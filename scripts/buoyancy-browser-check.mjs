@@ -1,0 +1,85 @@
+import assert from 'node:assert/strict';
+import { mkdir } from 'node:fs/promises';
+import { chromium } from '@playwright/test';
+
+const base = process.env.BROWSER_CHECK_URL ?? 'http://127.0.0.1:4321';
+const out = 'test-results/buoyancy';
+await mkdir(out, { recursive: true });
+const browser = await chromium.launch({ channel: process.env.PLAYWRIGHT_CHANNEL ?? 'chrome', headless: true });
+try {
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1050 } });
+  const errors = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  const read = (key) => page.locator(`[data-reading="${key}"]`).first().textContent();
+  await page.goto(`${base}/stem-lab/buoyancy/`, { waitUntil: 'networkidle' });
+  await page.waitForFunction(() => document.querySelector('#lab-viewport')?.dataset.ready === 'true');
+  await page.addStyleTag({ content: 'astro-dev-toolbar { display: none !important; }' });
+  assert.equal(await read('tensionN'), '22.0');
+  assert.equal(await read('buoyancyN'), '5.0');
+  await page.screenshot({ path: `${out}/desktop.png`, fullPage: true });
+  await page.locator('[data-stage="10"]').click();
+  assert.equal(await read('displacedCm3'), '1000');
+  assert.equal(await read('tensionN'), '17.0');
+  await page.locator('#liquid').selectOption('1200');
+  assert.equal(await read('buoyancyN'), '12.0');
+  assert.equal(await read('bottomPressurePa'), '2100');
+  await page.locator('[data-stage="0"]').click();
+  assert.equal(await read('buoyancyN'), '0.0');
+  assert.equal(await read('tensionN'), '27.0');
+  await page.locator('#play').click();
+  await page.waitForFunction(() => Number(document.querySelector('#immersion').value) > 0.2);
+  await page.locator('#play').click();
+  const paused = await page.locator('#immersion').inputValue();
+  await page.waitForTimeout(200);
+  assert.equal(await page.locator('#immersion').inputValue(), paused);
+  await page.locator('#play').click();
+  await page.locator('[data-stage="5"]').click();
+  assert.equal(await page.locator('#play').getAttribute('aria-pressed'), 'false');
+  await page.locator('#reset').click();
+  assert.equal(await page.locator('#liquid').inputValue(), '1000');
+  assert.equal(await read('tensionN'), '22.0');
+  await page.locator('#play').click();
+  await page.waitForFunction(() => document.querySelector('#immersion').value === '10' && document.querySelector('#play').getAttribute('aria-pressed') === 'false', undefined, { timeout: 15000 });
+  assert.equal(await page.locator('#play').getAttribute('aria-pressed'), 'false');
+  assert.equal(await read('tensionN'), '17.0');
+  await page.locator('#reset').click();
+  const initial = await page.locator('#lab-viewport canvas').screenshot();
+  await page.locator('#lab-viewport').focus();
+  await page.keyboard.press('ArrowLeft');
+  const rotated = await page.locator('#lab-viewport canvas').screenshot();
+  assert.notDeepEqual(initial, rotated, 'keyboard orbit changes the camera');
+  await page.locator('#camera-reset').click();
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 844 });
+    await page.waitForTimeout(100);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `no overflow at ${width}`);
+    await page.screenshot({ path: `${out}/mobile-${width}.png`, fullPage: true });
+  }
+  const reduced = await browser.newPage({ reducedMotion: 'reduce', viewport: { width: 390, height: 844 } });
+  await reduced.goto(`${base}/stem-lab/buoyancy/`);
+  await reduced.waitForFunction(() => document.querySelector('#lab-viewport')?.dataset.ready);
+  assert.equal(await reduced.locator('#motion-note').isVisible(), true);
+  assert.equal(await reduced.locator('#play').getAttribute('aria-pressed'), 'false');
+  await reduced.close();
+  const fallback = await browser.newPage();
+  fallback.on('pageerror', (error) => errors.push(error.message));
+  await fallback.addInitScript(() => {
+    const original = HTMLCanvasElement.prototype.getContext;
+    HTMLCanvasElement.prototype.getContext = function (type, ...args) {
+      if (String(type).startsWith('webgl')) return null;
+      return original.call(this, type, ...args);
+    };
+  });
+  await fallback.goto(`${base}/stem-lab/buoyancy/`, { waitUntil: 'networkidle' });
+  await fallback.waitForFunction(() => document.querySelector('#lab-viewport')?.dataset.ready === 'fallback');
+  await fallback.locator('[data-stage="10"]').click();
+  assert.equal(await fallback.locator('[data-reading="tensionN"]').textContent(), '17.0');
+  assert.equal(await fallback.locator('#scene-fallback').isVisible(), true);
+  await fallback.screenshot({ path: `${out}/fallback.png`, fullPage: true });
+  await fallback.close();
+  await page.goto(`${base}/`, { waitUntil: 'networkidle' });
+  assert.equal(await page.locator('[data-experiment-count]').first().innerText(), '12 个可探索实验');
+  assert.equal(await page.locator('#lab-viewport').count(), 0);
+  assert.deepEqual(errors, []);
+  console.log('Buoyancy browser checks passed: model controls, playback, reset, camera, mobile, reduced motion, fallback, science home.');
+} finally { await browser.close(); }

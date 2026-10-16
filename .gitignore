@@ -147,3 +147,9 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Local reference repository and browser artifacts
+bak/
+test-results/
+playwright-report/
+.DS_Store

@@ -1,0 +1,10 @@
+---
+import ExplorationTrails from '../components/ExplorationTrails.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ExperimentCard from '../components/ExperimentCard.astro';
+import { experiments, spaces } from '../data/labs';
+---
+<SiteLayout title="全部实验 · 科学探索实验室">
+  <section class="wrap page-intro"><p class="breadcrumb"><a href="/">探索首页</a> / 全部实验</p><p class="kicker">把问题放上实验台</p><h1>全部实验</h1><p data-experiment-count>{experiments.length} 个可探索实验</p><p>从一个具体的问题开始。先预测，再操作，用观察与测量检验你的想法。</p></section>
+  <section class="wrap directory" aria-label="实验目录"><nav class="space-tabs" aria-label="按空间浏览"><a href="/experiments/" aria-current="page">全部实验</a>{spaces.map(space => <a href={`/spaces/${space.slug}/`}>{space.name}</a>)}</nav><div class="experiment-grid">{experiments.map(experiment => <ExperimentCard experiment={experiment} />)}</div><ExplorationTrails /></section>
+</SiteLayout>

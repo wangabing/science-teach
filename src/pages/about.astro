@@ -1,0 +1,11 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+<SiteLayout title="关于与模型说明 · 科学探索实验室">
+  <section class="wrap page-intro"><p class="breadcrumb"><a href="/">探索首页</a> / 关于</p><p class="kicker">让公式有来处，让好奇有回应</p><h1>科学，从亲手试一试开始。</h1><p>这里是一座面向青少年的在线科学馆。你可以独自探索，也可以和家长、老师一起提出问题，改变条件，在可观察的证据中建立理解。</p></section>
+  <div class="wrap about-content"><article><h2>怎样开始一次探索？</h2><p>先猜一猜会发生什么，再改变一个条件。观察读数和运动，比较预测与结果，尝试解释其中的关系。最后，换一个条件，看看你的解释是否仍然成立。</p><p>四个空间共有十二个实验：从浮力和单摆，到面积拼图、立方体截面、卫星发射、三体对照、搭桥、齿轮组装、透镜成像、莫比乌斯带、重心稳定与月相日月食。不同实验采用不同的参与方式。</p></article>
+    <article id="models"><h2>模拟是理解世界的工具</h2><p>每个实验的装置、读数、图表与公式来自同一个模型。模拟有助于控制变量，但真实世界还包含更多因素，不能把理想模型的结果直接当作真实设备的测量结果。</p><ul><li><a href="/stem-lab/buoyancy/">浮力实验</a>使用阿基米德原理 F浮 = ρgV排，取 g = 10 N/kg。物体缓慢升降，忽略空气浮力、液体阻力和绳子体积，不模拟自由漂浮。</li><li><a href="/stem-lab/pendulum/">单摆实验</a>采用非线性单摆运动模型，绳子不可伸长、摆球视为质点。可以调节阻尼；小角度周期公式只作为近似，大角度使用修正理论值并通过运动测量周期。</li><li><a href="/labs/area/">面积搬家</a>以全等直角三角形重排说明勾股定理；<a href="/labs/sections/">立方体截面</a>由切平面与棱的实际交点计算。</li><li><a href="/labs/orbit/">卫星发射</a>使用二维中心引力，忽略大气和推力；<a href="/labs/three-body/">三体对照</a>使用软化引力，展示数值误差并在过近相遇时暂停。</li><li><a href="/labs/bridge/">桥梁挑战</a>使用小变形线弹性桁架，只研究轴向受力，不能用于真实桥梁安全评估；<a href="/labs/gears/">齿轮工坊</a>展示理想外啮合传动，忽略摩擦与滑动。</li><li><a href="/labs/lens/">透镜成像</a>使用理想薄凸透镜与近轴近似，光屏分离量用于几何调焦示意，不模拟实际亮度、像差或衍射。其光路与案例表达参考 <a href="https://github.com/ricktu288/ray-optics">Ray Optics</a>，模型、界面与图形独立实现。</li><li>首页单摆为轻量简谐运动预览，周期使用小角度公式 T = 2π√(L/g)，不是完整三维实验的替代。</li></ul></article>
+    <article><h2>适合不同设备的探索</h2><p>实验支持手机与键盘操作。设备无法显示三维画面时，仍可使用示意图、数值与公式探索。页面不会自动开始实验运动，也会尊重减少动态效果设置。</p></article>
+    <article><h2>内容与技术来源</h2><p>实验依据阿基米德原理、牛顿运动定律、面积守恒、平面几何与线弹性桁架理论建立。各实验页列明参数、假设和适用条件。三维装置使用 <a href="https://threejs.org/" target="_blank" rel="noreferrer">Three.js</a> 呈现；浮力装置的呈现与共享模型思路参考 <a href="https://github.com/wheresryan22/anatomy" target="_blank" rel="noreferrer">Anatomy</a>。本站首页仪器示意图为项目内绘制。</p><p>宇宙专题围绕牛顿引力和理想数值模型展开；本站没有把小说设定作为真实科学展示。</p></article>
+  </div>
+</SiteLayout>

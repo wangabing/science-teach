@@ -1,0 +1,80 @@
+---
+import '@fontsource-variable/noto-sans-sc';
+import '@fontsource/ibm-plex-mono/400.css';
+import '../../styles/buoyancy-lab.css';
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="旋转观察三维浮力实验，调整浸入深度，理解排水体积、浮力与测力计读数。" />
+    <title>浮力实验台 · 科学探索实验室</title>
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip" href="#experiment">跳到实验</a>
+    <header class="lab-header">
+      <a href="/" class="brand"><span class="brand-symbol">∴</span> 科学探索实验室 <small>STEM LAB</small></a>
+      <a class="back" href="/">返回探索首页 <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <section class="intro">
+        <div><p class="eyebrow">初中物理 / 阿基米德原理</p><h1>水托住的，<br class="mobile-break" />究竟有多重？</h1><p class="intro-copy">把铝块慢慢放进水中。看排水体积如何改变浮力，又如何改变测力计的读数。</p></div>
+        <div class="experiment-stamp"><span>EXPERIMENT</span><strong>F<span>浮</span> = ρgV<span>排</span></strong><span>观察 → 建模 → 推导</span></div>
+      </section>
+      <section id="experiment" class="experiment-grid" aria-label="浮力交互实验">
+        <div class="scene-panel">
+          <div class="scene-heading"><span><i></i> 三维实验台</span><span class="scene-tag" id="phase">部分浸入</span></div>
+          <div class="viewport" id="lab-viewport" tabindex="0" role="region" aria-label="三维实验装置。拖动旋转，滚轮缩放，方向键调整视角。">
+            <div id="scene-fallback" class="scene-fallback">
+              <svg viewBox="0 0 440 360" role="img" aria-label="铝块悬挂于水槽内的浮力实验示意">
+                <path d="M85 310H365M120 310V35H250V90" fill="none" stroke="#62768a" stroke-width="9" />
+                <rect x="229" y="90" width="42" height="72" rx="9" fill="#edf4fa" stroke="#18334c" stroke-width="3" />
+                <path d="M250 162V207" stroke="#18334c" stroke-width="3" />
+                <path d="M150 190V310H350V190" fill="#e0f1fc" stroke="#167db5" stroke-width="3" />
+                <path d="M150 243H350V310H150Z" fill="#91cce9" opacity=".6" />
+                <rect x="225" y="218" width="50" height="50" fill="#a2aeb9" stroke="#18334c" stroke-width="2" />
+                <text x="295" y="235" fill="#18334c" font-size="15">铝块</text><text x="180" y="292" fill="#167db5" font-size="15">液体</text>
+              </svg>
+              <p id="scene-message">正在准备三维装置…</p>
+            </div>
+            <div class="instrument-readout" aria-label="测力计读数"><span>测力计</span><strong><span data-reading="tensionN">22.0</span><small> N</small></strong></div>
+            <div class="scene-hint" id="scene-hint">拖动旋转 · 滚轮缩放 · 方向键调整</div>
+          </div>
+          <div class="scene-toolbar"><div class="legend"><span><i class="water-key"></i>浮力 F浮</span><span><i class="weight-key"></i>重力 G</span><span><i class="tension-key"></i>拉力 T</span></div><button id="camera-reset" type="button">恢复视角 ↺</button></div>
+        </div>
+        <aside class="controls-panel" aria-label="实验控制">
+          <p class="eyebrow">改变一个条件，观察一个关系</p><h2>动手试一试</h2>
+          <label class="control-label" for="immersion">浸入深度 <output id="depth-value" for="immersion">5.0 cm</output></label>
+          <input id="immersion" type="range" min="0" max="10" step="0.1" value="5" />
+          <div class="range-labels"><span>刚接触液面</span><span>完全浸没</span></div>
+          <p class="control-note">从当前液面到铝块底面的距离。</p>
+          <label class="control-label liquid-label" for="liquid">液体密度</label>
+          <select id="liquid"><option value="1000">水 · 1000 kg/m³</option><option value="800">低密度液体 · 800 kg/m³</option><option value="1200">高密度液体 · 1200 kg/m³</option></select>
+          <div class="control-actions"><button class="primary" id="play" aria-pressed="false" type="button">播放入水过程</button><button id="reset" type="button">重置</button></div>
+          <p class="motion-note" id="motion-note" hidden>你已设置减少动态效果；仍可手动播放或调整深度。</p>
+          <dl class="readings">
+            <div><dt>排水体积 V排</dt><dd><span data-reading="displacedCm3">500</span><small> cm³</small></dd></div>
+            <div class="highlight-reading"><dt>浮力 F浮</dt><dd><span data-reading="buoyancyN">5.0</span><small> N</small></dd></div>
+            <div><dt>液面升高 Δh</dt><dd><span data-reading="riseCm">1.25</span><small> cm</small></dd></div>
+            <div><dt>底部液体压强 p</dt><dd><span data-reading="bottomPressurePa">1625</span><small> Pa</small></dd></div>
+          </dl>
+          <p class="balance">受力平衡 <strong>T + F浮 = G = 27 N</strong></p>
+        </aside>
+      </section>
+      <section class="lesson" aria-labelledby="lesson-heading">
+        <div class="lesson-header"><div><p class="eyebrow">把现象变成解题思路</p><h2 id="lesson-heading">沿着三个状态理解浮力</h2></div><p>点击状态，让实验停在关键位置。</p></div>
+        <div class="lesson-steps" role="group" aria-label="实验关键状态">
+          <button data-stage="0" type="button" aria-pressed="false"><span class="step-number">01 / 刚接触</span><strong>没有排水，就没有浮力</strong><span>V排 = 0，测力计承担全部重力。</span></button>
+          <button data-stage="5" type="button" aria-pressed="true"><span class="step-number">02 / 部分浸入</span><strong>浸得越深，读数越小</strong><span>排水体积增加，液体分担更多重力。</span></button>
+          <button data-stage="10" type="button" aria-pressed="false"><span class="step-number">03 / 完全浸没</span><strong>此时，排水体积等于物体体积</strong><span>继续下沉时，浮力不再因深度增大。</span></button>
+        </div>
+        <div class="derivation" aria-live="polite" id="derivation">水中浸入 5.0 cm：V排 = 100 × 5.0 = 500 cm³；F浮 = 1000 × 10 × 0.000500 = 5.0 N；T = 27 − 5.0 = 22.0 N。</div>
+      </section>
+      <section class="lab-notes"><div><h3>实验条件</h3><p>铝块边长 10 cm，密度 2700 kg/m³；容器底面积 400 cm²，初始液深 15 cm；取 g = 10 N/kg。</p></div><div><h3>模型说明</h3><p>缓慢升降，忽略空气浮力、液体阻力与绳子体积；物体不触底、不自由漂浮。箭头长度表示力的相对大小，测力计为准静态读数示意。</p></div></section>
+    </main>
+    <footer><span>科学探索实验室 · 浮力实验台 · <a href="/stem-lab/pendulum/">探索单摆与能量 ↗</a></span><span>装置呈现与共享模型思路参考 <a href="https://github.com/wheresryan22/anatomy" target="_blank" rel="noreferrer">Anatomy ↗</a> · 三维渲染 <a href="https://threejs.org/" target="_blank" rel="noreferrer">Three.js ↗</a></span></footer>
+    <script>import '../../scripts/stem-lab/buoyancy';</script>
+  </body>
+</html>

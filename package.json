@@ -1,0 +1,39 @@
+{
+  "name": "science-teach",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:browser": "node scripts/site-browser-check.mjs && npm run test:browser:buoyancy && npm run test:browser:pendulum && npm run test:browser:exploration && npm run test:browser:learning && npm run test:browser:lens && npm run test:browser:spatial && npm run test:browser:balance && npm run test:browser:moon && npm run test:browser:observation",
+    "test:browser:buoyancy": "node scripts/buoyancy-browser-check.mjs",
+    "test:browser:pendulum": "node scripts/pendulum-browser-check.mjs",
+    "test:browser:exploration": "node scripts/exploration-browser-check.mjs",
+    "test:browser:learning": "node scripts/learning-browser-check.mjs",
+    "test:browser:lens": "node scripts/lens-browser-check.mjs",
+    "test:browser:spatial": "node scripts/spatial-browser-check.mjs",
+    "test:browser:balance": "node scripts/balance-browser-check.mjs",
+    "test:browser:moon": "node scripts/moon-browser-check.mjs",
+    "test:browser:observation": "node scripts/observation-browser-check.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/noto-sans-sc": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "astro": "^7.3.5",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^24.19.2",
+    "@types/three": "^0.186.0",
+    "typescript": "^6.0.3"
+  }
+}

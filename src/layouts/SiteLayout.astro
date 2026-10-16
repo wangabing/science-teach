@@ -1,0 +1,17 @@
+---
+import '@fontsource-variable/noto-sans-sc';
+import '@fontsource/ibm-plex-mono/400.css';
+import '../styles/site.css';
+interface Props { title?: string; description?: string }
+const { title = '科学探索实验室 · 让好奇发生', description = '面向青少年的互动科学实验室。探索物理、几何、宇宙和建造中的互动实验，在拼接、发射、对照与组装中理解科学。' } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content={description} /><title>{title}</title><link rel="icon" href="/favicon.svg" /></head>
+  <body>
+    <a href="#main" class="skip">跳到主要内容</a>
+    <header class="site-header"><a class="site-brand" href="/" aria-label="科学探索实验室首页"><span class="brand-mark" aria-hidden="true">∴</span><span>科学探索实验室<small>SCIENCE, IN YOUR HANDS</small></span></a><nav aria-label="主导航"><a href="/#spaces">探索空间</a><a href="/experiments/">全部实验</a><a href="/about/">关于</a></nav></header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer"><a class="footer-brand" href="/">∴ 科学探索实验室</a><p>先好奇，再动手。让每一个「为什么」都有探索的起点。</p><a href="/about/#models">模型与科学说明 ↗</a></footer>
+  </body>
+</html>

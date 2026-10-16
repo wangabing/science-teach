@@ -1,0 +1,33 @@
+---
+import NextExploration from '../../components/NextExploration.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import '../../styles/exploration.css';
+---
+<SiteLayout title="面积搬家 · 数学与几何实验室" description="用四块全等三角形亲手拼出勾股定理，让面积守恒成为看得见的证据。">
+  <div class="lab area-lab">
+    <p class="breadcrumb"><a href="/spaces/geometry/">数学与几何实验室</a> / 面积搬家</p>
+    <header class="lab-heading"><p class="kicker">一块都不多，一块都不少</p><h1>面积搬了家，<br />总量会改变吗？</h1><p>把左边的四块三角形，搬进右边同样大的方框。不能剪开、不能缩放——只靠移动和旋转，让黄色的面积告诉你答案。</p></header>
+    <div class="demo-dock"><div><strong>第一次来？先看一次面积搬家</strong><p>看四块三角形依次搬到新家，再自己试。不用先猜旋转角度。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：自动搬家</button><button id="demo-pause" type="button">暂停演示</button><button id="next-piece" type="button">帮我搬一块</button></div></div>
+    <section class="workbench" aria-label="勾股定理拼图台">
+      <div class="bench-title"><strong>四块全等三角形 · 两种拼法</strong><span>MOVE · ROTATE · DISCOVER</span></div>
+      <p id="demo-stage" class="demo-caption" aria-live="off">① 观察左侧 c² → ② 搬走四块全等三角形 → ③ 比较右侧 a²+b²。</p>
+      <svg id="area-svg" class="area-svg area-board" viewBox="0 0 760 400" role="group" aria-label="拖动四个彩色三角形，从左侧棋盘搬到右侧；也可使用下方选择、旋转与放置按钮">
+        <g id="area-boards"><rect x="40" y="60" width="290" height="290" rx="2" fill="#fff1a8" stroke="#90b7a9"/><rect x="430" y="60" width="290" height="290" fill="#fff1a8" stroke="#90b7a9"/><text x="40" y="36" fill="#153b56" font-size="17">原来的家：一块 c²</text><text x="430" y="36" fill="#153b56" font-size="17">新的家：a² + b²</text><text x="175" y="205" fill="#766320" font-size="24">c²</text><text x="470" y="305" fill="#766320" font-size="24">a²</text><text x="650" y="125" fill="#766320" font-size="24">b²</text></g>
+        <g id="area-hints"></g><g id="area-pieces"><polygon points="40,60 164,60 40,226" fill="#188d83"/><polygon points="330,60 330,184 164,60" fill="#4b87c5"/><polygon points="330,350 206,350 330,184" fill="#e5a338"/><polygon points="40,350 40,226 206,350" fill="#ad73b1"/></g>
+      </svg>
+      <div class="lab-controls">
+        <details class="advanced-tools"><summary>我想自己拼：选择、旋转和精细拖动</summary><div class="control-row piece-picker" aria-label="选择拼块">{['青绿','蓝色','橙色','紫色'].map((name,i)=><button id={`piece-${i}`} type="button" aria-pressed={i===0 ? 'true':'false'} style={`--piece:${['#188d83','#4b87c5','#e5a338','#ad73b1'][i]}`}>选择{name}块</button>)}</div>
+        <div class="control-row"><button id="rotate" type="button">旋转选中块 90°</button><button id="place" class="action" type="button">放入对应位置</button><button id="hint" type="button" aria-pressed="false">显示拼图轮廓</button><button id="reset" type="button">重新搬家</button></div>
+        <p class="small">左侧浅色轮廓保留原拼法；右侧灰色区域等待填入三角形。拖动后靠近正确位置会吸附。也可选择一块，旋转到对应朝向，再点“放入对应位置”。拼块聚焦后：方向键移动，R 旋转，Enter 放置。</p>
+        </details><div class="control-row"><label class="range-field" for="leg-a"><span>直角边 a <output id="leg-a-value">3</output></span><input id="leg-a" type="range" min="2" max="6" step="0.5" value="3"/></label><label class="range-field" for="leg-b"><span>直角边 b <output id="leg-b-value">4</output></span><input id="leg-b" type="range" min="2" max="6" step="0.5" value="4"/></label></div>
+      </div>
+      <p id="area-feedback" class="feedback" aria-live="off">先选一块，试着搬家。已归位 0 / 4 块。</p>
+      <div class="area-evidence"><p>两边的外框和四块三角形都一样大。扣掉同样的面积，剩余面积当然也一样。</p><div id="area-equation" class="equation">9 + 16 = 25</div><p id="area-subtract">外框 49 − 四块三角形 24 = 剩余面积 25</p></div>
+      <noscript><p>启用 JavaScript 即可搬动拼块。图中两种拼法使用同样四块全等三角形，剩余黄色面积分别为 c² 和 a²+b²。</p></noscript>
+    </section>
+    <section class="learning-evidence" aria-label="面积守恒的实时证据"><h2>搬动的是拼块，守住的是面积</h2><div class="evidence-grid"><div><div class="formula-live"><span class="formula-rule">c² = a² + b²</span><span id="area-live-formula">5² = 3² + 4² = 25</span></div><p id="area-live-explain">两块外框面积相同，扣去相同四块三角形，剩下的面积也相同。</p><dl class="readouts"><div><dt>已搬入新家</dt><dd id="area-progress">0 / 4</dd></div><div><dt>每块三角形面积</dt><dd id="area-triangle-area">6</dd></div></dl></div><div><h3>同一比例尺 · 黄色剩余面积</h3><div id="area-bars"></div><p>上条是 c²，下条由 a² 和 b² 共同组成。边长变化会重算，两条总长始终相同。</p></div></div></section>
+    <section class="lab-notes"><article><h2>这次搬家，证明了什么？</h2><p>左边，四块三角形围出一个边长为 c 的正方形；右边，相同的三角形围出边长为 a 和 b 的两个正方形。外框边长始终是 a+b，所以 c²=a²+b²。</p><p>这不是只对 3、4、5 成立的巧合。改变两条直角边，再搬一次，看看这个理由还在不在。</p></article><article class="model-note"><h2>再挑战一下</h2><p>把 a、b 设成相同长度，然后设成很不相同的长度。为什么形状变化了，“扣掉相同面积”的解释仍然成立？</p><p>适用条件：直角三角形。斜边 c 来自 √(a²+b²)，拼块保持全等，图形显示允许小范围位置吸附。</p></article></section>
+    <NextExploration slug="area" />
+    <script>import '../../scripts/exploration/area';</script>
+  </div>
+</SiteLayout>

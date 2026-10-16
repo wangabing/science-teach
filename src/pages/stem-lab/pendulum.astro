@@ -1,0 +1,51 @@
+---
+import '@fontsource-variable/noto-sans-sc';
+import '@fontsource/ibm-plex-mono/400.css';
+import '../../styles/pendulum-lab.css';
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="亲手释放三维单摆，观察能量交换，测量周期，用对照实验发现摆长、质量与重力的规律。" />
+    <title>单摆 · 能量的往返旅程 — 科学探索实验室</title><link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip" href="#apparatus">跳到实验台</a>
+    <header class="lab-nav"><a class="brand" href="/"><b>∴</b> 科学探索实验室 <span>STEM LAB</span></a><nav aria-label="实验导航"><a href="/stem-lab/buoyancy/">浮力实验</a><a href="/">探索首页 ↗</a></nav></header>
+    <main>
+      <section class="intro"><div><p class="eyebrow">力学实验 / 单摆与机械能</p><h1>能量，<em>往返之间。</em></h1><p>拉高摆球，松开手。看同一份能量，如何在高度与速度之间流转。</p></div><div class="intro-equation"><span>IDEAL PENDULUM</span><strong>E<sub>势</sub> + E<sub>动</sub> = 常量</strong><span>一个摆球，三条值得亲手验证的规律。</span></div></section>
+      <section class="bench-grid" aria-label="单摆实验">
+        <div class="apparatus-panel">
+          <div class="panel-head"><span><i class="status-dot"></i> <span id="status">待释放</span></span><span class="clock">t = <b data-value="time">0.00</b> s <small>仿真时间</small></span></div>
+          <div id="apparatus" class="viewport" tabindex="0" role="region" aria-label="单摆三维实验台。拖动摆球释放；拖动空白旋转视角。方向键旋转，空格播放或暂停。">
+            <div id="pendulum-fallback" class="fallback"><svg id="fallback-svg" viewBox="0 0 640 480" role="img" aria-label="由物理模型驱动的单摆示意图"><path d="M100 415H550M135 415V70H330" stroke="#e7b96c" stroke-width="9" fill="none"/><path d="M330 100V385" stroke="#91a8c2" stroke-dasharray="5 7" fill="none"/><path id="fallback-arc" d="M120 310Q330 470 540 310" fill="none" stroke="#63ded1" opacity=".25"/><g id="fallback-reference" visibility="hidden"><path id="fallback-reference-rope" stroke="#91a8c2" stroke-width="2"/><circle id="fallback-reference-bob" r="13" fill="#91a8c2" opacity=".5"/></g><line id="fallback-rope" x1="330" y1="100" stroke="#e7b96c" stroke-width="3"/><circle id="fallback-bob" r="22" fill="#63ded1" stroke="#d4fff7" stroke-width="3"/><circle cx="330" cy="100" r="7" fill="#e7b96c"/></svg><p id="fallback-message">正在准备实验装置…</p></div>
+            <div class="scene-note"><span id="phase">最高处 · 等待释放</span><strong><span data-value="speed">0.00</span><small> m/s</small></strong><span>摆球速率</span></div>
+            <div class="scene-axis"><span class="cyan">● 主摆</span><span id="reference-label" hidden>○ 参考摆 · 1.50 m</span></div>
+            <p class="drag-hint" id="drag-hint">抓住发光摆球，拉高后松手 <span>· 拖动空白旋转视角</span></p>
+          </div>
+          <div class="view-tools"><div class="segmented" aria-label="观察视角"><button type="button" data-camera="perspective" aria-pressed="true">立体视角</button><button type="button" data-camera="front" aria-pressed="false">正面观察</button></div><div class="overlays"><label><input type="checkbox" id="trail" checked />轨迹</label><label><input type="checkbox" id="forces" />受力</label><label><input type="checkbox" id="compare" />对照摆</label></div></div>
+          <div id="force-key" class="force-key" hidden><span>↓ 黄：重力 mg</span><span>↗ 青：绳子张力 T</span><span>箭头共同比例；合力提供向心加速度。</span></div>
+          <div class="transport"><button id="release" class="release" type="button">释放摆球 <span>↘</span></button><button id="toggle" type="button" aria-pressed="false">继续</button><button id="step" type="button">单步 +0.02 s</button><button id="reset" type="button" aria-label="重置实验">↺ 重置</button><label class="slow"><input id="slow" type="checkbox" /> ¼ 慢动作</label></div>
+          <p id="motion-note" class="motion-note" hidden>已启用减少动态；可用「单步」逐帧观察，也可手动释放摆球。</p>
+        </div>
+        <aside class="settings"><div class="section-title"><span class="eyebrow">实验条件</span><span class="tiny">更改后重新待释放</span></div>
+          <label class="slider-label" for="length">摆长 L <output id="length-output">1.50 m</output></label><input id="length" type="range" min="0.6" max="2.4" step="0.05" value="1.5" /><div class="range-ticks"><span>0.60 m</span><span>2.40 m</span></div>
+          <label class="slider-label" for="angle">释放角度 θ₀ <output id="angle-output">35°</output></label><input id="angle" type="range" min="-70" max="70" step="1" value="35" /><div class="range-ticks"><span>−70°</span><span>竖直为 0°</span><span>+70°</span></div>
+          <label class="slider-label" for="mass">摆球质量 m <output id="mass-output">1.0 kg</output></label><input id="mass" type="range" min="0.2" max="3" step="0.1" value="1" />
+          <label class="slider-label" for="gravity">把实验带到</label><div class="planet-select"><select id="gravity"><option value="9.81">地球 · 9.81 m/s²</option><option value="1.62">月球 · 1.62 m/s²</option><option value="24.79">木星 · 24.79 m/s²</option></select><span aria-hidden="true">◉</span></div>
+          <label class="slider-label" for="damping">阻尼系数 b <output id="damping-output">0.00 s⁻¹</output></label><input id="damping" type="range" min="0" max="0.6" step="0.05" value="0" /><p class="setting-note">0 为理想无阻尼。增大后，摆幅会逐渐减小。</p>
+          <div class="period-meter"><span>周期 · 一次完整往返</span><div><strong id="measured-period">—</strong><small>s 实测</small></div><p>完整理论值 <b id="theory-period">2.52 s</b></p><p>小角度近似 <b id="small-period">2.46 s</b></p><span id="period-note">释放后，经过两次同向过零自动测量。</span></div>
+          <p class="reference-note" id="reference-note" hidden>参考摆固定：1.50 m / 1.0 kg / 地球 / 35° / 无阻尼。与主摆同时释放，以虚线绳表示。</p>
+        </aside>
+      </section>
+      <section class="energy-console" aria-labelledby="energy-heading"><div class="energy-live"><div class="section-title"><h2 id="energy-heading">能量账本</h2><span class="tiny">最低处为势能零点</span></div><div class="energy-row gold"><span>势能 E势</span><strong><span data-value="potential">2.66</span><small> J</small></strong><div class="energy-track"><i id="potential-bar"></i></div></div><div class="energy-row cyan"><span>动能 E动</span><strong><span data-value="kinetic">0.00</span><small> J</small></strong><div class="energy-track"><i id="kinetic-bar"></i></div></div><div class="energy-row muted"><span>已耗散</span><strong><span data-value="dissipated">0.00</span><small> J</small></strong><div class="energy-track"><i id="dissipated-bar"></i></div></div><p class="energy-total">机械能 <b><span data-value="mechanical">2.66</span> J</b><span id="energy-state">无阻尼 · 总量不变</span></p></div>
+        <div class="history"><div class="section-title"><h2>看见能量交换</h2><span class="chart-legend"><i class="gold"></i>势能 <i class="cyan"></i>动能 <i class="muted"></i>机械能</span></div><svg id="energy-chart" viewBox="0 0 700 175" role="img" aria-label="最近十二仿真秒的势能、动能和机械能曲线"><defs><linearGradient id="kinetic-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#63ded1" stop-opacity=".15"/><stop offset="1" stop-color="#63ded1" stop-opacity="0"/></linearGradient></defs><path d="M42 18H686M42 64H686M42 110H686M42 156H686" stroke="#2c425d" stroke-dasharray="3 5"/><text x="0" y="23" id="chart-max">2.66 J</text><text x="20" y="160">0</text><path id="kinetic-area" fill="url(#kinetic-fill)"/><path id="total-path" fill="none" stroke="#91a8c2" stroke-width="1.5" stroke-dasharray="5 5"/><path id="potential-path" fill="none" stroke="#e7b96c" stroke-width="2.5"/><path id="kinetic-path" fill="none" stroke="#63ded1" stroke-width="2.5"/><circle id="chart-cursor" r="4" fill="#63ded1"/></svg><div class="chart-caption"><span id="chart-start">0.0 s</span><span>横轴：仿真时间 · 慢动作不改变周期读数</span><span id="chart-end">12.0 s</span></div></div></section>
+      <section class="insight"><span class="insight-symbol" aria-hidden="true">⇄</span><div><p class="eyebrow">此刻发生了什么</p><h2 id="insight-title">高度储存了能量。</h2><p id="insight-copy">摆球静止在高处，能量以重力势能的形式储存。释放后，重力的切向分量让它加速。</p></div><div class="live-equations"><p>E势 = mgh = <span id="potential-formula">1.0 × 9.81 × 0.271 = 2.66 J</span></p><p>E动 = ½mv² = <span id="kinetic-formula">½ × 1.0 × 0.00² = 0.00 J</span></p><p>T = mg cosθ + mv²/L = <span id="tension-formula">8.04 N</span></p></div></section>
+      <section class="explore" aria-labelledby="explore-heading"><div class="lesson-heading"><div><p class="eyebrow">先预测，再亲手验证</p><h2 id="explore-heading">三个小实验，拆开一个单摆。</h2></div><p>选择一个问题，实验条件会为你准备好。</p></div><div class="mission-tabs" role="group" aria-label="探索问题"><button data-mission="mass" type="button" aria-pressed="true"><span>01 / 控制变量</span><strong>更重，会摆得更快吗？</strong></button><button data-mission="length" type="button" aria-pressed="false"><span>02 / 周期规律</span><strong>摆长变长，时间怎么变？</strong></button><button data-mission="energy" type="button" aria-pressed="false"><span>03 / 能量转换</span><strong>最快的地方，拉力多大？</strong></button></div><div class="mission-body"><div><p id="mission-question">保持摆长、重力与释放角度相同，把主摆质量增加到 3 kg。它与 1 kg 参考摆相比，会怎样？</p><p id="mission-tip" class="muted">已开启对照摆。先选答案，再释放；两球的位置会给你证据。</p></div><div class="answer-area"><div id="answers" class="answers"></div><p id="answer-feedback" aria-live="polite">选一个预测，看看你的直觉。</p></div></div></section>
+      <section class="principles"><article><span class="principle-symbol">θ</span><h3>为什么会来回摆？</h3><p>重力沿圆弧切线的分量总指向最低处：F切 = −mg sinθ。惯性让摆球越过最低处，随后减速爬升，循环往返。</p><p class="formula">θ̈ = −(g/L) sinθ − bθ̇</p></article><article><span class="principle-symbol">T</span><h3>周期由什么决定？</h3><p>小角度时 T ≈ 2π√(L/g)。摆长越长越慢，重力越小越慢，质量不影响周期。大摆角下周期会增加，试试 70° 与 10°。</p><p class="formula">T小角 ≈ 2π√(L/g)</p></article><article><span class="principle-symbol">E</span><h3>能量去了哪里？</h3><p>无阻尼时，势能与动能互换，机械能总量不变。有阻尼时，一部分机械能转化为内能；账本把它计入「已耗散」。</p><p class="formula">E势 + E动 + E耗散 = E初始</p></article></section>
+      <details class="model-notes"><summary>实验假设与读数说明 <span>＋</span></summary><p>摆球视为质点，摆长从悬点量到球心；绳子无质量、不可伸长，摆动限制在一个竖直平面，忽略地球自转与球体转动。阻尼采用角速度线性阻尼 b，b 的单位为 s⁻¹，便于单独观察耗散。</p><p>「完整理论值」为当前释放角度下无阻尼非线性单摆周期；有阻尼时只作参考。实测周期取两次由正角度向负角度过零的仿真时间差，首个读数约需 1¼ 个周期。改变参数或拖拽会重新开始实验与测量；继续按钮从暂停状态恢复，释放按钮从设定角度重新开始。</p><p>受力只有重力和绳子张力；向心力是它们沿径向的合力，不是第三个作用力。图中球体大小随质量改变用于辨认，模型仍按质点计算。参考摆不受主摆参数影响。</p></details>
+    </main><footer><span>科学探索实验室 / MECHANICS 02</span><a href="/stem-lab/buoyancy/">继续探索：浮力实验台 ↗</a><a href="/experiments/#trail-light">回看探索路线：光与测量 ↗</a><span>亲手操作，让公式有来处。</span></footer>
+    <script>import '../../scripts/stem-lab/pendulum';</script>
+  </body>
+</html>

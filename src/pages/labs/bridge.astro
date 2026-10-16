@@ -1,0 +1,30 @@
+---
+import NextExploration from '../../components/NextExploration.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import '../../styles/exploration.css';
+---
+<SiteLayout title="桥梁挑战 · 空间与建造实验室" description="亲手给桁架加上杆件，施加载荷，从失稳、拉压和变形中发现三角形的力量。">
+  <div class="lab bridge-lab"><p class="breadcrumb"><a href="/spaces/structures/">空间与建造实验室</a> / 桥梁挑战</p>
+    <header class="lab-heading"><p class="kicker">稳定，来自连接的方式</p><h1>同样的杆件，<br />你会怎样搭一座桥？</h1><p>这座桥只有六个节点。点两个节点就能加一根杆，再施加载荷，看结构是否稳定、哪根杆在拉、哪根杆在压。</p></header>
+    <div class="demo-dock"><div><strong>先看一座桥怎样站稳</strong><p>裸框 → 加 A–E → 加 C–E → 逐渐加载。演示后你可以拆一根，再验证自己的猜想。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：搭桥与加载</button><button id="demo-pause" type="button">暂停演示</button><button id="guide-next" type="button">帮我做下一步</button></div></div>
+    <div class="wide-and-side"><section class="workbench"><div class="bench-title"><strong>跨度 4 m · 左铰支 / 右滚支</strong><span>PLANAR TRUSS</span></div>
+      <p id="demo-stage" class="demo-caption" aria-live="off">第 1 步：裸框会侧移。先点 A，再点 E，连接第一根斜撑。</p>
+      <svg id="bridge-svg" class="bridge-board" viewBox="0 0 680 440" role="group" aria-label="可选择节点和查看杆件受力的桥梁施工图"><path d="M55 325H625" stroke="#9eabb9" stroke-width="4"/><path d="M80 300L64 324H96ZM600 300L584 320H616Z" fill="#c1d1dd" stroke="#59758b" stroke-width="2"/><circle cx="591" cy="325" r="4" fill="#59758b"/><circle cx="609" cy="325" r="4" fill="#59758b"/><g id="bridge-members"><path d="M80 300H600M80 92H600M80 92V300M340 92V300M600 92V300" stroke="#738da1" stroke-width="7"/></g><g id="bridge-deformed"></g><g id="bridge-load"></g><g id="bridge-nodes"></g><text x="340" y="395" text-anchor="middle" font-size="14" fill="#59758b">0 m ───────── 2 m ───────── 4 m</text></svg>
+      <div class="legend"><span><i style="background:#217ab5"></i>拉力</span><span><i style="background:#cd6543"></i>压力</span><span><i style="background:#a2aeba"></i>接近零力</span><span><i style="background:#b97529"></i>变形 ×100</span></div>
+      <dl class="readouts"><div><dt>结构状态</dt><dd id="bridge-status">待分析</dd></div><div><dt>总杆长</dt><dd id="bridge-length">0 m</dd></div><div><dt>最大节点位移</dt><dd id="bridge-displacement">—</dd></div><div><dt>左 / 右竖向反力</dt><dd id="bridge-reactions">—</dd></div></dl>
+      <p id="bridge-feedback" class="feedback" role="status">没有斜撑的框架可能发生侧移。加一根斜杆试试。</p><p id="member-feedback" class="lab-summary">点击杆件查看受力；只有明确点“拆除选中杆件”才会删除；也可用右侧节点选择按钮添加或删除。</p>
+      <noscript><p>启用 JavaScript 可以添加杆件和施加载荷。裸矩形框在理想铰接模型下会失稳；合理的三角形斜撑可以限制侧移。图中不是可用于真实施工的设计。</p></noscript>
+    </section><aside class="side-panel" aria-label="桥梁搭建控制"><h2>先搭结构，再看受力</h2>
+      <div class="control-row"><button id="bare" type="button">裸框：拆掉斜撑</button><button id="truss" type="button">示例：三角形斜撑</button><button id="reset" type="button">重新搭桥</button></div>
+      <div class="inspector"><strong>选中杆件</strong><p id="bridge-inspection">点图上的一根杆，查看受力和作用。选杆不会拆除它。</p><button id="remove-member" type="button" disabled>拆除选中杆件</button></div>
+      <p class="small">依次选择两个节点，添加或删除它们之间的杆件。交叉杆件的交叉处不自动产生节点。</p><div class="node-choice" aria-label="选择连接节点">{['A','B','C','D','E','F'].map((name,i)=><button id={`node-${i}`} type="button" aria-pressed="false">{name}</button>)}</div>
+      <p id="node-feedback" class="small" role="status">选择第一个节点。</p><label class="range-field" for="load"><span>向下载荷 <output id="load-value">40 kN</output></span><input id="load" type="range" min="5" max="100" step="5" value="40"/></label>
+      <div class="control-row"><label for="load-node">施力位置</label><select id="load-node"><option value="1">B · 桥面中央</option><option value="3">D · 左上节点</option><option value="4">E · 上部中央</option><option value="5">F · 右上节点</option></select></div>
+      <p class="small">挑战：用不超过 18 m 的杆件，搭出当前桁架模型下稳定的结构。试着拆一根杆，观察“看起来像桥”和“结构稳定”有什么区别。</p>
+    </aside></div>
+    <section class="learning-evidence" aria-label="桥梁受力与反力证据"><h2>载荷最终去了哪里？</h2><div class="evidence-grid"><div><div class="formula-live"><span class="formula-rule">R左 + R右 = P</span><span id="bridge-live-formula">结构不稳定，不能确定可信反力。</span></div><div id="bridge-reaction-bars"></div><p id="bridge-load-explain">加斜撑让结构稳定后，再观察载荷怎样分到两侧支座。</p><p>EA 相同时，杆的轴向伸缩满足 ΔL = NL/(EA)。拉力为正，压力为负；变形图放大 100 倍。</p><div class="formula-live"><span class="formula-rule">ΔL = N × L / 200000</span><span id="bridge-member-formula">选中杆件后，代入当前受力与长度。</span></div></div><div><h3>每根杆的当前轴向力</h3><table class="live-table"><thead><tr><th>杆件</th><th>长度 m</th><th>状态</th><th>力 kN</th></tr></thead><tbody id="bridge-force-table"></tbody></table><p>不稳定时只保留几何长度，不提供没有意义的“承重分数”或受力值。</p></div></div></section>
+    <section class="lab-notes"><article><h2>三角形，为什么能锁住形状？</h2><p>铰接的四边形可以在杆长不变时歪斜；三角形的三条边一旦确定，形状也就确定。斜撑把可变的框架拆成三角形，让载荷通过拉力和压力传到支座。</p><p>颜色表示当前载荷下的轴向受力，不代表材料已经损坏。把载荷加倍，观察杆力和位移是否也加倍。</p></article><article class="model-note"><h2>实验桥，不是施工图</h2><p>二维、理想铰接、线弹性小变形；每根杆 EA=200000 kN，忽略弯曲、自重、屈曲、接头与破坏。求解刚度矩阵，奇异时报告不稳定；不能用该模型证明真实桥梁的安全。</p><p>橙色虚线将位移放大 100 倍便于观察；读数仍是实际计算值。手动搭建或改变载荷会立即重新求解；标准演示逐渐增加真实载荷，每一步重新计算。</p></article></section>
+    <NextExploration slug="bridge" />
+    <script>import '../../scripts/exploration/bridge';</script>
+  </div>
+</SiteLayout>

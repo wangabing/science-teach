@@ -1,0 +1,18 @@
+---
+import ExplorationTrails from '../../components/ExplorationTrails.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ExperimentCard from '../../components/ExperimentCard.astro';
+import Instrument from '../../components/Instrument.astro';
+import { spaces, inSpace } from '../../data/labs';
+export function getStaticPaths() { return spaces.map(space => ({ params: { slug: space.slug }, props: { space } })); }
+const { space } = Astro.props;
+const available = inSpace(space.slug);
+---
+<SiteLayout title={`${space.name} · 科学探索实验室`} description={space.description}>
+  <section class="wrap page-intro"><p class="breadcrumb"><a href="/">探索首页</a> / {space.name}</p><p class="kicker">{space.english}</p><h1>{space.name}</h1><p>{space.question}<br />{space.description}</p></section>
+  <section class="wrap directory" aria-label={`${space.name}实验目录`}>
+    <span class={`status ${available.length ? 'open' : ''}`}>{available.length ? `${available.length} 个可探索实验` : '筹备中 · 暂无开放实验'}</span>
+    {available.length ? <div class="experiment-grid">{available.map(experiment => <ExperimentCard experiment={experiment} />)}</div> : <div class="empty-state"><Instrument kind={space.symbol} /><div><p class="kicker">好奇心先来，实验随后</p><h2>这个空间正在筹备中</h2><p>目前还没有可操作的实验。你可以先去物理实验室，探索浮力和单摆。</p><a class="button primary" href="/spaces/physics/">进入物理实验室 ↗</a></div></div>}
+    <ExplorationTrails space={space.slug} />
+  </section>
+</SiteLayout>

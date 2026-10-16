@@ -1,0 +1,9 @@
+---
+import {trails,trailExperiment} from '../data/trails';
+interface Props {slug:string}
+const {slug}=Astro.props;
+const trail=trails.find(t=>t.steps.some(s=>s.slug===slug));
+const index=trail?.steps.findIndex(s=>s.slug===slug)??-1;
+const next=trail?.steps[index+1];
+---
+{trail&&<aside class="next-exploration" aria-label="下一次探索"><div><p class="kicker">{trail.title}</p><h2>{next?`带着问题，试试${trailExperiment(next.slug).name}`:'把这次发现，和另一个实验连起来'}</h2><p>{next?next.observe:'回到路线，比较两种装置中的观察方法。也可以选一个全新的问题。'}</p></div><a class="text-link" href={next?trailExperiment(next.slug).href:`/experiments/#trail-${trail.id}`}>{next?'继续动手':'回看探索路线'} ↗</a></aside>}

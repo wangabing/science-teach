@@ -1,0 +1,7 @@
+---
+import {trails,trailExperiment} from '../data/trails';
+interface Props {space?:string}
+const {space}=Astro.props;
+const selected=space?trails.filter(t=>t.space===space):trails;
+---
+<section class="exploration-trails" aria-label="短探索路线"><div class="section-heading"><div><p class="kicker">一个问题，可以走得更远</p><h2>带着发现，接着探索</h2></div><p>随时加入，不必按顺序完成。</p></div><div class="trail-grid">{selected.map(trail=><article class="trail-card" id={`trail-${trail.id}`}><h3>{trail.title}</h3><p>{trail.question}</p><ol>{trail.steps.map(step=><li><a href={trailExperiment(step.slug).href}>{trailExperiment(step.slug).name} <span aria-hidden="true">↗</span></a><p>{step.observe}</p></li>)}</ol></article>)}</div></section>

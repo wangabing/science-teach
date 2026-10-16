@@ -1,0 +1,31 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Instrument from '../components/Instrument.astro';
+import ExperimentCard from '../components/ExperimentCard.astro';
+import { spaces, experiments, inSpace } from '../data/labs';
+---
+<SiteLayout>
+  <section class="hero wrap">
+    <div class="hero-copy"><p class="kicker">向每一个好奇的你开放</p><h1>世界有规律。<br />你可以<span class="headline-highlight">亲手发现。</span></h1><p class="hero-intro">把「为什么」放上实验台。<br />改变一个条件，看见一种关系，找到自己的答案。</p><a class="button primary" href="#spaces">选择你的探索空间 <span aria-hidden="true">↓</span></a><p class="hero-note" data-experiment-count>{experiments.length} 个可探索实验</p></div>
+    <div class="hero-apparatus">
+      <div class="apparatus-label"><span class="live-dot"></span> 你的第一场小实验 <span class="mono">L / T</span></div>
+      <svg id="preview-pendulum" viewBox="0 0 520 330" fill="none" role="img" aria-label="单摆示意，调整下方摆长观察周期变化">
+        <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#bed6e8"/></pattern><linearGradient id="bob" x1="0" x2="1" y2="1"><stop stop-color="#64c3fa"/><stop offset="1" stop-color="#0866b9"/></linearGradient></defs>
+        <rect width="520" height="330" fill="url(#grid)"/><ellipse cx="260" cy="295" rx="143" ry="18" fill="#c8e0ee" opacity=".4"/>
+        <path d="M111 286V42H302M88 287H138" stroke="#7393aa" stroke-width="10" stroke-linecap="round"/><path d="M260 45V276" stroke="#b6cddd" stroke-dasharray="4 6"/>
+        <path id="preview-arc" d="M145 223Q260 302 375 223" stroke="#1ba8a1" stroke-width="2" stroke-dasharray="5 6"/>
+        <g id="preview-arm" transform="rotate(-30 260 45)"><path id="preview-rope" d="M260 45V255" stroke="#183e5b" stroke-width="2"/><circle id="preview-bob" cx="260" cy="255" r="24" fill="url(#bob)"/><circle id="preview-glint" cx="253" cy="248" r="6" fill="white" opacity=".65"/></g><circle cx="260" cy="45" r="7" fill="#163b58"/>
+        <text x="350" y="105" fill="#4e718b" font-size="13">同样的角度</text><text x="350" y="128" fill="#4e718b" font-size="13">不同的摆长</text>
+      </svg>
+      <div class="preview-controls"><div><label for="preview-length">把摆长调一调</label><output id="preview-length-value" for="preview-length">1.50 m</output></div><input type="range" id="preview-length" min="0.5" max="2.5" step="0.05" value="1.5" /><div class="preview-result"><span>小角度理论周期 <strong id="preview-period">2.46 s</strong></span><button id="preview-toggle" type="button" aria-pressed="false">试着摆动 ↗</button></div></div>
+      <p class="preview-caption">理想单摆 · 地球重力 · 小角度近似，T = 2π√(L/g)<br />预览用简谐运动示意；大角度运动请进入完整实验。</p>
+      <noscript><p class="preview-caption">启用 JavaScript 可操作预览；下方实验说明仍可阅读。</p></noscript>
+    </div>
+  </section>
+  <section class="spaces-section" id="spaces"><div class="wrap"><div class="section-heading"><div><p class="kicker">从一个问题，走进一个空间</p><h2>今天，想探索什么？</h2></div><p>四个空间，让好奇各有去处。</p></div>
+    <div class="space-grid">{spaces.map(space => <a class={`space-card ${space.color}`} href={`/spaces/${space.slug}/`}><div class="space-top"><span class="mono">{space.english}</span><span class={`status ${inSpace(space.slug).length ? 'open' : ''}`}>{inSpace(space.slug).length ? `${inSpace(space.slug).length} 个实验 · 已开放` : '筹备中'}</span></div><Instrument kind={space.symbol} /><div class="space-bottom"><div><h3>{space.name}</h3><p>{space.question}</p></div><span class="space-arrow" aria-hidden="true">↗</span></div></a>)}</div>
+  </div></section>
+  <section class="wrap featured"><div class="section-heading"><div><p class="kicker">让想法接受实验的检验</p><h2>从这里开始动手</h2></div><a class="text-link" href="/experiments/">全部实验 ↗</a></div><div class="experiment-grid">{experiments.map(experiment => <ExperimentCard experiment={experiment} />)}</div></section>
+  <section class="wrap curiosity"><span class="curiosity-symbol" aria-hidden="true">?</span><div><p class="kicker">带着问题来，带着发现走</p><h2>为什么更重的摆球，<br />没有摆得更快？</h2><p>先做一个预测，再打开参考摆，让两个摆球告诉你答案。</p><a class="text-link" href="/stem-lab/pendulum/">去做一次对照实验 ↗</a></div><div class="learning-path"><span>提出预测</span><span>亲手操作</span><span>观察证据</span><span>理解原理</span><span>再试一次</span></div></section>
+  <script>import '../scripts/home-preview';</script>
+</SiteLayout>

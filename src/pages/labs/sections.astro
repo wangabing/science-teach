@@ -1,0 +1,22 @@
+---
+import NextExploration from '../../components/NextExploration.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import '../../styles/exploration.css';
+---
+<SiteLayout title="切开立方体 · 数学与几何实验室" description="移动切平面，看立方体的截面从三角形变成六边形，探索真实的三维几何。">
+  <div class="lab section-lab"><p class="breadcrumb"><a href="/spaces/geometry/">数学与几何实验室</a> / 切开立方体</p>
+    <header class="lab-heading"><p class="kicker">二维的形状，藏在三维里面</p><h1>切开一个立方体，<br />会遇见六边形吗？</h1><p>不用想象一把看不见的刀。转动、平移切平面，看左边的立方体和右边的截面一起变化。</p></header>
+    <div class="demo-dock"><div><strong>一把刀，三种截面</strong><p>先看水平切，再斜切中心，最后移向顶角。每一步都标明该观察什么。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：截面变形</button><button id="demo-pause" type="button">暂停演示</button></div></div>
+    <section class="workbench" aria-label="立方体剖切台"><div class="bench-title"><strong>左边看空间 · 右边看截面</strong><span>PLANE ∩ CUBE</span></div>
+      <p id="demo-stage" class="demo-caption" aria-live="off">先点“水平切”认识正方形，再点“穿过中心”看六边形。不必先理解空间角度。</p>
+      <div class="split-views"><div class="section-board"><svg id="cube-view" viewBox="0 0 440 400" role="img" aria-label="立方体与切平面的三维投影"><g id="cube-lines" stroke="#779d95" stroke-width="2"><path d="M220 0L393 100V300L220 400L47 300V100ZM47 100L220 200L393 100M220 200V400M220 0V200" fill="none"/></g><g id="cut-plane"></g><g id="cube-section"></g></svg><p class="view-caption">立方体边长 2 · 固定观察视角</p></div><div><svg id="flat-view" viewBox="0 0 440 400" role="img" aria-label="正视切平面上的截面"><path d="M40 200H400M220 30V370" stroke="#d7e5ee"/><g id="flat-section"><polygon points="120,100 320,100 320,300 120,300" fill="#188d83" fill-opacity=".18" stroke="#188d83" stroke-width="3"/></g><text id="shape-label" x="220" y="380" text-anchor="middle" fill="#153b56" font-size="18">四边形 · 4 个顶点</text></svg><p class="view-caption">正视截面 · 与左图同一组交点</p></div></div>
+      <div class="lab-controls"><div class="control-row"><button id="square" type="button">水平切：正方形</button><button id="triangle" type="button">靠近顶角：三角形</button><button id="hexagon" type="button">穿过中心：六边形</button><button id="reset" type="button">重新探索</button></div><div class="control-row"><label class="range-field" for="azimuth"><span>绕竖直方向转动 <output id="azimuth-value">45°</output></span><input id="azimuth" type="range" min="0" max="180" step="1" value="45"/></label><label class="range-field" for="tilt"><span>切平面的方向（90° 水平）<output id="tilt-value">90°</output></span><input id="tilt" type="range" min="0" max="90" step="0.001" value="90"/></label><label class="range-field" for="offset"><span>沿垂直切面方向移动 <output id="offset-value">0.00</output></span><input id="offset" type="range" min="-1.8" max="1.8" step="0.01" value="0"/></label></div></div>
+      <p id="section-feedback" class="feedback" role="status">当前截面有 4 个顶点。试着改变平面方向。</p>
+      <noscript><p>启用 JavaScript 可以调整切平面。水平切立方体得到正方形；垂直于体对角线并经过中心，可以得到正六边形。</p></noscript>
+    </section>
+    <section class="learning-evidence" aria-label="截面实时测量"><h2>图形变了，数据怎样变？</h2><div class="evidence-grid"><div><dl class="readouts"><div><dt>顶点数</dt><dd id="section-vertices">4</dd></div><div><dt>面积（平方单位）</dt><dd id="section-area">4.000</dd></div><div><dt>周长（单位）</dt><dd id="section-perimeter">8.000</dd></div></dl><div class="formula-live"><span class="formula-rule">nₓx + nᵧy + n_z z = d</span><span id="section-formula">0x + 0y + 1z = 0</span></div><p>n 是垂直切平面的单位方向，d 是平移距离。公式描述的正是左图中的切平面。</p></div><div><h3>每条边有多长？</h3><div id="section-bars"></div><p id="section-observation">水平切得到边长 2 的正方形。</p></div></div></section>
+    <section class="lab-notes"><article><h2>截面不是随意画出的图形</h2><p>切平面碰到一条棱，就可能留下一个顶点。把交点按顺序连接，才得到真正的截面。一个立方体虽然有 12 条棱，但一个平面截面最多有 6 个顶点。</p><p>试试六边形预设，再慢慢平移切平面：为什么靠近顶角时，顶点会变少？</p></article><article class="model-note"><h2>挑战：找到五边形</h2><p>不要只沿体对角线对称地切。改变方位角和仰角，再调整偏移，找到一个五边形。你能解释第五个顶点来自哪条棱吗？</p><p>这里展示理想平面与边长 2 的立方体相交；左边是三维坐标的投影，右边是切平面正视图。面外或相切成线/点时，不显示为多边形截面。</p></article></section>
+    <NextExploration slug="sections" />
+    <script>import '../../scripts/exploration/section';</script>
+  </div>
+</SiteLayout>

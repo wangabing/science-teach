@@ -1,0 +1,25 @@
+---
+import NextExploration from '../../components/NextExploration.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import '../../styles/exploration.css';
+---
+<SiteLayout title="齿轮工坊 · 空间与建造实验室" description="组装两到三颗齿轮，探索齿数、转向、转速与理想扭矩之间的关系。">
+  <div class="lab gears-lab"><p class="breadcrumb"><a href="/spaces/structures/">空间与建造实验室</a> / 齿轮工坊</p>
+    <header class="lab-heading"><p class="kicker">一齿推动另一齿</p><h1>转得慢一点，<br />能换来更大的力吗？</h1><p>给机械装上不同大小的齿轮。看看转速去了哪里，再插入一颗中间齿轮：它会改变什么，又不会改变什么？</p></header>
+    <div class="demo-dock"><div><strong>输入转三圈，输出转几圈？</strong><p>标准 20 齿带动 60 齿，用转数与扭矩一起解释减速。再加中间轮比较方向。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：三倍减速</button><button id="demo-idler" type="button">标准演示：同向传动</button><button id="demo-pause" type="button">暂停演示</button></div></div>
+    <section class="workbench"><div class="bench-title"><strong>自由装配 · 理想外啮合齿轮</strong><span>TEETH → SPEED → TORQUE</span></div>
+      <p id="demo-stage" class="demo-caption" aria-live="off">① 选择齿数 → ② 观察白色标记与累计转数 → ③ 比较速度减少和扭矩增加。</p>
+      <div class="gear-workshop"><div class="gear-apparatus"><svg id="gear-svg" class="gears-board" viewBox="0 0 900 400" role="img" aria-label="可调整齿数并转动的两到三颗外啮合齿轮"><path d="M50 200H850" stroke="#e3d8c5" stroke-dasharray="5 6"/><g id="gear-wheels"><circle cx="320" cy="200" r="70" fill="#8bbbbb"/><circle cx="530" cy="200" r="140" fill="#efc176"/></g><g id="gear-labels"><text x="320" y="370" text-anchor="middle" font-size="16">输入轮</text><text x="530" y="370" text-anchor="middle" font-size="16">输出轮</text></g></svg><div id="gear-captions" class="gear-captions"><span>输入轮 · 20 齿 · 12 rpm</span><span>输出轮 · 40 齿 · 6 rpm</span></div>
+      </div><div class="lab-controls"><div class="control-row"><button id="idler" type="button" aria-pressed="false">加入中间齿轮</button><button id="run" class="action" type="button" aria-pressed="false">开始 / 继续</button><button id="step" type="button">单步 0.1 秒</button><button id="reset" type="button">重新组装</button></div>
+        <div class="control-row"><label class="range-field" for="input-teeth"><span>输入轮齿数 <output id="input-teeth-value">20</output></span><input id="input-teeth" type="range" min="12" max="60" step="1" value="20"/></label><label class="range-field" id="idler-field" for="idler-teeth" hidden><span>中间轮齿数 <output id="idler-teeth-value">30</output></span><input id="idler-teeth" type="range" min="12" max="60" step="1" value="30"/></label><label class="range-field" for="output-teeth"><span>输出轮齿数 <output id="output-teeth-value">40</output></span><input id="output-teeth" type="range" min="12" max="60" step="1" value="40"/></label><label class="range-field" for="rpm"><span>输入转速 <output id="rpm-value">12 rpm</output></span><input id="rpm" type="range" min="3" max="30" step="1" value="12"/></label></div>
+      </div>
+      </div><dl class="readouts"><div><dt>输出转速</dt><dd id="gear-speed">6.00 rpm</dd></div><div><dt>输出相对转向</dt><dd id="gear-direction">反向</dd></div><div><dt>输出 / 输入速度大小</dt><dd id="gear-ratio">0.500</dd></div><div><dt>理想扭矩放大倍数</dt><dd id="gear-torque">2.000 ×</dd></div></dl>
+      <p id="gear-feedback" class="feedback" role="status">挑战：让输出轮慢到输入轮的 1/3，再让它与输入轮同向。</p>
+      <noscript><p>启用 JavaScript 可改变齿数与播放转动。两颗外啮合齿轮转向相反，速度大小比等于输入齿数÷输出齿数；加入中间轮后首尾同向。</p></noscript>
+    </section>
+    <section class="learning-evidence" aria-label="齿轮传动的实时证据"><h2>速度少了，扭矩怎样补回来？</h2><div class="evidence-grid"><div><div class="formula-live"><span class="formula-rule">|ω出| / |ω入| = N入 / N出</span><span id="gear-live-formula">6 / 12 = 20 / 40 = 0.5</span></div><div id="gear-speed-bars"></div><div class="formula-live"><span class="formula-rule">τ出 / τ入 = N出 / N入</span><span id="gear-torque-formula">40 / 20 = 2；输入 1 N·m → 输出 2 N·m</span></div><div id="gear-torque-bars"></div><p>输入扭矩取 1 N·m 作对照。理想功率 τω 守恒；转速降低，扭矩增加。中间轮只改变方向，不改变首尾比值。</p></div><div><h3>相同时间，累计转了多少圈？</h3><div class="turn-dials"><div><svg id="input-dial" viewBox="0 0 180 180" role="img" aria-label="输入轮累计转数示意"></svg><p>输入：<strong id="input-turns">0.000</strong> 圈</p></div><div><svg id="output-dial" viewBox="0 0 180 180" role="img" aria-label="输出轮累计转数示意"></svg><p>输出：<strong id="output-turns">0.000</strong> 圈</p></div></div><div id="gear-turn-bars"></div><p id="gear-turn-explain">白色标记帮助数圈，下方记录累计值，暂停后也能比较。</p></div></div></section>
+    <section class="lab-notes"><article><h2>轮子变大，一圈就需要更多齿</h2><p>输入轮每推动一颗齿，输出轮也走过一颗齿。20 齿轮转一圈，40 齿轮只转半圈。理想情况下功率守恒，转速减半可以换来两倍扭矩。</p><div class="equation">ω₁N₁ = −ω₂N₂</div><p>试试保持输入和输出齿数不变，只改变中间齿轮。输出转速为什么没变？</p></article><article class="model-note"><h2>挑战：三倍减速，同向输出</h2><p>先调整首尾齿数，让输出速度是输入的 1/3；再加入中间轮，保持这个比值并让首尾同向。反馈会告诉你是否达成。</p><p>理想外啮合、相同模数、无摩擦与滑动；显示的齿形是教学示意，不是可制造的渐开线。读数中的扭矩倍数表示大小，不代表真实机器效率，也不表示创造能量。</p></article></section>
+    <NextExploration slug="gears" />
+    <script>import '../../scripts/exploration/gears';</script>
+  </div>
+</SiteLayout>
