@@ -45,7 +45,7 @@ npm run preview   # 本地预览生产构建
 - `/labs/area/`、`/labs/sections/`、`/labs/orbit/`、`/labs/three-body/`、`/labs/bridge/`、`/labs/gears/`：六个独立操作台。
 - `/about/`：学习方式、科学模型与来源说明。
 
-站名暂用“科学探索实验室”。四个空间共140个可用实验，本次每个空间新增20项，共80项。全部实验提供联动的二维证据与可旋转三维观察；平面实验的三维装置与显示厚度有明确说明。品牌、域名与后续实验选题可以继续调整。
+站名暂用“科学探索实验室”。四个空间共140个可用实验，本次每个空间新增20项，共80项。全部实验提供联动的二维证据与可旋转三维观察；平面实验的三维装置与显示厚度有明确说明。正式域名为 https://lab.xiaozhan.info/。
 
 ## 目录
 
@@ -61,7 +61,7 @@ npm run preview   # 本地预览生产构建
 - `doc/`：交接、实验操作与项目搭建记录。
 - `bak/`：只读参考资料，不参与构建、类型检查或版本提交。
 
-首页不加载 Three.js，完整场景在进入实验页后加载。构建为静态站，可将 `dist/` 部署到支持静态文件的托管平台；域名确定前不设置虚假的 canonical / sitemap 地址。
+首页不加载 Three.js，完整场景在进入实验页后加载。构建为静态站，通过 GitHub Actions 自动部署到 GitHub Pages。首次上线需要启用仓库 Pages、配置自定义域名和 DNS，详见 [部署指南](doc/deployment.md)。推送到 `main` 后将自动测试、构建并发布。
 
 项目的实现取舍与验收记录见 [搭建记录](doc/project-setup.md)，实验说明见 [浮力](doc/buoyancy-lab.md) 与 [单摆](doc/pendulum-lab.md)。
 
