@@ -21,7 +21,10 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 document.querySelector<HTMLElement>('#motion-note')!.hidden = !reducedMotion.matches;
 
 function update() {
+  document.querySelector<HTMLElement>('#immersed-fill')!.style.height=`${Number(depth.value)*10}%`;
+  document.querySelector('#displaced-link')!.textContent=`浸没部分：100 cm² × ${Number(depth.value).toFixed(1)} cm = ${(100*Number(depth.value)).toFixed(0)} cm³，这就是排水体积。`;
   const state = buoyancyState(Number(depth.value), Number(liquid.value));
+  const flatBlock=document.getElementById('buoyancy-2d-block');flatBlock?.setAttribute('y',String(193+5*Number(depth.value)));
   const decimals: Record<string, number> = { tensionN: 1, buoyancyN: 1, riseCm: 2, displacedCm3: 0, bottomPressurePa: 0 };
   document.querySelectorAll<HTMLElement>('[data-reading]').forEach((node) => {
     const key = node.dataset.reading as keyof typeof state;
@@ -56,6 +59,7 @@ function tick(time: number) {
 }
 play.addEventListener('click', () => {
   if (playing) return stop();
+  document.querySelector('#buoyancy-task-note')!.textContent='正在看入水示例，结束后自己拖动滑块比较。';
   depth.value = '0';
   animationDepth = 0;
   update();
@@ -65,13 +69,13 @@ play.addEventListener('click', () => {
   play.setAttribute('aria-pressed', 'true');
   frame = requestAnimationFrame(tick);
 });
-depth.addEventListener('input', () => { stop(); update(); });
+depth.addEventListener('input', () => { stop(); update(); document.querySelector('#buoyancy-task-note')!.textContent='这是你手动改变的浸入量。看看 V排 和 F浮 如何对应；下一步可保持体积不变，只改液体密度。'; });
 liquid.addEventListener('change', () => { stop(); update(); });
 stageButtons.forEach((button) => button.addEventListener('click', () => {
-  stop(); depth.value = button.dataset.stage!; update();
+  stop(); depth.value = button.dataset.stage!; update(); document.querySelector('#buoyancy-task-note')!.textContent='已选择状态示例，自己拖动滑块再比较。';
 }));
 document.querySelector('#reset')!.addEventListener('click', () => {
-  stop(); depth.value = '5'; liquid.value = '1000'; resetCamera?.(); update();
+  document.querySelector('#buoyancy-task-note')!.textContent='条件已重置，先自己改变浸入量。'; stop(); depth.value = '5'; liquid.value = '1000'; resetCamera?.(); update();
 });
 document.querySelector('#camera-reset')!.addEventListener('click', () => resetCamera?.());
 document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
@@ -270,3 +274,5 @@ window.addEventListener('pagehide', (event) => {
   stop();
   if (!event.persisted) { disposed = true; disposeScene?.(); }
 });
+
+const dimensionalSwitch=document.createElement('button');dimensionalSwitch.type='button';dimensionalSwitch.textContent='查看二维实验';dimensionalSwitch.style.cssText='min-height:44px;margin:10px;padding:10px 16px';let flatView=false;dimensionalSwitch.addEventListener('click',()=>{flatView=!flatView;fallback.hidden=!flatView&&Boolean(renderScene);const canvas=viewport.querySelector('canvas');if(canvas)canvas.hidden=flatView;dimensionalSwitch.textContent=flatView?'返回三维实验':'查看二维实验';dimensionalSwitch.setAttribute('aria-pressed',String(flatView));document.getElementById('scene-message')!.textContent='二维装置与深度、排水量及测力计同步；尺寸为示意。';update();});viewport.after(dimensionalSwitch);

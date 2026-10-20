@@ -1,4 +1,5 @@
 import { Pendulum, DEFAULT_PENDULUM, theoreticalPeriod, STEP, type PendulumParams } from '../../lib/stem-lab/pendulum';
+import { comparePendulum, type PendulumRecord } from '../../lib/stem-lab/pendulum-records';
 import { createPendulumScene } from './pendulum-scene';
 
 const node = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -9,6 +10,7 @@ let scene: ReturnType<typeof createPendulumScene> | undefined;
 let running = false, raf = 0, lastTime = 0, accumulator = 0, disposed = false;
 let history: { time: number; potential: number; kinetic: number; mechanical: number; x: number; y: number }[] = [];
 let sampleTime = -1, lastUI = 0;
+const records: PendulumRecord[] = [];
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 node('motion-note').hidden = !motion.matches;
 const opts = () => ({ trail: input('trail').checked, forces: input('forces').checked, compare: input('compare').checked });
@@ -49,7 +51,7 @@ function tick(time: number) {
 function update(full = true) {
   const r = main.readings, p = main.params;
   scene?.update(main, reference, opts());
-  if (!scene) {
+  {
     const scale = 102, x = 330 + r.x * scale, y = 100 - r.y * scale;
     node('fallback-rope').setAttribute('x2', String(x)); node('fallback-rope').setAttribute('y2', String(y));
     node('fallback-bob').setAttribute('cx', String(x)); node('fallback-bob').setAttribute('cy', String(y)); node('fallback-bob').setAttribute('r', String(18 * Math.cbrt(p.mass)));
@@ -80,6 +82,11 @@ function update(full = true) {
   node('theory-period').textContent = `${theoreticalPeriod(p).toFixed(2)} s`; node('small-period').textContent = `${(2 * Math.PI * Math.sqrt(p.length / p.gravity)).toFixed(2)} s`;
   node('measured-period').textContent = main.measuredPeriod?.toFixed(2) ?? '—';
   node('period-note').textContent = main.measuredPeriod ? `已测 ${main.cycles} 个完整周期${p.damping ? ' · 理论值为无阻尼参考' : ' · 同向过零计时'}` : '释放后，经过两次同向过零自动测量。';
+  const endpoints=main.periodEndpoints;
+  node('period-endpoints').textContent=endpoints?`同向过零：t₁=${endpoints.start.toFixed(3)} s → t₂=${endpoints.end.toFixed(3)} s；T=${(endpoints.end-endpoints.start).toFixed(3)} s。方向：正角 → 负角。`:main.lastCrossing!==null?`起点 t₁=${main.lastCrossing.toFixed(3)} s，等待下一次正角 → 负角过零；反向经过不结束计时。`:'等待起点：释放后，摆球从正角向负角经过最低处开始计时。';
+  node('cycle-start').classList.toggle('reached',main.lastCrossing!==null);
+  node('cycle-end').classList.toggle('reached',endpoints!==null);
+  node<HTMLButtonElement>('save-period').disabled=!endpoints;
   node('energy-state').textContent = p.damping ? '有阻尼 · 机械能转化为内能' : '无阻尼 · 总量不变';
   node('potential-formula').textContent = `${p.mass.toFixed(1)} × ${p.gravity} × ${r.height.toFixed(3)} = ${r.potential.toFixed(2)} J`;
   node('kinetic-formula').textContent = `½ × ${p.mass.toFixed(1)} × ${r.speed.toFixed(2)}² = ${r.kinetic.toFixed(2)} J`;
@@ -199,3 +206,17 @@ document.querySelectorAll<HTMLElement>('[data-mission]').forEach((b) => b.addEve
 }));
 displayMission('mass', false); stop(); update(true);
 window.addEventListener('pagehide', (event) => { stop(); if (!event.persisted) { disposed = true; scene?.dispose(); } });
+
+node('save-period').addEventListener('click',()=>{
+ const pair=main.periodEndpoints;if(!pair||main.measuredPeriod===null)return;
+ const replaced=records.length===2;if(replaced)records.shift();
+ records.push({params:{...main.params},...pair,period:main.measuredPeriod});
+ const list=node('period-records');list.replaceChildren(...records.map((r,i)=>{
+   const p=document.createElement('p');p.textContent=`${i===0?'A':'B'}：L=${r.params.length} m，m=${r.params.mass} kg，g=${r.params.gravity} m/s²，θ₀=${r.params.angle}°，b=${r.params.damping} s⁻¹；t₁=${r.start.toFixed(3)} s，t₂=${r.end.toFixed(3)} s，T=${r.period.toFixed(3)} s。`;return p;
+ }));
+ node('period-comparison').textContent=records.length===2?comparePendulum(records[0]!,records[1]!):'已保留 A。只改变一个条件，再释放并保存 B。';
+ node('period-save-note').textContent=replaced?'已替换最早一组，保留最近两组。仅当前页有效。':`已保存 ${records.length}/2 组，仅当前页有效。${records.length===2?'再次保存会替换最早一组。':''}`;
+});
+
+const dimensionalSwitch=document.createElement('button'); dimensionalSwitch.type='button';dimensionalSwitch.textContent='查看二维实验';dimensionalSwitch.style.cssText='min-height:44px;margin:10px;padding:10px 16px';
+let flatView=false; dimensionalSwitch.addEventListener('click',()=>{flatView=!flatView;node('pendulum-fallback').hidden=!flatView&&Boolean(scene);const canvas=document.querySelector<HTMLCanvasElement>('#apparatus canvas');if(canvas)canvas.hidden=flatView;dimensionalSwitch.textContent=flatView?'返回三维实验':'查看二维实验';dimensionalSwitch.setAttribute('aria-pressed',String(flatView));update(true);});viewport.after(dimensionalSwitch);

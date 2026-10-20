@@ -1,0 +1,6 @@
+---
+import DiscoveryStudio from '../../components/DiscoveryStudio.astro';import {studios} from '../../data/discovery-studios';
+export function getStaticPaths(){return studios.map(studio=>({params:{slug:studio.slug},props:{studio}}));}
+const {studio}=Astro.props;
+---
+<DiscoveryStudio studio={studio}/>

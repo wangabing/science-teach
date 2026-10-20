@@ -1,0 +1,55 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ExperimentHistory from './ExperimentHistory.astro';
+import StudyNotebook from './StudyNotebook.astro';
+import {geometryStudio} from '../data/geometry-studios';
+import {defaults,geometrySummary,type GeometryKind} from '../lib/geometry/models';
+import {geometryScene} from '../lib/geometry/scene';
+import '../styles/geometry-studios.css';
+interface Props {kind:GeometryKind}
+const {kind}=Astro.props,studio=geometryStudio(kind),initial=defaults[kind],scene=geometryScene(initial),position=studio.position;
+---
+<SiteLayout title={`${studio.name} · ${studio.title}`} description={studio.lead}>
+<div class={`geometry-lab wrap geometry-${kind}`} data-geometry-kind={kind}>
+ <p class="breadcrumb"><a href="/spaces/geometry/">数学与几何实验室</a> / {studio.name}</p>
+ <header class="geo-intro"><div><p class="kicker">{studio.stage} · {studio.topic}</p><h1>{studio.title}</h1><p class="geo-thesis">{studio.accent}</p></div><p>{studio.lead}</p></header>
+ <ExperimentHistory slug={studio.slug as 'reflection'|'circle-angles'|'triangle-rigidity'|'ellipse-string'} />
+ <noscript><p class="geo-noscript">启用JavaScript后可操作图形。{studio.fallback}下方证明与历史仍可阅读。</p></noscript>
+ <fieldset id="geo-tools" class="geo-workbench" disabled aria-label={`${studio.name}工作台`}>
+  <div class="geo-station"><h2>{studio.name}</h2><span>拖动 · 观察 · 解释</span><div><button id="geo-undo" type="button" disabled>撤销</button><button id="geo-redo" type="button" disabled>重做</button><button id="geo-reset" type="button">重置</button></div></div>
+  <div class="geo-condition"><p><b>已知</b>{studio.known}</p><p><b>研究</b>{studio.question}</p></div>
+  <section class="geo-first"><div><h3>先做一次自己的观察</h3><p>{studio.task}</p></div><button id="geo-prepare" type="button" class="geo-primary">准备独立探索</button></section>
+  <div class="geo-console">
+   <div class="geo-canvas-column">
+    <div class="geo-legend" aria-label="图形标记说明"><span>● 已知点</span><span>● 绿色可动点</span><span>┄ 金色辅助线</span>{kind==='circle'&&<span>紫色：不含P的截弧</span>}{kind==='ellipse'&&<span>橙点：实际笔迹</span>}</div>
+    <svg id="geo-svg" class="geo-board" viewBox="0 0 800 560" role="group" aria-label={`${studio.name}互动图形，绿色点可用方向键或下方滑块移动`}>
+     <defs><pattern id="geo-paper" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d8e6ee" stroke-width="1"/></pattern></defs>
+     <rect width="800" height="560" fill="#f7fbfd"/><rect width="800" height="560" fill="url(#geo-paper)"/>
+     <g id="geo-drawing" set:html={scene.markup}/>
+     <g id="geo-handle" role="slider" tabindex="-1" aria-disabled="true" aria-label={kind==='triangle'?'移动点C，左右键调铰链角':kind==='ellipse'?'移动笔尖P，左右键沿曲线走':'移动点P，左右键改变位置'} aria-valuemin={position.min} aria-valuemax={position.max} aria-valuenow={(initial as unknown as Record<string,number>)[position.key]} transform={scene.point?`translate(${scene.projection.x(scene.point.x)} ${scene.projection.y(scene.point.y)})`:undefined}>
+      <circle id="geo-hit" r="28" fill="transparent"/><circle class="geo-handle-halo" r="16"/><circle class="geo-handle-dot" r="8"/>
+     </g>
+    </svg>
+    <p class="geo-invitation">{studio.invitation}<span>点聚焦后，← → 调整；Shift加速；Home/End到端点。</span></p>
+    <div class="geo-position"><label for="geo-position"><span>{position.label}</span><output id="geo-position-value">{(initial as unknown as Record<string,number>)[position.key]} {position.unit}</output></label><input id="geo-position" type="range" min={position.min} max={position.max} step={position.step} value={(initial as unknown as Record<string,number>)[position.key]}/></div>
+    <dl class="geo-readings" aria-label="当前几何证据">{studio.readings.map((label,i)=><div><dt>{label}</dt><dd id={`geo-reading-${i}`}>—</dd></div>)}</dl>
+    <p id="geo-state-note" class="geo-state-note">{geometrySummary(initial)}。读数为近似值，一般结论需看下方论证。</p>
+   </div>
+   <aside class="geo-sidebar" aria-label="作图与已知条件">
+    <p class="geo-small-title">作一条有理由的辅助线</p><button id="geo-helper" type="button" aria-pressed="false">{studio.helper}</button>
+    {kind==='reflection'&&<button id="geo-limit" type="button" aria-pressed="false">限制P在线段[−5,−2]</button>}
+    {kind==='triangle'&&<><button id="geo-lock" type="button" aria-pressed="false">锁定当前第三边</button><button id="geo-flip" type="button">翻到基线另一侧</button><p>两杆时改变铰链角；三边锁定后，C由两圆交点确定。</p></>}
+    <details class="geo-parameters"><summary>改变已知条件</summary><p>改变题设会清除独立任务状态，已存记录保留。</p>{studio.controls.map(control=><label for={`geo-${control.key}`}><span>{control.label}<output id={`geo-${control.key}-value`}>{(initial as unknown as Record<string,number>)[control.key]} {control.unit}</output></span><input id={`geo-${control.key}`} type="range" min={control.min} max={control.max} step={control.step} value={(initial as unknown as Record<string,number>)[control.key]}/></label>)}</details>
+    <div class="geo-verification"><p class="geo-small-title">把判断交给当前图形</p><button id="geo-check" class="geo-primary" type="button">核验这次观察</button><p id="geo-task-note" role="status">当前可自由探索。准备任务后，亲手移动再核验。</p></div>
+    <details class="geo-reference"><summary>需要时，看参考状态</summary><p>参考用于理解，不计为独立操作。你也可以在看过后重新准备任务。</p><button id="geo-example" type="button">应用参考状态</button></details>
+   </aside>
+  </div>
+  <section class="geo-transfer"><p class="kicker">换个条件，再试一次</p><h2>{studio.transfer}</h2><div role="group" aria-label="迁移问题预测">{studio.answers.map((answer,i)=><button type="button" data-geo-answer={i} aria-pressed="false">{answer}</button>)}</div><p id="geo-transfer-note" role="status">先预测，再用下面的按钮检查反例。预测按钮不会改变当前图形。</p><button id="geo-counterexample" type="button">{studio.counterLabel}</button></section>
+  <StudyNotebook note={kind==='ellipse'?'恢复输入并重算，不恢复任务或过去笔迹。':'恢复输入并重算，不恢复独立任务状态。'} />
+ </fieldset>
+ <section class="geo-reasoning" id="reasoning"><div><p class="kicker">从“好像如此”到“为什么必然”</p><h2>{studio.proofTitle}</h2><p>实验中的数值能帮你提出猜想。下面的论证解释适用条件内的一般关系。</p><details><summary>展开一般论证</summary><ol>{studio.proof.map(step=><li>{step}</li>)}</ol></details></div><aside><p class="geo-small-title">把实验带回纸上</p><p>{studio.paper}</p><details><summary>适用条件与边界</summary><p>{studio.boundary}</p></details></aside></section>
+ <aside class="geo-teaching"><b>课堂连接</b><p>{studio.stage} · {studio.topic}。可用于课前猜想、课堂探究或课后解释。按知识主题组织，具体教材章节与北京真题对应需由教师结合所用版本核对。</p><p>给自己的证明写三行：已知什么？用了哪条辅助关系？结论在什么条件下成立？</p></aside>
+ <nav class="geo-next" aria-label="几何探索路线"><a href="/spaces/geometry/">回到几何实验室 ↗</a><a href="/experiments/#trail-geometry-reasoning">查看完整探索路线 ↗</a><a href={`/labs/${studio.next}/`}>下一站：{studio.next==='circle-angles'?'圆周角观测台':studio.next==='triangle-rigidity'?'三角形锁形工坊':studio.next==='ellipse-string'?'双钉拉线实验':'镜像寻路'} ↗</a></nav>
+</div>
+<script>import '../scripts/geometry/workbench';</script>
+</SiteLayout>

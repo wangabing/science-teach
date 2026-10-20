@@ -1,0 +1,42 @@
+---
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import '../../styles/interference.css';
+---
+<SiteLayout title="双源波纹 · 两个波，能让这里安静吗？" description="调节两个波源的相位，移动探针，亲手发现相长与相消。用位移分量、整周期曲线和两组记录解释波的叠加。">
+ <div class="wave-lab wrap">
+  <p class="breadcrumb"><a href="/spaces/physics/">物理实验室</a> / 双源波纹</p>
+  <header class="wave-intro"><div><p class="kicker">波动工作室 · 看见叠加</p><h1>两个波，<br/>能让这里<span>安静</span>吗？</h1></div><p>一个波让它起伏。<br/>再来一个，反而能让它不动？<small>转动相位旋钮，让两列波在探针处相遇。<br/>不用先背公式，先找到那个安静的点。</small></p></header>
+    <ExperimentHistory slug="interference" />
+  <section class="wave-workshop" aria-label="双源波纹工作台">
+   <div class="wave-station"><h2>透明波纹台</h2><span id="wave-motion">静止观察 · t = 0.00 s</span></div>
+   <div class="wave-first"><div><h3>先做一件事：让中心探针一直不动</h3><p>准备后，只调第二波源的相位，观察合成振幅。也可以直接自由探索。</p></div><button id="wave-prepare" type="button" class="wave-primary">准备静点任务</button><p id="wave-task-note" role="status">没有自动播放。先改变一个条件，看看波纹怎样相遇。</p></div>
+   <div class="wave-console">
+    <div class="wave-visual">
+     <div class="wave-field" id="wave-field"><canvas id="wave-canvas" width="360" height="240" aria-hidden="true"></canvas><svg id="wave-map" viewBox="0 0 720 480" role="group" aria-label="波源与探针位置，点击波纹台或用探针方向键移动"><defs><pattern id="wave-grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#b4d3e5" stroke-opacity=".12"/></pattern></defs><rect width="720" height="480" fill="url(#wave-grid)"/><path d="M0 240H720M360 0V480" stroke="#d4e2ef" stroke-opacity=".2" stroke-dasharray="4 8"/><g id="wave-distance-lines" stroke="#d8e8f2" stroke-width="1.5" stroke-dasharray="6 5"></g><g id="wave-sources"><circle cx="270" cy="240" r="9" fill="#72d5f0"/><circle cx="450" cy="240" r="9" fill="#e9a779"/></g><g id="wave-probe" tabindex="0" role="button" aria-label="探针，方向键每次移动0.2厘米"><circle r="19" fill="#122f47" fill-opacity=".65" stroke="white" stroke-width="2"/><path d="M-27 0H27M0 -27V27" stroke="white" stroke-width="1.5"/></g><text x="22" y="452" fill="#d4e2ef" font-size="13">横向 −12 → +12 cm · 纵向 −8 → +8 cm</text></svg></div>
+<label class="phase-dial" for="wave-phase"><span>第二波源的相位 <output aria-live="off" id="wave-phase-value">0°</output></span><input id="wave-phase" type="range" min="0" max="360" step="1" value="0"/><small>0° 同步起伏 · 180° 反向起伏 · 360° 回到同步</small></label>
+     <p id="wave-render-note" class="wave-caption">点选任意位置移动探针；聚焦十字探针后用方向键微调。</p>
+     <div class="wave-legend"><span><i class="crest"></i>波峰 / 正位移</span><span><i class="trough"></i>波谷 / 负位移</span><span><i class="zero"></i>零位移</span></div>
+     <p class="wave-caption">颜色表示此刻的上下位移，不是光强。零位移不一定是静点；请比较整周期振幅。</p>
+     <div class="wave-transport"><button id="wave-play" type="button" aria-pressed="false">播放波纹</button><button id="wave-step" type="button">单步 +0.05 s</button><button id="wave-reset" type="button">重新探索</button><span>单频 1 Hz · 每个波源振幅 1 mm</span></div>
+    </div>
+    <aside class="wave-controls" aria-label="波纹条件">
+     
+     <div class="wave-probe-readout"><span>探针处 · 整周期振幅</span><strong><b id="wave-amplitude">2.000</b><small> mm</small></strong><p id="wave-amplitude-note">一个周期里，合成位移偏离零线的最大幅度。</p></div>
+     <label for="wave-mode">哪些波源在工作？<select id="wave-mode"><option value="both">两个波源叠加</option><option value="one">只看波源 1</option><option value="two">只看波源 2</option></select></label>
+     <label for="wave-wavelength">波长 <output aria-live="off" id="wave-wavelength-value">4.0 cm</output><input id="wave-wavelength" type="range" min="2" max="6" step="0.1" value="4"/></label>
+     <label for="wave-separation">两源间距 <output aria-live="off" id="wave-separation-value">6.0 cm</output><input id="wave-separation" type="range" min="2" max="10" step="0.1" value="6"/></label>
+     <details><summary>精确移动探针</summary><label for="wave-x">探针 x <output aria-live="off" id="wave-x-value">0.0 cm</output><input id="wave-x" type="range" min="-12" max="12" step="0.2" value="0"/></label><label for="wave-y">探针 y <output aria-live="off" id="wave-y-value">0.0 cm</output><input id="wave-y" type="range" min="-8" max="8" step="0.2" value="0"/></label></details>
+    </aside>
+   </div>
+   <div class="wave-boundary">这是已经建立的理想等振幅单频场。忽略径向衰减、边界反射和启动传播过程；不是实际水面流体模拟。</div>
+   <noscript><p class="wave-noscript">启用 JavaScript 可调节波纹。等距点处，同相双源振幅为2 mm，反相双源为0 mm。试着用两只手同步、再反向上下移动，想象它们的位移相加。</p></noscript>
+  </section>
+  <section class="wave-evidence" aria-labelledby="wave-evidence-heading"><div><p class="kicker">同一个探针，三条曲线</p><h2 id="wave-evidence-heading">这一刻归零，<br/>还是一直安静？</h2><dl><div><dt>到两源的距离</dt><dd id="wave-distances">3.000 / 3.000 cm</dd></div><div><dt>路程差 r₂−r₁</dt><dd id="wave-path-difference">0.000 cm</dd></div><div><dt>此刻位移 u₁ + u₂</dt><dd id="wave-displacements">—</dd></div></dl><p id="wave-point-note">将两个波源的上下位移相加，得到探针的合成位移。</p></div><div class="wave-traces"><svg id="wave-traces" viewBox="0 0 600 240" role="img" aria-label="探针处接下来一个周期的两源位移与合成曲线"><path d="M45 25V205H580M45 115H580" stroke="#a8bdcf" fill="none"/><text x="4" y="29">+2 mm</text><text x="15" y="120">0</text><text x="4" y="205">−2 mm</text><text x="45" y="230">现在</text><text x="525" y="230">+1 s</text><path id="wave-curve-one"/><path id="wave-curve-two"/><path id="wave-curve-sum"/></svg><div class="wave-trace-key"><span>短虚线：波源 1</span><span>长虚线：波源 2</span><strong>实线：合成位移</strong></div><p>横轴：未来一个周期的仿真时间；纵轴：上下位移。曲线来自当前条件的解析计算，不是未记录的历史。</p></div></section>
+  <section class="wave-transfer"><h2>只看到一次“0”，够不够？</h2><p>暂停的一刻，探针合成位移恰好为0。这能说明它接下来一直不动吗？先留下你的预测。</p><div role="group" aria-label="静点迁移预测"><button data-wave-answer="yes" type="button" aria-pressed="false">足够，位移0就是相消</button><button data-wave-answer="no" type="button" aria-pressed="false">不够，还要看整个周期</button></div><p id="wave-transfer-note" role="status">选好后，用振幅和三条曲线检查你的理由。</p></section>
+  <section class="wave-notebook"><div><h2>保留两次相遇</h2><button id="wave-save" type="button">记下这组波纹</button><button id="wave-export" type="button" disabled>导出 CSV</button></div><p>仅当前页保留最近两组，刷新后清除；第三组会替换最早一组。恢复条件会暂停，读数重新计算。</p><p id="wave-record-note" role="status">先记一组，再只改变相位或探针位置。</p><div id="wave-records"></div><p id="wave-record-comparison"></p></section>
+  <details class="wave-theory"><summary>展开原理与模型边界</summary><p>u₁=A sin(2πr₁/λ−2πft)，u₂=A sin(2πr₂/λ−2πft+φ)，u=u₁+u₂。两个等振幅源叠加时，整周期振幅 B=2A |cos((2π(r₂−r₁)/λ+φ)/2)|。</p><p>单源振幅A=1 mm，频率f=1 Hz。固定频率改变波长，也意味着改变波速v=fλ。本实验只研究小振幅线性叠加，等振幅是教学理想化；不据此计算真实水面能量，也不把位移图当作声强或光强。</p><p>持续相消不等于波消失了：各个分量仍可不为0，只是此处总位移相抵。离开这个位置，路程差改变，相遇的结果也可能改变。</p></details>
+  <aside class="wave-next"><p>带着“叠加需要条件”的问题，再看看几何光线怎样会合。</p><a href="/labs/lens/">继续探索透镜成像 ↗</a><a href="/experiments/">回到全部实验 ↗</a></aside>
+ </div>
+ <script>import '../../scripts/exploration/interference';</script>
+</SiteLayout>

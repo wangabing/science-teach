@@ -2,17 +2,28 @@
 import ExplorationTrails from '../../components/ExplorationTrails.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import ExperimentCard from '../../components/ExperimentCard.astro';
-import Instrument from '../../components/Instrument.astro';
+import {studios} from '../../data/discovery-studios';
 import { spaces, inSpace } from '../../data/labs';
 export function getStaticPaths() { return spaces.map(space => ({ params: { slug: space.slug }, props: { space } })); }
 const { space } = Astro.props;
 const available = inSpace(space.slug);
+const oldGroups:Record<string,{name:string;slugs:string[]}[]>={
+ physics:[{name:'力学与振动',slugs:['buoyancy','pendulum']},{name:'电磁与电路',slugs:['circuits','resistors','capacitors']},{name:'光与波',slugs:['lens','interference']}],
+ geometry:[{name:'初中几何',slugs:['area','reflection','circle-angles','triangle-rigidity']},{name:'立体几何',slugs:['sections']},{name:'函数与数形结合',slugs:['ellipse-string']},{name:'概率与经典数学',slugs:['mobius']}],
+ cosmos:[{name:'轨道与引力',slugs:['orbit','three-body']},{name:'黑洞与宇宙观测',slugs:['moon']}],
+ structures:[{name:'承重与稳定',slugs:['bridge','balance']},{name:'机构与传动',slugs:['gears']}],
+};
+const names=[...new Set([...(oldGroups[space.slug]??[]).map(g=>g.name),...studios.filter(s=>s.space===space.slug).map(s=>s.group)])];
+const groups=names.map((name,i)=>({id:`${space.slug}-topic-${i}`,name,slugs:[...(oldGroups[space.slug]?.find(g=>g.name===name)?.slugs??[]),...studios.filter(s=>s.space===space.slug&&s.group===name).map(s=>s.slug)]}));
 ---
 <SiteLayout title={`${space.name} · 科学探索实验室`} description={space.description}>
   <section class="wrap page-intro"><p class="breadcrumb"><a href="/">探索首页</a> / {space.name}</p><p class="kicker">{space.english}</p><h1>{space.name}</h1><p>{space.question}<br />{space.description}</p></section>
   <section class="wrap directory" aria-label={`${space.name}实验目录`}>
     <span class={`status ${available.length ? 'open' : ''}`}>{available.length ? `${available.length} 个可探索实验` : '筹备中 · 暂无开放实验'}</span>
-    {available.length ? <div class="experiment-grid">{available.map(experiment => <ExperimentCard experiment={experiment} />)}</div> : <div class="empty-state"><Instrument kind={space.symbol} /><div><p class="kicker">好奇心先来，实验随后</p><h2>这个空间正在筹备中</h2><p>目前还没有可操作的实验。你可以先去物理实验室，探索浮力和单摆。</p><a class="button primary" href="/spaces/physics/">进入物理实验室 ↗</a></div></div>}
+    <nav class="space-tabs" aria-label="学习主题">{groups.map(group=><a href={`#${group.id}`}>{group.name}</a>)}</nav>
+    {groups.map(group=><section id={group.id} class="geometry-topic"><h2>{group.name}</h2><div class="experiment-grid">{group.slugs.map(slug=>available.find(e=>e.slug===slug)).filter(Boolean).map(experiment=><ExperimentCard experiment={experiment!}/>)}</div></section>)}
     <ExplorationTrails space={space.slug} />
   </section>
 </SiteLayout>
+
+<style>.geometry-topic{scroll-margin-top:24px;margin:32px 0 40px}.geometry-topic h2{font-size:23px;margin-bottom:8px}.geometry-topic>p{font-size:13px;color:var(--muted);line-height:1.9;margin-bottom:20px}</style>

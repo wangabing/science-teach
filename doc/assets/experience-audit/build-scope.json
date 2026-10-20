@@ -1,0 +1,16 @@
+{
+  "wholeCatalogScreen": {
+    "url": "http://127.0.0.1:4343",
+    "tidalPageSha256": "56c146378f786038647b9901618f5576fd7209434bd7b6d24c4f959653e13bc4",
+    "note": "Full140-route screen before subsequent mobile readout, hit-target and demo start improvements."
+  },
+  "sharedRegression": {
+    "url": "http://127.0.0.1:4344",
+    "note": "Shared mobile readout fix included; subsequent changes limited to C07 hit targets and demo start."
+  },
+  "finalTidalRegression": {
+    "url": "http://127.0.0.1:4343",
+    "tidalPageSha256": "2bd09b72016efdc25b3a050b64e8f8941f25e03deb215a8a4eba72c5f4364ea4",
+    "note": "Final build includes explicit demonstration entry jump, mobile hit targets and demo-start improvements."
+  }
+}

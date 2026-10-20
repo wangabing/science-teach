@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { solveLens,rayHeights,type LensInput } from '../src/lib/exploration/lens.ts';
+import {decodeRecords, compareRecords, challengeHint} from '../src/lib/exploration/lens-notebook.ts';
 const p=(object:number,screen=15,focal=10):LensInput=>({object,screen,focal,height:2});
 const close=(a:number,b:number,e=1e-8)=>assert.ok(Math.abs(a-b)<e,`${a} != ${b}`);
 test('five thin-lens regimes distinguish real inverted and virtual upright images',()=>{
@@ -22,4 +23,26 @@ test('near focus retains signed finite distant images, scaling preserves magnifi
 test('invalid lens inputs are rejected',()=>{
  for(const key of ['focal','object','screen','height'] as const)for(const value of [0,-1,NaN,Infinity])assert.throws(()=>solveLens({...p(30),[key]:value}),RangeError);
  assert.throws(()=>rayHeights(p(30),NaN),RangeError);
+});
+
+test('saved evidence validates schema, ranges, step and never trusts derived markup',()=>{
+ const row={...p(30),extensions:false};
+ assert.deepEqual(decodeRecords(JSON.stringify({version:1,records:[{...row,html:'<script>'}]})),[row]);
+ for(const data of [{version:2,records:[]},{version:1,records:Array(7).fill(row)},{version:1,records:[{...row,object:81}]},{version:1,records:[{...row,focal:10.1}]},{version:1,records:[{...row,extensions:'true'}]},{version:1,records:[{...row,screen:'<img>'}]}])assert.throws(()=>decodeRecords(JSON.stringify(data)));
+ assert.throws(()=>decodeRecords('{'));
+});
+test('comparison distinguishes focus adjustment, controlled evidence and confounding',()=>{
+ const row=(object:number,screen=15,focal=10)=>({...p(object,screen,focal),extensions:true});
+ assert.match(compareRecords(row(30),row(15,30)),/15.00 → 30.00/);
+ assert.match(compareRecords(row(30),row(30,20)),/理论像距不变/);
+ assert.match(compareRecords(row(30),row(15,30,12)),/不能单独说明/);
+ assert.match(compareRecords(row(30),row(15,8)),/先让两组/);
+});
+test('challenge diagnosis follows the actual optical failure',()=>{
+ assert.match(challengeHint(p(6),'small'),/虚像/);
+ assert.match(challengeHint(p(10),'large'),/平行/);
+ assert.match(challengeHint(p(10.1),'large'),/100 cm/);
+ assert.match(challengeHint(p(30,8),'small'),/移远/);
+ assert.match(challengeHint(p(30,25),'small'),/移近/);
+ assert.match(challengeHint(p(15,30),'small'),/两倍焦距/);
 });

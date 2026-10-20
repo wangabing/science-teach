@@ -1,4 +1,5 @@
 ---
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import NextExploration from '../../components/NextExploration.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import '../../styles/exploration.css';
@@ -6,6 +7,7 @@ import '../../styles/exploration.css';
 <SiteLayout title="发射一颗卫星 · 宇宙与三体实验室" description="亲手调整速度和方向，观察卫星坠落、绕行与逃逸，在轨迹中理解引力。">
   <div class="lab orbit-lab"><p class="breadcrumb"><a href="/spaces/cosmos/">宇宙与三体实验室</a> / 发射一颗卫星</p>
     <header class="lab-heading"><p class="kicker">一直下落，却没有落到地面</p><h1>你能把卫星，<br />送进一条轨道吗？</h1><p>卫星已在地表上方 1500 km。给它一次速度，此后不再开动引擎。太慢会怎样？太快又会怎样？</p></header>
+    <ExperimentHistory slug="orbit" />
     <div class="demo-dock"><div><strong>先观察一圈，再亲手发射</strong><p>圆轨道半径几乎不变；椭圆轨道里，离地球近时更快。对照下方能量和半径曲线。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：圆轨道</button><button id="demo-ellipse" type="button">标准演示：椭圆轨道</button><button id="demo-pause" type="button">暂停演示</button></div></div>
     <div class="wide-and-side"><section class="workbench"><div class="bench-title"><strong>地心引力 · 发射轨迹</strong><span id="orbit-scale">VIEW ±20000 km</span></div>
       <p id="demo-stage" class="demo-caption" aria-live="off">① 设定初速度 → ② 观察引力和轨迹 → ③ 用下方图表检验预测。</p>

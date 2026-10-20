@@ -1,0 +1,44 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
+import StudyNotebook from '../../components/StudyNotebook.astro';
+import '../../styles/electricity-studios.css';
+---
+<SiteLayout title="电阻分压台 · 6 V 怎样分出 3 V？" description="调节两颗电阻，用电压条和电流仪表观察分压。接上负载，亲手检验分压器为什么不是稳压电源。">
+<div class="electric-study resistor-study wrap">
+ <p class="breadcrumb"><a href="/spaces/physics/">物理实验室</a> / 电阻分压台</p>
+ <header class="study-intro"><div><p class="kicker">电学路线 · 从回路到分配</p><h1>6 V，<br/>怎样分出<span>3 V？</span></h1></div><p>两颗电阻，分享一份电压。<small>先调出想要的数值。<br/>再接上一个负载，看“刚刚好”还能不能保持。</small></p></header>
+ <ExperimentHistory slug="resistors" />
+ <noscript><p class="study-noscript">启用 JavaScript 可调电阻与接负载。6 V、上下各1000 Ω时，空载输出3 V；再并接1000 Ω负载，输出降至2 V。电源电流从3 mA增至4 mA。</p></noscript>
+ <fieldset id="divider-tools" class="study-tools" disabled aria-label="电阻分压工作台">
+  <div class="study-station"><h2>电压分配台</h2><span>理想电压源 · 恒阻元件</span></div>
+  <section class="study-first"><div><h3>先做一件事：只调上电阻，分出 3 V</h3><p>准备后固定6 V、下电阻1000 Ω、负载断开。你来找上电阻的阻值。</p></div><button id="divider-prepare" class="study-primary" type="button">准备分压任务</button><p id="divider-task-note" role="status">当前是自由探索。先准备任务，再亲手调节上电阻。</p></section>
+  <div class="study-console">
+   <div class="study-visual">
+    <svg id="divider-svg" viewBox="0 0 720 440" role="img" aria-label="上电阻与下电阻串联，输出取下电阻两端，负载与下电阻并联">
+     <defs><pattern id="divider-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c9dce7"/></pattern></defs><rect width="720" height="440" fill="url(#divider-grid)"/>
+     <path d="M90 190V50H350V105M350 195V270M350 360V390H90V270" stroke="#65879b" stroke-width="5" fill="none"/>
+     <rect x="48" y="190" width="84" height="80" rx="10" fill="#153b56"/><text x="90" y="218" class="study-source-small" text-anchor="middle">理想源</text><text id="divider-source-label" x="90" y="249" class="study-source-value" text-anchor="middle">6 V</text>
+     <rect x="323" y="105" width="54" height="90" rx="4" fill="#f5cfac" stroke="#b86531" stroke-width="3"/><path d="M337 120V180M350 120V180M363 120V180" stroke="#b86531" stroke-width="2"/><text x="255" y="145" class="study-diagram-label" text-anchor="middle">上电阻</text><text id="divider-upper-label" x="255" y="170" class="study-diagram-unit" text-anchor="middle">1000 Ω</text>
+     <rect x="323" y="270" width="54" height="90" rx="4" fill="#bde3d8" stroke="#16766f" stroke-width="3"/><path d="M337 285V345M350 285V345M363 285V345" stroke="#16766f" stroke-width="2"/><text x="255" y="310" class="study-diagram-label" text-anchor="middle">下电阻</text><text id="divider-lower-label" x="255" y="335" class="study-diagram-unit" text-anchor="middle">1000 Ω</text>
+     <circle cx="350" cy="235" r="7" fill="#16766f"/>
+     <g id="divider-load-branch" opacity=".3"><path d="M350 235H410M460 235H580V270M580 340V390H350" fill="none" stroke="#6656a8" stroke-width="4"/><path id="divider-load-contact" d="M410 235L450 215" stroke="#6656a8" stroke-width="4"/><rect x="554" y="270" width="52" height="70" rx="4" fill="#ded8ef" stroke="#6656a8" stroke-width="3"/><text x="646" y="305" class="study-diagram-label" text-anchor="middle">负载</text><text id="divider-load-label" x="646" y="329" class="study-diagram-unit" text-anchor="middle">1000 Ω</text></g>
+     <text x="570" y="150" class="study-diagram-label" text-anchor="middle">输出 · 对下端</text><text id="divider-output-label" x="570" y="191" class="study-diagram-value" text-anchor="middle">3.000 V</text><path d="M350 404V414M338 414H362M344 422H356" stroke="#65879b" stroke-width="2"/>
+    </svg>
+    <div class="study-slices" aria-label="两段电压之和等于电源电压"><span id="divider-upper-slice" style="width:50%"></span><span id="divider-lower-slice" style="width:50%"></span></div><p class="study-slice-caption"><span>橙色：上电阻压降 <b id="divider-upper-voltage">3.000 V</b></span><span>绿色：输出电压 <b id="divider-output">3.000 V</b></span></p>
+    <dl class="study-live"><div><dt>电源电流</dt><dd id="divider-current">3.000 mA</dd></div><div><dt>下电阻电流</dt><dd id="divider-lower-current">3.000 mA</dd></div><div><dt>负载电流</dt><dd id="divider-load-current">0.000 mA</dd></div><div><dt>同参数空载参考</dt><dd id="divider-reference">3.000 V</dd></div></dl>
+   </div>
+   <aside class="study-controls" aria-label="分压条件"><header><span>当前输出</span><strong id="divider-output-mini">3.000 V</strong></header>
+    {[["upper","上电阻",100,2000,1000,"Ω"],["lower","下电阻",100,2000,1000,"Ω"],["emf","电源电压",3,12,6,"V"]].map(([id,label,min,max,value,unit])=><label for={`divider-${id}`}><span>{label}<output id={`divider-${id}-value`}>{value} {unit}</output></span><input id={`divider-${id}`} type="range" min={min} max={max} step={id==='emf'?1:100} value={value}/></label>)}
+    <button id="divider-load-toggle" type="button" aria-pressed="false">接上负载</button><label for="divider-load"><span>负载电阻<output id="divider-load-value">1000 Ω</output></span><input id="divider-load" type="range" min="200" max="5000" step="100" value="1000"/></label><p>负载与下电阻并联，等效电阻会改变。调整条件会立即重算。</p>
+   </aside>
+  </div>
+  <p id="divider-explain" class="study-note" role="status">空载时，两电阻串联分压。上下相等，输出为电源电压的一半。</p>
+  <section class="study-transfer"><h2>接上负载，3 V 会留下吗？</h2><p>保持6 V、上下各1000 Ω，接上1000 Ω负载。你预测输出会怎样？</p><div role="group" aria-label="负载分压预测"><button type="button" data-divider-answer="same" aria-pressed="false">仍是 3 V</button><button type="button" data-divider-answer="lower" aria-pressed="false">低于 3 V</button><button type="button" data-divider-answer="higher" aria-pressed="false">高于 3 V</button></div><p id="divider-transfer-note" role="status">先留下判断，再用“接上负载”检查。预测按钮不会改变当前条件。</p></section>
+  <StudyNotebook />
+  <details class="study-examples"><summary>看一次参考接法</summary><button id="divider-example" type="button">示例：空载对半分</button><p>示例恢复6 V、上下各1000 Ω和断开负载，用于观察，不计为独立调阻。</p></details>
+ </fieldset>
+ <section class="study-ledger"><div><p class="kicker">从电压到能量去向</p><h2>分的是电压，<br/>功率也有账可查。</h2><p>E·I = P上 + P下 + P负载</p><output id="divider-ledger">18.000 = 9.000 + 9.000 + 0.000 mW</output><p id="divider-formula">U出 = E × R下 / (R上 + R下) = 3.000 V</p><p>功率读数保留三位小数，相加可能有舍入差。</p></div><details><summary>模型边界与下一步</summary><p>本页使用理想零内阻电压源、恒定电阻、理想导线和直流稳态。与接线工坊的1 Ω内阻电源不同，接负载后的下降来自分压器本身；它不是稳压电源。</p><p>没有模拟发热导致的阻值变化、器件额定功率或真实测量误差。电阻限制电流，也让能量转为热。电容实验将继续观察电流随时间的变化。</p></details></section>
+ <aside class="study-next"><a href="/labs/circuits/">回到电路接线工坊 ↗</a><a href="/labs/capacitors/">下一站：电容时间台 ↗</a></aside>
+</div><script>import '../../scripts/exploration/resistors';</script>
+</SiteLayout>

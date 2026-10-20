@@ -1,0 +1,1003 @@
+[
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Heron/",
+    "status": "200",
+    "title": "Heron of Alexandria (10 - 75) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "reflection"
+    ]
+  },
+  {
+    "url": "https://mathcs.clarku.edu/~djoyce/elements/bookIII/propIII20.html",
+    "status": "200",
+    "title": "Euclid's Elements, Book III, Proposition 20",
+    "experiments": [
+      "circle-angles"
+    ]
+  },
+  {
+    "url": "https://mathcs.clarku.edu/~djoyce/elements/bookIII/propIII21.html",
+    "status": "200",
+    "title": "Euclid's Elements, Book III, Proposition 21",
+    "experiments": [
+      "circle-angles"
+    ]
+  },
+  {
+    "url": "https://mathcs.clarku.edu/~djoyce/elements/bookI/propI8.html",
+    "status": "200",
+    "title": "Euclid's Elements, Book I, Proposition 8",
+    "experiments": [
+      "triangle-rigidity"
+    ]
+  },
+  {
+    "url": "https://mathcs.clarku.edu/~djoyce/elements/bookI/propI20.html",
+    "status": "200",
+    "title": "Euclid's Elements, Book I, Proposition 20",
+    "experiments": [
+      "triangle-rigidity"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Apollonius/",
+    "status": "200",
+    "title": "Apollonius (262 BC - 190 BC) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "ellipse-string",
+      "conic-sections",
+      "parabola-focus-directrix",
+      "hyperbola-focal-difference"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Ohm/",
+    "status": "200",
+    "title": "Georg Simon Ohm (1789 - 1854) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "resistors"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/technology/Leyden-jar",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "capacitors"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/biography/Alessandro-Volta",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "circuits"
+    ]
+  },
+  {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/9*.html",
+    "status": "200",
+    "title": "LacusCurtius • Vitruvius on Architecture — Book IX",
+    "experiments": [
+      "buoyancy"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+    "status": "200",
+    "title": "Archimedes (287 BC - 212 BC) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "buoyancy",
+      "balance",
+      "torque-balance",
+      "triangle-centroid",
+      "sphere-plane-section"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Huygens/",
+    "status": "200",
+    "title": "Christiaan Huygens (1629 - 1695) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "pendulum",
+      "collision-track"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Kepler/",
+    "status": "200",
+    "title": "Johannes Kepler (1571 - 1630) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "lens",
+      "kepler-area-clock"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Young_Thomas/",
+    "status": "200",
+    "title": "Thomas Young (1773 - 1829) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "interference"
+    ]
+  },
+  {
+    "url": "https://ctext.org/zhou-bi-suan-jing/zh",
+    "status": "000",
+    "title": "",
+    "experiments": [
+      "area"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Chinese_overview/",
+    "status": "200",
+    "title": "Chinese overview - MacTutor History of Mathematics",
+    "experiments": [
+      "area",
+      "pythagorean-squares",
+      "similarity-shadow"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Monge/",
+    "status": "200",
+    "title": "Gaspard Monge (1746 - 1818) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "sections"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Mobius/",
+    "status": "200",
+    "title": "August Möbius (1790 - 1868) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "mobius"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Halley/",
+    "status": "200",
+    "title": "Edmond Halley (1656 - 1742) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "moon"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Newton/",
+    "status": "200",
+    "title": "Isaac Newton (1643 - 1727) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "orbit",
+      "centripetal-force",
+      "escape-speed-well"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Poincare/",
+    "status": "200",
+    "title": "Henri Poincaré (1854 - 1912) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "three-body"
+    ]
+  },
+  {
+    "url": "https://archive.org/search?query=title%3A%22A+work+on+bridge+building%22+AND+creator%3AWhipple",
+    "status": "000",
+    "title": "",
+    "experiments": [
+      "bridge"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/technology/Antikythera-mechanism",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "gears"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/",
+    "status": "200",
+    "title": "Galileo Galilei (1564 - 1642) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "galileo-incline",
+      "projectile-launch"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Rayleigh/",
+    "status": "200",
+    "title": "John William Strutt (1842 - 1919) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "resonance-table",
+      "acoustic-beats",
+      "telescope-resolution"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/science/Coulombs-law",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "electric-field-probe"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Faraday/",
+    "status": "200",
+    "title": "Michael Faraday (1791 - 1867) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "faraday-coil",
+      "ideal-transformer"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/science/mass-spectrometry",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "magnetic-sorter"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/biography/James-Prescott-Joule",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "joule-calorimeter"
+    ]
+  },
+  {
+    "url": "https://openstax.org/details/books/university-physics-volume-2",
+    "status": "200",
+    "title": "OpenStax",
+    "experiments": [
+      "ideal-gas-piston",
+      "wire-magnetic-force",
+      "ideal-transformer",
+      "rlc-frequency-selector",
+      "carnot-engine",
+      "mixing-calorimetry",
+      "fourier-heat-bridge"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1002/andp.19053220806",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "brownian-microscope"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/science/Snells-law",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "refraction-interface"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/Cube.html",
+    "status": "200",
+    "title": "Cube -- from Wolfram MathWorld",
+    "experiments": [
+      "cube-nets"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/science/Cavalieris-principle",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "cavalieri-slices"
+    ]
+  },
+  {
+    "url": "https://openstax.org/details/books/calculus-volume-3",
+    "status": "200",
+    "title": "OpenStax",
+    "experiments": [
+      "spatial-perpendicular"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Descartes/",
+    "status": "200",
+    "title": "René Descartes (1596 - 1650) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "moving-point-function",
+      "quadratic-discriminant"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Trigonometric_functions/",
+    "status": "200",
+    "title": "Trigonometric functions - MacTutor History of Mathematics",
+    "experiments": [
+      "unit-circle-wave"
+    ]
+  },
+  {
+    "url": "https://openstax.org/details/books/calculus-volume-1",
+    "status": "200",
+    "title": "OpenStax",
+    "experiments": [
+      "tangent-microscope"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/biography/Francis-Galton",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "galton-board"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+    "status": "200",
+    "title": "Leonhard Euler (1707 - 1783) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "euler-polyhedra",
+      "complex-rotation",
+      "euler-column"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.4007/annals.2005.162.1065",
+    "status": "200",
+    "title": "A proof of the Kepler conjecture | Annals of Mathematics",
+    "experiments": [
+      "sphere-packing"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/exoplanets/",
+    "status": "200",
+    "title": "Exoplanets - NASA Science",
+    "experiments": [
+      "three-suns",
+      "exoplanet-transit",
+      "stellar-radial-velocity"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/resource/what-is-a-lagrange-point/",
+    "status": "200",
+    "title": "What is a Lagrange Point? - NASA Science",
+    "experiments": [
+      "lagrange-station"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1002/andp.19053221004",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "light-cone-messages",
+      "relativistic-clocks"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1038/s41563-018-0075-8",
+    "status": "200",
+    "title": "Materials challenges for the Starshot lightsail | Nature Materials",
+    "experiments": [
+      "solar-sail"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.3847/2041-8213/ab0ec7",
+    "status": "200",
+    "title": "Radware Bot Manager Captcha",
+    "experiments": [
+      "black-hole-rays"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/science/Roche-limit",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "tidal-roche"
+    ]
+  },
+  {
+    "url": "https://www.nrao.edu/",
+    "status": "200",
+    "title": "National Radio Astronomy Observatory &#8211; Revealing the Hidden Universe",
+    "experiments": [
+      "cosmic-radio"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1103/PhysRevLett.116.061102",
+    "status": "200",
+    "title": "Observation of Gravitational Waves from a Binary Black Hole Merger | Phys. Rev. Lett.",
+    "experiments": [
+      "gravitational-chirp"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1051/0004-6361/201833910",
+    "status": "403",
+    "title": "aanda.org",
+    "experiments": [
+      "cosmic-background"
+    ]
+  },
+  {
+    "url": "https://amandaghassaei.com/projects/shell_form_finding/",
+    "status": "200",
+    "title": "SHELL FORM FINDING",
+    "experiments": [
+      "funicular-arch"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/science/beam-structure",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "cantilever-design"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/technology/earthquake-engineering",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "seismic-tower"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/technology/tensegrity",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "tensegrity"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/technology/suspension-bridge",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "suspension-cable"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/technology/slider-crank-mechanism",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "crank-slider"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/technology/pulley",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "pulley-lift"
+    ]
+  },
+  {
+    "url": "https://www.britannica.com/science/Pascals-principle",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "hydraulic-lift"
+    ]
+  },
+  {
+    "url": "https://doi.org/10.1126/science.1252876",
+    "status": "403",
+    "title": "Just a moment...",
+    "experiments": [
+      "miura-canopy"
+    ]
+  },
+  {
+    "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+    "status": "200",
+    "title": "1.6 Mechanisms of Heat Transfer - University Physics Volume 2 | OpenStax",
+    "experiments": [
+      "thermal-house",
+      "stack-ventilation"
+    ]
+  },
+  {
+    "url": "https://openstax.org/details/books/university-physics-volume-1",
+    "status": "200",
+    "title": "OpenStax",
+    "experiments": [
+      "projectile-launch",
+      "atwood-machine",
+      "centripetal-force",
+      "torque-balance",
+      "spring-energy-store",
+      "venturi-tube",
+      "hydrostatic-pressure",
+      "acoustic-beats",
+      "standing-wave-string",
+      "doppler-source"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Atwood/",
+    "status": "200",
+    "title": "George Atwood (1745 - 1807) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "atwood-machine"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Hooke/",
+    "status": "200",
+    "title": "Robert Hooke (1635 - 1703) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "spring-energy-store"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Daniel/",
+    "status": "200",
+    "title": "Daniel Bernoulli (1700 - 1782) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "venturi-tube"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/",
+    "status": "200",
+    "title": "Blaise Pascal (1623 - 1662) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "hydrostatic-pressure"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Young/",
+    "status": "200",
+    "title": "William Young (1863 - 1942) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "young-double-slit"
+    ]
+  },
+  {
+    "url": "https://openstax.org/details/books/university-physics-volume-3",
+    "status": "200",
+    "title": "OpenStax",
+    "experiments": [
+      "young-double-slit",
+      "single-slit-diffraction",
+      "photoelectric-effect",
+      "rutherford-scattering"
+    ]
+  },
+  {
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/4-1-single-slit-diffraction",
+    "status": "200",
+    "title": "4.1 Single-Slit Diffraction - University Physics Volume 3 | OpenStax",
+    "experiments": [
+      "single-slit-diffraction"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Mersenne/",
+    "status": "200",
+    "title": "Marin Mersenne (1588 - 1648) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "standing-wave-string"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Doppler/",
+    "status": "200",
+    "title": "Christian Doppler (1803 - 1853) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "doppler-source"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Ampere/",
+    "status": "200",
+    "title": "André-Marie Ampère (1775 - 1836) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "wire-magnetic-force"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Maxwell/",
+    "status": "200",
+    "title": "James Clerk Maxwell (1831 - 1879) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "rlc-frequency-selector"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Carnot_Sadi/",
+    "status": "200",
+    "title": "Sadi Carnot (1796 - 1832) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "carnot-engine"
+    ]
+  },
+  {
+    "url": "https://openstax.org/books/college-physics-2e/pages/14-2-temperature-change-and-heat-capacity",
+    "status": "200",
+    "title": "14.2 Temperature Change and Heat Capacity - College Physics 2e | OpenStax",
+    "experiments": [
+      "mixing-calorimetry"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/",
+    "status": "200",
+    "title": "Joseph Fourier (1768 - 1830) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "fourier-heat-bridge"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Einstein/",
+    "status": "200",
+    "title": "Albert Einstein (1879 - 1955) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "photoelectric-effect",
+      "relativistic-precession",
+      "relativistic-energy"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Rutherford/",
+    "status": "200",
+    "title": "Daniel Rutherford (1906 - 1966) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "rutherford-scattering"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/",
+    "status": "200",
+    "title": "Wolfram MathWorld: The Web's Most Extensive Mathematics Resource",
+    "experiments": [
+      "pythagorean-squares",
+      "triangle-centroid",
+      "similarity-shadow",
+      "sine-rule-circle",
+      "cosine-rule-hinge",
+      "ptolemy-quadrilateral",
+      "parabola-focus-directrix",
+      "hyperbola-focal-difference",
+      "circle-inversion",
+      "determinant-area",
+      "cross-product-space",
+      "skew-lines-distance",
+      "sphere-plane-section",
+      "cuboid-diagonal",
+      "solid-of-revolution",
+      "riemann-area",
+      "monte-carlo-pi",
+      "bayes-screening",
+      "complex-rotation",
+      "quadratic-discriminant"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Regiomontanus/",
+    "status": "200",
+    "title": "Regiomontanus (1436 - 1476) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "sine-rule-circle"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/",
+    "status": "200",
+    "title": "Euclid (325 BC - 265 BC) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "cosine-rule-hinge",
+      "cuboid-diagonal"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Ptolemy/",
+    "status": "200",
+    "title": "Ptolemy (85 - 165) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "ptolemy-quadrilateral"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/Inversion.html",
+    "status": "200",
+    "title": "Inversion -- from Wolfram MathWorld",
+    "experiments": [
+      "circle-inversion"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/Determinant.html",
+    "status": "200",
+    "title": "Determinant -- from Wolfram MathWorld",
+    "experiments": [
+      "determinant-area"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/CrossProduct.html",
+    "status": "200",
+    "title": "Cross Product -- from Wolfram MathWorld",
+    "experiments": [
+      "cross-product-space"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/SkewLines.html",
+    "status": "200",
+    "title": "Skew Lines -- from Wolfram MathWorld",
+    "experiments": [
+      "skew-lines-distance"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Cavalieri/",
+    "status": "200",
+    "title": "Bonaventura Cavalieri (1598 - 1647) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "solid-of-revolution"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+    "status": "200",
+    "title": "Bernhard Riemann (1826 - 1866) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "riemann-area"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/MonteCarloMethod.html",
+    "status": "200",
+    "title": "Monte Carlo Method -- from Wolfram MathWorld",
+    "experiments": [
+      "monte-carlo-pi"
+    ]
+  },
+  {
+    "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bayes/",
+    "status": "200",
+    "title": "Thomas Bayes (1702 - 1761) - Biography - MacTutor History of Mathematics",
+    "experiments": [
+      "bayes-screening"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/",
+    "status": "200",
+    "title": "NASA Science",
+    "experiments": [
+      "kepler-area-clock",
+      "escape-speed-well",
+      "hohmann-transfer",
+      "exoplanet-transit",
+      "stellar-radial-velocity",
+      "habitable-zone",
+      "stellar-blackbody",
+      "stellar-lifetime",
+      "neutron-star-compactness",
+      "cosmological-redshift",
+      "gravitational-clock",
+      "einstein-lens",
+      "relativistic-precession",
+      "hill-sphere",
+      "rocket-mass-ledger",
+      "relativistic-energy",
+      "interstellar-dust-impact",
+      "interstellar-dust-impact",
+      "telescope-resolution",
+      "interferometer-baseline",
+      "hubble-distance-ladder"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/learn/basics-of-space-flight/",
+    "status": "200",
+    "title": "Basics of Space Flight",
+    "experiments": [
+      "hohmann-transfer",
+      "hill-sphere"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/exoplanets/habitable-zone/",
+    "status": "200",
+    "title": "The Habitable Zone - NASA Science",
+    "experiments": [
+      "habitable-zone"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/universe/stars/",
+    "status": "200",
+    "title": "Stars - NASA Science",
+    "experiments": [
+      "stellar-blackbody",
+      "stellar-lifetime"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/universe/stars/types/",
+    "status": "200",
+    "title": "Types - NASA Science",
+    "experiments": [
+      "neutron-star-compactness"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/universe/",
+    "status": "200",
+    "title": "Universe - NASA Science",
+    "experiments": [
+      "cosmological-redshift",
+      "einstein-lens",
+      "hubble-distance-ladder"
+    ]
+  },
+  {
+    "url": "https://science.nasa.gov/universe/black-holes/",
+    "status": "200",
+    "title": "Black Holes - NASA Science",
+    "experiments": [
+      "gravitational-clock",
+      "interferometer-baseline"
+    ]
+  },
+  {
+    "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/",
+    "status": "200",
+    "title": "Ideal Rocket Equation | Glenn Research Center | NASA",
+    "experiments": [
+      "rocket-mass-ledger"
+    ]
+  },
+  {
+    "url": "https://engineeringstatics.org/Chapter_06-trusses.html",
+    "status": "200",
+    "title": "Statics: Trusses",
+    "experiments": [
+      "triangle-truss-joint",
+      "diagonal-bracing"
+    ]
+  },
+  {
+    "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics%3A_Open_and_Interactive_(Baker_and_Haynes)",
+    "status": "200",
+    "title": "Engineering Statics: Open and Interactive (Baker and Haynes) - Engineering LibreTexts",
+    "experiments": [
+      "triangle-truss-joint",
+      "moving-load-beam",
+      "euler-column",
+      "eccentric-column-stress",
+      "retaining-wall-overturn",
+      "slope-friction",
+      "screw-jack",
+      "wedge-lift",
+      "belt-drive",
+      "planetary-gear",
+      "four-bar-linkage",
+      "scissor-lift",
+      "spherical-cap-dome",
+      "diagonal-bracing",
+      "honeycomb-relative-density",
+      "sandwich-beam",
+      "room-reverberation",
+      "solar-shading",
+      "rainwater-harvesting",
+      "stack-ventilation"
+    ]
+  },
+  {
+    "url": "https://engineeringstatics.org/Chapter_08-internal-forces.html",
+    "status": "200",
+    "title": "Statics: Internal Forces",
+    "experiments": [
+      "moving-load-beam"
+    ]
+  },
+  {
+    "url": "https://eng.libretexts.org/Bookshelves/Mechanical_Engineering",
+    "status": "200",
+    "title": "Mechanical Engineering - Engineering LibreTexts",
+    "experiments": [
+      "eccentric-column-stress",
+      "sandwich-beam"
+    ]
+  },
+  {
+    "url": "https://engineeringstatics.org/Chapter_09-dry-friction.html",
+    "status": "200",
+    "title": "Statics: Dry Friction",
+    "experiments": [
+      "retaining-wall-overturn",
+      "slope-friction",
+      "screw-jack",
+      "wedge-lift"
+    ]
+  },
+  {
+    "url": "https://americanhistory.si.edu/collections/search?edan_q=line%20shaft",
+    "status": "403",
+    "title": "Smithsonian request verification",
+    "experiments": [
+      "belt-drive"
+    ]
+  },
+  {
+    "url": "https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt7.html",
+    "status": "200",
+    "title": "Chapter 7. Gears",
+    "experiments": [
+      "planetary-gear"
+    ]
+  },
+  {
+    "url": "https://www.cs.cmu.edu/~rapidproto/mechanisms/chpt5.html",
+    "status": "200",
+    "title": "Chapter 5. Planar Linkages",
+    "experiments": [
+      "four-bar-linkage"
+    ]
+  },
+  {
+    "url": "https://engineeringstatics.org/",
+    "status": "200",
+    "title": "Engineering Statics Welcome Page",
+    "experiments": [
+      "scissor-lift"
+    ]
+  },
+  {
+    "url": "https://mathworld.wolfram.com/SphericalCap.html",
+    "status": "200",
+    "title": "Spherical Cap -- from Wolfram MathWorld",
+    "experiments": [
+      "spherical-cap-dome"
+    ]
+  },
+  {
+    "url": "https://eng.libretexts.org/Bookshelves/Materials_Science",
+    "status": "200",
+    "title": "Materials Science - Engineering LibreTexts",
+    "experiments": [
+      "honeycomb-relative-density"
+    ]
+  },
+  {
+    "url": "https://acoustics.org/",
+    "status": "200",
+    "title": "Acoustics News | Acoustical Society of America",
+    "experiments": [
+      "room-reverberation"
+    ]
+  },
+  {
+    "url": "https://gml.noaa.gov/grad/solcalc/",
+    "status": "200",
+    "title": "Solar Calculator - NOAA Global Monitoring Laboratory",
+    "experiments": [
+      "solar-shading"
+    ]
+  },
+  {
+    "url": "https://www.epa.gov/green-infrastructure",
+    "status": "200",
+    "title": "Green Infrastructure | US EPA",
+    "experiments": [
+      "rainwater-harvesting"
+    ]
+  }
+]

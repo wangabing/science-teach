@@ -1,0 +1,7434 @@
+[
+  {
+    "id": "L01",
+    "name": "浮力实验台",
+    "slug": "buoyancy",
+    "route": "/stem-lab/buoyancy/",
+    "operation": "调整材质、密度、深度，核对排水体积、浮力与测力计；二维/三维切换",
+    "spatialMeaning": "原生空间装置",
+    "audit": {
+      "slug": "buoyancy",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-buoyancy-2d.png",
+      "3d": "legacy-buoyancy-3d.png",
+      "mobile": "legacy-buoyancy-mobile.png"
+    }
+  },
+  {
+    "id": "L02",
+    "name": "单摆与能量",
+    "slug": "pendulum",
+    "route": "/stem-lab/pendulum/",
+    "operation": "拖摆释放，测周期并核对能量；质量/摆长/重力对照与二维切换",
+    "spatialMeaning": "原生空间装置",
+    "audit": {
+      "slug": "pendulum",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-pendulum-2d.png",
+      "3d": "legacy-pendulum-3d.png",
+      "mobile": "legacy-pendulum-mobile.png"
+    }
+  },
+  {
+    "id": "L03",
+    "name": "透镜成像",
+    "slug": "lens",
+    "route": "/labs/lens/",
+    "operation": "移动物体与光屏调焦，检验实像、虚像、焦点边界和保存恢复",
+    "spatialMeaning": "原生空间装置",
+    "audit": {
+      "slug": "lens",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-lens-2d.png",
+      "3d": "legacy-lens-3d.png",
+      "mobile": "legacy-lens-mobile.png"
+    }
+  },
+  {
+    "id": "L04",
+    "name": "双源波纹",
+    "slug": "interference",
+    "route": "/labs/interference/",
+    "operation": "移动探针、改相位，比较分波、合成位移与整周期振幅",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "interference",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-interference-2d.png",
+      "3d": "legacy-interference-3d.png",
+      "mobile": "legacy-interference-mobile.png"
+    }
+  },
+  {
+    "id": "L05",
+    "name": "电路接线工坊",
+    "slug": "circuits",
+    "route": "/labs/circuits/",
+    "operation": "自由接线，串并联/断灯挑战，核对电流和内阻功率账本",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "circuits",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-circuits-2d.png",
+      "3d": "legacy-circuits-3d.png",
+      "mobile": "legacy-circuits-mobile.png"
+    }
+  },
+  {
+    "id": "L06",
+    "name": "电阻分压台",
+    "slug": "resistors",
+    "route": "/labs/resistors/",
+    "operation": "调电阻与负载，检查输出电压、分流和功率",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "resistors",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-resistors-2d.png",
+      "3d": "legacy-resistors-3d.png",
+      "mobile": "legacy-resistors-mobile.png"
+    }
+  },
+  {
+    "id": "L07",
+    "name": "电容时间台",
+    "slug": "capacitors",
+    "route": "/labs/capacitors/",
+    "operation": "充电、开路保持、放电，检查电压、电荷、储能与记录",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "capacitors",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-capacitors-2d.png",
+      "3d": "legacy-capacitors-3d.png",
+      "mobile": "legacy-capacitors-mobile.png"
+    }
+  },
+  {
+    "id": "L08",
+    "name": "面积搬家",
+    "slug": "area",
+    "route": "/labs/area/",
+    "operation": "移动拼块，核对全等三角形与两次面积重排",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "area",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-area-2d.png",
+      "3d": "legacy-area-3d.png",
+      "mobile": "legacy-area-mobile.png"
+    }
+  },
+  {
+    "id": "L09",
+    "name": "切开立方体",
+    "slug": "sections",
+    "route": "/labs/sections/",
+    "operation": "调整切面，核对棱上交点、截面多边形与立体视角",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "sections",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-sections-2d.png",
+      "3d": "legacy-sections-3d.png",
+      "mobile": "legacy-sections-mobile.png"
+    }
+  },
+  {
+    "id": "L10",
+    "name": "莫比乌斯带",
+    "slug": "mobius",
+    "route": "/labs/mobius/",
+    "operation": "比较0/1/2半扭转、沿面/沿边追踪和中心剪切，二维/三维同源",
+    "spatialMeaning": "原生空间装置",
+    "audit": {
+      "slug": "mobius",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-mobius-2d.png",
+      "3d": "legacy-mobius-3d.png",
+      "mobile": "legacy-mobius-mobile.png"
+    }
+  },
+  {
+    "id": "L11",
+    "name": "镜像寻路",
+    "slug": "reflection",
+    "route": "/labs/reflection/",
+    "operation": "拖动反射点，比较折线路程、镜像直线与边界最短路",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "reflection",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-reflection-2d.png",
+      "3d": "legacy-reflection-3d.png",
+      "mobile": "legacy-reflection-mobile.png"
+    }
+  },
+  {
+    "id": "L12",
+    "name": "圆周角观测台",
+    "slug": "circle-angles",
+    "route": "/labs/circle-angles/",
+    "operation": "移动圆上观察点，比较同弧角与圆心角，检查跨弧边界",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "circle-angles",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-circle-angles-2d.png",
+      "3d": "legacy-circle-angles-3d.png",
+      "mobile": "legacy-circle-angles-mobile.png"
+    }
+  },
+  {
+    "id": "L13",
+    "name": "三角形锁形工坊",
+    "slug": "triangle-rigidity",
+    "route": "/labs/triangle-rigidity/",
+    "operation": "转动两杆、锁第三边，检查镜像全等、约束与退化边界",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "triangle-rigidity",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-triangle-rigidity-2d.png",
+      "3d": "legacy-triangle-rigidity-3d.png",
+      "mobile": "legacy-triangle-rigidity-mobile.png"
+    }
+  },
+  {
+    "id": "L14",
+    "name": "双钉拉线实验",
+    "slug": "ellipse-string",
+    "route": "/labs/ellipse-string/",
+    "operation": "改焦距、绳长并移动笔尖，核对焦点距离和与轨迹",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "ellipse-string",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-ellipse-string-2d.png",
+      "3d": "legacy-ellipse-string-3d.png",
+      "mobile": "legacy-ellipse-string-mobile.png"
+    }
+  },
+  {
+    "id": "L15",
+    "name": "月相与日月食",
+    "slug": "moon",
+    "route": "/labs/moon/",
+    "operation": "改相位、轨道倾角和交点，对照月盘、太阳盘、阴影与食的边界",
+    "spatialMeaning": "原生空间装置",
+    "audit": {
+      "slug": "moon",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-moon-2d.png",
+      "3d": "legacy-moon-3d.png",
+      "mobile": "legacy-moon-mobile.png"
+    }
+  },
+  {
+    "id": "L16",
+    "name": "发射一颗卫星",
+    "slug": "orbit",
+    "route": "/labs/orbit/",
+    "operation": "改变初速度并发射，分别检验碰撞、绕行、逃逸及守恒误差",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "orbit",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-orbit-2d.png",
+      "3d": "legacy-orbit-3d.png",
+      "mobile": "legacy-orbit-mobile.png"
+    }
+  },
+  {
+    "id": "L17",
+    "name": "三体：两种未来",
+    "slug": "three-body",
+    "route": "/labs/three-body/",
+    "operation": "运行两个初态，比较分离与数值误差，检查暂停/重置",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "three-body",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-three-body-2d.png",
+      "3d": "legacy-three-body-3d.png",
+      "mobile": "legacy-three-body-mobile.png"
+    }
+  },
+  {
+    "id": "L18",
+    "name": "桥梁挑战",
+    "slug": "bridge",
+    "route": "/labs/bridge/",
+    "operation": "连接杆件并加载，核对机构/稳定状态、杆力与支座平衡",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "bridge",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-bridge-2d.png",
+      "3d": "legacy-bridge-3d.png",
+      "mobile": "legacy-bridge-mobile.png"
+    }
+  },
+  {
+    "id": "L19",
+    "name": "重心与稳定",
+    "slug": "balance",
+    "route": "/labs/balance/",
+    "operation": "移动配重、倾斜后松手，核对重力线、力矩和翻倒边界",
+    "spatialMeaning": "原生空间装置",
+    "audit": {
+      "slug": "balance",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-balance-2d.png",
+      "3d": "legacy-balance-3d.png",
+      "mobile": "legacy-balance-mobile.png"
+    }
+  },
+  {
+    "id": "L20",
+    "name": "齿轮工坊",
+    "slug": "gears",
+    "route": "/labs/gears/",
+    "operation": "组合齿轮，核对转向、齿速、扭矩与功率",
+    "spatialMeaning": "同源几何空间观察；平面构造不新增维度",
+    "audit": {
+      "slug": "gears",
+      "history": true,
+      "twoDimensional": true,
+      "threeDimensional": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "legacy-gears-2d.png",
+      "3d": "legacy-gears-3d.png",
+      "mobile": "legacy-gears-mobile.png"
+    }
+  },
+  {
+    "id": "P01",
+    "name": "伽利略斜面",
+    "slug": "galileo-incline",
+    "route": "/labs/galileo-incline/",
+    "operation": "滑块质量：0.1–5 kg；观察 arrival",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P01",
+      "slug": "galileo-incline",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "mass",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "theta",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "theta",
+          "value": 60,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "length",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "length",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "static",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "static",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "kinetic",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "20"
+        },
+        {
+          "control": "kinetic",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "22"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "25"
+        },
+        {
+          "control": "time",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "27"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P01-2d.png",
+      "3d": "P01-3d.png",
+      "mobile": "P01-mobile.png"
+    }
+  },
+  {
+    "id": "P02",
+    "name": "碰撞轨道",
+    "slug": "collision-track",
+    "route": "/labs/collision-track/",
+    "operation": "恢复系数：0–1 ；观察 energy_after",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P02",
+      "slug": "collision-track",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass1",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "mass1",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "mass2",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "mass2",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "v1",
+          "value": -4,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "v1",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "v2",
+          "value": -4,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "v2",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "restitution",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "restitution",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "27"
+        },
+        {
+          "control": "time",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "29"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P02-2d.png",
+      "3d": "P02-3d.png",
+      "mobile": "P02-mobile.png"
+    }
+  },
+  {
+    "id": "P03",
+    "name": "共振台",
+    "slug": "resonance-table",
+    "route": "/labs/resonance-table/",
+    "operation": "驱动频率：0.1–3 Hz；观察 amplitude",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P03",
+      "slug": "resonance-table",
+      "history": true,
+      "controls": [
+        {
+          "control": "frequency",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "frequency",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "natural",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "natural",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "damping",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "damping",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "mass",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "mass",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "force",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "force",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "27"
+        },
+        {
+          "control": "time",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "29"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P03-2d.png",
+      "3d": "P03-3d.png",
+      "mobile": "P03-mobile.png"
+    }
+  },
+  {
+    "id": "P04",
+    "name": "电场探针",
+    "slug": "electric-field-probe",
+    "route": "/labs/electric-field-probe/",
+    "operation": "探针横坐标：-4–4 m；观察 potential",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "P04",
+      "slug": "electric-field-probe",
+      "history": true,
+      "controls": [
+        {
+          "control": "q1",
+          "value": -5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "q1",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "q2",
+          "value": -5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "q2",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "x",
+          "value": -4,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "x",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "y",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "y",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P04-2d.png",
+      "3d": "P04-3d.png",
+      "mobile": "P04-mobile.png"
+    }
+  },
+  {
+    "id": "P05",
+    "name": "法拉第线圈",
+    "slug": "faraday-coil",
+    "route": "/labs/faraday-coil/",
+    "operation": "规定运动速度：-0.2–0.2 m/s；观察 emf",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P05",
+      "slug": "faraday-coil",
+      "history": true,
+      "controls": [
+        {
+          "control": "z",
+          "value": -0.2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "z",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "velocity",
+          "value": -0.2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "velocity",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "radius",
+          "value": 0.03,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "radius",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "turns",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "turns",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "resistance",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "resistance",
+          "value": 50,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "polarity",
+          "value": -1,
+          "status": "valid",
+          "spatialRevision": "29"
+        },
+        {
+          "control": "polarity",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "31"
+        },
+        {
+          "control": "closed",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "34"
+        },
+        {
+          "control": "closed",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "36"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "37"
+        },
+        {
+          "control": "time",
+          "value": 8,
+          "status": "valid",
+          "spatialRevision": "39"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P05-2d.png",
+      "3d": "P05-3d.png",
+      "mobile": "P05-mobile.png"
+    }
+  },
+  {
+    "id": "P06",
+    "name": "磁场分选器",
+    "slug": "magnetic-sorter",
+    "route": "/labs/magnetic-sorter/",
+    "operation": "磁感应强度：-2–2 T；观察 radius",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P06",
+      "slug": "magnetic-sorter",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "2"
+        },
+        {
+          "control": "mass",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "charge",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "7"
+        },
+        {
+          "control": "charge",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "speed",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "12"
+        },
+        {
+          "control": "speed",
+          "value": 5000,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "field",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "field",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "22"
+        },
+        {
+          "control": "time",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "24"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P06-2d.png",
+      "3d": "P06-3d.png",
+      "mobile": "P06-mobile.png"
+    }
+  },
+  {
+    "id": "P07",
+    "name": "焦耳量热",
+    "slug": "joule-calorimeter",
+    "route": "/labs/joule-calorimeter/",
+    "operation": "电流：0–5 A；观察 temperature",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P07",
+      "slug": "joule-calorimeter",
+      "history": true,
+      "controls": [
+        {
+          "control": "current",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "current",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "resistance",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "resistance",
+          "value": 50,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "water",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "water",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "loss",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "loss",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "22"
+        },
+        {
+          "control": "time",
+          "value": 600,
+          "status": "valid",
+          "spatialRevision": "24"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P07-2d.png",
+      "3d": "P07-3d.png",
+      "mobile": "P07-mobile.png"
+    }
+  },
+  {
+    "id": "P08",
+    "name": "气体活塞",
+    "slug": "ideal-gas-piston",
+    "route": "/labs/ideal-gas-piston/",
+    "operation": "过程：0–1 ；观察 temperature",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P08",
+      "slug": "ideal-gas-piston",
+      "history": true,
+      "controls": [
+        {
+          "control": "moles",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "moles",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "process",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "8"
+        },
+        {
+          "control": "process",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "10"
+        },
+        {
+          "control": "heat",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "13"
+        },
+        {
+          "control": "heat",
+          "value": 2000,
+          "status": "valid",
+          "spatialRevision": "15"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P08-2d.png",
+      "3d": "P08-3d.png",
+      "mobile": "P08-mobile.png"
+    }
+  },
+  {
+    "id": "P09",
+    "name": "布朗显微镜",
+    "slug": "brownian-microscope",
+    "route": "/labs/brownian-microscope/",
+    "operation": "观察时间：0–10 s；观察 msd",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P09",
+      "slug": "brownian-microscope",
+      "history": true,
+      "controls": [
+        {
+          "control": "seed",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "seed",
+          "value": 99,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "particles",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "particles",
+          "value": 256,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "diffusion",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "diffusion",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "time",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P09-2d.png",
+      "3d": "P09-3d.png",
+      "mobile": "P09-mobile.png"
+    }
+  },
+  {
+    "id": "P10",
+    "name": "光的转弯",
+    "slug": "refraction-interface",
+    "route": "/labs/refraction-interface/",
+    "operation": "相对法线入射角：0–89 °；观察 reflectance",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P10",
+      "slug": "refraction-interface",
+      "history": true,
+      "controls": [
+        {
+          "control": "n1",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "n1",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "n2",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "7"
+        },
+        {
+          "control": "n2",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "12"
+        },
+        {
+          "control": "angle",
+          "value": 89,
+          "status": "valid",
+          "spatialRevision": "14"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P10-2d.png",
+      "3d": "P10-3d.png",
+      "mobile": "P10-mobile.png"
+    }
+  },
+  {
+    "id": "M01",
+    "name": "折起立方体",
+    "slug": "cube-nets",
+    "route": "/labs/cube-nets/",
+    "operation": "六连方编号：0–34 ；观察 valid",
+    "spatialMeaning": "真实刚体折叠，保留面编号；无效六连方不冒充立方体",
+    "audit": {
+      "id": "M01",
+      "slug": "cube-nets",
+      "history": true,
+      "controls": [
+        {
+          "control": "net",
+          "value": 0,
+          "status": "boundary",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "net",
+          "value": 34,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "fold",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "7"
+        },
+        {
+          "control": "fold",
+          "value": 90,
+          "status": "valid",
+          "spatialRevision": "9"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M01-2d.png",
+      "3d": "M01-3d.png",
+      "mobile": "M01-mobile.png"
+    }
+  },
+  {
+    "id": "M02",
+    "name": "等高切片",
+    "slug": "cavalieri-slices",
+    "route": "/labs/cavalieri-slices/",
+    "operation": "顶部侧移：0–2 m；观察 volume",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M02",
+      "slug": "cavalieri-slices",
+      "history": true,
+      "controls": [
+        {
+          "control": "radius",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "radius",
+          "value": 1.5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "shear",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "shear",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "slice",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "slice",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M02-2d.png",
+      "3d": "M02-3d.png",
+      "mobile": "M02-mobile.png"
+    }
+  },
+  {
+    "id": "M03",
+    "name": "空间垂线",
+    "slug": "spatial-perpendicular",
+    "route": "/labs/spatial-perpendicular/",
+    "operation": "方向y：-2–2 ；观察 dot_y",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M03",
+      "slug": "spatial-perpendicular",
+      "history": true,
+      "controls": [
+        {
+          "control": "x",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "x",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "y",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "y",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "z",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "z",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M03-2d.png",
+      "3d": "M03-3d.png",
+      "mobile": "M03-mobile.png"
+    }
+  },
+  {
+    "id": "M04",
+    "name": "切圆锥",
+    "slug": "conic-sections",
+    "route": "/labs/conic-sections/",
+    "operation": "平面倾角：0–80 °；观察 eccentricity",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M04",
+      "slug": "conic-sections",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 80,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "offset",
+          "value": 0,
+          "status": "boundary",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "offset",
+          "value": 1.5,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M04-2d.png",
+      "3d": "M04-3d.png",
+      "mobile": "M04-mobile.png"
+    }
+  },
+  {
+    "id": "M05",
+    "name": "动点函数",
+    "slug": "moving-point-function",
+    "route": "/labs/moving-point-function/",
+    "operation": "P累计路程：0–18 ；观察 area",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M05",
+      "slug": "moving-point-function",
+      "history": true,
+      "controls": [
+        {
+          "control": "width",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "width",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "distance",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "distance",
+          "value": 14,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M05-2d.png",
+      "3d": "M05-3d.png",
+      "mobile": "M05-mobile.png"
+    }
+  },
+  {
+    "id": "M06",
+    "name": "单位圆示波台",
+    "slug": "unit-circle-wave",
+    "route": "/labs/unit-circle-wave/",
+    "operation": "有向角：0–720 °；观察 sin",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M06",
+      "slug": "unit-circle-wave",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 720,
+          "status": "valid",
+          "spatialRevision": "6"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M06-2d.png",
+      "3d": "M06-3d.png",
+      "mobile": "M06-mobile.png"
+    }
+  },
+  {
+    "id": "M07",
+    "name": "切线显微镜",
+    "slug": "tangent-microscope",
+    "route": "/labs/tangent-microscope/",
+    "operation": "割线横向间隔Δx：-1–1 ；观察 secant",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M07",
+      "slug": "tangent-microscope",
+      "history": true,
+      "controls": [
+        {
+          "control": "function",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "3"
+        },
+        {
+          "control": "function",
+          "value": 1,
+          "status": "boundary",
+          "spatialRevision": "5"
+        },
+        {
+          "control": "x",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "8"
+        },
+        {
+          "control": "x",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "10"
+        },
+        {
+          "control": "delta",
+          "value": -1,
+          "status": "valid",
+          "spatialRevision": "13"
+        },
+        {
+          "control": "delta",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "15"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M07-2d.png",
+      "3d": "M07-3d.png",
+      "mobile": "M07-mobile.png"
+    }
+  },
+  {
+    "id": "M08",
+    "name": "高尔顿钉板",
+    "slug": "galton-board",
+    "route": "/labs/galton-board/",
+    "operation": "小球数：100–3000 ；观察 mean",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M08",
+      "slug": "galton-board",
+      "history": true,
+      "controls": [
+        {
+          "control": "rows",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "rows",
+          "value": 12,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "balls",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "balls",
+          "value": 3000,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "probability",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "probability",
+          "value": 0.9,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "seed",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "seed",
+          "value": 999,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M08-2d.png",
+      "3d": "M08-3d.png",
+      "mobile": "M08-mobile.png"
+    }
+  },
+  {
+    "id": "M09",
+    "name": "多面体侦探",
+    "slug": "euler-polyhedra",
+    "route": "/labs/euler-polyhedra/",
+    "operation": "表面类型：0–1 ；观察 chi",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M09",
+      "slug": "euler-polyhedra",
+      "history": true,
+      "controls": [
+        {
+          "control": "surface",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "3"
+        },
+        {
+          "control": "surface",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "5"
+        },
+        {
+          "control": "sides",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "8"
+        },
+        {
+          "control": "sides",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "10"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M09-2d.png",
+      "3d": "M09-3d.png",
+      "mobile": "M09-mobile.png"
+    }
+  },
+  {
+    "id": "M10",
+    "name": "球堆仓库",
+    "slug": "sphere-packing",
+    "route": "/labs/sphere-packing/",
+    "operation": "堆积方式：0–1 ；观察 fraction",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M10",
+      "slug": "sphere-packing",
+      "history": true,
+      "controls": [
+        {
+          "control": "arrangement",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "3"
+        },
+        {
+          "control": "arrangement",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "5"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M10-2d.png",
+      "3d": "M10-3d.png",
+      "mobile": "M10-mobile.png"
+    }
+  },
+  {
+    "id": "C01",
+    "name": "三日凌空",
+    "slug": "three-suns",
+    "route": "/labs/three-suns/",
+    "operation": "固定探针位置x：2–5 AU映射；观察 flux",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C01",
+      "slug": "three-suns",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "mass",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "planet",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "planet",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "albedo",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "albedo",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "time",
+          "value": 5,
+          "status": "boundary",
+          "spatialRevision": "19"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C01-2d.png",
+      "3d": "C01-3d.png",
+      "mobile": "C01-mobile.png"
+    }
+  },
+  {
+    "id": "C02",
+    "name": "拉格朗日驿站",
+    "slug": "lagrange-station",
+    "route": "/labs/lagrange-station/",
+    "operation": "L4横向扰动：0–0.1 ；观察 displacement",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C02",
+      "slug": "lagrange-station",
+      "history": true,
+      "controls": [
+        {
+          "control": "frame",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "3"
+        },
+        {
+          "control": "frame",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "5"
+        },
+        {
+          "control": "point",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "7"
+        },
+        {
+          "control": "point",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "ratio",
+          "value": 0.001,
+          "status": "valid",
+          "spatialRevision": "12"
+        },
+        {
+          "control": "ratio",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "offset",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "offset",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "20"
+        },
+        {
+          "control": "time",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "22"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C02-2d.png",
+      "3d": "C02-3d.png",
+      "mobile": "C02-mobile.png"
+    }
+  },
+  {
+    "id": "C03",
+    "name": "光锥通信",
+    "slug": "light-cone-messages",
+    "route": "/labs/light-cone-messages/",
+    "operation": "目的地速度：-0.5–0.8 c；观察 return",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C03",
+      "slug": "light-cone-messages",
+      "history": true,
+      "controls": [
+        {
+          "control": "distance",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "distance",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "speed",
+          "value": -0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "speed",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "wait",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "12"
+        },
+        {
+          "control": "wait",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "15"
+        },
+        {
+          "control": "time",
+          "value": 130,
+          "status": "valid",
+          "spatialRevision": "17"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C03-2d.png",
+      "3d": "C03-3d.png",
+      "mobile": "C03-mobile.png"
+    }
+  },
+  {
+    "id": "C04",
+    "name": "星际钟表",
+    "slug": "relativistic-clocks",
+    "route": "/labs/relativistic-clocks/",
+    "operation": "巡航速度：0.05–0.99 c；观察 difference",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C04",
+      "slug": "relativistic-clocks",
+      "history": true,
+      "controls": [
+        {
+          "control": "speed",
+          "value": 0.05,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "speed",
+          "value": 0.99,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "distance",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "distance",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C04-2d.png",
+      "3d": "C04-3d.png",
+      "mobile": "C04-mobile.png"
+    }
+  },
+  {
+    "id": "C05",
+    "name": "光帆启航",
+    "slug": "solar-sail",
+    "route": "/labs/solar-sail/",
+    "operation": "帆面积：1–100 m²；观察 force_x",
+    "spatialMeaning": "局部受力/径向航行两种模式及混合CSV",
+    "audit": {
+      "id": "C05",
+      "slug": "solar-sail",
+      "history": true,
+      "controls": [
+        {
+          "control": "mode",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "3"
+        },
+        {
+          "control": "mode",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "5"
+        },
+        {
+          "control": "area",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "8"
+        },
+        {
+          "control": "area",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "10"
+        },
+        {
+          "control": "mass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "13"
+        },
+        {
+          "control": "mass",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "15"
+        },
+        {
+          "control": "reflectivity",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "18"
+        },
+        {
+          "control": "reflectivity",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "20"
+        },
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "angle",
+          "value": 90,
+          "status": "valid",
+          "spatialRevision": "23"
+        },
+        {
+          "control": "radius",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "radius",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "28"
+        },
+        {
+          "control": "emissivity",
+          "value": 0,
+          "status": "boundary",
+          "spatialRevision": "31"
+        },
+        {
+          "control": "emissivity",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "33"
+        },
+        {
+          "control": "days",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "36"
+        },
+        {
+          "control": "days",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "38"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C05-2d.png",
+      "3d": "C05-3d.png",
+      "mobile": "C05-mobile.png"
+    }
+  },
+  {
+    "id": "C06",
+    "name": "黑洞观景台",
+    "slug": "black-hole-rays",
+    "route": "/labs/black-hole-rays/",
+    "operation": "入射冲量参数b：2–12 GM/c²；观察 capture",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C06",
+      "slug": "black-hole-rays",
+      "history": true,
+      "controls": [
+        {
+          "control": "impact",
+          "value": 2,
+          "status": "boundary",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "impact",
+          "value": 12,
+          "status": "valid",
+          "spatialRevision": "6"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C06-2d.png",
+      "3d": "C06-3d.png",
+      "mobile": "C06-mobile.png"
+    }
+  },
+  {
+    "id": "C07",
+    "name": "潮汐撕裂",
+    "slug": "tidal-roche",
+    "route": "/labs/tidal-roche/",
+    "operation": "中心距离：100–2000 千km；观察 tidal",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C07",
+      "slug": "tidal-roche",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "mass",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "density",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "density",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "distance",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "distance",
+          "value": 2000,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C07-2d.png",
+      "3d": "C07-3d.png",
+      "mobile": "C07-mobile.png"
+    }
+  },
+  {
+    "id": "C08",
+    "name": "宇宙收音机",
+    "slug": "cosmic-radio",
+    "route": "/labs/cosmic-radio/",
+    "operation": "传播距离：0.1–10 光年；观察 received",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "C08",
+      "slug": "cosmic-radio",
+      "history": true,
+      "controls": [
+        {
+          "control": "distance",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "distance",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "power",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "power",
+          "value": 1000000,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "frequency",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "frequency",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "txgain",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "txgain",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "rxgain",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "rxgain",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "bandwidth",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "29"
+        },
+        {
+          "control": "bandwidth",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "31"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C08-2d.png",
+      "3d": "C08-3d.png",
+      "mobile": "C08-mobile.png"
+    }
+  },
+  {
+    "id": "C09",
+    "name": "时空涟漪",
+    "slug": "gravitational-chirp",
+    "route": "/labs/gravitational-chirp/",
+    "operation": "起始引力波频率：10–200 Hz；观察 frequency_rate",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C09",
+      "slug": "gravitational-chirp",
+      "history": true,
+      "controls": [
+        {
+          "control": "m1",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "m1",
+          "value": 50,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "m2",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "m2",
+          "value": 50,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "frequency",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "frequency",
+          "value": 200,
+          "status": "boundary",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "distance",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "distance",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "22"
+        },
+        {
+          "control": "time",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "24"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C09-2d.png",
+      "3d": "C09-3d.png",
+      "mobile": "C09-mobile.png"
+    }
+  },
+  {
+    "id": "C10",
+    "name": "宇宙背景屏",
+    "slug": "cosmic-background",
+    "route": "/labs/cosmic-background/",
+    "operation": "噪声标准差：0–100 μK；观察 rms",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C10",
+      "slug": "cosmic-background",
+      "history": true,
+      "controls": [
+        {
+          "control": "frequency",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "frequency",
+          "value": 600,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "foreground",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "foreground",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "noise",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "noise",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "seed",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "seed",
+          "value": 999,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C10-2d.png",
+      "3d": "C10-3d.png",
+      "mobile": "C10-mobile.png"
+    }
+  },
+  {
+    "id": "S01",
+    "name": "反转悬链",
+    "slug": "funicular-arch",
+    "route": "/labs/funicular-arch/",
+    "operation": "抛物拱中心矢高：0.5–3 m；观察 margin",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S01",
+      "slug": "funicular-arch",
+      "history": true,
+      "controls": [
+        {
+          "control": "span",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "span",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "rise",
+          "value": 0.5,
+          "status": "boundary",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "rise",
+          "value": 3,
+          "status": "boundary",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "envelope",
+          "value": 0.5,
+          "status": "boundary",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "envelope",
+          "value": 3,
+          "status": "boundary",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "thickness",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "thickness",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "load",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "load",
+          "value": 500,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "loading",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "29"
+        },
+        {
+          "control": "loading",
+          "value": 2,
+          "status": "boundary",
+          "spatialRevision": "31"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S01-2d.png",
+      "3d": "S01-3d.png",
+      "mobile": "S01-mobile.png"
+    }
+  },
+  {
+    "id": "S02",
+    "name": "悬臂工作台",
+    "slug": "cantilever-design",
+    "route": "/labs/cantilever-design/",
+    "operation": "旋转截面：0–1 ；观察 deflection",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S02",
+      "slug": "cantilever-design",
+      "history": true,
+      "controls": [
+        {
+          "control": "length",
+          "value": 0.2,
+          "status": "boundary",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "length",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "width",
+          "value": 0.005,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "width",
+          "value": 0.08,
+          "status": "boundary",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "height",
+          "value": 0.005,
+          "status": "boundary",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "height",
+          "value": 0.08,
+          "status": "boundary",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "modulus",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "modulus",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "force",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "force",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "rotated",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "28"
+        },
+        {
+          "control": "rotated",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "30"
+        },
+        {
+          "control": "magnify",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "33"
+        },
+        {
+          "control": "magnify",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "35"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S02-2d.png",
+      "3d": "S02-3d.png",
+      "mobile": "S02-mobile.png"
+    }
+  },
+  {
+    "id": "S03",
+    "name": "抗震塔",
+    "slug": "seismic-tower",
+    "route": "/labs/seismic-tower/",
+    "operation": "附加质量：0–150 kg；观察 tower_amplitude",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S03",
+      "slug": "seismic-tower",
+      "history": true,
+      "controls": [
+        {
+          "control": "natural",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "natural",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "frequency",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "frequency",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "damper",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "damper",
+          "value": 150,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "tuning",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "tuning",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "acceleration",
+          "value": 0.01,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "acceleration",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "27"
+        },
+        {
+          "control": "time",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "29"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S03-2d.png",
+      "3d": "S03-3d.png",
+      "mobile": "S03-mobile.png"
+    }
+  },
+  {
+    "id": "S04",
+    "name": "张拉整体",
+    "slug": "tensegrity",
+    "route": "/labs/tensegrity/",
+    "operation": "斜索预张力：0–1000 N；观察 stiffness",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S04",
+      "slug": "tensegrity",
+      "history": true,
+      "controls": [
+        {
+          "control": "radius",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "radius",
+          "value": 1.5,
+          "status": "boundary",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "tension",
+          "value": 0,
+          "status": "boundary",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "tension",
+          "value": 1000,
+          "status": "boundary",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "rigidity",
+          "value": 10,
+          "status": "boundary",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "rigidity",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S04-2d.png",
+      "3d": "S04-3d.png",
+      "mobile": "S04-mobile.png"
+    }
+  },
+  {
+    "id": "S05",
+    "name": "悬索跨越",
+    "slug": "suspension-cable",
+    "route": "/labs/suspension-cable/",
+    "operation": "索垂度：0.5–15 m；观察 horizontal",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S05",
+      "slug": "suspension-cable",
+      "history": true,
+      "controls": [
+        {
+          "control": "span",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "span",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "sag",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "sag",
+          "value": 15,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "load",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "load",
+          "value": 5000,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S05-2d.png",
+      "3d": "S05-3d.png",
+      "mobile": "S05-mobile.png"
+    }
+  },
+  {
+    "id": "S06",
+    "name": "曲柄画线机",
+    "slug": "crank-slider",
+    "route": "/labs/crank-slider/",
+    "operation": "曲柄转角：0–360 °；观察 velocity",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S06",
+      "slug": "crank-slider",
+      "history": true,
+      "controls": [
+        {
+          "control": "crank",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "crank",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "rod",
+          "value": 0.5,
+          "status": "invalid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "rod",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "angle",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "omega",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "omega",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S06-2d.png",
+      "3d": "S06-3d.png",
+      "mobile": "S06-mobile.png"
+    }
+  },
+  {
+    "id": "S07",
+    "name": "滑轮吊装",
+    "slug": "pulley-lift",
+    "route": "/labs/pulley-lift/",
+    "operation": "承重绳段：1–4 ；观察 force",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S07",
+      "slug": "pulley-lift",
+      "history": true,
+      "controls": [
+        {
+          "control": "weight",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "weight",
+          "value": 500,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "segments",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "segments",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "height",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "height",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "efficiency",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "efficiency",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S07-2d.png",
+      "3d": "S07-3d.png",
+      "mobile": "S07-mobile.png"
+    }
+  },
+  {
+    "id": "S08",
+    "name": "液压举升",
+    "slug": "hydraulic-lift",
+    "route": "/labs/hydraulic-lift/",
+    "operation": "大活塞面积：10–100 cm²；观察 input_force",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S08",
+      "slug": "hydraulic-lift",
+      "history": true,
+      "controls": [
+        {
+          "control": "small",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "small",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "large",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "large",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "load",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "load",
+          "value": 5000,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "displacement",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "displacement",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S08-2d.png",
+      "3d": "S08-3d.png",
+      "mobile": "S08-mobile.png"
+    }
+  },
+  {
+    "id": "S09",
+    "name": "可展开遮棚",
+    "slug": "miura-canopy",
+    "route": "/labs/miura-canopy/",
+    "operation": "折叠半角：0–80 °；观察 area",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S09",
+      "slug": "miura-canopy",
+      "history": true,
+      "controls": [
+        {
+          "control": "panel",
+          "value": 0.3,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "panel",
+          "value": 1,
+          "status": "boundary",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "fold",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "fold",
+          "value": 80,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "snow",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "snow",
+          "value": 500,
+          "status": "boundary",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S09-2d.png",
+      "3d": "S09-3d.png",
+      "mobile": "S09-mobile.png"
+    }
+  },
+  {
+    "id": "S10",
+    "name": "房子的热账本",
+    "slug": "thermal-house",
+    "route": "/labs/thermal-house/",
+    "operation": "保温厚度：0.01–0.3 m；观察 conductance",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S10",
+      "slug": "thermal-house",
+      "history": true,
+      "controls": [
+        {
+          "control": "insulation",
+          "value": 0.01,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "insulation",
+          "value": 0.3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "window",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "window",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "glass",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "glass",
+          "value": 6,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "indoor",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "indoor",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "21"
+        },
+        {
+          "control": "outdoor",
+          "value": -20,
+          "status": "valid",
+          "spatialRevision": "24"
+        },
+        {
+          "control": "outdoor",
+          "value": 35,
+          "status": "valid",
+          "spatialRevision": "26"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "29"
+        },
+        {
+          "control": "time",
+          "value": 48,
+          "status": "valid",
+          "spatialRevision": "31"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S10-2d.png",
+      "3d": "S10-3d.png",
+      "mobile": "S10-mobile.png"
+    }
+  },
+  {
+    "id": "P11",
+    "name": "抛体发射台",
+    "slug": "projectile-launch",
+    "route": "/labs/projectile-launch/",
+    "operation": "发射角：5–85 °；观察 range",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P11",
+      "slug": "projectile-launch",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 85,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "speed",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "speed",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "progress",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "progress",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P11-2d.png",
+      "3d": "P11-3d.png",
+      "mobile": "P11-mobile.png"
+    }
+  },
+  {
+    "id": "P12",
+    "name": "阿特伍德机",
+    "slug": "atwood-machine",
+    "route": "/labs/atwood-machine/",
+    "operation": "右侧质量：0.5–5 kg；观察 acceleration",
+    "spatialMeaning": "释放过程含加速度、绳长约束和接触停止",
+    "audit": {
+      "id": "P12",
+      "slug": "atwood-machine",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass2",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "mass2",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "mass1",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "mass1",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "position",
+          "value": -0.8,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "position",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "time",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "19"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P12-2d.png",
+      "3d": "P12-3d.png",
+      "mobile": "P12-mobile.png"
+    }
+  },
+  {
+    "id": "P13",
+    "name": "圆周运动台",
+    "slug": "centripetal-force",
+    "route": "/labs/centripetal-force/",
+    "operation": "速率：0.5–10 m/s；观察 force",
+    "spatialMeaning": "速度/半径改变播放角速度，圆轨道置于真实水平面",
+    "audit": {
+      "id": "P13",
+      "slug": "centripetal-force",
+      "history": true,
+      "controls": [
+        {
+          "control": "speed",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "speed",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "mass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "mass",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "angle",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P13-2d.png",
+      "3d": "P13-3d.png",
+      "mobile": "P13-mobile.png"
+    }
+  },
+  {
+    "id": "P14",
+    "name": "力矩平衡尺",
+    "slug": "torque-balance",
+    "route": "/labs/torque-balance/",
+    "operation": "右侧力臂：0.2–1.5 m；观察 required",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P14",
+      "slug": "torque-balance",
+      "history": true,
+      "controls": [
+        {
+          "control": "arm",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "arm",
+          "value": 1.5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "force",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "force",
+          "value": 80,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P14-2d.png",
+      "3d": "P14-3d.png",
+      "mobile": "P14-mobile.png"
+    }
+  },
+  {
+    "id": "P15",
+    "name": "弹簧能量仓",
+    "slug": "spring-energy-store",
+    "route": "/labs/spring-energy-store/",
+    "operation": "压缩量：0–0.5 m；观察 energy",
+    "spatialMeaning": "螺旋弹簧与释放位移；弹性势能转为动能",
+    "audit": {
+      "id": "P15",
+      "slug": "spring-energy-store",
+      "history": true,
+      "controls": [
+        {
+          "control": "compression",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "compression",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "stiffness",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "stiffness",
+          "value": 500,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "mass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "mass",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "release",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "release",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "19"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P15-2d.png",
+      "3d": "P15-3d.png",
+      "mobile": "P15-mobile.png"
+    }
+  },
+  {
+    "id": "P16",
+    "name": "文丘里管",
+    "slug": "venturi-tube",
+    "route": "/labs/venturi-tube/",
+    "operation": "窄管直径：1.5–4 cm；观察 pressure",
+    "spatialMeaning": "圆形渐变通道、缩口、压差柱与流速箭头",
+    "audit": {
+      "id": "P16",
+      "slug": "venturi-tube",
+      "history": true,
+      "controls": [
+        {
+          "control": "diameter",
+          "value": 1.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "diameter",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "speed",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "speed",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P16-2d.png",
+      "3d": "P16-3d.png",
+      "mobile": "P16-mobile.png"
+    }
+  },
+  {
+    "id": "P17",
+    "name": "液柱压力台",
+    "slug": "hydrostatic-pressure",
+    "route": "/labs/hydrostatic-pressure/",
+    "operation": "探针深度：0–5 m；观察 gauge",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P17",
+      "slug": "hydrostatic-pressure",
+      "history": true,
+      "controls": [
+        {
+          "control": "depth",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "depth",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "density",
+          "value": 700,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "density",
+          "value": 1400,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "width",
+          "value": 300,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "width",
+          "value": 600,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P17-2d.png",
+      "3d": "P17-3d.png",
+      "mobile": "P17-mobile.png"
+    }
+  },
+  {
+    "id": "P18",
+    "name": "双缝光屏",
+    "slug": "young-double-slit",
+    "route": "/labs/young-double-slit/",
+    "operation": "双缝间距：0.1–1 mm；观察 spacing",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "P18",
+      "slug": "young-double-slit",
+      "history": true,
+      "controls": [
+        {
+          "control": "separation",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "separation",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "wavelength",
+          "value": 400,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "wavelength",
+          "value": 700,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "distance",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "distance",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P18-2d.png",
+      "3d": "P18-3d.png",
+      "mobile": "P18-mobile.png"
+    }
+  },
+  {
+    "id": "P19",
+    "name": "单缝衍射",
+    "slug": "single-slit-diffraction",
+    "route": "/labs/single-slit-diffraction/",
+    "operation": "缝宽：0.03–0.3 mm；观察 central",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "P19",
+      "slug": "single-slit-diffraction",
+      "history": true,
+      "controls": [
+        {
+          "control": "width",
+          "value": 0.03,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "width",
+          "value": 0.3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "wavelength",
+          "value": 400,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "wavelength",
+          "value": 700,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "distance",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "distance",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P19-2d.png",
+      "3d": "P19-3d.png",
+      "mobile": "P19-mobile.png"
+    }
+  },
+  {
+    "id": "P20",
+    "name": "拍频听音台",
+    "slug": "acoustic-beats",
+    "route": "/labs/acoustic-beats/",
+    "operation": "频率差：0–10 Hz；观察 beat",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "P20",
+      "slug": "acoustic-beats",
+      "history": true,
+      "controls": [
+        {
+          "control": "difference",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "difference",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "base",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "base",
+          "value": 80,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "time",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P20-2d.png",
+      "3d": "P20-3d.png",
+      "mobile": "P20-mobile.png"
+    }
+  },
+  {
+    "id": "P21",
+    "name": "驻波弦",
+    "slug": "standing-wave-string",
+    "route": "/labs/standing-wave-string/",
+    "operation": "谐波阶数：1–6 ；观察 frequency",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P21",
+      "slug": "standing-wave-string",
+      "history": true,
+      "controls": [
+        {
+          "control": "mode",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "2"
+        },
+        {
+          "control": "mode",
+          "value": 6,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "tension",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "7"
+        },
+        {
+          "control": "tension",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "length",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "12"
+        },
+        {
+          "control": "length",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "phase",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "15"
+        },
+        {
+          "control": "phase",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "17"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P21-2d.png",
+      "3d": "P21-3d.png",
+      "mobile": "P21-mobile.png"
+    }
+  },
+  {
+    "id": "P22",
+    "name": "多普勒声源",
+    "slug": "doppler-source",
+    "route": "/labs/doppler-source/",
+    "operation": "接近速度：-150–150 m/s；观察 observed",
+    "spatialMeaning": "波面按发射时位置展开，声源前后疏密不同",
+    "audit": {
+      "id": "P22",
+      "slug": "doppler-source",
+      "history": true,
+      "controls": [
+        {
+          "control": "speed",
+          "value": -150,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "speed",
+          "value": 150,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "frequency",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "frequency",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "time",
+          "value": 0.02,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P22-2d.png",
+      "3d": "P22-3d.png",
+      "mobile": "P22-mobile.png"
+    }
+  },
+  {
+    "id": "P23",
+    "name": "通电导线受力",
+    "slug": "wire-magnetic-force",
+    "route": "/labs/wire-magnetic-force/",
+    "operation": "电流与磁场夹角：0–180 °；观察 force",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P23",
+      "slug": "wire-magnetic-force",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 180,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "current",
+          "value": -5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "current",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "field",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "field",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P23-2d.png",
+      "3d": "P23-3d.png",
+      "mobile": "P23-mobile.png"
+    }
+  },
+  {
+    "id": "P24",
+    "name": "理想变压器",
+    "slug": "ideal-transformer",
+    "route": "/labs/ideal-transformer/",
+    "operation": "副原匝数比：0.25–4 ；观察 secondary",
+    "spatialMeaning": "闭合铁芯与绕组可见，绕组匝数比与电压比对应",
+    "audit": {
+      "id": "P24",
+      "slug": "ideal-transformer",
+      "history": true,
+      "controls": [
+        {
+          "control": "ratio",
+          "value": 0.25,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "ratio",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "voltage",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "voltage",
+          "value": 24,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "resistance",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "resistance",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P24-2d.png",
+      "3d": "P24-3d.png",
+      "mobile": "P24-mobile.png"
+    }
+  },
+  {
+    "id": "P25",
+    "name": "RLC选频台",
+    "slug": "rlc-frequency-selector",
+    "route": "/labs/rlc-frequency-selector/",
+    "operation": "驱动频率：20–500 Hz；观察 current",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "P25",
+      "slug": "rlc-frequency-selector",
+      "history": true,
+      "controls": [
+        {
+          "control": "frequency",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "frequency",
+          "value": 500,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "resistance",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "resistance",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "inductance",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "inductance",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "capacitance",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "capacitance",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P25-2d.png",
+      "3d": "P25-3d.png",
+      "mobile": "P25-mobile.png"
+    }
+  },
+  {
+    "id": "P26",
+    "name": "卡诺热机",
+    "slug": "carnot-engine",
+    "route": "/labs/carnot-engine/",
+    "operation": "冷库温度：200–600 K；观察 efficiency",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P26",
+      "slug": "carnot-engine",
+      "history": true,
+      "controls": [
+        {
+          "control": "cold",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "cold",
+          "value": 600,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "hot",
+          "value": 400,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "hot",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "heat",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "heat",
+          "value": 2000,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P26-2d.png",
+      "3d": "P26-3d.png",
+      "mobile": "P26-mobile.png"
+    }
+  },
+  {
+    "id": "P27",
+    "name": "混合量热",
+    "slug": "mixing-calorimetry",
+    "route": "/labs/mixing-calorimetry/",
+    "operation": "热水质量：0.1–2 kg；观察 temperature",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P27",
+      "slug": "mixing-calorimetry",
+      "history": true,
+      "controls": [
+        {
+          "control": "hotmass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "hotmass",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "hottemp",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "hottemp",
+          "value": 90,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "coldmass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "coldmass",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "coldtemp",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "coldtemp",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P27-2d.png",
+      "3d": "P27-3d.png",
+      "mobile": "P27-mobile.png"
+    }
+  },
+  {
+    "id": "P28",
+    "name": "导热桥",
+    "slug": "fourier-heat-bridge",
+    "route": "/labs/fourier-heat-bridge/",
+    "operation": "导热长度：1–20 cm；观察 flow",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P28",
+      "slug": "fourier-heat-bridge",
+      "history": true,
+      "controls": [
+        {
+          "control": "thickness",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "thickness",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "conductivity",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "conductivity",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "area",
+          "value": 0.01,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "area",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P28-2d.png",
+      "3d": "P28-3d.png",
+      "mobile": "P28-mobile.png"
+    }
+  },
+  {
+    "id": "P29",
+    "name": "光电效应",
+    "slug": "photoelectric-effect",
+    "route": "/labs/photoelectric-effect/",
+    "operation": "波长：250–800 nm；观察 voltage",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P29",
+      "slug": "photoelectric-effect",
+      "history": true,
+      "controls": [
+        {
+          "control": "wavelength",
+          "value": 250,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "wavelength",
+          "value": 800,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "intensity",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "intensity",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P29-2d.png",
+      "3d": "P29-3d.png",
+      "mobile": "P29-mobile.png"
+    }
+  },
+  {
+    "id": "P30",
+    "name": "卢瑟福散射",
+    "slug": "rutherford-scattering",
+    "route": "/labs/rutherford-scattering/",
+    "operation": "碰撞参数：10–200 fm；观察 angle",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "P30",
+      "slug": "rutherford-scattering",
+      "history": true,
+      "controls": [
+        {
+          "control": "impact",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "impact",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "energy",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "energy",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "P30-2d.png",
+      "3d": "P30-3d.png",
+      "mobile": "P30-mobile.png"
+    }
+  },
+  {
+    "id": "M11",
+    "name": "勾股面积拼证",
+    "slug": "pythagorean-squares",
+    "route": "/labs/pythagorean-squares/",
+    "operation": "直角边a：1–5 ；观察 residual",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M11",
+      "slug": "pythagorean-squares",
+      "history": true,
+      "controls": [
+        {
+          "control": "a",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "a",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "b",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "b",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M11-2d.png",
+      "3d": "M11-3d.png",
+      "mobile": "M11-mobile.png"
+    }
+  },
+  {
+    "id": "M12",
+    "name": "三角形重心",
+    "slug": "triangle-centroid",
+    "route": "/labs/triangle-centroid/",
+    "operation": "顶点横坐标：-4–4 ；观察 ratio",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M12",
+      "slug": "triangle-centroid",
+      "history": true,
+      "controls": [
+        {
+          "control": "x",
+          "value": -4,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "x",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M12-2d.png",
+      "3d": "M12-3d.png",
+      "mobile": "M12-mobile.png"
+    }
+  },
+  {
+    "id": "M13",
+    "name": "相似测高",
+    "slug": "similarity-shadow",
+    "route": "/labs/similarity-shadow/",
+    "operation": "太阳高度角：10–75 °；观察 inferred",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M13",
+      "slug": "similarity-shadow",
+      "history": true,
+      "controls": [
+        {
+          "control": "sun",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "sun",
+          "value": 75,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 12,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M13-2d.png",
+      "3d": "M13-3d.png",
+      "mobile": "M13-mobile.png"
+    }
+  },
+  {
+    "id": "M14",
+    "name": "正弦定理",
+    "slug": "sine-rule-circle",
+    "route": "/labs/sine-rule-circle/",
+    "operation": "所对圆周角：15–165 °；观察 diameter",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M14",
+      "slug": "sine-rule-circle",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 15,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 165,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M14-2d.png",
+      "3d": "M14-3d.png",
+      "mobile": "M14-mobile.png"
+    }
+  },
+  {
+    "id": "M15",
+    "name": "余弦定理",
+    "slug": "cosine-rule-hinge",
+    "route": "/labs/cosine-rule-hinge/",
+    "operation": "两杆夹角：5–175 °；观察 third",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M15",
+      "slug": "cosine-rule-hinge",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 175,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "a",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "a",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "b",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "b",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M15-2d.png",
+      "3d": "M15-3d.png",
+      "mobile": "M15-mobile.png"
+    }
+  },
+  {
+    "id": "M16",
+    "name": "托勒密四边形",
+    "slug": "ptolemy-quadrilateral",
+    "route": "/labs/ptolemy-quadrilateral/",
+    "operation": "第四点圆周位置：200–340 °；观察 residual",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M16",
+      "slug": "ptolemy-quadrilateral",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 340,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M16-2d.png",
+      "3d": "M16-3d.png",
+      "mobile": "M16-mobile.png"
+    }
+  },
+  {
+    "id": "M17",
+    "name": "抛物线焦准线",
+    "slug": "parabola-focus-directrix",
+    "route": "/labs/parabola-focus-directrix/",
+    "operation": "曲线上横坐标：-3–3 ；观察 difference",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M17",
+      "slug": "parabola-focus-directrix",
+      "history": true,
+      "controls": [
+        {
+          "control": "x",
+          "value": -3,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "x",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "focus",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "focus",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M17-2d.png",
+      "3d": "M17-3d.png",
+      "mobile": "M17-mobile.png"
+    }
+  },
+  {
+    "id": "M18",
+    "name": "双曲线双焦点",
+    "slug": "hyperbola-focal-difference",
+    "route": "/labs/hyperbola-focal-difference/",
+    "operation": "曲线参数u：-1.5–1.5 ；观察 difference",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M18",
+      "slug": "hyperbola-focal-difference",
+      "history": true,
+      "controls": [
+        {
+          "control": "parameter",
+          "value": -1.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "parameter",
+          "value": 1.5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "focus",
+          "value": 1.2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "focus",
+          "value": 2.5,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M18-2d.png",
+      "3d": "M18-3d.png",
+      "mobile": "M18-mobile.png"
+    }
+  },
+  {
+    "id": "M19",
+    "name": "圆反演",
+    "slug": "circle-inversion",
+    "route": "/labs/circle-inversion/",
+    "operation": "原点距离OP：0.2–5 ；观察 product",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M19",
+      "slug": "circle-inversion",
+      "history": true,
+      "controls": [
+        {
+          "control": "distance",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "distance",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M19-2d.png",
+      "3d": "M19-3d.png",
+      "mobile": "M19-mobile.png"
+    }
+  },
+  {
+    "id": "M20",
+    "name": "行列式面积",
+    "slug": "determinant-area",
+    "route": "/labs/determinant-area/",
+    "operation": "剪切量s：-3–3 ；观察 area",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M20",
+      "slug": "determinant-area",
+      "history": true,
+      "controls": [
+        {
+          "control": "shear",
+          "value": -3,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "shear",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M20-2d.png",
+      "3d": "M20-3d.png",
+      "mobile": "M20-mobile.png"
+    }
+  },
+  {
+    "id": "M21",
+    "name": "空间叉积",
+    "slug": "cross-product-space",
+    "route": "/labs/cross-product-space/",
+    "operation": "v的y分量：-2–2 ；观察 area",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M21",
+      "slug": "cross-product-space",
+      "history": true,
+      "controls": [
+        {
+          "control": "height",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "height",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "depth",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "depth",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "shear",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "shear",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M21-2d.png",
+      "3d": "M21-3d.png",
+      "mobile": "M21-mobile.png"
+    }
+  },
+  {
+    "id": "M22",
+    "name": "异面直线公垂线",
+    "slug": "skew-lines-distance",
+    "route": "/labs/skew-lines-distance/",
+    "operation": "两线方向夹角：0–170 °；观察 distance",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M22",
+      "slug": "skew-lines-distance",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 170,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M22-2d.png",
+      "3d": "M22-3d.png",
+      "mobile": "M22-mobile.png"
+    }
+  },
+  {
+    "id": "M23",
+    "name": "球的截面",
+    "slug": "sphere-plane-section",
+    "route": "/labs/sphere-plane-section/",
+    "operation": "平面距球心：0–3 ；观察 area",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M23",
+      "slug": "sphere-plane-section",
+      "history": true,
+      "controls": [
+        {
+          "control": "distance",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "distance",
+          "value": 3,
+          "status": "invalid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M23-2d.png",
+      "3d": "M23-3d.png",
+      "mobile": "M23-mobile.png"
+    }
+  },
+  {
+    "id": "M24",
+    "name": "长方体空间对角线",
+    "slug": "cuboid-diagonal",
+    "route": "/labs/cuboid-diagonal/",
+    "operation": "箱高c：1–4 ；观察 diagonal",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M24",
+      "slug": "cuboid-diagonal",
+      "history": true,
+      "controls": [
+        {
+          "control": "height",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "height",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "width",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "width",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "depth",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "depth",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M24-2d.png",
+      "3d": "M24-3d.png",
+      "mobile": "M24-mobile.png"
+    }
+  },
+  {
+    "id": "M25",
+    "name": "旋转体",
+    "slug": "solid-of-revolution",
+    "route": "/labs/solid-of-revolution/",
+    "operation": "旋转扫过角：0–360 °；观察 volume",
+    "spatialMeaning": "拖动旋转检查空间关系；正面、俯视可核对投影，读数按原构造计算。",
+    "audit": {
+      "id": "M25",
+      "slug": "solid-of-revolution",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "height",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "height",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M25-2d.png",
+      "3d": "M25-3d.png",
+      "mobile": "M25-mobile.png"
+    }
+  },
+  {
+    "id": "M26",
+    "name": "黎曼和",
+    "slug": "riemann-area",
+    "route": "/labs/riemann-area/",
+    "operation": "矩形条数：2–60 ；观察 error",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M26",
+      "slug": "riemann-area",
+      "history": true,
+      "controls": [
+        {
+          "control": "count",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "count",
+          "value": 60,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "side",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "8"
+        },
+        {
+          "control": "side",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "10"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M26-2d.png",
+      "3d": "M26-3d.png",
+      "mobile": "M26-mobile.png"
+    }
+  },
+  {
+    "id": "M27",
+    "name": "蒙特卡洛圆周率",
+    "slug": "monte-carlo-pi",
+    "route": "/labs/monte-carlo-pi/",
+    "operation": "投点数：50–2000 ；观察 estimate",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M27",
+      "slug": "monte-carlo-pi",
+      "history": true,
+      "controls": [
+        {
+          "control": "count",
+          "value": 50,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "count",
+          "value": 2000,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "seed",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "seed",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M27-2d.png",
+      "3d": "M27-3d.png",
+      "mobile": "M27-mobile.png"
+    }
+  },
+  {
+    "id": "M28",
+    "name": "贝叶斯分诊树",
+    "slug": "bayes-screening",
+    "route": "/labs/bayes-screening/",
+    "operation": "人群患病率：0.1–30 %；观察 posterior",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M28",
+      "slug": "bayes-screening",
+      "history": true,
+      "controls": [
+        {
+          "control": "prevalence",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "prevalence",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "population",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "population",
+          "value": 20000,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M28-2d.png",
+      "3d": "M28-3d.png",
+      "mobile": "M28-mobile.png"
+    }
+  },
+  {
+    "id": "M29",
+    "name": "复数旋转",
+    "slug": "complex-rotation",
+    "route": "/labs/complex-rotation/",
+    "operation": "乘数辐角：0–360 °；观察 modulus",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M29",
+      "slug": "complex-rotation",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "scale",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "scale",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M29-2d.png",
+      "3d": "M29-3d.png",
+      "mobile": "M29-mobile.png"
+    }
+  },
+  {
+    "id": "M30",
+    "name": "二次函数判别式",
+    "slug": "quadratic-discriminant",
+    "route": "/labs/quadratic-discriminant/",
+    "operation": "常数项c：-2–3 ；观察 discriminant",
+    "spatialMeaning": "本题是平面数学构造。三维将同一构造放入空间，便于换角度看；证明仍依据二维关系。",
+    "audit": {
+      "id": "M30",
+      "slug": "quadratic-discriminant",
+      "history": true,
+      "controls": [
+        {
+          "control": "constant",
+          "value": -2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "constant",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "probe",
+          "value": -1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "probe",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "M30-2d.png",
+      "3d": "M30-3d.png",
+      "mobile": "M30-mobile.png"
+    }
+  },
+  {
+    "id": "C11",
+    "name": "开普勒等面积",
+    "slug": "kepler-area-clock",
+    "route": "/labs/kepler-area-clock/",
+    "operation": "偏近点角E：0–360 °；观察 areal",
+    "spatialMeaning": "偏近点角按等面积时间推进",
+    "audit": {
+      "id": "C11",
+      "slug": "kepler-area-clock",
+      "history": true,
+      "controls": [
+        {
+          "control": "phase",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "phase",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "eccentricity",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "eccentricity",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C11-2d.png",
+      "3d": "C11-3d.png",
+      "mobile": "C11-mobile.png"
+    }
+  },
+  {
+    "id": "C12",
+    "name": "逃逸速度",
+    "slug": "escape-speed-well",
+    "route": "/labs/escape-speed-well/",
+    "operation": "地表高度：0–40000 km；观察 escape",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C12",
+      "slug": "escape-speed-well",
+      "history": true,
+      "controls": [
+        {
+          "control": "altitude",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "2"
+        },
+        {
+          "control": "altitude",
+          "value": 40000,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "mass",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "7"
+        },
+        {
+          "control": "mass",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "9"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C12-2d.png",
+      "3d": "C12-3d.png",
+      "mobile": "C12-mobile.png"
+    }
+  },
+  {
+    "id": "C13",
+    "name": "霍曼转移",
+    "slug": "hohmann-transfer",
+    "route": "/labs/hohmann-transfer/",
+    "operation": "目标轨道半径：8000–42000 km；观察 delta",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C13",
+      "slug": "hohmann-transfer",
+      "history": true,
+      "controls": [
+        {
+          "control": "target",
+          "value": 8000,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "target",
+          "value": 42000,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "phase",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "phase",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C13-2d.png",
+      "3d": "C13-3d.png",
+      "mobile": "C13-mobile.png"
+    }
+  },
+  {
+    "id": "C14",
+    "name": "系外行星凌星",
+    "slug": "exoplanet-transit",
+    "route": "/labs/exoplanet-transit/",
+    "operation": "行星/恒星半径比：0.02–0.2 ；观察 depth",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C14",
+      "slug": "exoplanet-transit",
+      "history": true,
+      "controls": [
+        {
+          "control": "radius",
+          "value": 0.02,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "radius",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "position",
+          "value": -1.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "position",
+          "value": 1.5,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C14-2d.png",
+      "3d": "C14-3d.png",
+      "mobile": "C14-mobile.png"
+    }
+  },
+  {
+    "id": "C15",
+    "name": "恒星视向速度",
+    "slug": "stellar-radial-velocity",
+    "route": "/labs/stellar-radial-velocity/",
+    "operation": "轨道倾角：0–90 °；观察 amplitude",
+    "spatialMeaning": "视向速度与倾角同源；反向位移的显示放大有声明",
+    "audit": {
+      "id": "C15",
+      "slug": "stellar-radial-velocity",
+      "history": true,
+      "controls": [
+        {
+          "control": "inclination",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "inclination",
+          "value": 90,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "mass",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "mass",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "orbit",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "orbit",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "phase",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "19"
+        },
+        {
+          "control": "phase",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "21"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C15-2d.png",
+      "3d": "C15-3d.png",
+      "mobile": "C15-mobile.png"
+    }
+  },
+  {
+    "id": "C16",
+    "name": "宜居带",
+    "slug": "habitable-zone",
+    "route": "/labs/habitable-zone/",
+    "operation": "恒星光度/太阳：0.1–4 ；观察 temperature",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C16",
+      "slug": "habitable-zone",
+      "history": true,
+      "controls": [
+        {
+          "control": "luminosity",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "luminosity",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "distance",
+          "value": 0.3,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "distance",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C16-2d.png",
+      "3d": "C16-3d.png",
+      "mobile": "C16-mobile.png"
+    }
+  },
+  {
+    "id": "C17",
+    "name": "恒星光谱",
+    "slug": "stellar-blackbody",
+    "route": "/labs/stellar-blackbody/",
+    "operation": "有效温度：2500–15000 K；观察 peak",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "C17",
+      "slug": "stellar-blackbody",
+      "history": true,
+      "controls": [
+        {
+          "control": "temperature",
+          "value": 2500,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "temperature",
+          "value": 15000,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C17-2d.png",
+      "3d": "C17-3d.png",
+      "mobile": "C17-mobile.png"
+    }
+  },
+  {
+    "id": "C18",
+    "name": "恒星寿命",
+    "slug": "stellar-lifetime",
+    "route": "/labs/stellar-lifetime/",
+    "operation": "恒星质量/太阳：0.5–5 ；观察 lifetime",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C18",
+      "slug": "stellar-lifetime",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "mass",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "fraction",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "fraction",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C18-2d.png",
+      "3d": "C18-3d.png",
+      "mobile": "C18-mobile.png"
+    }
+  },
+  {
+    "id": "C19",
+    "name": "中子星致密度",
+    "slug": "neutron-star-compactness",
+    "route": "/labs/neutron-star-compactness/",
+    "operation": "天体半径：4–20 km；观察 compactness",
+    "spatialMeaning": "透明剖视保留引力半径比较与失效边界",
+    "audit": {
+      "id": "C19",
+      "slug": "neutron-star-compactness",
+      "history": true,
+      "controls": [
+        {
+          "control": "radius",
+          "value": 4,
+          "status": "invalid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "radius",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "mass",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "mass",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C19-2d.png",
+      "3d": "C19-3d.png",
+      "mobile": "C19-mobile.png"
+    }
+  },
+  {
+    "id": "C20",
+    "name": "宇宙红移",
+    "slug": "cosmological-redshift",
+    "route": "/labs/cosmological-redshift/",
+    "operation": "红移z：0–8 ；观察 observed",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "C20",
+      "slug": "cosmological-redshift",
+      "history": true,
+      "controls": [
+        {
+          "control": "redshift",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "redshift",
+          "value": 8,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "wavelength",
+          "value": 400,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "wavelength",
+          "value": 700,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C20-2d.png",
+      "3d": "C20-3d.png",
+      "mobile": "C20-mobile.png"
+    }
+  },
+  {
+    "id": "C21",
+    "name": "引力钟",
+    "slug": "gravitational-clock",
+    "route": "/labs/gravitational-clock/",
+    "operation": "距中心半径/rs：1.1–10 ；观察 ratio",
+    "spatialMeaning": "两只时钟的累计时间和指针同时联动",
+    "audit": {
+      "id": "C21",
+      "slug": "gravitational-clock",
+      "history": true,
+      "controls": [
+        {
+          "control": "radius",
+          "value": 1.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "radius",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "time",
+          "value": 24,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C21-2d.png",
+      "3d": "C21-3d.png",
+      "mobile": "C21-mobile.png"
+    }
+  },
+  {
+    "id": "C22",
+    "name": "引力透镜",
+    "slug": "einstein-lens",
+    "route": "/labs/einstein-lens/",
+    "operation": "源角偏移/爱因斯坦角：0–3 ；观察 separation",
+    "spatialMeaning": "标明原光源、透镜和双像的角位置；不冒充真实射线路径",
+    "audit": {
+      "id": "C22",
+      "slug": "einstein-lens",
+      "history": true,
+      "controls": [
+        {
+          "control": "offset",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "offset",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "einstein",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "einstein",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C22-2d.png",
+      "3d": "C22-3d.png",
+      "mobile": "C22-mobile.png"
+    }
+  },
+  {
+    "id": "C23",
+    "name": "水星进动",
+    "slug": "relativistic-precession",
+    "route": "/labs/relativistic-precession/",
+    "operation": "半长轴：0.3–1 AU；观察 precession",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C23",
+      "slug": "relativistic-precession",
+      "history": true,
+      "controls": [
+        {
+          "control": "axis",
+          "value": 0.3,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "axis",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "eccentricity",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "eccentricity",
+          "value": 0.6,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "orbits",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "orbits",
+          "value": 8,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C23-2d.png",
+      "3d": "C23-3d.png",
+      "mobile": "C23-mobile.png"
+    }
+  },
+  {
+    "id": "C24",
+    "name": "希尔球",
+    "slug": "hill-sphere",
+    "route": "/labs/hill-sphere/",
+    "operation": "行星质量/地球：1–300 ；观察 hill",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C24",
+      "slug": "hill-sphere",
+      "history": true,
+      "controls": [
+        {
+          "control": "mass",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "2"
+        },
+        {
+          "control": "mass",
+          "value": 300,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "orbit",
+          "value": 0.3,
+          "status": "valid",
+          "spatialRevision": "7"
+        },
+        {
+          "control": "orbit",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "9"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C24-2d.png",
+      "3d": "C24-3d.png",
+      "mobile": "C24-mobile.png"
+    }
+  },
+  {
+    "id": "C25",
+    "name": "火箭质量账本",
+    "slug": "rocket-mass-ledger",
+    "route": "/labs/rocket-mass-ledger/",
+    "operation": "初末质量比：1–20 ；观察 delta",
+    "spatialMeaning": "透明剖视保留推进剂质量占比",
+    "audit": {
+      "id": "C25",
+      "slug": "rocket-mass-ledger",
+      "history": true,
+      "controls": [
+        {
+          "control": "ratio",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "ratio",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "exhaust",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "exhaust",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C25-2d.png",
+      "3d": "C25-3d.png",
+      "mobile": "C25-mobile.png"
+    }
+  },
+  {
+    "id": "C26",
+    "name": "相对论能量",
+    "slug": "relativistic-energy",
+    "route": "/labs/relativistic-energy/",
+    "operation": "速度/光速：0.01–0.99 ；观察 kinetic",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C26",
+      "slug": "relativistic-energy",
+      "history": true,
+      "controls": [
+        {
+          "control": "beta",
+          "value": 0.01,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "beta",
+          "value": 0.99,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "mass",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "mass",
+          "value": 1000,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C26-2d.png",
+      "3d": "C26-3d.png",
+      "mobile": "C26-mobile.png"
+    }
+  },
+  {
+    "id": "C27",
+    "name": "星际尘埃撞击",
+    "slug": "interstellar-dust-impact",
+    "route": "/labs/interstellar-dust-impact/",
+    "operation": "尘埃半径：1–100 μm；观察 energy",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "C27",
+      "slug": "interstellar-dust-impact",
+      "history": true,
+      "controls": [
+        {
+          "control": "radius",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "radius",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "beta",
+          "value": 0.01,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "beta",
+          "value": 0.8,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C27-2d.png",
+      "3d": "C27-3d.png",
+      "mobile": "C27-mobile.png"
+    }
+  },
+  {
+    "id": "C28",
+    "name": "望远镜分辨率",
+    "slug": "telescope-resolution",
+    "route": "/labs/telescope-resolution/",
+    "operation": "望远镜口径：0.1–10 m；观察 resolution",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "C28",
+      "slug": "telescope-resolution",
+      "history": true,
+      "controls": [
+        {
+          "control": "diameter",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "diameter",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "wavelength",
+          "value": 400,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "wavelength",
+          "value": 2000,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "separation",
+          "value": 0.02,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "separation",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C28-2d.png",
+      "3d": "C28-3d.png",
+      "mobile": "C28-mobile.png"
+    }
+  },
+  {
+    "id": "C29",
+    "name": "干涉仪基线",
+    "slug": "interferometer-baseline",
+    "route": "/labs/interferometer-baseline/",
+    "operation": "基线长度：0.1–10000 km；观察 scale",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "C29",
+      "slug": "interferometer-baseline",
+      "history": true,
+      "controls": [
+        {
+          "control": "baseline",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "baseline",
+          "value": 10000,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "wavelength",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "wavelength",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "phase",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "12"
+        },
+        {
+          "control": "phase",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "14"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C29-2d.png",
+      "3d": "C29-3d.png",
+      "mobile": "C29-mobile.png"
+    }
+  },
+  {
+    "id": "C30",
+    "name": "哈勃距离梯",
+    "slug": "hubble-distance-ladder",
+    "route": "/labs/hubble-distance-ladder/",
+    "operation": "低红移z：0.001–0.1 ；观察 distance",
+    "spatialMeaning": "三维保留同一场、波或观测证据的空间示意；图线不是额外测得的实体轨迹，数值见同步读数。",
+    "audit": {
+      "id": "C30",
+      "slug": "hubble-distance-ladder",
+      "history": true,
+      "controls": [
+        {
+          "control": "redshift",
+          "value": 0.001,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "redshift",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "hubble",
+          "value": 60,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "hubble",
+          "value": 80,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "C30-2d.png",
+      "3d": "C30-3d.png",
+      "mobile": "C30-mobile.png"
+    }
+  },
+  {
+    "id": "S11",
+    "name": "三角桁架节点",
+    "slug": "triangle-truss-joint",
+    "route": "/labs/triangle-truss-joint/",
+    "operation": "桁架高度：0.3–3 m；观察 compression",
+    "spatialMeaning": "高跨比、荷载和水平支座反力",
+    "audit": {
+      "id": "S11",
+      "slug": "triangle-truss-joint",
+      "history": true,
+      "controls": [
+        {
+          "control": "height",
+          "value": 0.3,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "height",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "span",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "span",
+          "value": 6,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "load",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "load",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S11-2d.png",
+      "3d": "S11-3d.png",
+      "mobile": "S11-mobile.png"
+    }
+  },
+  {
+    "id": "S12",
+    "name": "移动荷载梁",
+    "slug": "moving-load-beam",
+    "route": "/labs/moving-load-beam/",
+    "operation": "载荷距左支座：0–4 m；观察 moment",
+    "spatialMeaning": "移动荷载及两端反力箭头",
+    "audit": {
+      "id": "S12",
+      "slug": "moving-load-beam",
+      "history": true,
+      "controls": [
+        {
+          "control": "position",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "position",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "load",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "load",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S12-2d.png",
+      "3d": "S12-3d.png",
+      "mobile": "S12-mobile.png"
+    }
+  },
+  {
+    "id": "S13",
+    "name": "欧拉压杆",
+    "slug": "euler-column",
+    "route": "/labs/euler-column/",
+    "operation": "柱长：0.5–3 m；观察 critical",
+    "spatialMeaning": "端部约束、轴压和失稳模态示意",
+    "audit": {
+      "id": "S13",
+      "slug": "euler-column",
+      "history": true,
+      "controls": [
+        {
+          "control": "length",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "length",
+          "value": 3,
+          "status": "boundary",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "factor",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "factor",
+          "value": 2,
+          "status": "boundary",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "load",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "load",
+          "value": 30,
+          "status": "boundary",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S13-2d.png",
+      "3d": "S13-3d.png",
+      "mobile": "S13-mobile.png"
+    }
+  },
+  {
+    "id": "S14",
+    "name": "偏心受压柱",
+    "slug": "eccentric-column-stress",
+    "route": "/labs/eccentric-column-stress/",
+    "operation": "偏心距：0–40 mm；观察 maximum",
+    "spatialMeaning": "偏心荷载与两侧应力幅值，受拉/受压区分",
+    "audit": {
+      "id": "S14",
+      "slug": "eccentric-column-stress",
+      "history": true,
+      "controls": [
+        {
+          "control": "eccentricity",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "eccentricity",
+          "value": 40,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "load",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "load",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S14-2d.png",
+      "3d": "S14-3d.png",
+      "mobile": "S14-mobile.png"
+    }
+  },
+  {
+    "id": "S15",
+    "name": "挡土墙抗倾覆",
+    "slug": "retaining-wall-overturn",
+    "route": "/labs/retaining-wall-overturn/",
+    "operation": "墙底宽：0.5–3 m；观察 factor",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S15",
+      "slug": "retaining-wall-overturn",
+      "history": true,
+      "controls": [
+        {
+          "control": "width",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "width",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "height",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "height",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S15-2d.png",
+      "3d": "S15-3d.png",
+      "mobile": "S15-mobile.png"
+    }
+  },
+  {
+    "id": "S16",
+    "name": "斜坡摩擦",
+    "slug": "slope-friction",
+    "route": "/labs/slope-friction/",
+    "operation": "坡角：5–60 °；观察 factor",
+    "spatialMeaning": "坡角等比例、刚体接触、实际静摩擦/极限区分",
+    "audit": {
+      "id": "S16",
+      "slug": "slope-friction",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 60,
+          "status": "boundary",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "friction",
+          "value": 0.1,
+          "status": "boundary",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "friction",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S16-2d.png",
+      "3d": "S16-3d.png",
+      "mobile": "S16-mobile.png"
+    }
+  },
+  {
+    "id": "S17",
+    "name": "螺旋千斤顶",
+    "slug": "screw-jack",
+    "route": "/labs/screw-jack/",
+    "operation": "螺距：1–10 mm；观察 force",
+    "spatialMeaning": "转数×螺距的举升；输入功与效率账本",
+    "audit": {
+      "id": "S17",
+      "slug": "screw-jack",
+      "history": true,
+      "controls": [
+        {
+          "control": "pitch",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "pitch",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "load",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "load",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "efficiency",
+          "value": 0.2,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "efficiency",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "turn",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "turn",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "19"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S17-2d.png",
+      "3d": "S17-3d.png",
+      "mobile": "S17-mobile.png"
+    }
+  },
+  {
+    "id": "S18",
+    "name": "楔块举升",
+    "slug": "wedge-lift",
+    "route": "/labs/wedge-lift/",
+    "operation": "楔角：5–40 °；观察 force",
+    "spatialMeaning": "推进楔块，导向负载保持接触并竖直举升",
+    "audit": {
+      "id": "S18",
+      "slug": "wedge-lift",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 40,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "load",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "load",
+          "value": 2000,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "stroke",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "stroke",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S18-2d.png",
+      "3d": "S18-3d.png",
+      "mobile": "S18-mobile.png"
+    }
+  },
+  {
+    "id": "S19",
+    "name": "皮带传动",
+    "slug": "belt-drive",
+    "route": "/labs/belt-drive/",
+    "operation": "从动/主动半径比：0.5–3 ；观察 speed",
+    "spatialMeaning": "闭合带、实体轮轴、同向传动、无滑动速比与功率守恒",
+    "audit": {
+      "id": "S19",
+      "slug": "belt-drive",
+      "history": true,
+      "controls": [
+        {
+          "control": "ratio",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "ratio",
+          "value": 3,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "speed",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "speed",
+          "value": 300,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "torque",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "torque",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "16"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "17"
+        },
+        {
+          "control": "time",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "19"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S19-2d.png",
+      "3d": "S19-3d.png",
+      "mobile": "S19-mobile.png"
+    }
+  },
+  {
+    "id": "S20",
+    "name": "行星齿轮",
+    "slug": "planetary-gear",
+    "route": "/labs/planetary-gear/",
+    "operation": "齿圈齿数：40–100 齿；观察 carrier",
+    "spatialMeaning": "太阳轮、行星自转/公转、固定外齿圈",
+    "audit": {
+      "id": "S20",
+      "slug": "planetary-gear",
+      "history": true,
+      "controls": [
+        {
+          "control": "ring",
+          "value": 40,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "ring",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "speed",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "speed",
+          "value": 300,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "time",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "12"
+        },
+        {
+          "control": "time",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "14"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S20-2d.png",
+      "3d": "S20-3d.png",
+      "mobile": "S20-mobile.png"
+    }
+  },
+  {
+    "id": "S21",
+    "name": "四杆机构",
+    "slug": "four-bar-linkage",
+    "route": "/labs/four-bar-linkage/",
+    "operation": "输入杆转角：0–360 °；观察 residual",
+    "spatialMeaning": "两装配分支的闭环与全角域杆长不变",
+    "audit": {
+      "id": "S21",
+      "slug": "four-bar-linkage",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 360,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "branch",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "8"
+        },
+        {
+          "control": "branch",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "10"
+        }
+      ],
+      "playback": true,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S21-2d.png",
+      "3d": "S21-3d.png",
+      "mobile": "S21-mobile.png"
+    }
+  },
+  {
+    "id": "S22",
+    "name": "剪叉升降",
+    "slug": "scissor-lift",
+    "route": "/labs/scissor-lift/",
+    "operation": "杆与水平夹角：5–75 °；观察 force",
+    "spatialMeaning": "固定杆长的剪叉；展开高度与驱动力",
+    "audit": {
+      "id": "S22",
+      "slug": "scissor-lift",
+      "history": true,
+      "controls": [
+        {
+          "control": "angle",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "angle",
+          "value": 75,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "load",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "load",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S22-2d.png",
+      "3d": "S22-3d.png",
+      "mobile": "S22-mobile.png"
+    }
+  },
+  {
+    "id": "S23",
+    "name": "球冠穹顶",
+    "slug": "spherical-cap-dome",
+    "route": "/labs/spherical-cap-dome/",
+    "operation": "穹顶高度：0.5–4 m；观察 area",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S23",
+      "slug": "spherical-cap-dome",
+      "history": true,
+      "controls": [
+        {
+          "control": "height",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "height",
+          "value": 4,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "radius",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "radius",
+          "value": 6,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S23-2d.png",
+      "3d": "S23-3d.png",
+      "mobile": "S23-mobile.png"
+    }
+  },
+  {
+    "id": "S24",
+    "name": "斜撑抗剪",
+    "slug": "diagonal-bracing",
+    "route": "/labs/diagonal-bracing/",
+    "operation": "是否加斜撑：0–1 ；观察 displacement",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S24",
+      "slug": "diagonal-bracing",
+      "history": true,
+      "controls": [
+        {
+          "control": "brace",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "3"
+        },
+        {
+          "control": "brace",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "5"
+        },
+        {
+          "control": "load",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "8"
+        },
+        {
+          "control": "load",
+          "value": 5,
+          "status": "valid",
+          "spatialRevision": "10"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S24-2d.png",
+      "3d": "S24-3d.png",
+      "mobile": "S24-mobile.png"
+    }
+  },
+  {
+    "id": "S25",
+    "name": "蜂窝材料",
+    "slug": "honeycomb-relative-density",
+    "route": "/labs/honeycomb-relative-density/",
+    "operation": "壁厚/边长：0.01–0.1 ；观察 relative",
+    "spatialMeaning": "厚壁实体蜂窝，壁厚改变空间几何",
+    "audit": {
+      "id": "S25",
+      "slug": "honeycomb-relative-density",
+      "history": true,
+      "controls": [
+        {
+          "control": "thickness",
+          "value": 0.01,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "thickness",
+          "value": 0.1,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "density",
+          "value": 300,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "density",
+          "value": 2700,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S25-2d.png",
+      "3d": "S25-3d.png",
+      "mobile": "S25-mobile.png"
+    }
+  },
+  {
+    "id": "S26",
+    "name": "夹芯梁",
+    "slug": "sandwich-beam",
+    "route": "/labs/sandwich-beam/",
+    "operation": "芯层厚度：2–40 mm；观察 deflection",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S26",
+      "slug": "sandwich-beam",
+      "history": true,
+      "controls": [
+        {
+          "control": "core",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "core",
+          "value": 40,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "load",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "load",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S26-2d.png",
+      "3d": "S26-3d.png",
+      "mobile": "S26-mobile.png"
+    }
+  },
+  {
+    "id": "S27",
+    "name": "房间混响",
+    "slug": "room-reverberation",
+    "route": "/labs/room-reverberation/",
+    "operation": "平均吸声系数：0.05–0.5 ；观察 reverberation",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S27",
+      "slug": "room-reverberation",
+      "history": true,
+      "controls": [
+        {
+          "control": "absorption",
+          "value": 0.05,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "absorption",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "volume",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "volume",
+          "value": 2,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S27-2d.png",
+      "3d": "S27-3d.png",
+      "mobile": "S27-mobile.png"
+    }
+  },
+  {
+    "id": "S28",
+    "name": "日照遮阳",
+    "slug": "solar-shading",
+    "route": "/labs/solar-shading/",
+    "operation": "挑檐进深：0–1.5 m；观察 shaded",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S28",
+      "slug": "solar-shading",
+      "history": true,
+      "controls": [
+        {
+          "control": "depth",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "depth",
+          "value": 1.5,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "altitude",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "altitude",
+          "value": 75,
+          "status": "valid",
+          "spatialRevision": "11"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S28-2d.png",
+      "3d": "S28-3d.png",
+      "mobile": "S28-mobile.png"
+    }
+  },
+  {
+    "id": "S29",
+    "name": "雨水收集",
+    "slug": "rainwater-harvesting",
+    "route": "/labs/rainwater-harvesting/",
+    "operation": "单场雨量：0–100 mm；观察 stored",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S29",
+      "slug": "rainwater-harvesting",
+      "history": true,
+      "controls": [
+        {
+          "control": "rain",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "rain",
+          "value": 100,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "area",
+          "value": 20,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "area",
+          "value": 200,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "capacity",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "capacity",
+          "value": 10,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S29-2d.png",
+      "3d": "S29-3d.png",
+      "mobile": "S29-mobile.png"
+    }
+  },
+  {
+    "id": "S30",
+    "name": "烟囱通风",
+    "slug": "stack-ventilation",
+    "route": "/labs/stack-ventilation/",
+    "operation": "进排气高度差：1–12 m；观察 flow",
+    "spatialMeaning": "旋转查看装置连接与相对位置。用装置旁滑块改变条件，二维、三维和读数来自同一状态；尺寸为示意。",
+    "audit": {
+      "id": "S30",
+      "slug": "stack-ventilation",
+      "history": true,
+      "controls": [
+        {
+          "control": "height",
+          "value": 1,
+          "status": "valid",
+          "spatialRevision": "4"
+        },
+        {
+          "control": "height",
+          "value": 12,
+          "status": "valid",
+          "spatialRevision": "6"
+        },
+        {
+          "control": "difference",
+          "value": 0,
+          "status": "valid",
+          "spatialRevision": "9"
+        },
+        {
+          "control": "difference",
+          "value": 30,
+          "status": "valid",
+          "spatialRevision": "11"
+        },
+        {
+          "control": "area",
+          "value": 0.02,
+          "status": "valid",
+          "spatialRevision": "14"
+        },
+        {
+          "control": "area",
+          "value": 0.5,
+          "status": "valid",
+          "spatialRevision": "16"
+        }
+      ],
+      "playback": false,
+      "errors": []
+    },
+    "screenshots": {
+      "2d": "S30-2d.png",
+      "3d": "S30-3d.png",
+      "mobile": "S30-mobile.png"
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-18",
+  "unit": {
+    "passed": 284,
+    "failed": 0
+  },
+  "wholeCatalogScreen": {
+    "catalogTotal": 140,
+    "screened": 140,
+    "complete": true,
+    "functionalFailures": 0,
+    "candidateFindings": 60,
+    "confirmedFindings": 0,
+    "studentTasksPending": 140,
+    "teachingReviewsPending": 140
+  },
+  "candidateAffectedRoutes": 49,
+  "browser": {
+    "tidalTaskTestsPassed": 4,
+    "newAndRetainedTestsPassed": 137,
+    "experienceTestsPassed": 41,
+    "webGLAbsenceRepeatPassed": 3
+  },
+  "build": {
+    "astroFiles": 160,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "pages": 147,
+    "bundlerWarning": "Some chunks exceed 500kB after minification"
+  },
+  "openSpec": {
+    "strictItemsPassed": 29,
+    "failed": 0
+  },
+  "scope": "Screened the full catalog before mobile readout and C07 entry/hit-target refinements. Shared regression includes mobile readouts; final tidal tests cover all C07 refinements. See build-scope.json.",
+  "remaining": [
+    "60 candidate observations across 49 experiments require task-specific confirmation; they are not all confirmed defects",
+    "140 real-student tasks and teacher reviews pending",
+    "One early WebGL-disabled initialization failure was not reproduced in subsequent full tests and three repeats; diagnostics added"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-17",
+  "unit": {
+    "passed": 280,
+    "failed": 0
+  },
+  "routeQuality": {
+    "passed": 141,
+    "failed": 0,
+    "routes": 140,
+    "studioControls": 366,
+    "endpointProbes": 732,
+    "screenshots": 420,
+    "scope": "Full route audit before final two UI fixes; affected routes rechecked on final build."
+  },
+  "finalBuildFollowup": {
+    "targetedScenarioTestsPassed": 5,
+    "affectedRouteChecksPassed": 8,
+    "fullEightyAndRetainedTestsPassed": 137
+  },
+  "existingBrowserRegressions": {
+    "playwrightTestsPassed": 330,
+    "nodeSuitesPassed": 10,
+    "suites": [
+      {
+        "suite": "node scripts/site-browser-check.mjs",
+        "exitCode": 0,
+        "finalBuild": true
+      },
+      {
+        "suite": "test:browser:buoyancy",
+        "exitCode": 0,
+        "finalBuild": true
+      },
+      {
+        "suite": "test:browser:exploration",
+        "exitCode": 0,
+        "finalBuild": true
+      },
+      {
+        "suite": "test:browser:learning",
+        "exitCode": 0,
+        "finalBuild": true
+      },
+      {
+        "suite": "test:browser:lens",
+        "exitCode": 0,
+        "finalBuild": true
+      },
+      {
+        "suite": "test:browser:spatial",
+        "exitCode": 0,
+        "finalBuild": true,
+        "verification": "quality-spatial-release.log"
+      },
+      {
+        "suite": "test:browser:balance",
+        "exitCode": 0,
+        "finalBuild": true
+      },
+      {
+        "suite": "test:browser:pendulum",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:lens-workbench",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:polish",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:moon",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:observation",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:discovery",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:circuits",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:history",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:electricity",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:geometry",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:expansion",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:experience-polish",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:eighty",
+        "exitCode": 0,
+        "finalBuild": true,
+        "verification": "quality-eighty-release.log"
+      }
+    ],
+    "sevenRepeatedLegacySuites": [
+      {
+        "suite": "node scripts/site-browser-check.mjs",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:buoyancy",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:exploration",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:learning",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:lens",
+        "exitCode": 0
+      },
+      {
+        "suite": "test:browser:spatial",
+        "exitCode": 0,
+        "verification": "quality-spatial-release.log"
+      },
+      {
+        "suite": "test:browser:balance",
+        "exitCode": 0
+      }
+    ]
+  },
+  "build": {
+    "astroFiles": 155,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0,
+    "pages": 147,
+    "bundlerWarning": "Some chunks exceed 500 kB after minification",
+    "beltPageSha256": "5707a3657fff1b2122046bd7c2ecc040f6ff0261d42b22cd8a2b9649155bd59d"
+  },
+  "openSpec": {
+    "preArchiveStrictValidationPassed": 29,
+    "postArchiveStrictValidationPassed": 28,
+    "failed": 0,
+    "archive": "openspec/changes/archive/2026-10-17-repair-experiment-quality-and-investigation",
+    "specsSynced": true
+  },
+  "limitations": [
+    "Desktop Chrome and simulated 320/390 px viewports",
+    "No student classroom or Beijing teacher review",
+    "No real mobile GPU or cross-browser certification",
+    "Endpoint probes do not exhaust all combinations"
+  ]
+}

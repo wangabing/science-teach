@@ -1,11 +1,13 @@
 ---
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import NextExploration from '../../components/NextExploration.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import '../../styles/exploration.css';
 ---
-<SiteLayout title="齿轮工坊 · 空间与建造实验室" description="组装两到三颗齿轮，探索齿数、转向、转速与理想扭矩之间的关系。">
-  <div class="lab gears-lab"><p class="breadcrumb"><a href="/spaces/structures/">空间与建造实验室</a> / 齿轮工坊</p>
+<SiteLayout title="齿轮工坊 · 工程与建造实验室" description="组装两到三颗齿轮，探索齿数、转向、转速与理想扭矩之间的关系。">
+  <div class="lab gears-lab"><p class="breadcrumb"><a href="/spaces/structures/">工程与建造实验室</a> / 齿轮工坊</p>
     <header class="lab-heading"><p class="kicker">一齿推动另一齿</p><h1>转得慢一点，<br />能换来更大的力吗？</h1><p>给机械装上不同大小的齿轮。看看转速去了哪里，再插入一颗中间齿轮：它会改变什么，又不会改变什么？</p></header>
+    <ExperimentHistory slug="gears" />
     <div class="demo-dock"><div><strong>输入转三圈，输出转几圈？</strong><p>标准 20 齿带动 60 齿，用转数与扭矩一起解释减速。再加中间轮比较方向。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：三倍减速</button><button id="demo-idler" type="button">标准演示：同向传动</button><button id="demo-pause" type="button">暂停演示</button></div></div>
     <section class="workbench"><div class="bench-title"><strong>自由装配 · 理想外啮合齿轮</strong><span>TEETH → SPEED → TORQUE</span></div>
       <p id="demo-stage" class="demo-caption" aria-live="off">① 选择齿数 → ② 观察白色标记与累计转数 → ③ 比较速度减少和扭矩增加。</p>

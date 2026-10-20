@@ -12,7 +12,7 @@ try {
   const requests = [];
   page.on('request', request => requests.push(request.url()));
   await page.goto(base, { waitUntil: 'networkidle' });
-  assert.equal(await page.locator('[data-experiment-count]').innerText(), '12 个可探索实验');
+  assert.equal(await page.locator('[data-experiment-count]').innerText(), '140 个可探索实验');
   assert.equal(await page.locator('.space-card').count(), 4);
   assert.equal(await page.locator('.space-card .open').count(), 4);
   assert.equal(await page.locator('canvas').count(), 0);
@@ -31,17 +31,17 @@ try {
   assert.equal(await page.locator('#preview-arm').getAttribute('transform'), stopped);
   await page.screenshot({ path: `${out}/home-desktop.png`, fullPage: true });
   await page.locator('.space-card.blue').click();
-  assert.equal(await page.locator('.experiment-card').count(), 3);
+  assert.equal(await page.locator('.experiment-card').count(), 37);
   await page.locator('.experiment-card').first().click();
   await page.waitForURL('**/stem-lab/buoyancy/');
   await page.locator('.back').click();
   await page.waitForURL(`${base}/`);
   await page.locator('.space-card.green').click();
-  assert.equal(await page.locator('.experiment-card').count(), 3);
+  assert.equal(await page.locator('.experiment-card').count(), 37);
   await page.locator('.experiment-card').first().click();
   await page.waitForURL('**/labs/area/');
   await page.getByRole('link', { name: '全部实验', exact: true }).click();
-  assert.equal(await page.locator('.experiment-card').count(), 12);
+  assert.equal(await page.locator('.experiment-card').count(), 140);
   for (const width of [390, 320]) {
     await page.setViewportSize({ width, height: 844 });
     for (const path of ['/', '/experiments/', '/spaces/physics/', '/spaces/geometry/', '/spaces/cosmos/', '/spaces/structures/', '/about/']) {
@@ -61,7 +61,7 @@ try {
   const noJS = await browser.newPage({ javaScriptEnabled: false });
   await noJS.goto(base);
   assert.equal(await noJS.locator('.space-card').count(), 4);
-  assert.equal(await noJS.locator('.experiment-card').count(), 12);
+  assert.equal(await noJS.locator('.experiment-card').count(), 140);
   await noJS.close();
   assert.deepEqual(errors, []);
   console.log('Site browser checks passed: preview, navigation, truthful catalog, 320/390px, reduced motion, keyboard and no-JS content.');

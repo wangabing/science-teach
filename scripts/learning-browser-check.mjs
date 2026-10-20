@@ -8,7 +8,7 @@ const errors=[];
 try{
  const page=await browser.newPage({viewport:{width:1440,height:1000}});page.on('pageerror',e=>errors.push(e.message));
  await page.clock.install();
- const goto=async slug=>{await page.goto(`${base}/labs/${slug}/`,{waitUntil:'networkidle'});};
+ const goto=async slug=>{await page.goto(`${base}/labs/${slug}/`,{waitUntil:'networkidle'});if(slug==='sections')await page.getByText('看看示例 · 截面怎样变化',{exact:true}).click();};
  const txt=async id=>page.locator(`#${id}`).innerText();
  const range=async(id,v)=>{await page.locator(`#${id}`).fill(String(v));await page.locator(`#${id}`).dispatchEvent('input');};
  const advance=async ms=>page.clock.runFor(ms);

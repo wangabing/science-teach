@@ -100,7 +100,7 @@ try {
   await page.goto(`${base}/stem-lab/buoyancy/`, { waitUntil: 'networkidle' });
   assert.equal(await page.locator('a[href="/stem-lab/pendulum/"]').count(), 1);
   await page.goto(`${base}/`, { waitUntil: 'networkidle' });
-  assert.equal(await page.locator('[data-experiment-count]').first().innerText(), '12 个可探索实验');
+  assert.equal(await page.locator('[data-experiment-count]').first().innerText(), '140 个可探索实验');
   assert.equal(await page.locator('#apparatus').count(), 0); assert.deepEqual(errors, []);
   console.log('Pendulum browser checks passed: drag release, energy, period, pause, step, keyboard, missions, reference, gravity, damping, mobile, reduced motion, animated fallback and science home.');
 } finally { await browser.close(); }

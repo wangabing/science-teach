@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-17",
+  "node": "24.22.0",
+  "experiment_routes": 140,
+  "new_experiments": 80,
+  "per_space": [
+    37,
+    37,
+    33,
+    33
+  ],
+  "model_tests": {
+    "passed": 268,
+    "failed": 0
+  },
+  "playwright": {
+    "retained": 193,
+    "dual_view": 137,
+    "unique_total": 330,
+    "failed": 0
+  },
+  "browser_script_groups": 10,
+  "build": {
+    "pages": 147,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "screenshots": 294,
+  "contact_sheets": 17,
+  "openspec": {
+    "strict_specs_passed": 27,
+    "failed": 0,
+    "archive": "openspec/changes/archive/2026-10-17-add-eighty-crafted-experiments",
+    "active_changes": 0
+  },
+  "visual_review": "All 80 new 2D/3D/mobile entries and 54 retained spatial views reviewed through final contact sheets; native six reviewed via retained browser checks.",
+  "limitations": [
+    "Desktop Chrome and simulated mobile, no real mobile GPU or classroom review",
+    "Planar experiments use actual geometry in a spatial apparatus; display depth is illustrative"
+  ],
+  "sha256": {
+    "src/lib/discovery/expansion/cosmos.ts": "08af098c53fdaebaa497480f323c71fdd6da8b0a4fec4f0e7764d9295986d7a2",
+    "src/lib/discovery/expansion/engineering.ts": "f73158909ea08208680f0360379b18aaa1d20bfdcd830c7d80d2362cf3dc3591",
+    "src/lib/discovery/expansion/physics.ts": "4cbda7d02bd7bb4782de70010e5aa485454547aea4a5601be0f42f64be95a4a9",
+    "src/lib/discovery/expansion/index.ts": "639c6bae542897443c5e4aa0b3d7279443fb4ca97033e9daaba18d9433566fdb",
+    "src/lib/discovery/expansion/mathematics.ts": "415fa9a04efc5af3e04c1f3286ad5382aaf40e6ec96f0a3d9a37d85ae5bd86d7",
+    "src/lib/discovery/expansion/kit.ts": "5a7f3f7782d8ed5d93a7b6132bde950c25f1fe7dbb870ca6e533581a6687ba19",
+    "src/scripts/discovery/scene.ts": "8aa0e50cb998bee1be2829116194b95b49ce7d5945fa4f26886b6e83b0a40ff1",
+    "src/scripts/discovery/workbench.ts": "4daa530855d886ebb25271558fd778f6cc90677b6775a48faf0e5ed723ea8284",
+    "src/scripts/spatial/legacy-dual-view.ts": "1aa43da3d46b9f738f718936394d1be4ec6beca53a84926f1ef37244c449a040",
+    "src/lib/discovery/triangulation.ts": "1dbdf918716c1dea7c6e9c3c069df66a6b6f897b1f224c1511f9503e9f11e5f0",
+    "src/lib/discovery/synchronized-evidence.ts": "377c251689ece5656d564e0e588cf95b03bd625308fb6266f6f795a455d96256"
+  }
+}

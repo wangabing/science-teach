@@ -1,0 +1,43 @@
+---
+import {experimentHistory, type ExperimentSlug} from '../data/experiment-history';
+interface Props {slug: ExperimentSlug; dark?: boolean}
+const {slug, dark = false} = Astro.props;
+const story = experimentHistory[slug];
+const headingId = `history-${slug}`;
+---
+<section class:list={['experiment-history', {'history-dark': dark}]} aria-labelledby={headingId} data-experiment-history={slug}>
+  <div class="history-era"><span>问题的来处</span><span>{story.period}</span></div>
+  <div class="history-reading">
+    <h2 id={headingId}>{story.title}</h2>
+    <p class="history-lead">{story.lead}</p>
+    <details class="history-details">
+      <summary>读一段背景，带着问题动手</summary>
+      <div class="history-expanded">
+        <p>{story.background}</p>
+        <p class="history-invitation"><strong>现在，换你来试</strong>{story.invitation}</p>
+        <div class="history-sources"><h3>故事出处与延伸阅读</h3><ul>{story.sources.map(source => <li><a href={source.href}>{source.title}</a></li>)}</ul></div>
+      </div>
+    </details>
+  </div>
+</section>
+<style>
+  .experiment-history{--history-ink:#244356;--history-muted:#526978;--history-accent:#8b5225;--history-line:#d9d6ca;--history-bg:#f5f2e9;display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,4fr);gap:16px 28px;margin:0 0 24px;padding:18px 22px;border-block:1px solid var(--history-line);background:var(--history-bg);color:var(--history-ink);text-align:left;}
+  .experiment-history.history-dark{--history-ink:#edf4fa;--history-muted:#b5c5d8;--history-accent:#e7b96c;--history-line:#3d526d;--history-bg:#182c48;}
+  .experiment-history .history-era{display:flex;flex-direction:column;gap:8px;font-size:11px;line-height:1.7;color:var(--history-muted);}
+  .experiment-history .history-era>span:first-child{font-size:10px;letter-spacing:.16em;color:var(--history-accent);font-weight:650;}
+  .experiment-history .history-reading{min-width:0;}
+  .experiment-history h2{margin:0 0 7px;font-size:17px;line-height:1.6;font-weight:600;letter-spacing:0;color:var(--history-ink);}
+  .experiment-history p{margin:0;font-size:12px;line-height:1.9;color:var(--history-muted);}
+  .experiment-history .history-details{margin:10px 0 0;padding:0;border:0;border-radius:0;background:transparent;color:var(--history-ink);}
+  .experiment-history summary{width:fit-content;padding:5px 0;min-height:32px;font-size:12px;line-height:1.8;color:var(--history-accent);cursor:pointer;}
+  .experiment-history summary:focus-visible,.experiment-history a:focus-visible{outline:2px solid var(--history-accent);outline-offset:4px;}
+  .experiment-history .history-expanded{padding-top:12px;}
+  .experiment-history .history-invitation{margin-top:14px;padding-left:14px;border-left:2px solid var(--history-accent);color:var(--history-ink);}
+  .experiment-history .history-invitation strong{display:block;margin-bottom:3px;font-size:11px;color:var(--history-accent);}
+  .experiment-history .history-sources{margin-top:16px;padding-top:12px;border-top:1px solid var(--history-line);}
+  .experiment-history h3{margin:0 0 5px;font-size:11px;line-height:1.7;color:var(--history-muted);font-weight:500;}
+  .experiment-history ul{margin:0;padding-left:18px;}
+  .experiment-history li{font-size:11px;line-height:1.9;}
+  .experiment-history a{color:var(--history-ink);text-underline-offset:3px;overflow-wrap:anywhere;}
+  @media(max-width:640px){.experiment-history{grid-template-columns:minmax(0,1fr);gap:8px;padding:14px 16px;margin-bottom:18px;}.experiment-history .history-era{flex-direction:row;flex-wrap:wrap;gap:4px 12px;}.experiment-history h2{font-size:15px;}}
+</style>

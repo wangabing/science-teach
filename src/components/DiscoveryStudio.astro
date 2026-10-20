@@ -1,0 +1,66 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';import ExperimentHistory from './ExperimentHistory.astro';import StudyNotebook from './StudyNotebook.astro';
+import {type Studio} from '../data/discovery-studios';import {modelById} from '../lib/discovery/registry';import {defaults,solveModel,format} from '../lib/discovery/core';import {spaces} from '../data/labs';import '../styles/discovery-studios.css';
+import DiscoveryControl from './DiscoveryControl.astro';import {experienceById} from '../data/discovery-experiences';import {observationCue} from '../lib/discovery/observation-cues';import {apparatusDrawing} from '../lib/discovery/presentation';
+import {responseEvidence} from '../lib/discovery/response-evidence';
+import {viewPurpose} from '../lib/discovery/view-purpose';
+interface Props {studio:Studio}
+const {studio:s}=Astro.props,model=modelById(s.id),initial=solveModel(model,defaults(model)),space=spaces.find(x=>x.slug===s.space)!,experience=experienceById(s.id),spotlight=initial.metrics.find(q=>q.key===s.metric)!,primary=experience.primary.map(k=>model.controls.find(c=>c.key===k)!),advanced=model.controls.filter(c=>!experience.primary.includes(c.key)),illustration=apparatusDrawing(s.id,defaults(model),initial);
+---
+<SiteLayout title={`${s.name} · ${s.title}`} description={`${s.known}${s.task}`}>
+<article class={`dis-lab dis-${s.space} wrap`} data-discovery={s.id}>
+ <p class="breadcrumb"><a href={`/spaces/${s.space}/`}>{space.name}</a> / {s.name}</p>
+ <header class="dis-intro"><div><p class="kicker">{s.stage} · {s.topic}</p><h1>{s.title}</h1></div><p class="dis-thesis">{s.known}<span>{experience.invitation}</span></p></header>
+ <ExperimentHistory slug={s.slug} dark={s.space==='cosmos'}/>
+ <nav class="dis-start" aria-label="开始实验">{model.demonstration&&<a href="#dis-demonstration">演示入口 ↓</a>}<a href="#dis-stage">看装置</a><a href="#dis-input-anchor">动手操作 ↓</a><span>{model.time?'先播放或单步，再改变条件作比较。':'拖动带单位的滑块，装置与测量同时更新。'}</span></nav>
+ <noscript><p class="dis-noscript">启用JavaScript后可操作实验。下方是默认条件的计算图与数值例子；历史、公式与边界仍可阅读。</p></noscript>
+ <fieldset id="dis-tools" class="dis-workbench" disabled aria-label={`${s.name}工作台`}>
+  <div class="dis-station"><h2>{s.name}</h2><span>{s.id} / {s.group}</span><div><button id="dis-undo" type="button" disabled>撤销</button><button id="dis-redo" type="button" disabled>重做</button><button id="dis-reset" type="button">重置</button></div></div>
+  <section class="dis-mission"><div><b>今天的问题</b><p>{experience.look}</p><details class="dis-task-brief"><summary>独立探索要做什么？</summary><p>{s.task}</p></details></div><button id="dis-prepare" class="dis-primary" type="button">准备独立探索</button></section>
+  <div class="dis-console">
+   <div class="dis-visual">
+    <div class="dis-viewbar"><span>装置 · 尺寸示意，量值见读数</span>{model.spatial&&<button id="dis-view" type="button" aria-pressed="false">打开三维视图</button>}<a href="#dis-evidence">看证据图 ↓</a></div>
+    {model.demonstration&&<section id="dis-demonstration" class="dis-demonstration" aria-label="实验演示">
+     <div><b>先看一次，再亲手试</b><p>{model.demonstration.caption}</p></div>
+     <div class="dis-demo-actions"><button id="dis-demo" class="dis-primary" type="button" aria-pressed="false">{model.demonstration.title}</button><button id="dis-demo-step" type="button">{s.id==='C07'?'靠近一步':'扫描一步'}</button></div>
+     <output id="dis-demo-state" aria-live="off">尚未开始；也可直接使用装置旁的参数控件。</output>
+    </section>}
+    <div id="dis-stage" class="dis-stage" style={responseEvidence[s.id]?'aspect-ratio:800/580':undefined}>
+     <svg id="dis-svg" viewBox={responseEvidence[s.id]?'0 0 800 580':'0 0 800 460'} role="img" aria-label={`${s.name}装置；可通过旁边带单位控件操作`}><defs><pattern id="dis-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="currentColor" stroke-width=".5" opacity=".12" fill="none"/></pattern></defs><rect width="800" height="460" fill="url(#dis-grid)"/><g id="dis-drawing" set:html={illustration}/></svg>
+     {model.spatial&&<div id="dis-three" class="dis-three" hidden aria-label="三维装置；拖动旋转，滚轮缩放；二维证据可独立使用"></div>}
+    </div>
+    {responseEvidence[s.id]&&<p class="dis-response-guide">{responseEvidence[s.id]!.reason} 图中量尺以0为中线，各量按默认值独立作非线性标定，长度不能跨量比较；精确数值与单位见读数。</p>}
+    <label class="dis-direct-control" for="dis-direct-input"><span>直接调整 · {model.controls.find(c=>c.key===s.compare)!.label}</span><output id="dis-direct-value">{format(defaults(model)[s.compare]!)} {model.controls.find(c=>c.key===s.compare)!.unit}</output><input id="dis-direct-input" type="range" min={model.controls.find(c=>c.key===s.compare)!.min} max={model.controls.find(c=>c.key===s.compare)!.max} step={model.controls.find(c=>c.key===s.compare)!.step} value={defaults(model)[s.compare]} aria-label={`装置旁直接调整${model.controls.find(c=>c.key===s.compare)!.label}`}/></label>
+    {model.spatial&&<div id="dis-camera-controls" class="dis-camera-controls" hidden aria-label="空间视角"><span>换个角度看</span><button type="button" data-dis-camera="perspective">立体</button><button type="button" data-dis-camera="front">正面</button><button type="button" data-dis-camera="top">俯视</button></div>}
+    <div class="dis-legend" aria-label="装置图例">{experience.legend.map((text,i)=><span><i data-color={i}></i>{text}</span>)}</div>
+    <div class="dis-spotlight"><div><span id="dis-spotlight-label">看这里 · {spotlight.label}</span><output id="dis-spotlight-value">{format(spotlight.value)} <small>{spotlight.unit}</small></output></div><p id="dis-observe">{observationCue(s.id,defaults(model),initial)}</p></div>
+    <p id="dis-view-note" class="dis-caption">{viewPurpose(s.id)}</p>
+    {model.time&&<div class="dis-transport" role="group" aria-label="实验时钟"><button id="dis-play" type="button" aria-pressed="false">{s.id==='C03'?'发送光信号':s.id==='P01'?'释放滑块':'播放'}</button><button id="dis-step" type="button">单步</button><button id="dis-rewind" type="button">计时归零</button><output id="dis-clock">{format(defaults(model)[model.time.key]!)} {model.controls.find(c=>c.key===model.time!.key)?.unit}</output><span>{model.time.caption??'默认暂停 · 隐藏页面自动暂停'}</span></div>}
+    <dl id="dis-readings" class="dis-readings" aria-label="当前测量结果">{initial.metrics.map(q=><div data-reading={q.key} class:list={{"dis-key-reading":q.key===s.metric}}><dt>{q.label}</dt><dd>{format(q.value)} <small>{q.unit}</small></dd></div>)}</dl>
+    <p id="dis-model-note" class="dis-model-note" data-status={initial.status}>{initial.note}</p>
+    <section id="dis-evidence" class="dis-evidence"><h3>证据图 <small>参考解随题设重算 · 不计个人完成</small></h3><div id="dis-charts"></div><p id="dis-empty-chart">{initial.curves.length?'启用交互后显示带单位曲线。':'本实验以装置几何与上方读数作为证据。'}</p></section>
+   </div>
+   <aside class="dis-sidebar">
+     <div class="dis-preview" aria-label="操作时的装置观察窗"><details open><summary>实时观察窗 <span>可收起</span></summary><svg id="dis-preview" viewBox={responseEvidence[s.id]?'0 0 800 580':'0 0 800 460'} aria-hidden="true"><g id="dis-preview-drawing" set:html={illustration.replaceAll('apparatus-', 'preview-apparatus-')}/></svg><output id="dis-preview-value">{spotlight.label} {format(spotlight.value)} {spotlight.unit}</output></details></div>
+    <details open class="dis-parameters" id="dis-input-anchor"><summary>动手试一试 <span>{experience.invitation}</span></summary>
+
+     <div class="dis-primary-controls">{primary.map(c=><DiscoveryControl control={c} main={c.key===s.compare}/>)}</div>
+    </details>
+    {advanced.length>0&&<details id="dis-advanced" class="dis-advanced"><summary>更多条件与测量 <span>{advanced.length}项</span></summary>{advanced.map(c=><DiscoveryControl control={c}/>)}</details>}
+    <section class="dis-scenes" aria-label="探索情景"><h3>换个情景，看看差别</h3><p>情景用于观察，不计独立任务。</p>{experience.scenes.map((scene,i)=><button type="button" data-dis-scene={i} aria-pressed="false"><strong>{scene.name}</strong><span>{scene.detail}</span></button>)}</section>
+    <details class="dis-hint"><summary>给我一点观察提示</summary><p>{experience.hint}</p></details>
+    {s.id==='M01'&&<label class="dis-prediction" for="dis-prediction">先预测：1号面的相对面<select id="dis-prediction"><option value="0">请选择</option>{[2,3,4,5,6].map(n=><option value={n}>{n}号面</option>)}</select><span>准备后先选，再折起；不提前揭晓。</span></label>}
+    <div class="dis-check"><button id="dis-check" class="dis-primary" type="button">核验这次观察</button><p id="dis-task-note" role="status">先准备任务，再亲手操作。改变其他题设会清除任务比较。</p></div>
+    <details class="dis-reference"><summary>需要时，看参考状态</summary><p>默认状态供理解。引用参考会清除独立任务，重新准备后可再探索。</p><button id="dis-reference" type="button">应用参考状态</button></details>
+    <a href="#dis-stage" class="dis-back">回到装置 ↑</a>
+   </aside>
+  </div>
+  <section class="dis-transfer"><div><p class="kicker">换个条件，再想一步</p><h2>{s.transfer}</h2><p>先预测，再观察。反例不会替你完成独立任务。</p></div><button id="dis-counter" type="button">检查这个条件</button></section>
+  <section id="dis-record-views" class="dis-record-views" hidden aria-label="两组装置对照"><header><h2>把两次观察放在一起</h2><p>按保存条件重算的二维装置快照；不恢复任务资格或未记录的轨迹。</p></header><div id="dis-record-gallery"></div></section>
+  <StudyNotebook note="保存模型条件与单位；恢复后重算，不恢复任务完成资格。"/>
+ </fieldset>
+ <section class="dis-reasoning"><div><p class="kicker">从观察到解释</p><h2>把证据带回纸上</h2><details><summary>展开关系与推导</summary><p>{s.proof}</p><p>固定哪些量？改变哪个量？列出两组数值，写出关系，再说明一个不能套用的条件。实验支持猜想，一般证明需要理由。</p></details></div><aside><h3>适用范围与科学状态</h3><p>{initial.note}</p>{s.space==='cosmos'&&<p>公认理论：引力、光速与能量动量关系。限定近似：本页计算模型。工程设想和小说假设见背景说明，均不作已实现机制。</p>}<p>{s.stage}，按知识主题连接中国初高中课程。北京教材章节、届别和课堂使用需教师结合所用版本核对；未宣称教学认证。</p></aside></section>
+ <nav class="dis-next next-exploration"><a href={`/spaces/${s.space}/`}>回到{space.name} ↗</a><a href="/experiments/">探索全部实验 ↗</a><a href="/about/">我们怎样做实验 ↗</a></nav>
+</article>
+<script>import '../scripts/discovery/workbench';</script>
+</SiteLayout>

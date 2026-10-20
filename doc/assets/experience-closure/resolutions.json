@@ -1,0 +1,1708 @@
+{
+  "date": "2026-10-18T05:20:22.839Z",
+  "baseline": "../experience-audit/report.json",
+  "summary": {
+    "findings": 60,
+    "labs": 49
+  },
+  "rows": [
+    {
+      "id": "P01",
+      "name": "伽利略斜面",
+      "kind": "measurement-without-apparatus",
+      "original": "mass改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "同坡度与摩擦下质量不改变加速度；μk只在滑动时起作用，且有效值不超过μs。",
+      "checks": [
+        {
+          "key": "mass",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process",
+            "sliding-friction"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P01-before.png",
+        "test-results/experience-closure-audit/P01-after-3d.png"
+      ]
+    },
+    {
+      "id": "P01",
+      "name": "伽利略斜面",
+      "kind": "unexplained-invariant",
+      "original": "kinetic端点未产生变化；需解释不变量或修正控件",
+      "resolution": "同坡度与摩擦下质量不改变加速度；μk只在滑动时起作用，且有效值不超过μs。",
+      "checks": [
+        {
+          "key": "kinetic",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process",
+            "sliding-friction"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P01-before.png",
+        "test-results/experience-closure-audit/P01-after-3d.png"
+      ]
+    },
+    {
+      "id": "P01",
+      "name": "伽利略斜面",
+      "kind": "primary-picture-static",
+      "original": "主变量mass实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "同坡度与摩擦下质量不改变加速度；μk只在滑动时起作用，且有效值不超过μs。",
+      "checks": [
+        {
+          "key": "mass",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process",
+            "sliding-friction"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P01-before.png",
+        "test-results/experience-closure-audit/P01-after-3d.png"
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "碰撞轨道",
+      "kind": "measurement-without-apparatus",
+      "original": "mass1、mass2、v1、v2、restitution改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "这里展示碰后预测；尚未接触时恢复系数不改变车的位置。播放越过接触时刻再比较。",
+      "checks": [
+        {
+          "key": "mass1",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "mass2",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "v1",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "v2",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "restitution",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P02-before.png",
+        "test-results/experience-closure-audit/P02-after-3d.png"
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "碰撞轨道",
+      "kind": "primary-picture-static",
+      "original": "主变量restitution实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "这里展示碰后预测；尚未接触时恢复系数不改变车的位置。播放越过接触时刻再比较。",
+      "checks": [
+        {
+          "key": "restitution",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P02-before.png",
+        "test-results/experience-closure-audit/P02-after-3d.png"
+      ]
+    },
+    {
+      "id": "P07",
+      "name": "焦耳量热",
+      "kind": "measurement-without-apparatus",
+      "original": "current、resistance、water、loss改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "温度计与能量账同步；散热改变分配，电阻与电流改变输入。",
+      "checks": [
+        {
+          "key": "current",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "resistance",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "water",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "loss",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P07-before.png",
+        "test-results/experience-closure-audit/P07-after-3d.png"
+      ]
+    },
+    {
+      "id": "P07",
+      "name": "焦耳量热",
+      "kind": "primary-picture-static",
+      "original": "主变量current实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "温度计与能量账同步；散热改变分配，电阻与电流改变输入。",
+      "checks": [
+        {
+          "key": "current",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P07-before.png",
+        "test-results/experience-closure-audit/P07-after-3d.png"
+      ]
+    },
+    {
+      "id": "P08",
+      "name": "气体活塞",
+      "kind": "measurement-without-apparatus",
+      "original": "moles改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "定容时活塞不移动；改变物质的量仍会改变温度和压强。",
+      "checks": [
+        {
+          "key": "moles",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P08-before.png",
+        "test-results/experience-closure-audit/P08-after-3d.png"
+      ]
+    },
+    {
+      "id": "C01",
+      "name": "三日凌空",
+      "kind": "measurement-without-apparatus",
+      "original": "albedo改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "反照率只改变吸收与平衡温度，不改变恒星轨道。",
+      "checks": [
+        {
+          "key": "albedo",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C01-before.png",
+        "test-results/experience-closure-audit/C01-after-3d.png"
+      ]
+    },
+    {
+      "id": "C03",
+      "name": "光锥通信",
+      "kind": "measurement-without-apparatus",
+      "original": "distance改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "时空图自适应取景；几何相似不代表实际光年和等待年数相同。",
+      "checks": [
+        {
+          "key": "distance",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C03-before.png",
+        "test-results/experience-closure-audit/C03-after-3d.png"
+      ]
+    },
+    {
+      "id": "C04",
+      "name": "星际钟表",
+      "kind": "measurement-without-apparatus",
+      "original": "speed、distance改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "世界线与时钟比较同一次往返；瞬时掉头是理想化。",
+      "checks": [
+        {
+          "key": "speed",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "distance",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C04-before.png",
+        "test-results/experience-closure-audit/C04-after-3d.png"
+      ]
+    },
+    {
+      "id": "C04",
+      "name": "星际钟表",
+      "kind": "primary-picture-static",
+      "original": "主变量speed实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "世界线与时钟比较同一次往返；瞬时掉头是理想化。",
+      "checks": [
+        {
+          "key": "speed",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C04-before.png",
+        "test-results/experience-closure-audit/C04-after-3d.png"
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "光帆启航",
+      "kind": "measurement-without-apparatus",
+      "original": "area、mass、reflectivity、radius、emissivity、days改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "完全反射且无吸收时，改变发射率不改变温度；降低反射率再比较。速度增量不是太阳系轨迹。",
+      "checks": [
+        {
+          "key": "area",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        },
+        {
+          "key": "mass",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        },
+        {
+          "key": "reflectivity",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        },
+        {
+          "key": "radius",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        },
+        {
+          "key": "emissivity",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        },
+        {
+          "key": "days",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C05-before.png",
+        "test-results/experience-closure-audit/C05-after-3d.png"
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "光帆启航",
+      "kind": "unexplained-invariant",
+      "original": "emissivity端点未产生变化；需解释不变量或修正控件",
+      "resolution": "完全反射且无吸收时，改变发射率不改变温度；降低反射率再比较。速度增量不是太阳系轨迹。",
+      "checks": [
+        {
+          "key": "emissivity",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C05-before.png",
+        "test-results/experience-closure-audit/C05-after-3d.png"
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "光帆启航",
+      "kind": "primary-picture-static",
+      "original": "主变量area实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "完全反射且无吸收时，改变发射率不改变温度；降低反射率再比较。速度增量不是太阳系轨迹。",
+      "checks": [
+        {
+          "key": "area",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "absorbing-sail"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C05-before.png",
+        "test-results/experience-closure-audit/C05-after-3d.png"
+      ]
+    },
+    {
+      "id": "C08",
+      "name": "宇宙收音机",
+      "kind": "measurement-without-apparatus",
+      "original": "distance、power、frequency、txgain、rxgain、bandwidth改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "波形为信号包络示意；dBW是功率对数值，不是负功率。",
+      "checks": [
+        {
+          "key": "distance",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "power",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "frequency",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "txgain",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "rxgain",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "bandwidth",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C08-before.png",
+        "test-results/experience-closure-audit/C08-after-3d.png"
+      ]
+    },
+    {
+      "id": "C08",
+      "name": "宇宙收音机",
+      "kind": "primary-picture-static",
+      "original": "主变量distance实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "波形为信号包络示意；dBW是功率对数值，不是负功率。",
+      "checks": [
+        {
+          "key": "distance",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C08-before.png",
+        "test-results/experience-closure-audit/C08-after-3d.png"
+      ]
+    },
+    {
+      "id": "C09",
+      "name": "时空涟漪",
+      "kind": "measurement-without-apparatus",
+      "original": "distance改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "距离改变应变与臂长差，画面振幅放大，不是真实机械位移。",
+      "checks": [
+        {
+          "key": "distance",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C09-before.png",
+        "test-results/experience-closure-audit/C09-after-3d.png"
+      ]
+    },
+    {
+      "id": "C10",
+      "name": "宇宙背景屏",
+      "kind": "measurement-without-apparatus",
+      "original": "frequency改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "频率选择黑体谱采样点；合成温度图并不是逐频前景观测图。",
+      "checks": [
+        {
+          "key": "frequency",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C10-before.png",
+        "test-results/experience-closure-audit/C10-after-3d.png"
+      ]
+    },
+    {
+      "id": "S01",
+      "name": "反转悬链",
+      "kind": "measurement-without-apparatus",
+      "original": "load改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "规定形状下改变荷载改变推力，理想推力线可保持相同形状。",
+      "checks": [
+        {
+          "key": "load",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S01-before.png",
+        "test-results/experience-closure-audit/S01-after-3d.png"
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "张拉整体",
+      "kind": "measurement-without-apparatus",
+      "original": "tension、rigidity改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "预应力改变刚度与1N探测位移；主结构为平衡参考形状，未求解大变形。",
+      "checks": [
+        {
+          "key": "tension",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "rigidity",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S04-before.png",
+        "test-results/experience-closure-audit/S04-after-3d.png"
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "张拉整体",
+      "kind": "primary-picture-static",
+      "original": "主变量tension实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "预应力改变刚度与1N探测位移；主结构为平衡参考形状，未求解大变形。",
+      "checks": [
+        {
+          "key": "tension",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S04-before.png",
+        "test-results/experience-closure-audit/S04-after-3d.png"
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "悬索跨越",
+      "kind": "measurement-without-apparatus",
+      "original": "load改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "固定跨径与垂度时荷载改变张力，不必改变索的参考形状。",
+      "checks": [
+        {
+          "key": "load",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S05-before.png",
+        "test-results/experience-closure-audit/S05-after-3d.png"
+      ]
+    },
+    {
+      "id": "S06",
+      "name": "曲柄画线机",
+      "kind": "measurement-without-apparatus",
+      "original": "omega改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "同一转角姿态不变；角速度改变播放速率与滑块速度。",
+      "checks": [
+        {
+          "key": "omega",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": true,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S06-before.png",
+        "test-results/experience-closure-audit/S06-after-3d.png"
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "滑轮吊装",
+      "kind": "measurement-without-apparatus",
+      "original": "weight、efficiency改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "提升高度固定时几何相同，效率改变手拉力和耗散。",
+      "checks": [
+        {
+          "key": "weight",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "efficiency",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S07-before.png",
+        "test-results/experience-closure-audit/S07-after-3d.png"
+      ]
+    },
+    {
+      "id": "S08",
+      "name": "液压举升",
+      "kind": "measurement-without-apparatus",
+      "original": "load改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "负载改变压力与输入力；相同排量下活塞位置可以相同。",
+      "checks": [
+        {
+          "key": "load",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S08-before.png",
+        "test-results/experience-closure-audit/S08-after-3d.png"
+      ]
+    },
+    {
+      "id": "S09",
+      "name": "可展开遮棚",
+      "kind": "measurement-without-apparatus",
+      "original": "snow改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "雪载改变合力；挠度只是等效平板参考，不冒充折叠壳体形变解。",
+      "checks": [
+        {
+          "key": "snow",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S09-before.png",
+        "test-results/experience-closure-audit/S09-after-3d.png"
+      ]
+    },
+    {
+      "id": "S10",
+      "name": "房子的热账本",
+      "kind": "measurement-without-apparatus",
+      "original": "insulation、glass、indoor、outdoor改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "保温层、窗和温差改变热流与冷却时间，不表示房屋几何变形。",
+      "checks": [
+        {
+          "key": "insulation",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "glass",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "indoor",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "outdoor",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S10-before.png",
+        "test-results/experience-closure-audit/S10-after-3d.png"
+      ]
+    },
+    {
+      "id": "S10",
+      "name": "房子的热账本",
+      "kind": "primary-picture-static",
+      "original": "主变量insulation实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "保温层、窗和温差改变热流与冷却时间，不表示房屋几何变形。",
+      "checks": [
+        {
+          "key": "insulation",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S10-before.png",
+        "test-results/experience-closure-audit/S10-after-3d.png"
+      ]
+    },
+    {
+      "id": "P12",
+      "name": "阿特伍德机",
+      "kind": "measurement-without-apparatus",
+      "original": "mass1改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "释放前位置不随质量改变；质量同时改变张力和释放后加速度。",
+      "checks": [
+        {
+          "key": "mass1",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P12-before.png",
+        "test-results/experience-closure-audit/P12-after-3d.png"
+      ]
+    },
+    {
+      "id": "P14",
+      "name": "力矩平衡尺",
+      "kind": "measurement-without-apparatus",
+      "original": "force改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "平衡需要的力随左力变化；杆保持水平表示求解平衡条件。",
+      "checks": [
+        {
+          "key": "force",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P14-before.png",
+        "test-results/experience-closure-audit/P14-after-3d.png"
+      ]
+    },
+    {
+      "id": "P15",
+      "name": "弹簧能量仓",
+      "kind": "measurement-without-apparatus",
+      "original": "stiffness、mass改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "相同压缩位置下刚度改变弹力，质量改变释放速度与播放时间尺度。",
+      "checks": [
+        {
+          "key": "stiffness",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": true,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "mass",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": true,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P15-before.png",
+        "test-results/experience-closure-audit/P15-after-3d.png"
+      ]
+    },
+    {
+      "id": "P17",
+      "name": "液柱压力台",
+      "kind": "measurement-without-apparatus",
+      "original": "density改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "同一深度下液体密度改变压强；容器形状不决定该点静水压。",
+      "checks": [
+        {
+          "key": "density",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P17-before.png",
+        "test-results/experience-closure-audit/P17-after-3d.png"
+      ]
+    },
+    {
+      "id": "P21",
+      "name": "驻波弦",
+      "kind": "measurement-without-apparatus",
+      "original": "tension、length改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "弦长按窗口归一化显示；张力改变频率和播放速率，不改变给定相位的归一化波形。",
+      "checks": [
+        {
+          "key": "tension",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": true,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "length",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": true,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P21-before.png",
+        "test-results/experience-closure-audit/P21-after-3d.png"
+      ]
+    },
+    {
+      "id": "P24",
+      "name": "理想变压器",
+      "kind": "measurement-without-apparatus",
+      "original": "voltage、resistance改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "有效值电表与负载联动；线圈几何不随原边电压和负载变化。",
+      "checks": [
+        {
+          "key": "voltage",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "resistance",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P24-before.png",
+        "test-results/experience-closure-audit/P24-after-3d.png"
+      ]
+    },
+    {
+      "id": "P26",
+      "name": "卡诺热机",
+      "kind": "measurement-without-apparatus",
+      "original": "heat改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "热量增加使功和排热同比增大；固定热库温度时效率不变。",
+      "checks": [
+        {
+          "key": "heat",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P26-before.png",
+        "test-results/experience-closure-audit/P26-after-3d.png"
+      ]
+    },
+    {
+      "id": "P27",
+      "name": "混合量热",
+      "kind": "measurement-without-apparatus",
+      "original": "hottemp、coldtemp改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "质量决定液面；温度决定热交换和平衡温度。",
+      "checks": [
+        {
+          "key": "hottemp",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "coldtemp",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P27-before.png",
+        "test-results/experience-closure-audit/P27-after-3d.png"
+      ]
+    },
+    {
+      "id": "P28",
+      "name": "导热桥",
+      "kind": "measurement-without-apparatus",
+      "original": "conductivity、area改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "固定端温的稳态温度线不随k与面积改变，热流会改变。",
+      "checks": [
+        {
+          "key": "conductivity",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "area",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P28-before.png",
+        "test-results/experience-closure-audit/P28-after-3d.png"
+      ]
+    },
+    {
+      "id": "P29",
+      "name": "光电效应",
+      "kind": "measurement-without-apparatus",
+      "original": "wavelength改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "波长改变单光子能量；过阈值后截止电压连续变化，通量只改变电子数量。",
+      "checks": [
+        {
+          "key": "wavelength",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/P29-before.png",
+        "test-results/experience-closure-audit/P29-after-3d.png"
+      ]
+    },
+    {
+      "id": "M28",
+      "name": "贝叶斯分诊树",
+      "kind": "measurement-without-apparatus",
+      "original": "population改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "样本数增加使期望人数同比增加；患病率不变时比例图与后验概率不变。",
+      "checks": [
+        {
+          "key": "population",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/M28-before.png",
+        "test-results/experience-closure-audit/M28-after-3d.png"
+      ]
+    },
+    {
+      "id": "C12",
+      "name": "逃逸速度",
+      "kind": "measurement-without-apparatus",
+      "original": "mass改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "中心质量改变速度尺度；相同高度的示意轨道半径不变。",
+      "checks": [
+        {
+          "key": "mass",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C12-before.png",
+        "test-results/experience-closure-audit/C12-after-3d.png"
+      ]
+    },
+    {
+      "id": "C17",
+      "name": "恒星光谱",
+      "kind": "measurement-without-apparatus",
+      "original": "temperature改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "Bλ谱峰与恒星温度联动；图中颜色仅作温度提示，不替代真实光谱。",
+      "checks": [
+        {
+          "key": "temperature",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C17-before.png",
+        "test-results/experience-closure-audit/C17-after-3d.png"
+      ]
+    },
+    {
+      "id": "C17",
+      "name": "恒星光谱",
+      "kind": "primary-picture-static",
+      "original": "主变量temperature实际操作后主图未变；排除了文字和附属仪表",
+      "resolution": "Bλ谱峰与恒星温度联动；图中颜色仅作温度提示，不替代真实光谱。",
+      "checks": [
+        {
+          "key": "temperature",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C17-before.png",
+        "test-results/experience-closure-audit/C17-after-3d.png"
+      ]
+    },
+    {
+      "id": "C20",
+      "name": "宇宙红移",
+      "kind": "measurement-without-apparatus",
+      "original": "wavelength改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "归一化波形显示拉伸比例；标尺显示实际观测波长。",
+      "checks": [
+        {
+          "key": "wavelength",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C20-before.png",
+        "test-results/experience-closure-audit/C20-after-3d.png"
+      ]
+    },
+    {
+      "id": "C22",
+      "name": "引力透镜",
+      "kind": "measurement-without-apparatus",
+      "original": "einstein改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "透镜图以爱因斯坦角归一化，角秒标尺随爱因斯坦角变化。",
+      "checks": [
+        {
+          "key": "einstein",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C22-before.png",
+        "test-results/experience-closure-audit/C22-after-3d.png"
+      ]
+    },
+    {
+      "id": "C24",
+      "name": "希尔球",
+      "kind": "measurement-without-apparatus",
+      "original": "orbit改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "轨道图按公转半径归一化，质量固定时希尔半径比例不变，实际距离仍改变。",
+      "checks": [
+        {
+          "key": "orbit",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C24-before.png",
+        "test-results/experience-closure-audit/C24-after-3d.png"
+      ]
+    },
+    {
+      "id": "C25",
+      "name": "火箭质量账本",
+      "kind": "measurement-without-apparatus",
+      "original": "exhaust改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "排气速度改变速度增量，不改变给定质量比的燃料占比。",
+      "checks": [
+        {
+          "key": "exhaust",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C25-before.png",
+        "test-results/experience-closure-audit/C25-after-3d.png"
+      ]
+    },
+    {
+      "id": "C26",
+      "name": "相对论能量",
+      "kind": "measurement-without-apparatus",
+      "original": "mass改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "质量改变两种能量估计；相同β的洛伦兹因子保持不变。",
+      "checks": [
+        {
+          "key": "mass",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C26-before.png",
+        "test-results/experience-closure-audit/C26-after-3d.png"
+      ]
+    },
+    {
+      "id": "C27",
+      "name": "星际尘埃撞击",
+      "kind": "measurement-without-apparatus",
+      "original": "beta改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "速度改变碰撞能量；不虚构尘埃烧蚀或舰体破坏过程。",
+      "checks": [
+        {
+          "key": "beta",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C27-before.png",
+        "test-results/experience-closure-audit/C27-after-3d.png"
+      ]
+    },
+    {
+      "id": "C29",
+      "name": "干涉仪基线",
+      "kind": "measurement-without-apparatus",
+      "original": "wavelength改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "干涉相位图归一化；波长改变真实条纹角尺度。",
+      "checks": [
+        {
+          "key": "wavelength",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C29-before.png",
+        "test-results/experience-closure-audit/C29-after-3d.png"
+      ]
+    },
+    {
+      "id": "C30",
+      "name": "哈勃距离梯",
+      "kind": "measurement-without-apparatus",
+      "original": "hubble改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "红移固定时cz不变；哈勃常数改变距离标定与d/c时间尺度。",
+      "checks": [
+        {
+          "key": "hubble",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/C30-before.png",
+        "test-results/experience-closure-audit/C30-after-3d.png"
+      ]
+    },
+    {
+      "id": "S16",
+      "name": "斜坡摩擦",
+      "kind": "measurement-without-apparatus",
+      "original": "friction改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "摩擦系数改变抗滑极限；未超过静摩擦限值时物体可保持静止。",
+      "checks": [
+        {
+          "key": "friction",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S16-before.png",
+        "test-results/experience-closure-audit/S16-after-3d.png"
+      ]
+    },
+    {
+      "id": "S17",
+      "name": "螺旋千斤顶",
+      "kind": "measurement-without-apparatus",
+      "original": "efficiency改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "效率改变所需手柄力和输入功，不改变螺距确定的每圈位移。",
+      "checks": [
+        {
+          "key": "efficiency",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S17-before.png",
+        "test-results/experience-closure-audit/S17-after-3d.png"
+      ]
+    },
+    {
+      "id": "S19",
+      "name": "皮带传动",
+      "kind": "measurement-without-apparatus",
+      "original": "speed、torque改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "转速接入轮辐运动；扭矩改变传递功率，不改变无滑动几何。",
+      "checks": [
+        {
+          "key": "speed",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        },
+        {
+          "key": "torque",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S19-before.png",
+        "test-results/experience-closure-audit/S19-after-3d.png"
+      ]
+    },
+    {
+      "id": "S20",
+      "name": "行星齿轮",
+      "kind": "measurement-without-apparatus",
+      "original": "speed改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "静止初态的齿轮位置不随转速改变；播放后比较行星架运动。",
+      "checks": [
+        {
+          "key": "speed",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial",
+            "process"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S20-before.png",
+        "test-results/experience-closure-audit/S20-after-3d.png"
+      ]
+    },
+    {
+      "id": "S22",
+      "name": "剪叉升降",
+      "kind": "measurement-without-apparatus",
+      "original": "load改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "载荷改变水平驱动力；给定角度时剪叉几何固定。",
+      "checks": [
+        {
+          "key": "load",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S22-before.png",
+        "test-results/experience-closure-audit/S22-after-3d.png"
+      ]
+    },
+    {
+      "id": "S24",
+      "name": "斜撑抗剪",
+      "kind": "measurement-without-apparatus",
+      "original": "load改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "侧移可能超出主图显示限幅；量尺保留计算值，线性模型不能预测破坏。",
+      "checks": [
+        {
+          "key": "load",
+          "apparatus": true,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S24-before.png",
+        "test-results/experience-closure-audit/S24-after-3d.png"
+      ]
+    },
+    {
+      "id": "S25",
+      "name": "蜂窝材料",
+      "kind": "measurement-without-apparatus",
+      "original": "density改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "这里的密度是壁材本身密度；改变它不改变壁厚与蜂窝几何。",
+      "checks": [
+        {
+          "key": "density",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S25-before.png",
+        "test-results/experience-closure-audit/S25-after-3d.png"
+      ]
+    },
+    {
+      "id": "S26",
+      "name": "夹芯梁",
+      "kind": "measurement-without-apparatus",
+      "original": "load改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "显示线性弯曲挠度估计；不模拟芯材剪切和局部屈曲。",
+      "checks": [
+        {
+          "key": "load",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S26-before.png",
+        "test-results/experience-closure-audit/S26-after-3d.png"
+      ]
+    },
+    {
+      "id": "S30",
+      "name": "烟囱通风",
+      "kind": "measurement-without-apparatus",
+      "original": "difference、area改变数值但主图及空间几何不变；审阅不变量与证据用途",
+      "resolution": "温差与开口面积改变通风量；空气流线为流动方向示意。",
+      "checks": [
+        {
+          "key": "difference",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        },
+        {
+          "key": "area",
+          "apparatus": false,
+          "measurementEvidence": true,
+          "processRate": false,
+          "phases": [
+            "initial"
+          ]
+        }
+      ],
+      "browser": "产品自动巡检通过",
+      "evidence": [
+        "test-results/experience-closure-audit/S30-before.png",
+        "test-results/experience-closure-audit/S30-after-3d.png"
+      ]
+    }
+  ]
+}

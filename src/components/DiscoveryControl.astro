@@ -1,0 +1,9 @@
+---
+import {format,type Control} from '../lib/discovery/core';
+interface Props {control:Control;main?:boolean}
+const {control:c,main=false}=Astro.props;
+---
+<label for={`dis-input-${c.key}`} class:list={['dis-control',{'dis-main-control':main}]}>
+ <span>{c.label}<output id={`dis-value-${c.key}`}>{format(c.value)} {c.unit}</output></span>
+ {c.options?<select id={`dis-input-${c.key}`} data-dis-input={c.key}>{c.options.map(([v,label])=><option value={v} selected={v===c.value}>{label}</option>)}</select>:<input id={`dis-input-${c.key}`} data-dis-input={c.key} type="range" min={c.min} max={c.max} step={c.step} value={c.value}/>}
+</label>

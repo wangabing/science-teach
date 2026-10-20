@@ -12,12 +12,12 @@ try{
  const range=async(id,v)=>{await page.locator(`#${id}`).fill(String(v));await page.locator(`#${id}`).dispatchEvent('input');};
  const steps=async n=>{await page.evaluate(n=>{for(let i=0;i<n;i++)document.getElementById('step').click();},n);};
  const paused=async()=>{assert.equal(await page.locator('#run').getAttribute('aria-pressed'),'false');};
- await goto('area');
+ await goto('area');await page.evaluate(()=>document.fonts.ready);await page.locator('#area-svg').scrollIntoViewIfNeeded();
  // Pointer coordinates are converted from SVG world to CSS pixels: no assumed scale.
  const points=await page.evaluate(()=>{const svg=document.getElementById('area-svg');const m=svg.getScreenCTM();return [[75,100],[465,100]].map(([x,y])=>{const p=new DOMPoint(x,y).matrixTransform(m);return {x:p.x,y:p.y};});});
  await page.mouse.move(points[0].x,points[0].y);await page.mouse.down();await page.mouse.move(points[1].x,points[1].y,{steps:10});await page.mouse.up();
  assert.ok((await page.locator('#area-feedback').innerText()).includes('1 / 4'));
- await page.locator('.advanced-tools').evaluate(e=>e.open=true);await page.locator('#piece-1').click();await page.locator('#place').click();assert.ok((await page.locator('#area-feedback').innerText()).includes('朝向还没对上'));
+ await page.locator('.advanced-tools').evaluate(e=>e.open=true);await page.locator('#piece-1').click();await page.locator('#place').click();assert.ok((await page.locator('#area-feedback').innerText()).includes('朝向还没对上'),await page.locator('#area-feedback').innerText());
  await page.locator('#rotate').click();await page.locator('#place').click();
  await page.locator('#piece-2').click();for(let i=0;i<3;i++)await page.locator('#rotate').click();await page.locator('#place').click();
  await page.locator('#piece-3').click();await page.locator('#place').click();assert.ok((await page.locator('#area-feedback').innerText()).includes('搬家完成'));
@@ -74,6 +74,6 @@ try{
  for(const path of paths){await reduced.goto(`${base}/labs/${path}/`,{waitUntil:'networkidle'});if(['orbit','three-body','gears'].includes(path))assert.equal(await reduced.locator('#run').getAttribute('aria-pressed'),'false');}
  await reduced.locator('#input-teeth').focus();await reduced.keyboard.press('ArrowRight');assert.equal(await reduced.locator('#input-teeth-value').innerText(),'21');await reduced.close();
  const noJS=await browser.newPage({javaScriptEnabled:false});
- for(const path of paths){await noJS.goto(`${base}/labs/${path}/`);assert.equal(await noJS.locator('h1').count(),1);assert.ok(await noJS.locator('noscript').isVisible());assert.ok(await noJS.locator('svg').count()>0);assert.ok((await noJS.locator('.lab-notes').innerText()).length>100);}
+ for(const path of paths){await noJS.goto(`${base}/labs/${path}/`);assert.equal(await noJS.locator('h1').count(),1);assert.ok(await noJS.locator('noscript').first().isVisible());assert.ok(await noJS.locator('svg').count()>0);assert.ok((await noJS.locator('.lab-notes').innerText()).length>100);}
  await noJS.close();assert.deepEqual(errors,[]);console.log('Six exploration labs passed: complete puzzle, real sections, orbit outcomes, paired three-body, truss equilibrium, gear challenge, pause/reset, keyboard, touch, 320/390px, reduced motion and no-JS.');
 }finally{await browser.close();}

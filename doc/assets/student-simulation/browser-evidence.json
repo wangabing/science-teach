@@ -1,0 +1,420 @@
+{
+  "date": "2026-10-16",
+  "method": "本地生产静态构建，Chrome headless；桌面1440x1000、390x844布局；脚本操作代表任务，不是真实学生使用",
+  "pages": [
+    {
+      "slug": "home",
+      "path": "/",
+      "status": 200,
+      "errors": [],
+      "height": 3615
+    },
+    {
+      "slug": "buoyancy",
+      "path": "/stem-lab/buoyancy/",
+      "status": 200,
+      "errors": [],
+      "height": 1503
+    },
+    {
+      "slug": "pendulum",
+      "path": "/stem-lab/pendulum/",
+      "status": 200,
+      "errors": [],
+      "height": 2216
+    },
+    {
+      "slug": "lens",
+      "path": "/labs/lens/",
+      "status": 200,
+      "errors": [],
+      "height": 3884
+    },
+    {
+      "slug": "area",
+      "path": "/labs/area/",
+      "status": 200,
+      "errors": [],
+      "height": 2669
+    },
+    {
+      "slug": "sections",
+      "path": "/labs/sections/",
+      "status": 200,
+      "errors": [],
+      "height": 2444
+    },
+    {
+      "slug": "mobius",
+      "path": "/labs/mobius/",
+      "status": 200,
+      "errors": [],
+      "height": 3214
+    },
+    {
+      "slug": "moon",
+      "path": "/labs/moon/",
+      "status": 200,
+      "errors": [],
+      "height": 4108
+    },
+    {
+      "slug": "orbit",
+      "path": "/labs/orbit/",
+      "status": 200,
+      "errors": [],
+      "height": 2767
+    },
+    {
+      "slug": "three-body",
+      "path": "/labs/three-body/",
+      "status": 200,
+      "errors": [],
+      "height": 2980
+    },
+    {
+      "slug": "bridge",
+      "path": "/labs/bridge/",
+      "status": 200,
+      "errors": [],
+      "height": 2614
+    },
+    {
+      "slug": "balance",
+      "path": "/labs/balance/",
+      "status": 200,
+      "errors": [],
+      "height": 3936
+    },
+    {
+      "slug": "gears",
+      "path": "/labs/gears/",
+      "status": 200,
+      "errors": [],
+      "height": 2606
+    }
+  ],
+  "operations": [
+    {
+      "slug": "buoyancy",
+      "task": "浸入 0 cm",
+      "observed": [
+        "浸入 0.0 cm：V排 = 100 × 0.0 = 0 cm³；F浮 = 1000 × 10 × 0.000000 = 0.0 N；T = 27 − 0.0 = 27.0 N。"
+      ]
+    },
+    {
+      "slug": "buoyancy",
+      "task": "浸入 5 cm",
+      "observed": [
+        "浸入 5.0 cm：V排 = 100 × 5.0 = 500 cm³；F浮 = 1000 × 10 × 0.000500 = 5.0 N；T = 27 − 5.0 = 22.0 N。"
+      ]
+    },
+    {
+      "slug": "buoyancy",
+      "task": "浸入 10 cm",
+      "observed": [
+        "浸入 10.0 cm：V排 = 100 × 10.0 = 1000 cm³；F浮 = 1000 × 10 × 0.001000 = 10.0 N；T = 27 − 10.0 = 17.0 N。"
+      ]
+    },
+    {
+      "slug": "buoyancy",
+      "task": "完全浸没，密度1200",
+      "observed": [
+        "浸入 10.0 cm：V排 = 100 × 10.0 = 1000 cm³；F浮 = 1200 × 10 × 0.001000 = 12.0 N；T = 27 − 12.0 = 15.0 N。"
+      ]
+    },
+    {
+      "slug": "buoyancy",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 2339
+    },
+    {
+      "slug": "pendulum",
+      "task": "3kg主摆与参考摆，释放后暂停",
+      "observed": [
+        "2.52",
+        "2.52 s",
+        "参考摆固定：1.50 m / 1.0 kg / 地球 / 35° / 无阻尼。与主摆同时释放，以虚线绳表示。"
+      ]
+    },
+    {
+      "slug": "pendulum",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 3824
+    },
+    {
+      "slug": "lens",
+      "task": "首次调焦初态",
+      "observed": [
+        "只移动蓝色光屏，试着让模糊的 F 变清晰。物体和透镜先保持不动。",
+        "尚未对焦"
+      ]
+    },
+    {
+      "slug": "lens",
+      "task": "光屏调至15cm",
+      "observed": [
+        "你调清晰了！光屏来到了光线会合处。记下这一刻，再改变物距、重新调焦，比较两组证据。",
+        "接近清晰"
+      ]
+    },
+    {
+      "slug": "lens",
+      "task": "放大镜情景，记录两组",
+      "observed": [
+        "光屏仍能接到光，但没有清晰图案。虚像需从透镜另一侧用眼睛观察；焦点处则没有有限像距。",
+        "正立 · 放大 · 虚像",
+        "30.010.015.015.00-0.50倒立 · 缩小 · 实像 / 已对焦恢复 16.010.015.0-15.002.50正立 · 放大 · 虚像恢复 2",
+        "最近两组（1 与 2）：固定：焦距 10.0 cm、屏距 15.0 cm。变化：物距 30.0 → 6.0 cm。先让两组都接到清晰实像，再比较物距和像距；虚像和焦点情景可单独观察。"
+      ]
+    },
+    {
+      "slug": "lens",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 6475
+    },
+    {
+      "slug": "area",
+      "task": "辅助搬入四块",
+      "observed": [
+        "5² ≈ 3² + 4² = 25",
+        "外框 (3+4)² = 49；四块三角形共 24。左侧 c²=25，右侧 a²+b²=9+16，都没有变。",
+        "4 / 4"
+      ]
+    },
+    {
+      "slug": "area",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 3419
+    },
+    {
+      "slug": "sections",
+      "task": "中心六边形",
+      "observed": [
+        "6",
+        "5.196"
+      ]
+    },
+    {
+      "slug": "sections",
+      "task": "找五边形",
+      "observed": [
+        "找到五边形了！现在轻轻改变偏移，观察哪条棱上的交点先消失。",
+        "5",
+        "4.251"
+      ]
+    },
+    {
+      "slug": "sections",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 3503
+    },
+    {
+      "slug": "mobius",
+      "task": "预测两条，剪开莫比乌斯带",
+      "observed": [
+        "2",
+        "2",
+        "结果与你的预测不同：剪后是 1 条带。选完整纸带，沿着追踪检验。",
+        "仍是一条更长的双面带。计数已切换为剪后面数与总边界条数。选择每条带追踪，验证连接。"
+      ]
+    },
+    {
+      "slug": "mobius",
+      "task": "双半扭转剪开",
+      "observed": [
+        "得到两条双面带。两条带相互套连，不能直接分开。计数已切换为剪后面数与总边界条数。选择每条带追踪，验证连接。"
+      ]
+    },
+    {
+      "slug": "mobius",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 4611
+    },
+    {
+      "slug": "moon",
+      "task": "满月，无月食",
+      "observed": [
+        "这是几乎圆满的月亮，但黄纬 5.14° 让它错开地球影子。满月还要接近交点才会发生月食。",
+        "0.0%"
+      ]
+    },
+    {
+      "slug": "moon",
+      "task": "真实倾角月食挑战",
+      "observed": [
+        "100.0%",
+        "通过！整个月盘进入本影，真实倾角下也能发生月全食。解释一下为什么这个位置能对齐。"
+      ]
+    },
+    {
+      "slug": "moon",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 6451
+    },
+    {
+      "slug": "orbit",
+      "task": "椭圆单步",
+      "observed": [
+        "准备好了。先预测，再发射；修改参数会清除上次轨迹。",
+        "椭圆轨道：远离地球时变慢，靠近时变快。总能量仍近似守恒。",
+        "近地点 / 远地点高度：1500 / 7140 km"
+      ]
+    },
+    {
+      "slug": "orbit",
+      "task": "8km/s向地心，负能量仍穿地",
+      "observed": [
+        "理想轨道会穿过地球表面：即使总能量为负，也不意味着安全绕行。",
+        "近地点 / 远地点高度：-6371 / 15011 km"
+      ]
+    },
+    {
+      "slug": "orbit",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 3799
+    },
+    {
+      "slug": "three-body",
+      "task": "零扰动运行",
+      "observed": [
+        "δ=0：两套系统完全相同。开始后，位置差应始终为 0。",
+        "δ=0，两边初态完全相同；位置差应为 0。"
+      ]
+    },
+    {
+      "slug": "three-body",
+      "task": "微扰快放后暂停",
+      "observed": [
+        "只有第一颗星向右移动了一点。两边独立计算；比较同一时刻的位置差和能量误差。",
+        "初始 RMS=0.000577，当前=0.249490，相当于初始的 432.13 倍。"
+      ]
+    },
+    {
+      "slug": "three-body",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 4129
+    },
+    {
+      "slug": "bridge",
+      "task": "A-E及C-E斜撑",
+      "observed": [
+        "挑战完成：总杆长不超过 18 m，当前简化模型稳定。尝试拆掉一根杆，再看看。",
+        "20.00 + 20.00 = 40.00 kN"
+      ]
+    },
+    {
+      "slug": "bridge",
+      "task": "载荷加倍",
+      "observed": [
+        "40.00 + 40.00 = 80.00 kN",
+        "A–B2.00拉伸50.00B–C2.00拉伸50.00D–E2.00接近零力0.00E–F2.00接近零力-0.00A–D1.60接近零力0.00B–E1.60拉伸80.00C–F1.60接近零力0.00A–E2.56压缩-64.03C–E2.56压缩-64.03"
+      ]
+    },
+    {
+      "slug": "bridge",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 3992
+    },
+    {
+      "slug": "balance",
+      "task": "A/B降低配重",
+      "observed": [
+        "固定：倾角 12.0° · 支撑宽度 60 cm · 架 2.0 kg · 配重 2.0 kg · 横向 0 cm。",
+        "只改变高度：整体重心从 62.50 → 36.00 cm；稳定余量从 16.72 → 22.35 cm。对照看的是释放前的姿态；松开后的翻倒过程另行验证。"
+      ]
+    },
+    {
+      "slug": "balance",
+      "task": "20度运输挑战",
+      "observed": [
+        "方案通过！20° 倾角下余量至少 3 cm。松开夹持验证，再预测所有质量加倍会怎样。"
+      ]
+    },
+    {
+      "slug": "balance",
+      "task": "所有质量加倍",
+      "observed": [
+        "预测得到支持：临界角和余量不变，恢复力矩加倍。两种质量同比增加，重心公式的分子、分母同时乘二，质量比例不变；不是只加配重。",
+        "原方案架 2.0 kg · 配重 4.0 kg · 高度 12 cm−50 cm+50 cm重力线落点10.19 cm稳定余量39.81 cm向右临界角60.75°恢复力矩22.02 N·m所有质量 ×2架 4.0 kg · 配重 8.0 kg · 高度 12 cm−50 cm+50 cm重力线落点10.19 cm稳定余量39.81 cm向右临界角60.75°恢复力矩44.04 N·m"
+      ]
+    },
+    {
+      "slug": "balance",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 6736
+    },
+    {
+      "slug": "gears",
+      "task": "20:60加中间轮",
+      "observed": [
+        "4.00 rpm",
+        "同向",
+        "挑战完成！输出为输入的 1/3，首尾同向。改变中间轮齿数，观察这个结果是否保持。"
+      ]
+    },
+    {
+      "slug": "gears",
+      "task": "中间轮改50齿",
+      "observed": [
+        "4.00 rpm",
+        "同向"
+      ]
+    },
+    {
+      "slug": "gears",
+      "task": "390px布局",
+      "overflow": false,
+      "height": 3745
+    }
+  ],
+  "stem_followup": {
+    "results": [
+      {
+        "slug": "buoyancy",
+        "n": 0,
+        "text": "浸入 0.0 cm：V排 = 100 × 0.0 = 0 cm³；F浮 = 1000 × 10 × 0.000000 = 0.0 N；T = 27 − 0.0 = 27.0 N。"
+      },
+      {
+        "slug": "buoyancy",
+        "n": 5,
+        "text": "浸入 5.0 cm：V排 = 100 × 5.0 = 500 cm³；F浮 = 1000 × 10 × 0.000500 = 5.0 N；T = 27 − 5.0 = 22.0 N。"
+      },
+      {
+        "slug": "buoyancy",
+        "n": 10,
+        "text": "浸入 10.0 cm：V排 = 100 × 10.0 = 1000 cm³；F浮 = 1000 × 10 × 0.001000 = 10.0 N；T = 27 − 10.0 = 17.0 N。"
+      },
+      {
+        "slug": "buoyancy",
+        "task": "density1200",
+        "text": "浸入 10.0 cm：V排 = 100 × 10.0 = 1000 cm³；F浮 = 1200 × 10 × 0.001000 = 12.0 N；T = 27 − 12.0 = 15.0 N。"
+      },
+      {
+        "slug": "pendulum",
+        "text": "2.52",
+        "time": "4.54",
+        "status": "正在准备实验装置…"
+      }
+    ],
+    "logs": []
+  },
+  "build": {
+    "checked_files": 73,
+    "errors": 0,
+    "warnings_in_typecheck": 0,
+    "built_pages": 19,
+    "bundler_warning": "部分chunk压缩后超过500kB；未做性能量化"
+  }
+}

@@ -1,0 +1,49 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
+import StudyNotebook from '../../components/StudyNotebook.astro';
+import '../../styles/electricity-studios.css';
+---
+<SiteLayout title="电容时间台 · 电源断开，电压还在吗？" description="切换充电、开路保持和放电，观察RC电压、电流、极板电荷与能量账本。用暂停、单步和两组记录发现时间常数。">
+<div class="electric-study capacitor-study wrap">
+ <p class="breadcrumb"><a href="/spaces/physics/">物理实验室</a> / 电容时间台</p>
+ <header class="study-intro"><div><p class="kicker">电学路线 · 给变化一点时间</p><h1>电源断开，<br/><span>电压还在吗？</span></h1></div><p>电流可以停，电压未必归零。<small>充一点，留一会儿，再放掉。<br/>让开关、曲线与能量账本一起告诉你发生了什么。</small></p></header>
+ <ExperimentHistory slug="capacitors" />
+ <noscript><p class="study-noscript">启用 JavaScript 可推进充放电。6 V、1000 Ω、1000 µF时，时间常数1 s，从零充电1 s后约3.793 V；理想开路保持时电流为0、电压不变；经电阻放电时电压指数下降。下方原理仍可阅读。</p></noscript>
+ <fieldset id="rc-tools" class="study-tools" disabled aria-label="电容充放电工作台">
+  <div class="study-station"><h2>时间与电荷实验板</h2><span id="rc-clock">已暂停 · t = 0.00 s</span></div>
+  <section class="study-first"><div><h3>先充到 3 V，再留住它，最后放掉</h3><p>先播放或单步充电；切“保持”再推进时间，最后切“放电”再推进。</p></div><button id="rc-prepare" class="study-primary" type="button">从零开始这次观察</button><p id="rc-task-note" role="status">当前已暂停。先推进充电，让电容电压达到3 V。</p></section>
+  <div class="study-switches" role="group" aria-label="电容电路挡位"><button type="button" data-rc-mode="charge" aria-pressed="true">充电</button><button type="button" data-rc-mode="hold" aria-pressed="false">保持（开路）</button><button type="button" data-rc-mode="discharge" aria-pressed="false">放电</button></div>
+  <div class="study-playback"><button id="rc-play" class="study-primary" type="button" aria-pressed="false">播放</button><button id="rc-step" type="button">单步 0.1 s</button><button id="rc-step-second" type="button">单步 1 s</button><p>横轴是仿真时间；切挡保留电压，改参数从零重来。</p></div>
+  <div class="study-console">
+   <div class="study-visual">
+    <svg id="rc-svg" viewBox="0 0 720 440" role="img" aria-label="三挡开关经电阻连接电容：充电接电源，保持开路，放电接回电阻与下端">
+     <defs><pattern id="rc-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#d8d7ea"/></pattern></defs><rect width="720" height="440" fill="url(#rc-grid)"/>
+     <path d="M100 190V100H280M100 270V360H580V245M280 220V360M360 140H400M500 140H580V215" stroke="#7c85a5" stroke-width="5" fill="none"/>
+     <rect x="58" y="190" width="84" height="80" rx="10" fill="#153b56"/><text x="100" y="217" class="study-source-small" text-anchor="middle">理想源</text><text id="rc-source-label" x="100" y="248" class="study-source-value" text-anchor="middle">6 V</text>
+     <circle cx="280" cy="100" r="6" fill="#6656a8"/><circle cx="280" cy="160" r="6" fill="#6656a8"/><circle cx="280" cy="220" r="6" fill="#6656a8"/><circle cx="360" cy="140" r="7" fill="#6656a8"/><path id="rc-switch-contact" d="M360 140L280 100" stroke="#6656a8" stroke-width="6" stroke-linecap="round"/>
+     <text x="233" y="84" class="study-diagram-unit" text-anchor="end">充电</text><text x="233" y="164" class="study-diagram-unit" text-anchor="end">保持</text><text x="233" y="224" class="study-diagram-unit" text-anchor="end">放电</text>
+     <rect x="400" y="120" width="100" height="40" rx="4" fill="#f5cfac" stroke="#b86531" stroke-width="3"/><path d="M416 128V152M432 128V152M448 128V152M464 128V152M480 128V152" stroke="#b86531" stroke-width="2"/><text id="rc-resistor-label" x="450" y="193" class="study-diagram-unit" text-anchor="middle">1000 Ω</text><text id="rc-direction" x="450" y="93" class="study-diagram-label" text-anchor="middle">充电 →</text>
+     <rect x="540" y="217" width="80" height="26" fill="#ebe8f5"/><path d="M535 215H625M535 245H625" stroke="#6656a8" stroke-width="7"/><text x="580" y="235" class="study-dielectric" text-anchor="middle">介质</text>
+     <g id="rc-charge-symbols" opacity="0">{[548,569,590,611].map(x=><><text x={x} y="201" text-anchor="middle" class="study-positive">+</text><text x={x} y="273" text-anchor="middle" class="study-negative">−</text></>)}</g>
+     <text id="rc-capacitor-label" x="580" y="312" class="study-diagram-unit" text-anchor="middle">1000 µF</text><text x="580" y="336" class="study-diagram-unit" text-anchor="middle">异号电荷分居两极板</text>
+     <text x="350" y="407" class="study-diagram-unit" text-anchor="middle">符号深浅仅为示意，Q = C × U 才是电荷量</text>
+    </svg>
+    <dl class="study-live"><div><dt>电容电压 Uc</dt><dd id="rc-voltage">0.000 V</dd></div><div><dt>有符号电流 I</dt><dd id="rc-current">+6.000 mA</dd></div><div><dt>正极板电荷 +Q</dt><dd id="rc-charge">0.000 mC</dd></div><div><dt>储存的能量</dt><dd id="rc-energy">0.000 mJ</dd></div></dl>
+   </div>
+   <aside class="study-controls" aria-label="RC元件参数"><header><span>时间常数 τ = RC</span><strong id="rc-tau">1.000 s</strong></header>
+    {[["resistance","电阻 R",500,5000,1000,100,"Ω"],["capacitance","电容 C",200,2000,1000,100,"µF"],["emf","电源电压",3,9,6,1,"V"]].map(([id,label,min,max,value,step,unit])=><label for={`rc-${id}`}><span>{label}<output id={`rc-${id}-value`}>{value} {unit}</output></span><input id={`rc-${id}`} type="range" min={min} max={max} step={step} value={value}/></label>)}
+    <p>改任一元件参数会暂停，并把电压、时间、曲线与能量账本重置为零；已保存记录仍在。这样可从同一起点作对照。</p>
+   </aside>
+  </div>
+  <p id="rc-state-note" class="study-note" role="status">充电：电源通过电阻分离极板电荷；电压升高，电流逐渐减小。</p>
+  <section class="study-traces" aria-labelledby="rc-traces-heading"><h2 id="rc-traces-heading">同一段时间，两种变化。</h2><p id="rc-trace-note">曲线只记录本页实际推进的采样，最多最近400点；恢复记录不补造过去曲线。</p>
+   <div>{[['voltage','电容电压 / V'],['current','有符号电流 / mA']].map(([id,label])=><figure><figcaption>{label}</figcaption><svg viewBox="0 0 620 220" role="img" aria-label={`${label}随仿真时间的曲线`}><path d="M40 20V180H600M40 100H600" stroke="#c8d4e0" fill="none"/><text id={`rc-${id}-max`} x="3" y="26">{id==='voltage'?'6':'6'}</text><text x="15" y={id==='voltage'?'185':'105'}>0</text>{id==='current'&&<text id="rc-current-min" x="3" y="184">−6</text>}<path id={`rc-${id}-curve`} fill="none" stroke={id==='voltage'?'#6656a8':'#b86531'} stroke-width="3"/><circle id={`rc-${id}-point`} cx="40" cy={id==='voltage'?180:30} r="4" fill={id==='voltage'?'#6656a8':'#b86531'}/><text class="rc-trace-start" x="40" y="210">0.00 s</text><text class="rc-trace-end" x="540" y="210">0.00 s</text></svg></figure>)}</div>
+  </section>
+  <section class="study-transfer"><h2>电容加倍，一秒后会充得更高吗？</h2><p>从零开始，保持6 V与1000 Ω，只把1000 µF改为2000 µF。先预测，再用“单步1 s”留下同刻对照。</p><div role="group" aria-label="电容大小与充电速度预测"><button type="button" data-rc-answer="higher" aria-pressed="false">电压更高</button><button type="button" data-rc-answer="lower" aria-pressed="false">电压更低</button><button type="button" data-rc-answer="same" aria-pressed="false">电压相同</button></div><p id="rc-transfer-note" role="status">容量更大，和同一秒能到更高电压，是一回事吗？</p></section>
+  <StudyNotebook note="恢复后暂停，只从保存时刻的当前点重新画曲线；不恢复任务完成状态。" />
+ </fieldset>
+ <section class="study-ledger"><div><p class="kicker">能量也要对得上</p><h2>留在电场里，<br/>还是变成了热？</h2><p>W电源 = ½CUc² + W电阻耗散</p><output id="rc-ledger">0.000 = 0.000 + 0.000 mJ</output><p>这是从本次零初态累计的能量。放电时电源不再做功，储能转为电阻耗散。三位小数显示可能有舍入差。</p></div><details><summary>模型边界与电流方向</summary><p>理想电压源、恒阻、理想电容，无漏电、无寄生电阻或电感。保持时开路，电压理想地不变；真实电容会有漏电。没有模拟闪光灯、LED或危险电压装置。</p><p>电容介质中没有导电电流穿过：两极板电荷分离，能量存于电场。电流正方向取经电阻流向正极板，充电为正、放电为负。切挡瞬间电压连续，电流可以突变。</p><p>从零充电：Uc = E(1−e^(−t/RC))；从U₀放电：Uc = U₀e^(−t/RC)。τ时达到最终变化的约63.2%，不代表已经充满；理想指数过程只渐近达到终值。</p></details></section>
+ <aside class="study-next"><a href="/labs/resistors/">回到电阻分压台 ↗</a><a href="/labs/circuits/">自由搭建电路 ↗</a></aside>
+</div><script>import '../../scripts/exploration/capacitors';</script>
+</SiteLayout>

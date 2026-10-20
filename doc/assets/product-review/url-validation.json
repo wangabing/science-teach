@@ -1,0 +1,852 @@
+{
+  "checkedAt": "2026-10-18T11:35:05.418277+00:00",
+  "baseURL": "http://127.0.0.1:4324",
+  "scope": "HTTP可访问性；非交互或效果验收",
+  "total": 140,
+  "passed": 140,
+  "failed": 0,
+  "previousBaseURL": "http://localhost:4321",
+  "reason": "4321运行早期版本，/labs/lens/等路由404",
+  "results": [
+    {
+      "port": 4324,
+      "id": "R001",
+      "url": "http://127.0.0.1:4324/stem-lab/buoyancy/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R002",
+      "url": "http://127.0.0.1:4324/stem-lab/pendulum/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R003",
+      "url": "http://127.0.0.1:4324/labs/lens/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R004",
+      "url": "http://127.0.0.1:4324/labs/interference/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R005",
+      "url": "http://127.0.0.1:4324/labs/circuits/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R006",
+      "url": "http://127.0.0.1:4324/labs/resistors/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R007",
+      "url": "http://127.0.0.1:4324/labs/capacitors/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R008",
+      "url": "http://127.0.0.1:4324/labs/area/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R009",
+      "url": "http://127.0.0.1:4324/labs/sections/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R010",
+      "url": "http://127.0.0.1:4324/labs/mobius/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R011",
+      "url": "http://127.0.0.1:4324/labs/reflection/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R012",
+      "url": "http://127.0.0.1:4324/labs/circle-angles/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R013",
+      "url": "http://127.0.0.1:4324/labs/triangle-rigidity/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R014",
+      "url": "http://127.0.0.1:4324/labs/ellipse-string/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R015",
+      "url": "http://127.0.0.1:4324/labs/moon/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R016",
+      "url": "http://127.0.0.1:4324/labs/orbit/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R017",
+      "url": "http://127.0.0.1:4324/labs/three-body/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R018",
+      "url": "http://127.0.0.1:4324/labs/bridge/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R019",
+      "url": "http://127.0.0.1:4324/labs/balance/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R020",
+      "url": "http://127.0.0.1:4324/labs/gears/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R021",
+      "url": "http://127.0.0.1:4324/labs/galileo-incline/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R022",
+      "url": "http://127.0.0.1:4324/labs/collision-track/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R023",
+      "url": "http://127.0.0.1:4324/labs/resonance-table/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R024",
+      "url": "http://127.0.0.1:4324/labs/electric-field-probe/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R025",
+      "url": "http://127.0.0.1:4324/labs/faraday-coil/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R026",
+      "url": "http://127.0.0.1:4324/labs/magnetic-sorter/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R027",
+      "url": "http://127.0.0.1:4324/labs/joule-calorimeter/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R028",
+      "url": "http://127.0.0.1:4324/labs/ideal-gas-piston/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R029",
+      "url": "http://127.0.0.1:4324/labs/brownian-microscope/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R030",
+      "url": "http://127.0.0.1:4324/labs/refraction-interface/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R031",
+      "url": "http://127.0.0.1:4324/labs/cube-nets/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R032",
+      "url": "http://127.0.0.1:4324/labs/cavalieri-slices/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R033",
+      "url": "http://127.0.0.1:4324/labs/spatial-perpendicular/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R034",
+      "url": "http://127.0.0.1:4324/labs/conic-sections/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R035",
+      "url": "http://127.0.0.1:4324/labs/moving-point-function/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R036",
+      "url": "http://127.0.0.1:4324/labs/unit-circle-wave/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R037",
+      "url": "http://127.0.0.1:4324/labs/tangent-microscope/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R038",
+      "url": "http://127.0.0.1:4324/labs/galton-board/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R039",
+      "url": "http://127.0.0.1:4324/labs/euler-polyhedra/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R040",
+      "url": "http://127.0.0.1:4324/labs/sphere-packing/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R041",
+      "url": "http://127.0.0.1:4324/labs/three-suns/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R042",
+      "url": "http://127.0.0.1:4324/labs/lagrange-station/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R043",
+      "url": "http://127.0.0.1:4324/labs/light-cone-messages/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R044",
+      "url": "http://127.0.0.1:4324/labs/relativistic-clocks/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R045",
+      "url": "http://127.0.0.1:4324/labs/solar-sail/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R046",
+      "url": "http://127.0.0.1:4324/labs/black-hole-rays/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R047",
+      "url": "http://127.0.0.1:4324/labs/tidal-roche/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R048",
+      "url": "http://127.0.0.1:4324/labs/cosmic-radio/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R049",
+      "url": "http://127.0.0.1:4324/labs/gravitational-chirp/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R050",
+      "url": "http://127.0.0.1:4324/labs/cosmic-background/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R051",
+      "url": "http://127.0.0.1:4324/labs/funicular-arch/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R052",
+      "url": "http://127.0.0.1:4324/labs/cantilever-design/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R053",
+      "url": "http://127.0.0.1:4324/labs/seismic-tower/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R054",
+      "url": "http://127.0.0.1:4324/labs/tensegrity/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R055",
+      "url": "http://127.0.0.1:4324/labs/suspension-cable/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R056",
+      "url": "http://127.0.0.1:4324/labs/crank-slider/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R057",
+      "url": "http://127.0.0.1:4324/labs/pulley-lift/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R058",
+      "url": "http://127.0.0.1:4324/labs/hydraulic-lift/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R059",
+      "url": "http://127.0.0.1:4324/labs/miura-canopy/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R060",
+      "url": "http://127.0.0.1:4324/labs/thermal-house/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R061",
+      "url": "http://127.0.0.1:4324/labs/projectile-launch/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R062",
+      "url": "http://127.0.0.1:4324/labs/atwood-machine/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R063",
+      "url": "http://127.0.0.1:4324/labs/centripetal-force/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R064",
+      "url": "http://127.0.0.1:4324/labs/torque-balance/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R065",
+      "url": "http://127.0.0.1:4324/labs/spring-energy-store/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R066",
+      "url": "http://127.0.0.1:4324/labs/venturi-tube/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R067",
+      "url": "http://127.0.0.1:4324/labs/hydrostatic-pressure/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R068",
+      "url": "http://127.0.0.1:4324/labs/young-double-slit/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R069",
+      "url": "http://127.0.0.1:4324/labs/single-slit-diffraction/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R070",
+      "url": "http://127.0.0.1:4324/labs/acoustic-beats/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R071",
+      "url": "http://127.0.0.1:4324/labs/standing-wave-string/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R072",
+      "url": "http://127.0.0.1:4324/labs/doppler-source/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R073",
+      "url": "http://127.0.0.1:4324/labs/wire-magnetic-force/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R074",
+      "url": "http://127.0.0.1:4324/labs/ideal-transformer/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R075",
+      "url": "http://127.0.0.1:4324/labs/rlc-frequency-selector/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R076",
+      "url": "http://127.0.0.1:4324/labs/carnot-engine/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R077",
+      "url": "http://127.0.0.1:4324/labs/mixing-calorimetry/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R078",
+      "url": "http://127.0.0.1:4324/labs/fourier-heat-bridge/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R079",
+      "url": "http://127.0.0.1:4324/labs/photoelectric-effect/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R080",
+      "url": "http://127.0.0.1:4324/labs/rutherford-scattering/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R081",
+      "url": "http://127.0.0.1:4324/labs/pythagorean-squares/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R082",
+      "url": "http://127.0.0.1:4324/labs/triangle-centroid/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R083",
+      "url": "http://127.0.0.1:4324/labs/similarity-shadow/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R084",
+      "url": "http://127.0.0.1:4324/labs/sine-rule-circle/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R085",
+      "url": "http://127.0.0.1:4324/labs/cosine-rule-hinge/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R086",
+      "url": "http://127.0.0.1:4324/labs/ptolemy-quadrilateral/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R087",
+      "url": "http://127.0.0.1:4324/labs/parabola-focus-directrix/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R088",
+      "url": "http://127.0.0.1:4324/labs/hyperbola-focal-difference/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R089",
+      "url": "http://127.0.0.1:4324/labs/circle-inversion/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R090",
+      "url": "http://127.0.0.1:4324/labs/determinant-area/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R091",
+      "url": "http://127.0.0.1:4324/labs/cross-product-space/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R092",
+      "url": "http://127.0.0.1:4324/labs/skew-lines-distance/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R093",
+      "url": "http://127.0.0.1:4324/labs/sphere-plane-section/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R094",
+      "url": "http://127.0.0.1:4324/labs/cuboid-diagonal/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R095",
+      "url": "http://127.0.0.1:4324/labs/solid-of-revolution/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R096",
+      "url": "http://127.0.0.1:4324/labs/riemann-area/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R097",
+      "url": "http://127.0.0.1:4324/labs/monte-carlo-pi/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R098",
+      "url": "http://127.0.0.1:4324/labs/bayes-screening/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R099",
+      "url": "http://127.0.0.1:4324/labs/complex-rotation/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R100",
+      "url": "http://127.0.0.1:4324/labs/quadratic-discriminant/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R101",
+      "url": "http://127.0.0.1:4324/labs/kepler-area-clock/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R102",
+      "url": "http://127.0.0.1:4324/labs/escape-speed-well/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R103",
+      "url": "http://127.0.0.1:4324/labs/hohmann-transfer/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R104",
+      "url": "http://127.0.0.1:4324/labs/exoplanet-transit/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R105",
+      "url": "http://127.0.0.1:4324/labs/stellar-radial-velocity/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R106",
+      "url": "http://127.0.0.1:4324/labs/habitable-zone/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R107",
+      "url": "http://127.0.0.1:4324/labs/stellar-blackbody/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R108",
+      "url": "http://127.0.0.1:4324/labs/stellar-lifetime/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R109",
+      "url": "http://127.0.0.1:4324/labs/neutron-star-compactness/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R110",
+      "url": "http://127.0.0.1:4324/labs/cosmological-redshift/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R111",
+      "url": "http://127.0.0.1:4324/labs/gravitational-clock/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R112",
+      "url": "http://127.0.0.1:4324/labs/einstein-lens/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R113",
+      "url": "http://127.0.0.1:4324/labs/relativistic-precession/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R114",
+      "url": "http://127.0.0.1:4324/labs/hill-sphere/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R115",
+      "url": "http://127.0.0.1:4324/labs/rocket-mass-ledger/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R116",
+      "url": "http://127.0.0.1:4324/labs/relativistic-energy/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R117",
+      "url": "http://127.0.0.1:4324/labs/interstellar-dust-impact/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R118",
+      "url": "http://127.0.0.1:4324/labs/telescope-resolution/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R119",
+      "url": "http://127.0.0.1:4324/labs/interferometer-baseline/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R120",
+      "url": "http://127.0.0.1:4324/labs/hubble-distance-ladder/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R121",
+      "url": "http://127.0.0.1:4324/labs/triangle-truss-joint/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R122",
+      "url": "http://127.0.0.1:4324/labs/moving-load-beam/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R123",
+      "url": "http://127.0.0.1:4324/labs/euler-column/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R124",
+      "url": "http://127.0.0.1:4324/labs/eccentric-column-stress/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R125",
+      "url": "http://127.0.0.1:4324/labs/retaining-wall-overturn/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R126",
+      "url": "http://127.0.0.1:4324/labs/slope-friction/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R127",
+      "url": "http://127.0.0.1:4324/labs/screw-jack/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R128",
+      "url": "http://127.0.0.1:4324/labs/wedge-lift/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R129",
+      "url": "http://127.0.0.1:4324/labs/belt-drive/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R130",
+      "url": "http://127.0.0.1:4324/labs/planetary-gear/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R131",
+      "url": "http://127.0.0.1:4324/labs/four-bar-linkage/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R132",
+      "url": "http://127.0.0.1:4324/labs/scissor-lift/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R133",
+      "url": "http://127.0.0.1:4324/labs/spherical-cap-dome/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R134",
+      "url": "http://127.0.0.1:4324/labs/diagonal-bracing/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R135",
+      "url": "http://127.0.0.1:4324/labs/honeycomb-relative-density/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R136",
+      "url": "http://127.0.0.1:4324/labs/sandwich-beam/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R137",
+      "url": "http://127.0.0.1:4324/labs/room-reverberation/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R138",
+      "url": "http://127.0.0.1:4324/labs/solar-shading/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R139",
+      "url": "http://127.0.0.1:4324/labs/rainwater-harvesting/",
+      "status": 200
+    },
+    {
+      "port": 4324,
+      "id": "R140",
+      "url": "http://127.0.0.1:4324/labs/stack-ventilation/",
+      "status": 200
+    }
+  ]
+}

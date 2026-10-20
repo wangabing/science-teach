@@ -1,0 +1,1362 @@
+{
+  "checkedAt": "2026-10-18T11:53:44.154678+00:00",
+  "baseURL": "http://127.0.0.1:4324",
+  "service": "production preview; Astro build 147 pages; check 0 errors/warnings/hints",
+  "cause": "Vite optimized Three.js and OrbitControls dependency requests returned 504; application module did not execute",
+  "resolution": "replace broken development server with current production preview on same port",
+  "scope": "140 pages and production JavaScript HTTP checks; does not assert all 140 interaction flows",
+  "pages": [
+    {
+      "id": "R001",
+      "url": "http://127.0.0.1:4324/stem-lab/buoyancy/",
+      "status": 200,
+      "scripts": [
+        "/_astro/buoyancy.astro_astro_type_script_index_0_lang.BfsYObPU.js"
+      ]
+    },
+    {
+      "id": "R002",
+      "url": "http://127.0.0.1:4324/stem-lab/pendulum/",
+      "status": 200,
+      "scripts": [
+        "/_astro/pendulum.astro_astro_type_script_index_0_lang.C_Lg3xQf.js"
+      ]
+    },
+    {
+      "id": "R003",
+      "url": "http://127.0.0.1:4324/labs/lens/",
+      "status": 200,
+      "scripts": [
+        "/_astro/lens.astro_astro_type_script_index_0_lang.puBjsoQ_.js"
+      ]
+    },
+    {
+      "id": "R004",
+      "url": "http://127.0.0.1:4324/labs/interference/",
+      "status": 200,
+      "scripts": [
+        "/_astro/interference.astro_astro_type_script_index_0_lang.CQli7MOz.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R005",
+      "url": "http://127.0.0.1:4324/labs/circuits/",
+      "status": 200,
+      "scripts": [
+        "/_astro/circuits.astro_astro_type_script_index_0_lang.BORTEAEL.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R006",
+      "url": "http://127.0.0.1:4324/labs/resistors/",
+      "status": 200,
+      "scripts": [
+        "/_astro/resistors.astro_astro_type_script_index_0_lang.FqpY0rMq.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R007",
+      "url": "http://127.0.0.1:4324/labs/capacitors/",
+      "status": 200,
+      "scripts": [
+        "/_astro/capacitors.astro_astro_type_script_index_0_lang.CPWXfxPE.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R008",
+      "url": "http://127.0.0.1:4324/labs/area/",
+      "status": 200,
+      "scripts": [
+        "/_astro/area.astro_astro_type_script_index_0_lang.X5uyQtp7.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R009",
+      "url": "http://127.0.0.1:4324/labs/sections/",
+      "status": 200,
+      "scripts": [
+        "/_astro/sections.astro_astro_type_script_index_0_lang.DZp73lEc.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R010",
+      "url": "http://127.0.0.1:4324/labs/mobius/",
+      "status": 200,
+      "scripts": [
+        "/_astro/mobius.astro_astro_type_script_index_0_lang.BWrXW_XE.js"
+      ]
+    },
+    {
+      "id": "R011",
+      "url": "http://127.0.0.1:4324/labs/reflection/",
+      "status": 200,
+      "scripts": [
+        "/_astro/GeometryStudio.astro_astro_type_script_index_0_lang.BJziIk4d.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R012",
+      "url": "http://127.0.0.1:4324/labs/circle-angles/",
+      "status": 200,
+      "scripts": [
+        "/_astro/GeometryStudio.astro_astro_type_script_index_0_lang.BJziIk4d.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R013",
+      "url": "http://127.0.0.1:4324/labs/triangle-rigidity/",
+      "status": 200,
+      "scripts": [
+        "/_astro/GeometryStudio.astro_astro_type_script_index_0_lang.BJziIk4d.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R014",
+      "url": "http://127.0.0.1:4324/labs/ellipse-string/",
+      "status": 200,
+      "scripts": [
+        "/_astro/GeometryStudio.astro_astro_type_script_index_0_lang.BJziIk4d.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R015",
+      "url": "http://127.0.0.1:4324/labs/moon/",
+      "status": 200,
+      "scripts": [
+        "/_astro/moon.astro_astro_type_script_index_0_lang.WDL8FySi.js"
+      ]
+    },
+    {
+      "id": "R016",
+      "url": "http://127.0.0.1:4324/labs/orbit/",
+      "status": 200,
+      "scripts": [
+        "/_astro/orbit.astro_astro_type_script_index_0_lang.fNcE7L8n.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R017",
+      "url": "http://127.0.0.1:4324/labs/three-body/",
+      "status": 200,
+      "scripts": [
+        "/_astro/three-body.astro_astro_type_script_index_0_lang.ByyAvCqu.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R018",
+      "url": "http://127.0.0.1:4324/labs/bridge/",
+      "status": 200,
+      "scripts": [
+        "/_astro/bridge.astro_astro_type_script_index_0_lang.ZkeZDSZ2.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R019",
+      "url": "http://127.0.0.1:4324/labs/balance/",
+      "status": 200,
+      "scripts": [
+        "/_astro/balance.astro_astro_type_script_index_0_lang.B7ktGWmv.js"
+      ]
+    },
+    {
+      "id": "R020",
+      "url": "http://127.0.0.1:4324/labs/gears/",
+      "status": 200,
+      "scripts": [
+        "/_astro/gears.astro_astro_type_script_index_0_lang.CF0Y11-V.js",
+        "/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js"
+      ]
+    },
+    {
+      "id": "R021",
+      "url": "http://127.0.0.1:4324/labs/galileo-incline/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R022",
+      "url": "http://127.0.0.1:4324/labs/collision-track/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R023",
+      "url": "http://127.0.0.1:4324/labs/resonance-table/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R024",
+      "url": "http://127.0.0.1:4324/labs/electric-field-probe/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R025",
+      "url": "http://127.0.0.1:4324/labs/faraday-coil/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R026",
+      "url": "http://127.0.0.1:4324/labs/magnetic-sorter/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R027",
+      "url": "http://127.0.0.1:4324/labs/joule-calorimeter/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R028",
+      "url": "http://127.0.0.1:4324/labs/ideal-gas-piston/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R029",
+      "url": "http://127.0.0.1:4324/labs/brownian-microscope/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R030",
+      "url": "http://127.0.0.1:4324/labs/refraction-interface/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R031",
+      "url": "http://127.0.0.1:4324/labs/cube-nets/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R032",
+      "url": "http://127.0.0.1:4324/labs/cavalieri-slices/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R033",
+      "url": "http://127.0.0.1:4324/labs/spatial-perpendicular/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R034",
+      "url": "http://127.0.0.1:4324/labs/conic-sections/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R035",
+      "url": "http://127.0.0.1:4324/labs/moving-point-function/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R036",
+      "url": "http://127.0.0.1:4324/labs/unit-circle-wave/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R037",
+      "url": "http://127.0.0.1:4324/labs/tangent-microscope/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R038",
+      "url": "http://127.0.0.1:4324/labs/galton-board/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R039",
+      "url": "http://127.0.0.1:4324/labs/euler-polyhedra/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R040",
+      "url": "http://127.0.0.1:4324/labs/sphere-packing/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R041",
+      "url": "http://127.0.0.1:4324/labs/three-suns/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R042",
+      "url": "http://127.0.0.1:4324/labs/lagrange-station/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R043",
+      "url": "http://127.0.0.1:4324/labs/light-cone-messages/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R044",
+      "url": "http://127.0.0.1:4324/labs/relativistic-clocks/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R045",
+      "url": "http://127.0.0.1:4324/labs/solar-sail/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R046",
+      "url": "http://127.0.0.1:4324/labs/black-hole-rays/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R047",
+      "url": "http://127.0.0.1:4324/labs/tidal-roche/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R048",
+      "url": "http://127.0.0.1:4324/labs/cosmic-radio/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R049",
+      "url": "http://127.0.0.1:4324/labs/gravitational-chirp/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R050",
+      "url": "http://127.0.0.1:4324/labs/cosmic-background/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R051",
+      "url": "http://127.0.0.1:4324/labs/funicular-arch/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R052",
+      "url": "http://127.0.0.1:4324/labs/cantilever-design/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R053",
+      "url": "http://127.0.0.1:4324/labs/seismic-tower/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R054",
+      "url": "http://127.0.0.1:4324/labs/tensegrity/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R055",
+      "url": "http://127.0.0.1:4324/labs/suspension-cable/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R056",
+      "url": "http://127.0.0.1:4324/labs/crank-slider/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R057",
+      "url": "http://127.0.0.1:4324/labs/pulley-lift/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R058",
+      "url": "http://127.0.0.1:4324/labs/hydraulic-lift/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R059",
+      "url": "http://127.0.0.1:4324/labs/miura-canopy/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R060",
+      "url": "http://127.0.0.1:4324/labs/thermal-house/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R061",
+      "url": "http://127.0.0.1:4324/labs/projectile-launch/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R062",
+      "url": "http://127.0.0.1:4324/labs/atwood-machine/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R063",
+      "url": "http://127.0.0.1:4324/labs/centripetal-force/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R064",
+      "url": "http://127.0.0.1:4324/labs/torque-balance/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R065",
+      "url": "http://127.0.0.1:4324/labs/spring-energy-store/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R066",
+      "url": "http://127.0.0.1:4324/labs/venturi-tube/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R067",
+      "url": "http://127.0.0.1:4324/labs/hydrostatic-pressure/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R068",
+      "url": "http://127.0.0.1:4324/labs/young-double-slit/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R069",
+      "url": "http://127.0.0.1:4324/labs/single-slit-diffraction/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R070",
+      "url": "http://127.0.0.1:4324/labs/acoustic-beats/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R071",
+      "url": "http://127.0.0.1:4324/labs/standing-wave-string/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R072",
+      "url": "http://127.0.0.1:4324/labs/doppler-source/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R073",
+      "url": "http://127.0.0.1:4324/labs/wire-magnetic-force/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R074",
+      "url": "http://127.0.0.1:4324/labs/ideal-transformer/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R075",
+      "url": "http://127.0.0.1:4324/labs/rlc-frequency-selector/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R076",
+      "url": "http://127.0.0.1:4324/labs/carnot-engine/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R077",
+      "url": "http://127.0.0.1:4324/labs/mixing-calorimetry/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R078",
+      "url": "http://127.0.0.1:4324/labs/fourier-heat-bridge/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R079",
+      "url": "http://127.0.0.1:4324/labs/photoelectric-effect/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R080",
+      "url": "http://127.0.0.1:4324/labs/rutherford-scattering/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R081",
+      "url": "http://127.0.0.1:4324/labs/pythagorean-squares/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R082",
+      "url": "http://127.0.0.1:4324/labs/triangle-centroid/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R083",
+      "url": "http://127.0.0.1:4324/labs/similarity-shadow/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R084",
+      "url": "http://127.0.0.1:4324/labs/sine-rule-circle/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R085",
+      "url": "http://127.0.0.1:4324/labs/cosine-rule-hinge/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R086",
+      "url": "http://127.0.0.1:4324/labs/ptolemy-quadrilateral/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R087",
+      "url": "http://127.0.0.1:4324/labs/parabola-focus-directrix/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R088",
+      "url": "http://127.0.0.1:4324/labs/hyperbola-focal-difference/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R089",
+      "url": "http://127.0.0.1:4324/labs/circle-inversion/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R090",
+      "url": "http://127.0.0.1:4324/labs/determinant-area/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R091",
+      "url": "http://127.0.0.1:4324/labs/cross-product-space/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R092",
+      "url": "http://127.0.0.1:4324/labs/skew-lines-distance/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R093",
+      "url": "http://127.0.0.1:4324/labs/sphere-plane-section/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R094",
+      "url": "http://127.0.0.1:4324/labs/cuboid-diagonal/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R095",
+      "url": "http://127.0.0.1:4324/labs/solid-of-revolution/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R096",
+      "url": "http://127.0.0.1:4324/labs/riemann-area/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R097",
+      "url": "http://127.0.0.1:4324/labs/monte-carlo-pi/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R098",
+      "url": "http://127.0.0.1:4324/labs/bayes-screening/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R099",
+      "url": "http://127.0.0.1:4324/labs/complex-rotation/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R100",
+      "url": "http://127.0.0.1:4324/labs/quadratic-discriminant/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R101",
+      "url": "http://127.0.0.1:4324/labs/kepler-area-clock/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R102",
+      "url": "http://127.0.0.1:4324/labs/escape-speed-well/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R103",
+      "url": "http://127.0.0.1:4324/labs/hohmann-transfer/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R104",
+      "url": "http://127.0.0.1:4324/labs/exoplanet-transit/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R105",
+      "url": "http://127.0.0.1:4324/labs/stellar-radial-velocity/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R106",
+      "url": "http://127.0.0.1:4324/labs/habitable-zone/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R107",
+      "url": "http://127.0.0.1:4324/labs/stellar-blackbody/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R108",
+      "url": "http://127.0.0.1:4324/labs/stellar-lifetime/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R109",
+      "url": "http://127.0.0.1:4324/labs/neutron-star-compactness/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R110",
+      "url": "http://127.0.0.1:4324/labs/cosmological-redshift/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R111",
+      "url": "http://127.0.0.1:4324/labs/gravitational-clock/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R112",
+      "url": "http://127.0.0.1:4324/labs/einstein-lens/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R113",
+      "url": "http://127.0.0.1:4324/labs/relativistic-precession/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R114",
+      "url": "http://127.0.0.1:4324/labs/hill-sphere/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R115",
+      "url": "http://127.0.0.1:4324/labs/rocket-mass-ledger/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R116",
+      "url": "http://127.0.0.1:4324/labs/relativistic-energy/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R117",
+      "url": "http://127.0.0.1:4324/labs/interstellar-dust-impact/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R118",
+      "url": "http://127.0.0.1:4324/labs/telescope-resolution/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R119",
+      "url": "http://127.0.0.1:4324/labs/interferometer-baseline/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R120",
+      "url": "http://127.0.0.1:4324/labs/hubble-distance-ladder/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R121",
+      "url": "http://127.0.0.1:4324/labs/triangle-truss-joint/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R122",
+      "url": "http://127.0.0.1:4324/labs/moving-load-beam/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R123",
+      "url": "http://127.0.0.1:4324/labs/euler-column/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R124",
+      "url": "http://127.0.0.1:4324/labs/eccentric-column-stress/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R125",
+      "url": "http://127.0.0.1:4324/labs/retaining-wall-overturn/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R126",
+      "url": "http://127.0.0.1:4324/labs/slope-friction/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R127",
+      "url": "http://127.0.0.1:4324/labs/screw-jack/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R128",
+      "url": "http://127.0.0.1:4324/labs/wedge-lift/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R129",
+      "url": "http://127.0.0.1:4324/labs/belt-drive/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R130",
+      "url": "http://127.0.0.1:4324/labs/planetary-gear/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R131",
+      "url": "http://127.0.0.1:4324/labs/four-bar-linkage/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R132",
+      "url": "http://127.0.0.1:4324/labs/scissor-lift/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R133",
+      "url": "http://127.0.0.1:4324/labs/spherical-cap-dome/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R134",
+      "url": "http://127.0.0.1:4324/labs/diagonal-bracing/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R135",
+      "url": "http://127.0.0.1:4324/labs/honeycomb-relative-density/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R136",
+      "url": "http://127.0.0.1:4324/labs/sandwich-beam/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R137",
+      "url": "http://127.0.0.1:4324/labs/room-reverberation/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R138",
+      "url": "http://127.0.0.1:4324/labs/solar-shading/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R139",
+      "url": "http://127.0.0.1:4324/labs/rainwater-harvesting/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    },
+    {
+      "id": "R140",
+      "url": "http://127.0.0.1:4324/labs/stack-ventilation/",
+      "status": 200,
+      "scripts": [
+        "/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4324/_astro/DiscoveryStudio.astro_astro_type_script_index_0_lang.DYP9OH06.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/GeometryStudio.astro_astro_type_script_index_0_lang.BJziIk4d.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/LegacyDualView.astro_astro_type_script_index_0_lang.DE9WgSTH.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/OrbitControls.0KX2VnC1.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/area.astro_astro_type_script_index_0_lang.X5uyQtp7.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/balance-scene.BasUatip.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/balance.astro_astro_type_script_index_0_lang.B7ktGWmv.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/bridge.astro_astro_type_script_index_0_lang.ZkeZDSZ2.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/buoyancy.astro_astro_type_script_index_0_lang.BfsYObPU.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/capacitors.astro_astro_type_script_index_0_lang.CPWXfxPE.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/circuits.astro_astro_type_script_index_0_lang.BORTEAEL.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/cosmos.A1xdwinr.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/demonstration.DbkrBu5w.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/electricity.CwjY6YKL.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/evidence.Ddjis4rO.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/gears.astro_astro_type_script_index_0_lang.CF0Y11-V.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/interference.B_lBmmEe.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/interference.astro_astro_type_script_index_0_lang.CQli7MOz.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/lens-scene.B3T9mc1s.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/lens.astro_astro_type_script_index_0_lang.puBjsoQ_.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/measurements.D3tQunDh.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/mobius-scene.BrLz_EU2.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/mobius.astro_astro_type_script_index_0_lang.BWrXW_XE.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/moon-scene.Dsdvp4IT.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/moon.astro_astro_type_script_index_0_lang.WDL8FySi.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/orbit.astro_astro_type_script_index_0_lang.fNcE7L8n.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/pendulum.astro_astro_type_script_index_0_lang.C_Lg3xQf.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/preload-helper.oCYlU9a4.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/registry.Bn_EfIjq.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/resistors.astro_astro_type_script_index_0_lang.FqpY0rMq.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/scene.BtZRVdM4.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/sections.astro_astro_type_script_index_0_lang.DZp73lEc.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/stage.D6kNWSCr.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/study-notebook.DxHyNLB8.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/three-body.astro_astro_type_script_index_0_lang.ByyAvCqu.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/tidal.CZ8KNcNK.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:4324/_astro/ui.LSd_arRr.js",
+      "status": 200,
+      "contentType": "text/javascript"
+    }
+  ],
+  "browserRegressions": {
+    "buoyancy": {
+      "result": "passed",
+      "command": "BROWSER_CHECK_URL=http://127.0.0.1:4324 node scripts/buoyancy-browser-check.mjs",
+      "checks": [
+        "3D ready",
+        "controls and readings",
+        "play/pause/reset",
+        "keyboard camera",
+        "320/390px layout",
+        "reduced motion",
+        "WebGL fallback"
+      ],
+      "screenshots": "test-results/buoyancy/"
+    },
+    "pendulum": {
+      "result": "passed",
+      "command": "BROWSER_CHECK_URL=http://127.0.0.1:4324 node scripts/pendulum-browser-check.mjs",
+      "checks": [
+        "3D ready",
+        "drag/release",
+        "period/energy",
+        "pause/step",
+        "reference",
+        "gravity/damping",
+        "mobile",
+        "fallback"
+      ],
+      "screenshots": "test-results/pendulum/"
+    }
+  }
+}

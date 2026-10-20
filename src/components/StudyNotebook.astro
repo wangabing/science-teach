@@ -1,0 +1,9 @@
+---
+interface Props {note?: string}
+const {note='恢复条件后重新计算，不恢复任务完成状态。'}=Astro.props;
+---
+<section class="study-notebook" aria-labelledby="study-notebook-heading">
+  <div><h2 id="study-notebook-heading">留下两组证据</h2><button id="study-save" type="button">记下这一组</button><button id="study-export" type="button" disabled>导出 CSV</button></div>
+  <p>仅当前页保留最近两组，刷新清除；第三组替换最早一组。{note}</p>
+  <p id="study-record-note" role="status">先留一组，再改变一个条件。</p><div id="study-records"></div><p id="study-comparison"></p>
+</section>

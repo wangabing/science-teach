@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-18",
+  "catalog": {
+    "catalogTotal": 140,
+    "screened": 140,
+    "complete": true,
+    "functionalFailures": 0,
+    "candidateFindings": 0,
+    "confirmedFindings": 0,
+    "studentTasksDeferred": 140,
+    "teachingReviewsDeferred": 140
+  },
+  "baselineClosed": 60,
+  "baselineLabs": 49,
+  "sharedWorkbenches": {
+    "parameterDemonstrations": 81,
+    "withoutProcess": 0,
+    "playback": 39
+  },
+  "checks": {
+    "unit": {
+      "log": "/tmp/audit-closure-product-unit.log",
+      "result": "ℹ pass 292"
+    },
+    "types": {
+      "log": "/tmp/audit-closure-product-check.log",
+      "result": "0 errors"
+    },
+    "targeted": {
+      "log": "/tmp/audit-closure-product-targeted.log",
+      "result": "14 passed"
+    },
+    "tidal": {
+      "log": "/tmp/audit-closure-complete-tidal.log",
+      "result": "5 passed"
+    },
+    "polish": {
+      "log": "/tmp/audit-closure-verified-polish.log",
+      "result": "41 passed"
+    },
+    "sharedRetries": {
+      "log": "/tmp/audit-closure-verified-retries.log",
+      "result": "2 passed"
+    },
+    "cmbRepeats": {
+      "log": "/tmp/audit-closure-cmb-targeted.log",
+      "result": "3 passed"
+    },
+    "specs": {
+      "result": "30 passed, 0 failed",
+      "log": "/tmp/audit-closure-spec-validation.log"
+    }
+  },
+  "sharedRegression": {
+    "firstRun": {
+      "passed": 135,
+      "failed": 2
+    },
+    "fixedAndRetested": [
+      "S24",
+      "C10"
+    ],
+    "finalCovered": 137
+  },
+  "build": {
+    "directory": "/tmp/science-teach-response-final-product",
+    "htmlPages": 147,
+    "sourceSha256": {
+      "src/components/DiscoveryStudio.astro": "9d9fb58f357c7e6380c023f90aaf982d97e92489e26f64bae9730de365c73c0e",
+      "src/lib/discovery/core.ts": "39eab474828a46c8b3f439fb64fa8cdcadedd44a714f94ddaf59038a94ccd23a",
+      "src/lib/discovery/cosmos.ts": "608a2daa01920b6ea5375ec81c0a602bc5cf43d5e387ec7c2436623ed6c38a79",
+      "src/lib/discovery/demonstration.ts": "3ddc71d5f5cf76f6ce2fa9d122a07b6f6a6f3c44a245a51289cb078415e43b16",
+      "src/lib/discovery/diagram-solids.ts": "c7d6c079c6bb301ed2da85550b263d82f4fca2bbc98010da0c542abaf739318c",
+      "src/lib/discovery/engineering.ts": "a165b987f0c66aa0a5ae9a5c62561890b35caea21bb9293e3fe6e10c63a1b6f9",
+      "src/lib/discovery/expansion/belt.ts": "369043a0019edb5df603de92bb60a025e132e6739f12011db9eb7a54e8b1ef43",
+      "src/lib/discovery/expansion/cosmos.ts": "7467b9a64ae02a93200a60a94b2b0567729c6f5eb3e3fd59f54d8e63f453c6f4",
+      "src/lib/discovery/expansion/engineering.ts": "77a9bfa99c7ffb2d226dca0f3ce400564b6ddcfa7c137ceabba7648c1d90fbc9",
+      "src/lib/discovery/expansion/index.ts": "639c6bae542897443c5e4aa0b3d7279443fb4ca97033e9daaba18d9433566fdb",
+      "src/lib/discovery/expansion/kit.ts": "506bd7e6c6360de8a4f17c7aa360a3f6979f41cc5b19a15ee946c188d001d2d7",
+      "src/lib/discovery/expansion/mathematics.ts": "415fa9a04efc5af3e04c1f3286ad5382aaf40e6ec96f0a3d9a37d85ae5bd86d7",
+      "src/lib/discovery/expansion/physics.ts": "6e5e86010eea5fe877c13959ea7426e2a0a644f1b289c351a9aac09e538b911d",
+      "src/lib/discovery/experience-audit.ts": "cbcab62e1bf4f2936eaa0f5d8172aa92c50e4a8d0f0914d5664439aa99dc0e1c",
+      "src/lib/discovery/mathematics.ts": "42f30756059aa03b6e45d0d3e603b60369186a90ee3ab11da6d5fd97b9fbbd36",
+      "src/lib/discovery/numerics.ts": "c9f069e721a8ed6a3ae46240513b6cae9b316b80869dac6b82d2b2366f7725ea",
+      "src/lib/discovery/observation-cues.ts": "c9afd75e84750055cf29bc93da6b6321104cb59aa0756dd74d73e30f5ac1aac3",
+      "src/lib/discovery/physics.ts": "ad6f3ad15fcbf19bf026931d45b8482fca9f5747166873e0e97d7af7d72de5e6",
+      "src/lib/discovery/presentation.ts": "1e6571eaef73753808e97feba99cf999560995329539b2288a94c5cd3d1d9060",
+      "src/lib/discovery/registry.ts": "06e9b0522c6566e34b1bd29bde3df534d758ade8d6bf4edc0b673939fa480f21",
+      "src/lib/discovery/response-evidence.ts": "c424ded9f8605afb924a3f734ac9ab6395da0cafc9020ff7924f6c816e4a211a",
+      "src/lib/discovery/synchronized-evidence.ts": "c649290c8a3aef99daa3621ea5c791d6d739bc478613e722a49cd944abc9ffd5",
+      "src/lib/discovery/task.ts": "10e820305384863c7a6a8b9481da555c14027ee11ad2fd8d52cd2a81a0cd1452",
+      "src/lib/discovery/tidal.ts": "d091c86e44f0ffc862293642c4e290ed4c416be4a71e3375ad17a2071ee5208a",
+      "src/lib/discovery/triangulation.ts": "1dbdf918716c1dea7c6e9c3c069df66a6b6f897b1f224c1511f9503e9f11e5f0",
+      "src/lib/discovery/view-purpose.ts": "15fece3b30fffeadf30bdeff70f1e94667a467f9427f4f07611cda4df5626a88",
+      "src/scripts/discovery/charts.ts": "3d3a452df1dc27bb5ba1e03ed1bf8e3c5c9c17554c285982be15893d43f7032a",
+      "src/scripts/discovery/cosmic-visuals.ts": "6e00b7329e981ca599fbb9f6c09cb32fcdfa3e1bcefed9c9dab5dbf2695a8a79",
+      "src/scripts/discovery/scene.ts": "59dc281bc77277c1807fd5d968c5dde08ced1f495c7592e10e551aec47428670",
+      "src/scripts/discovery/workbench.ts": "772d4cf311b49da181da723994f319482b397c4cbd2b818406bbd0d105d506bf",
+      "src/styles/discovery-studios.css": "4cab27971829ad87e7d009a4e457d46c1605510f39218327f9e8264318b2b35b"
+    }
+  },
+  "auditScope": "全量140项首轮后对14条路由增量复测；verifiedBaseURL和recheckedAt保留每条构建与复测信息。",
+  "externalReview": "按用户要求延后至推广沟通反馈，不阻塞本轮产品验收。",
+  "knownBuildWarning": "现有打包分块体积提示仍存在；类型检查为0错误、0警告、0提示。",
+  "finalPresentationVerification": "三维测量列宽和字号最后调整后，292项单元、14项浏览器专项与类型检查再次通过。"
+}

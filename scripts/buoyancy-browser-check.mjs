@@ -78,7 +78,7 @@ try {
   await fallback.screenshot({ path: `${out}/fallback.png`, fullPage: true });
   await fallback.close();
   await page.goto(`${base}/`, { waitUntil: 'networkidle' });
-  assert.equal(await page.locator('[data-experiment-count]').first().innerText(), '12 个可探索实验');
+  assert.equal(await page.locator('[data-experiment-count]').first().innerText(), '140 个可探索实验');
   assert.equal(await page.locator('#lab-viewport').count(), 0);
   assert.deepEqual(errors, []);
   console.log('Buoyancy browser checks passed: model controls, playback, reset, camera, mobile, reduced motion, fallback, science home.');

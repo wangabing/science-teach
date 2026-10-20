@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const source=process.env.EXPERIENCE_AUDIT_DIR??'test-results/experience-audit';
+const report=JSON.parse(await fs.readFile(path.join(source,'report.json'),'utf8'));
+if(!report.summary.complete||report.summary.screened!==report.summary.catalogTotal)throw new Error('Refuse to publish an incomplete audit snapshot');
+await fs.mkdir('doc/assets/experience-audit',{recursive:true});
+await fs.writeFile('doc/assets/experience-audit/report.json',JSON.stringify(report,null,2)+'\n');
+const affected=report.rows.filter(r=>r.findings.length).length;
+const header=`> 本次运行日期：${report.date}。候选线索涉及${affected}项，尚未确认为${affected}个缺陷。原始截图路径相对仓库根目录；见[逐项JSON](assets/experience-audit/report.json)。\n\n`;
+let markdown=await fs.readFile(path.join(source,'report.md'),'utf8');
+markdown=markdown.replace('\n\n','\n\n'+header);
+markdown+='\n## 如何确认候选线索\n\n默认条件可能处于释放前、零振幅或碰撞前。应先推进时间或施加载荷，再重复同一变量对照。质量不影响无摩擦落体加速度、刚性结构载荷不改变外形等可能是合理不变量；温度计和光谱等仪表本身也可能是核心证据。不能机械要求所有主体变形。\n\n当前'+report.rows.filter(r=>r.demonstration.startsWith('无连续演示')).length+'个共用工作台无连续演示，'+report.rows.filter(r=>r.spatialOperation.startsWith('仅相机')).length+'个仅有相机/面板操作，均需结合用途审阅。最早20项按专用任务复核。\n\n后续按[执行方案](experiment-experience-acceptance-plan.md)分级处理，审阅结论应附任务录像、关系断言、审阅人和日期。此快照保留自动扫描时的原始风险，不将筛查通过等同任务或教学通过。\n';
+await fs.writeFile('doc/experiment-experience-risk-audit.md',markdown);
+console.log(`Saved ${report.summary.screened} routes, ${report.summary.candidateFindings} candidate findings across ${affected} routes.`);

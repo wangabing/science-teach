@@ -1,4 +1,5 @@
 ---
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import NextExploration from '../../components/NextExploration.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import '../../styles/exploration.css';
@@ -7,6 +8,7 @@ import '../../styles/exploration.css';
   <div class="lab area-lab">
     <p class="breadcrumb"><a href="/spaces/geometry/">数学与几何实验室</a> / 面积搬家</p>
     <header class="lab-heading"><p class="kicker">一块都不多，一块都不少</p><h1>面积搬了家，<br />总量会改变吗？</h1><p>把左边的四块三角形，搬进右边同样大的方框。不能剪开、不能缩放——只靠移动和旋转，让黄色的面积告诉你答案。</p></header>
+    <ExperimentHistory slug="area" />
     <div class="demo-dock"><div><strong>第一次来？先看一次面积搬家</strong><p>看四块三角形依次搬到新家，再自己试。不用先猜旋转角度。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：自动搬家</button><button id="demo-pause" type="button">暂停演示</button><button id="next-piece" type="button">帮我搬一块</button></div></div>
     <section class="workbench" aria-label="勾股定理拼图台">
       <div class="bench-title"><strong>四块全等三角形 · 两种拼法</strong><span>MOVE · ROTATE · DISCOVER</span></div>

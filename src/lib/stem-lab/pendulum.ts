@@ -20,10 +20,11 @@ export class Pendulum {
   params: PendulumParams;
   theta = 0; omega = 0; time = 0; initialEnergy = 0;
   lastCrossing: number | null = null; measuredPeriod: number | null = null; cycles = 0;
+  periodEndpoints: { start: number; end: number } | null = null;
   constructor(params: PendulumParams = DEFAULT_PENDULUM) { this.params = sanitizeParams(params); this.reset(params); }
   reset(params: PendulumParams) {
     this.params = sanitizeParams(params); this.theta = this.params.angle * Math.PI / 180;
-    this.omega = 0; this.time = 0; this.lastCrossing = null; this.measuredPeriod = null; this.cycles = 0;
+    this.omega = 0; this.time = 0; this.lastCrossing = null; this.measuredPeriod = null; this.cycles = 0; this.periodEndpoints = null;
     this.initialEnergy = this.params.mass * this.params.gravity * this.params.length * (1 - Math.cos(this.theta));
   }
   step(dt = STEP) {
@@ -39,7 +40,7 @@ export class Pendulum {
     // Interpolate same-direction zero crossings, independent of frame rate.
     if (a > 0 && this.theta <= 0) {
       const crossing = this.time + dt * a / (a - this.theta);
-      if (this.lastCrossing !== null) { this.measuredPeriod = crossing - this.lastCrossing; this.cycles++; }
+      if (this.lastCrossing !== null) { this.periodEndpoints = { start: this.lastCrossing, end: crossing }; this.measuredPeriod = crossing - this.lastCrossing; this.cycles++; }
       this.lastCrossing = crossing;
     }
     this.time += dt;

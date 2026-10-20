@@ -1,0 +1,16 @@
+---
+interface Props {slug:string}
+const {slug}=Astro.props;
+---
+<section class="legacy-spatial wrap" data-legacy-spatial={slug}>
+ <div class="legacy-view-heading"><div><p class="kicker">同一装置，换个角度</p><h2>空间观察台</h2></div><button type="button" data-legacy-open disabled aria-expanded="false">打开三维视图</button></div>
+ <p>上方二维实验负责接线、构造和测量；这里同步呈现当前几何。平面对象置于空间台面，厚度、球体大小及变形显示均为示意，不新增测量值。</p>
+ <div class="legacy-three" data-legacy-host hidden></div>
+ <div class="legacy-camera" hidden><button type="button" data-legacy-camera="perspective">立体</button><button type="button" data-legacy-camera="front">正面</button><button type="button" data-legacy-camera="top">俯视</button></div>
+ <output data-legacy-summary aria-live="off"></output><p data-legacy-note role="status">三维按需打开；拖动旋转、滚轮缩放，也可用方向键。二维与测量始终可用。</p>
+ <noscript><p>启用JavaScript后可打开三维；二维构造、公式与历史仍可阅读。</p></noscript>
+</section>
+<script>import '../scripts/spatial/legacy-dual-view';</script>
+<style>
+.legacy-spatial{margin:32px auto 56px;padding:24px;border:1px solid #c6d7df;border-radius:20px;background:#edf5f8;max-width:1100px}.legacy-spatial p{line-height:1.8;font-size:14px;color:#365366}.legacy-view-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}.legacy-view-heading h2{margin:0}.legacy-three{width:100%;height:460px;border-radius:14px;overflow:hidden;background:#eff6f8}.legacy-three canvas{display:block;width:100%;height:100%}.legacy-camera{display:flex;gap:8px;margin:12px 0}.legacy-spatial button{min-height:44px;padding:10px 16px;border:1px solid #9eb8c7;border-radius:10px;background:#fff;color:#234359;font:inherit}.legacy-spatial button:focus-visible{outline:3px solid #b77c22;outline-offset:3px}.legacy-spatial [hidden]{display:none!important}.legacy-spatial output{display:block;font:12px/1.8 'IBM Plex Mono','Noto Sans SC',sans-serif;white-space:normal;overflow-wrap:anywhere}@media(max-width:600px){.legacy-spatial{padding:16px;width:calc(100% - 28px)}.legacy-three{height:330px}.legacy-view-heading{align-items:flex-start;flex-direction:column}}
+</style>

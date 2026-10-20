@@ -2,7 +2,7 @@
 export interface LensInput { focal:number; object:number; screen:number; height:number }
 export type LensRegime='reduced'|'equal'|'enlarged'|'focus'|'virtual';
 export function validateLens(p:LensInput){
-  for(const v of Object.values(p))if(!Number.isFinite(v)||v<=0)throw new RangeError('Lens lengths must be positive and finite');
+  for(const v of [p.focal,p.object,p.screen,p.height])if(!Number.isFinite(v)||v<=0)throw new RangeError('Lens lengths must be positive and finite');
 }
 export function rayHeights(p:LensInput,x:number):[number,number]{
   validateLens(p);if(!Number.isFinite(x))throw new RangeError('Ray position must be finite');

@@ -1,0 +1,59 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
+import '../../styles/circuits.css';
+const ports=[{id:'P',x:80,y:105,label:'P ＋'},{id:'N',x:80,y:335,label:'N −'},{id:'A1',x:300,y:105,label:'A1'},{id:'B1',x:600,y:105,label:'B1'},{id:'A2',x:300,y:335,label:'A2'},{id:'B2',x:600,y:335,label:'B2'}];
+---
+<SiteLayout title="电路接线工坊 · 一盏灯的两条路" description="亲手连接接线柱，让两盏灯各走各的回路。用电压、电流、功率和断灯对照发现串并联的不同。">
+<div class="circuit-lab wrap">
+  <p class="breadcrumb"><a href="/spaces/physics/">物理实验室</a> / 电路接线工坊</p>
+  <header class="circuit-intro"><div><p class="kicker">接线工坊 · 让电流有路可走</p><h1>少一盏灯，<br/>另一盏<span>还亮吗？</span></h1></div><p>两盏灯，同一节电源。<br/>命运连在一起，还是各走各的路？<small>点两个接线柱，亲手接上一根导线。<br/>先让它亮起来，再解释电流怎样回来。</small></p></header>
+  <ExperimentHistory slug="circuits" />
+  <noscript><p class="circuit-noscript">启用 JavaScript 后可接线与测量。闭合回路才有持续电流：电动势6 V、内阻1 Ω、单灯20 Ω时，电流约0.286 A；两灯串联约0.146 A；并联时各约0.273 A。下方历史、模型边界与示例说明可直接阅读。</p></noscript>
+  <fieldset id="circuit-tools" class="circuit-tools" disabled aria-label="电路接线工作台">
+    <div class="circuit-station"><h2>一盏灯的两条路</h2><span>直流 · 稳态 · 电阻灯</span></div>
+    <div class="circuit-first"><strong>先做一件事：补上回来的路</strong><p>已接好 P → A1。再点 B1、N，让灯1的两端接到电源两极。</p><p id="circuit-first-note" role="status">灯1还没亮：电流缺少返回电源的通路。</p></div>
+    <div class="circuit-console">
+      <div class="circuit-apparatus">
+        <div class="circuit-board" role="group" aria-label="六接线柱实验板">
+          <svg id="circuit-svg" viewBox="0 0 720 440" aria-hidden="true">
+            <defs><pattern id="circuit-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c9dce7"/></pattern><radialGradient id="circuit-light"><stop stop-color="#ffc45b" stop-opacity=".7"/><stop offset="1" stop-color="#ffc45b" stop-opacity="0"/></radialGradient></defs>
+            <rect width="720" height="440" fill="url(#circuit-grid)"/>
+            <path d="M80 105V170M80 270V335" stroke="#153b56" stroke-width="6"/>
+            <rect x="36" y="170" width="88" height="100" rx="12" fill="#153b56"/><rect x="65" y="158" width="30" height="12" rx="3" fill="#7896ab"/>
+            <text x="80" y="202" class="circuit-battery-text" text-anchor="middle">电源</text><text id="circuit-battery-label" x="80" y="233" class="circuit-battery-value" text-anchor="middle">6 V</text><text x="80" y="254" class="circuit-battery-small" text-anchor="middle">r = 1 Ω</text>
+            <g id="circuit-wires"><path d="M80 105Q190 25 300 105" stroke="#b86531" stroke-width="6" fill="none"/></g>
+            {[105,335].map((y,i)=><g id={`circuit-lamp-${i+1}`}>
+              <circle class="circuit-glow" cx="450" cy={y} r="88" fill="url(#circuit-light)" opacity="0"/>
+              <path d={`M300 ${y}H410M490 ${y}H600`} stroke="#7896ab" stroke-width="5"/>
+              <circle class="circuit-bulb" cx="450" cy={y} r="39" fill="#fff" stroke="#7896ab" stroke-width="3"/>
+              <path class="circuit-filament" d={`M427 ${y+17}L441 ${y-16}L450 ${y+6}L459 ${y-16}L473 ${y+17}`} fill="none" stroke="#7896ab" stroke-width="4" stroke-linejoin="round"/>
+              <text x="450" y={y+67} text-anchor="middle" class="circuit-lamp-label">灯{i+1}</text><text id={`circuit-direction-${i+1}`} x="450" y={y-62} text-anchor="middle" class="circuit-direction">无电流</text>
+            </g>)}
+          </svg>
+          {ports.map(port=><button type="button" class="circuit-port" data-terminal={port.id} style={`left:${port.x/7.2}%;top:${port.y/4.4}%`} aria-label={`接线柱 ${port.id}`} aria-pressed="false"><span>{port.label}</span></button>)}
+        </div>
+        <p class="circuit-board-caption">只有接线柱处相连，交叉导线不会自动相连。</p>
+        <div class="circuit-wiring-toolbar"><p id="circuit-selection" role="status">点一个接线柱，再点另一个。</p><button id="circuit-cancel" type="button">取消接线</button><button id="circuit-clear" type="button">拆掉全部导线</button></div>
+        <div class="circuit-wire-list" id="circuit-wire-list" aria-label="已接导线"></div>
+      </div>
+      <aside class="circuit-meter" aria-label="实时电路仪表">
+        <div class="circuit-meter-heading"><span>电源送出了多少？</span><strong id="circuit-current">0.000 <small>A</small></strong><p>总电流</p></div>
+        <dl><div><dt>外端电压 U</dt><dd id="circuit-voltage">6.000 V</dd></div><div><dt>灯上总功率</dt><dd id="circuit-load-power">0.000 W</dd></div></dl>
+        {[1,2].map(i=><article class="circuit-lamp-card"><div><h3>灯{i}</h3><span id={`circuit-lamp-state-${i}`}>未形成通路</span></div><dl><div><dt>电流 |I|</dt><dd id={`circuit-lamp-current-${i}`}>0.000 A</dd></div><div><dt>两端电压 |U|</dt><dd id={`circuit-lamp-voltage-${i}`}>{i===1?'0.000 V':'悬浮'}</dd></div><div><dt>功率 P</dt><dd id={`circuit-lamp-power-${i}`}>0.000 W</dd></div></dl><button type="button" data-lamp-switch={i-1} aria-pressed="true">断开灯{i}</button></article>)}
+        <p class="circuit-meter-note">光晕随功率增强，仅作相对提示。数值才是定量证据；箭头表示约定电流方向。</p>
+      </aside>
+    </div>
+    <p id="circuit-diagnosis" class="circuit-diagnosis" role="status">断路：从电源出发，还找不到经过灯返回另一极的完整路径。</p>
+    <details class="circuit-parameters"><summary>调节电源与灯的电阻</summary><div>{[['emf','电动势 E',3,9,6,'V'],['r1','灯1电阻',10,40,20,'Ω'],['r2','灯2电阻',10,40,20,'Ω']].map(([id,label,min,max,value,unit])=><label for={`circuit-${id}`}><span>{label}<output id={`circuit-${id}-value`}>{value} {unit}</output></span><input id={`circuit-${id}`} type="range" min={min} max={max} step="1" value={value}/></label>)}</div><p>内阻固定为 1 Ω。改变这些条件会结束当前独立接线任务，你可以继续自由探索。</p></details>
+    <details class="circuit-examples"><summary>需要灵感？看三种接法</summary><p>示例会替换当前接线，接回两盏灯并恢复 6 V / 20 Ω；属于观察示例，不计为独立完成。</p><div><button type="button" data-circuit-preset="single">示例：一盏灯</button><button type="button" data-circuit-preset="series">示例：两灯串联</button><button type="button" data-circuit-preset="parallel">示例：两灯并联</button></div><p>串联只有一条经过两灯的路；并联让两盏灯分别跨接在电源两极。也可以拆掉示例中的一根线，亲手检查。</p></details>
+    <section class="circuit-challenge" aria-labelledby="circuit-challenge-heading"><div><p class="kicker">轮到你设计</p><h2 id="circuit-challenge-heading">一盏断开，<br/>另一盏仍亮。</h2><p>从空板开始，自己让两灯都亮，再亲手断开灯1验证。目标是各有通路，不要求亮度完全不变。</p><button id="circuit-prepare" class="circuit-primary" type="button">开始独立接线</button></div><div><p id="circuit-challenge-note" role="status">你会怎样接？不必先记住“串联”或“并联”的名字。</p><div id="circuit-challenge-evidence"></div></div></section>
+    <section class="circuit-notebook" aria-labelledby="circuit-notebook-heading"><div><h2 id="circuit-notebook-heading">留住两种接法</h2><button id="circuit-save" type="button">记下当前接法</button><button id="circuit-export" type="button" disabled>导出 CSV</button></div><p>仅本页保留最近两组，刷新清除；第三组替换最早一组。恢复重算读数，不恢复挑战完成状态。</p><p id="circuit-record-note" role="status">记一组，再只改接法或一个参数，留下对照。</p><div id="circuit-records"></div><p id="circuit-comparison"></p></section>
+    <section class="circuit-transfer"><h2>另一盏仍亮，就一定一样亮吗？</h2><p>并联时断开灯1，灯2的功率会怎样？考虑电源还有 1 Ω 内阻。先预测，再亲手断灯。</p><div role="group" aria-label="并联断灯功率预测"><button type="button" data-circuit-answer="same" aria-pressed="false">完全不变</button><button type="button" data-circuit-answer="brighter" aria-pressed="false">略微增大</button><button type="button" data-circuit-answer="off" aria-pressed="false">也变成零</button></div><p id="circuit-transfer-note" role="status">先选一个判断，再比较电源端电压与灯2功率。</p></section>
+  </fieldset>
+  <section class="circuit-ledger"><div><p class="kicker">每一瓦，都有去处</p><h2>灯上的功率，<br/>没有拿走全部。</h2><p>E·I = P灯1 + P灯2 + I²r</p><output id="circuit-power-ledger">0.000 = 0.000 + 0.000 + 0.000 W</output><p>读数保留三位小数，相加可能有舍入差。内阻也消耗功率；负载改变时，内阻压降改变，外端电压 U = E − Ir 也会变。</p></div><details><summary>这块实验板能解释到哪里？</summary><p>直流稳态、理想导线、固定电阻灯和电源内阻。灯的视觉亮度由功率作相对提示，不是白炽灯温度、真实照度或 LED 模型。没有模拟电流建立过程、电池耗尽与元件损坏。</p><p>两端绝对电势没有电源参考时标为“悬浮”。导线交叉不自动连通，只有同一个接线柱相连。短接电源时，1 Ω 内阻令电流有限；这不是可用于真实电池的短路试验指导。</p><p>读数 U/I 显示大小，灯旁箭头显示方向；理想导线闭环中的分流可能不唯一，因此不显示每根导线电流。断开灯表示移除灯元件，已接导线仍在。</p></details></section>
+  <aside class="circuit-next"><p>电学里功率怎样分配？机械里功率又怎样传递？</p><a href="/labs/gears/">去齿轮工坊比较转速与扭矩 ↗</a><a href="/experiments/">全部实验 ↗</a></aside>
+</div>
+<script>import '../../scripts/exploration/circuits';</script>
+<p class="wrap"><a href="/labs/resistors/">下一站：电阻分压台——6 V怎样分出3 V？ ↗</a></p>
+</SiteLayout>

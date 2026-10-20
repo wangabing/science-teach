@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {stripPoint,tracePoint,topology,cutBands,type HalfTwists} from '../src/lib/exploration/mobius.ts';
+import {stripPoint,tracePoint,topology,cutBands,cutSegments,paperRoute,componentTracePoint,stripWidth,type HalfTwists} from '../src/lib/exploration/mobius.ts';
 const close=(a:number[],b:number[])=>a.forEach((v,i)=>assert.ok(Math.abs(v-b[i]!)<1e-9));
 test('paper seam reverses width only for odd half twists',()=>{
  for(const n of [0,1,2] as HalfTwists[])for(const v of [-.65,-.3,0,.3,.65])close(stripPoint(n,2*Math.PI,v),stripPoint(n,0,n%2?-v:v));
@@ -28,4 +28,29 @@ test('center-cut double-twist components are linked, ordinary ring components ar
  const da=sub(stripPoint(n,(i+1)*dt,.37),stripPoint(n,i*dt,.37)),db=sub(stripPoint(n,(j+1)*dt,-.37),stripPoint(n,j*dt,-.37)),c=cross(da,db);
  integral+=r.reduce((sum,x,k)=>sum+x*c[k]!,0)/Math.hypot(...r)**3;
  }assert.ok(Math.abs(Math.abs(integral/(4*Math.PI))-(n===2?1:0))<.01);}
+});
+
+test('partial cutting exposes only the completed slit and keeps the remaining full width',()=>{
+ for(const n of [0,1,2] as const)for(const progress of [0,.25,.5,.75]){
+  const segments=cutSegments(n,progress),whole=segments.at(-1)!;
+  assert.equal(whole.start,2*Math.PI*progress);assert.equal(whole.end,2*Math.PI);assert.equal(whole.min,-stripWidth);assert.equal(whole.max,stripWidth);
+  for(const segment of segments.slice(0,-1)){assert.equal(segment.start,0);assert.equal(segment.end,whole.start);assert.ok(segment.min>0||segment.max<0);}
+ }
+ for(const p of [-.1,1.1,NaN,Infinity])assert.throws(()=>cutSegments(1,p),RangeError);
+});
+test('every cut component surface and both boundaries close on their own seam',()=>{
+ for(const n of [0,1,2] as const){
+  const segments=cutSegments(n,1);assert.equal(segments.length,topology(n).cutComponents);
+  for(let component=0;component<segments.length;component++)for(const edge of [false,true])for(const fresh of [false,true]){
+   const route=paperRoute(n,true,component,edge,fresh),band=cutBands(n)[component]!;
+   assert.ok(route.v>=band.min&&route.v<=band.max);
+   const a=componentTracePoint(n,0,component,edge,fresh),b=componentTracePoint(n,1,component,edge,fresh);
+   assert.ok(Math.hypot(...a.map((v,i)=>v-b[i]!))<1e-8);
+   if(component===1)assert.ok(route.v<0,'second band must use the negative-width component');
+   if(edge&&fresh)assert.equal(Math.abs(route.v),.09);
+  }
+ }
+ assert.throws(()=>paperRoute(1,true,1),RangeError);
+ assert.equal(paperRoute(1,true).turn,4*Math.PI);
+ assert.equal(paperRoute(2,true,1).turn,2*Math.PI);
 });

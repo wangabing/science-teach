@@ -1,11 +1,13 @@
 ---
+import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import NextExploration from '../../components/NextExploration.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import '../../styles/exploration.css';
 ---
-<SiteLayout title="桥梁挑战 · 空间与建造实验室" description="亲手给桁架加上杆件，施加载荷，从失稳、拉压和变形中发现三角形的力量。">
-  <div class="lab bridge-lab"><p class="breadcrumb"><a href="/spaces/structures/">空间与建造实验室</a> / 桥梁挑战</p>
+<SiteLayout title="桥梁挑战 · 工程与建造实验室" description="亲手给桁架加上杆件，施加载荷，从失稳、拉压和变形中发现三角形的力量。">
+  <div class="lab bridge-lab"><p class="breadcrumb"><a href="/spaces/structures/">工程与建造实验室</a> / 桥梁挑战</p>
     <header class="lab-heading"><p class="kicker">稳定，来自连接的方式</p><h1>同样的杆件，<br />你会怎样搭一座桥？</h1><p>这座桥只有六个节点。点两个节点就能加一根杆，再施加载荷，看结构是否稳定、哪根杆在拉、哪根杆在压。</p></header>
+    <ExperimentHistory slug="bridge" />
     <div class="demo-dock"><div><strong>先看一座桥怎样站稳</strong><p>裸框 → 加 A–E → 加 C–E → 逐渐加载。演示后你可以拆一根，再验证自己的猜想。</p></div><div class="control-row"><button id="demo" class="action" type="button">标准演示：搭桥与加载</button><button id="demo-pause" type="button">暂停演示</button><button id="guide-next" type="button">帮我做下一步</button></div></div>
     <div class="wide-and-side"><section class="workbench"><div class="bench-title"><strong>跨度 4 m · 左铰支 / 右滚支</strong><span>PLANAR TRUSS</span></div>
       <p id="demo-stage" class="demo-caption" aria-live="off">第 1 步：裸框会侧移。先点 A，再点 E，连接第一根斜撑。</p>
