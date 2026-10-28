@@ -1,3 +1,5 @@
+import {checkedState} from '../../lib/product/state-validation';
+import {validateGeometry} from '../../lib/geometry/models';
 import {geometryStudio} from '../../data/geometry-studios';
 import {defaults,cloneGeometry,solveReflection,solveCircle,solveTriangle,solveEllipse,geometrySummary,compareGeometry,geometryCSV,normalize,clamp,degrees,type GeometryKind,type GeometryState,type Point} from '../../lib/geometry/models';
 import {geometryScene,projection} from '../../lib/geometry/scene';
@@ -176,5 +178,5 @@ try{
  };
  handle.addEventListener('pointerup',e=>finish(e));handle.addEventListener('pointercancel',e=>finish(e,true));
  new ResizeObserver(hitSize).observe(svg);
- setupNotebook<GeometryState>({snapshot:()=>state,clone:cloneGeometry,restore:s=>replace(s,'记录已恢复并重算。任务完成与过去笔迹未恢复，可重新准备独立探索。'),summary:geometrySummary,compare:compareGeometry,csv:geometryCSV,filename:`${studio.slug}-evidence.csv`});
+ setupNotebook<GeometryState>({snapshot:()=>state,clone:cloneGeometry,restore:s=>replace(s,'记录已恢复并重算。任务完成与过去笔迹未恢复，可重新准备独立探索。'),summary:geometrySummary,compare:compareGeometry,csv:geometryCSV,filename:`${studio.slug}-evidence.csv`,durable:{slug:studio.slug,validate:checkedState(defaults[kind],value=>{if(value.kind!==kind)throw new Error("Wrong geometry");validateGeometry(value);}),labels:Object.fromEntries([studio.position,...studio.controls].map(c=>[c.key,`${c.label}/${c.unit}`]))}});
 }catch(error){get<HTMLFieldSetElement>('tools').disabled=true;handle.setAttribute('tabindex','-1');handle.setAttribute('aria-disabled','true');text('task-note','实验工具暂未就绪，请刷新。下方静态说明与证明仍可阅读。');console.error(error);}

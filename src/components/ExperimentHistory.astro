@@ -1,11 +1,12 @@
 ---
+import {curation} from '../data/curation';
 import {experimentHistory, type ExperimentSlug} from '../data/experiment-history';
 interface Props {slug: ExperimentSlug; dark?: boolean}
 const {slug, dark = false} = Astro.props;
 const story = experimentHistory[slug];
 const headingId = `history-${slug}`;
 ---
-<section class:list={['experiment-history', {'history-dark': dark}]} aria-labelledby={headingId} data-experiment-history={slug}>
+<section class:list={['experiment-history', {'history-dark': dark}]} aria-labelledby={headingId} data-experiment-history={slug} data-compact={curation[slug]?true:undefined}>
   <div class="history-era"><span>问题的来处</span><span>{story.period}</span></div>
   <div class="history-reading">
     <h2 id={headingId}>{story.title}</h2>
@@ -13,7 +14,7 @@ const headingId = `history-${slug}`;
     <details class="history-details">
       <summary>读一段背景，带着问题动手</summary>
       <div class="history-expanded">
-        <p>{story.background}</p>
+        {curation[slug]&&<p class="history-lead-expanded">{story.lead}</p>}<p>{story.background}</p>
         <p class="history-invitation"><strong>现在，换你来试</strong>{story.invitation}</p>
         <div class="history-sources"><h3>故事出处与延伸阅读</h3><ul>{story.sources.map(source => <li><a href={source.href}>{source.title}</a></li>)}</ul></div>
       </div>

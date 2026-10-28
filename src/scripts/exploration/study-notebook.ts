@@ -1,4 +1,6 @@
-export function setupNotebook<T>(options:{snapshot:()=>T;clone:(p:T)=>T;restore:(p:T)=>void;summary:(p:T)=>string;compare:(a:T,b:T)=>string;csv:(p:T[])=>string;filename:string;onRecordsChange?:(records:T[])=>void}){
+import {setupDiscoveries} from '../product/discoveries';
+import type {DiscoveryState} from '../../lib/product/discoveries';
+export function setupNotebook<T>(options:{snapshot:()=>T;clone:(p:T)=>T;restore:(p:T)=>void;summary:(p:T)=>string;compare:(a:T,b:T)=>string;csv:(p:T[])=>string;filename:string;onRecordsChange?:(records:T[])=>void;durable?:{slug:string;validate:(value:unknown)=>value is T&DiscoveryState;labels?:Record<string,string>}}){
   const get=(id:string)=>document.getElementById(`study-${id}`)!;
   const records:T[]=[];
   function render(){
@@ -18,4 +20,6 @@ export function setupNotebook<T>(options:{snapshot:()=>T;clone:(p:T)=>T;restore:
   get('export').addEventListener('click',()=>{
     const url=URL.createObjectURL(new Blob(['\uFEFF'+options.csv(records)],{type:'text/csv;charset=utf-8'})),link=document.createElement('a');link.href=url;link.download=options.filename;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   });
+  if(options.durable)setupDiscoveries({slug:options.durable.slug,snapshot:()=>options.clone(options.snapshot()) as unknown as DiscoveryState,validate:options.durable.validate,restore:value=>options.restore(options.clone(value as T)),describe:value=>options.summary(value as T),labels:options.durable.labels??{}});
+
 }

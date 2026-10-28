@@ -1,3 +1,5 @@
+import {checkedState} from '../../lib/product/state-validation';
+import {validateDivider} from '../../lib/exploration/electricity';
 import {DIVIDER_DEFAULTS,solveDivider,compareDividers,dividerCSV,type DividerInput} from '../../lib/exploration/electricity';
 import {setupNotebook} from './study-notebook';
 const get=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(`divider-${id}`) as T;
@@ -26,5 +28,5 @@ try{
   document.querySelectorAll('[data-divider-answer]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
   text('transfer-note',`${button.dataset.dividerAnswer==='lower'?'这个预测符合模型。':'再看并联后的等效电阻。'}参考条件下，1000 Ω与1000 Ω并联得到500 Ω，输出6×500/(1000+500)=2 V。分压器会受负载影响。这是参考计算，当前条件没有改变。`);
  }));
- setupNotebook<DividerInput>({snapshot:()=>input,clone:p=>({...p}),restore:p=>{input=p;invalidate('记录已恢复并重算，不计为独立调阻。');render();},summary:p=>`${p.emf} V · ${p.upper}/${p.lower} Ω · ${p.loaded?'接入':'断开'}${p.load} Ω负载 · 输出${solveDivider(p).output.toFixed(3)} V`,compare:compareDividers,csv:dividerCSV,filename:'resistor-divider.csv'});
+ setupNotebook<DividerInput>({snapshot:()=>input,clone:p=>({...p}),restore:p=>{input=p;invalidate('记录已恢复并重算，不计为独立调阻。');render();},summary:p=>`${p.emf} V · ${p.upper}/${p.lower} Ω · ${p.loaded?'接入':'断开'}${p.load} Ω负载 · 输出${solveDivider(p).output.toFixed(3)} V`,compare:compareDividers,csv:dividerCSV,filename:'resistor-divider.csv',durable:{slug:'resistors',validate:checkedState(DIVIDER_DEFAULTS,validateDivider),labels:{emf:'电动势/V',upper:'上臂电阻/Ω',lower:'下臂电阻/Ω',load:'负载/Ω',loaded:'负载接入'}}});
 }catch(error){get<HTMLFieldSetElement>('tools').disabled=true;text('task-note','分压工具未能就绪，请刷新重试。下方原理仍可阅读。');console.error(error);}

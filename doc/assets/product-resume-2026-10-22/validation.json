@@ -1,0 +1,55 @@
+{
+  "recordedAt": "2026-10-22T10:13:56.204832+00:00",
+  "status": "local-passed-external-todos-open",
+  "environment": {
+    "node": "24.19.0 Homebrew via command PATH",
+    "browser": "local Chrome",
+    "preview": "http://127.0.0.1:4371"
+  },
+  "unit": {
+    "passed": 303,
+    "failed": 0,
+    "log": "unit.txt"
+  },
+  "build": {
+    "pages": 147,
+    "typeErrors": 0,
+    "typeWarnings": 0,
+    "typeHints": 0,
+    "log": "build.txt",
+    "remainingWarning": "minified shared chunk >500kB"
+  },
+  "specs": {
+    "passed": 34,
+    "failed": 0,
+    "log": "specs.txt"
+  },
+  "browser": {
+    "coverage": {
+      "passed": 145,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "report": "coverage-report.json",
+      "log": "coverage.txt"
+    },
+    "product": {
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "report": "product-report.json",
+      "log": "product.txt"
+    },
+    "regression": {
+      "passed": 33,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "report": "regression-report.json",
+      "log": "regression.txt"
+    }
+  },
+  "ci": "affected regression step added; hosted run not executed",
+  "externalTodos": "../../product-followup-todo.md"
+}

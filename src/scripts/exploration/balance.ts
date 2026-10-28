@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {checkedState} from '../../lib/product/state-validation';
 import {solveBalance,startTipping,stepTipping,bodyPoint,platformPoint,bodyHeight,type BalanceInput,type TippingState} from '../../lib/exploration/balance';
 import {el,text,value,svgPoint} from './ui';import {sequence} from './demonstration';
 type Mode='idle'|'demo'|'demo-paused'|'fall'|'fall-paused';
@@ -103,3 +105,12 @@ let departed=false;async function init(){try{const {createBalanceScene}=await im
 el('balance-view-toggle').addEventListener('click',()=>{view2d=!view2d;setView();});document.querySelectorAll<HTMLButtonElement>('[data-balance-camera]').forEach(b=>b.addEventListener('click',()=>{view2d=false;setView();spatial?.preset(b.dataset.balanceCamera!);}));
 window.addEventListener('pagehide',()=>{background();departed=true;spatial?.dispose();spatial=undefined;});window.addEventListener('pageshow',e=>{if(e.persisted){departed=false;void init();}});
 render();void init();
+
+const savedBalanceValid=checkedState(input(),p=>{
+ solveBalance(p);
+ const xMax=Math.floor((p.width/2-.06)*100+1e-7)/100;
+ if(p.bodyMass!==2||p.width<.3||p.width>1||Math.abs(p.tilt)>60||p.loadY<.12||p.loadY>1.08||p.loadMass<.5||p.loadMass>5||Math.abs(p.loadX)>xMax+1e-9)throw new RangeError('Outside control bounds');
+});
+setupDiscoveries({slug:'balance',snapshot:()=>({...input()}),validate:savedBalanceValid,labels:{width:'支撑宽度 m',tilt:'倾角 °',loadX:'配重横向 m',loadY:'配重高度 m',loadMass:'配重 kg',bodyMass:'架质量 kg'},
+ describe:s=>{const p=s as unknown as BalanceInput;return `支撑 ${p.width} m；倾角 ${p.tilt}°；配重 (${p.loadX},${p.loadY}) m、${p.loadMass} kg；稳定余量 ${(solveBalance(p).margin*100).toFixed(2)} cm。恢复夹持姿态。`;},
+ restore:s=>{challenge=false;prediction='';endComparison();manual();el<HTMLInputElement>('balance-width').value=String(s.width);widthBounds();for(const [id,key] of [['balance-tilt','tilt'],['balance-load-x','loadX'],['balance-load-y','loadY'],['balance-mass','loadMass']])el<HTMLInputElement>(id!).value=String(s[key!]);document.querySelectorAll('[data-balance-predict]').forEach(b=>b.setAttribute('aria-pressed','false'));text('balance-challenge-note','恢复记录不计独立挑战；可重新准备挑战。');text('balance-prediction-note','请重新预测并释放检验。');render();}});

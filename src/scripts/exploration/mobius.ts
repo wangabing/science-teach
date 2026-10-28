@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {checkedState} from '../../lib/product/state-validation';
 import {stripPoint,stripWidth,topology,cutSegments,paperRoute,type HalfTwists} from '../../lib/exploration/mobius';
 import {el,text,value} from './ui';
 import {sequence} from './demonstration';
@@ -86,3 +88,9 @@ el('paper-view-toggle').addEventListener('click',()=>{view2d=!view2d;setView();}
 document.querySelectorAll<HTMLButtonElement>('[data-paper-camera]').forEach(b=>b.addEventListener('click',()=>{view2d=false;setView();spatial?.preset(b.dataset.paperCamera!);}));
 window.addEventListener('pagehide',()=>{background();departed=true;spatial?.dispose();spatial=undefined;});window.addEventListener('pageshow',e=>{if(e.persisted){departed=false;void init();}});
 render();void init();
+
+setupDiscoveries({slug:'mobius',snapshot:()=>({...state}),validate:checkedState(initial(),p=>{
+ if(![0,1,2].includes(p.twists)||p.progress<0||p.progress>1||p.cutProgress<0||p.cutProgress>1||p.cut!==(p.cutProgress===1)||![0,1].includes(p.component)||p.component>=(p.cut?topology(p.twists).cutComponents:1)||p.newEdge&&(!p.cut||!p.edge))throw new RangeError('Invalid paper state');
+}),labels:{twists:'半扭转数',progress:'追踪比例',edge:'沿边',cut:'剪完',cutProgress:'剪切比例',component:'纸带编号',newEdge:'新切边'},
+ describe:s=>`半扭转 ${s.twists} 次；剪切 ${Math.round(Number(s.cutProgress)*100)}%；追踪 ${Math.round(Number(s.progress)*100)}%；${s.edge?(s.newEdge?'新切边':'原纸边'):'纸面'}；第 ${Number(s.component)+1} 条带。`,
+ restore:s=>{stop();state={...s} as unknown as PaperState;prediction=0;el<HTMLInputElement>('paper-progress').value=String(state.progress*100);document.querySelectorAll('[data-paper-predict]').forEach(b=>b.setAttribute('aria-pressed','false'));text('paper-prediction-note','已恢复纸带，预测需要重新作出。');render();}});

@@ -1,0 +1,234 @@
+{
+  "recordedAt": "2026-10-21T10:04:42.281Z",
+  "conditions": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "latency": 100,
+    "downloadThroughput": 200000,
+    "uploadThroughput": 100000,
+    "cpuSlowdown": 4,
+    "cache": "disabled; fresh context per page",
+    "runs": 3
+  },
+  "limits": "Local synthetic conditions; elapsed milestones differ by page and are not a real-user metric. No cross-page speed ranking.",
+  "results": [
+    {
+      "pathname": "/",
+      "run": 1,
+      "elapsedMs": 15922.199999988079,
+      "height": 38354,
+      "htmlBytes": 995705,
+      "cards": 140,
+      "transferredBytes": 2908942
+    },
+    {
+      "pathname": "/",
+      "run": 2,
+      "elapsedMs": 15242.399999976158,
+      "height": 38354,
+      "htmlBytes": 995705,
+      "cards": 140,
+      "transferredBytes": 2908942
+    },
+    {
+      "pathname": "/",
+      "run": 3,
+      "elapsedMs": 15738.299999952316,
+      "height": 38354,
+      "htmlBytes": 995705,
+      "cards": 140,
+      "transferredBytes": 2908942
+    },
+    {
+      "pathname": "/experiments/",
+      "run": 1,
+      "elapsedMs": 16771.19999998808,
+      "height": 41524,
+      "htmlBytes": 997651,
+      "cards": 140,
+      "transferredBytes": 3019598
+    },
+    {
+      "pathname": "/experiments/",
+      "run": 2,
+      "elapsedMs": 17002.700000047684,
+      "height": 41524,
+      "htmlBytes": 997651,
+      "cards": 140,
+      "transferredBytes": 3020106
+    },
+    {
+      "pathname": "/experiments/",
+      "run": 3,
+      "elapsedMs": 16522.600000023842,
+      "height": 41524,
+      "htmlBytes": 997651,
+      "cards": 140,
+      "transferredBytes": 3019598
+    },
+    {
+      "pathname": "/labs/lens/",
+      "run": 1,
+      "elapsedMs": 6933.399999976158,
+      "height": 5541,
+      "htmlBytes": 30427,
+      "cards": 0,
+      "transferredBytes": 1156586
+    },
+    {
+      "pathname": "/labs/lens/",
+      "run": 2,
+      "elapsedMs": 6873.600000023842,
+      "height": 5541,
+      "htmlBytes": 30427,
+      "cards": 0,
+      "transferredBytes": 1156586
+    },
+    {
+      "pathname": "/labs/lens/",
+      "run": 3,
+      "elapsedMs": 6912,
+      "height": 5541,
+      "htmlBytes": 30427,
+      "cards": 0,
+      "transferredBytes": 1156586
+    },
+    {
+      "pathname": "/labs/sections/",
+      "run": 1,
+      "elapsedMs": 6662.5,
+      "height": 4268,
+      "htmlBytes": 20286,
+      "cards": 0,
+      "transferredBytes": 1201504
+    },
+    {
+      "pathname": "/labs/sections/",
+      "run": 2,
+      "elapsedMs": 6625.400000035763,
+      "height": 4268,
+      "htmlBytes": 20286,
+      "cards": 0,
+      "transferredBytes": 1201504
+    },
+    {
+      "pathname": "/labs/sections/",
+      "run": 3,
+      "elapsedMs": 6625.199999988079,
+      "height": 4268,
+      "htmlBytes": 20286,
+      "cards": 0,
+      "transferredBytes": 1201504
+    },
+    {
+      "pathname": "/labs/moon/",
+      "run": 1,
+      "elapsedMs": 11765.800000011921,
+      "height": 6907,
+      "htmlBytes": 45953,
+      "cards": 0,
+      "transferredBytes": 1913797
+    },
+    {
+      "pathname": "/labs/moon/",
+      "run": 2,
+      "elapsedMs": 10568.400000035763,
+      "height": 6907,
+      "htmlBytes": 45953,
+      "cards": 0,
+      "transferredBytes": 1913797
+    },
+    {
+      "pathname": "/labs/moon/",
+      "run": 3,
+      "elapsedMs": 10368.199999988079,
+      "height": 6907,
+      "htmlBytes": 45953,
+      "cards": 0,
+      "transferredBytes": 1913797
+    },
+    {
+      "pathname": "/labs/bridge/",
+      "run": 1,
+      "elapsedMs": 6862.699999988079,
+      "height": 4476,
+      "htmlBytes": 19999,
+      "cards": 0,
+      "transferredBytes": 1229595
+    },
+    {
+      "pathname": "/labs/bridge/",
+      "run": 2,
+      "elapsedMs": 6899.400000035763,
+      "height": 4476,
+      "htmlBytes": 19999,
+      "cards": 0,
+      "transferredBytes": 1229595
+    },
+    {
+      "pathname": "/labs/bridge/",
+      "run": 3,
+      "elapsedMs": 7028,
+      "height": 4476,
+      "htmlBytes": 19999,
+      "cards": 0,
+      "transferredBytes": 1229595
+    },
+    {
+      "pathname": "/labs/belt-drive/",
+      "run": 1,
+      "elapsedMs": 8335.400000035763,
+      "height": 5091,
+      "htmlBytes": 45271,
+      "cards": 0,
+      "transferredBytes": 1482928
+    },
+    {
+      "pathname": "/labs/belt-drive/",
+      "run": 2,
+      "elapsedMs": 8289.300000011921,
+      "height": 5091,
+      "htmlBytes": 45271,
+      "cards": 0,
+      "transferredBytes": 1482928
+    },
+    {
+      "pathname": "/labs/belt-drive/",
+      "run": 3,
+      "elapsedMs": 8297.5,
+      "height": 5091,
+      "htmlBytes": 45271,
+      "cards": 0,
+      "transferredBytes": 1482928
+    },
+    {
+      "pathname": "/labs/tidal-roche/",
+      "run": 1,
+      "elapsedMs": 9048.299999952316,
+      "height": 5111,
+      "htmlBytes": 39725,
+      "cards": 0,
+      "transferredBytes": 1522884
+    },
+    {
+      "pathname": "/labs/tidal-roche/",
+      "run": 2,
+      "elapsedMs": 8994,
+      "height": 5111,
+      "htmlBytes": 39725,
+      "cards": 0,
+      "transferredBytes": 1522884
+    },
+    {
+      "pathname": "/labs/tidal-roche/",
+      "run": 3,
+      "elapsedMs": 8871.299999952316,
+      "height": 5111,
+      "htmlBytes": 39726,
+      "cards": 0,
+      "transferredBytes": 1522884
+    }
+  ]
+}

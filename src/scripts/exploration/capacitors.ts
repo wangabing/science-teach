@@ -1,3 +1,5 @@
+import {checkedState} from '../../lib/product/state-validation';
+import {validateRC} from '../../lib/exploration/electricity';
 import {RC_DEFAULTS,initialRC,advanceRC,readRC,cloneRCRecord,compareRC,rcCSV,type RCMode,type RCRecord} from '../../lib/exploration/electricity';
 import {setupNotebook} from './study-notebook';
 const get=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(`rc-${id}`) as T;
@@ -69,7 +71,7 @@ try{
  document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
  setupNotebook<RCRecord>({snapshot:()=>({input,state}),clone:cloneRCRecord,restore:record=>{
   pause();input=record.input;state=record.state;task=null;heldAt=null;heldVoltage=null;points=[{time:state.time,voltage:state.voltage,current:readRC(input,state).current}];text('task-note','记录已恢复并暂停；不计为独立观察完成。');text('trace-note',`只从恢复时刻 ${state.time.toFixed(2)} s 的当前点开始；此前曲线未保存，不补造历史。`);render();
- },summary:record=>`${record.input.resistance} Ω / ${record.input.capacitance} µF / ${record.input.emf} V · ${record.state.mode} · ${record.state.time.toFixed(2)} s · ${record.state.voltage.toFixed(3)} V`,compare:compareRC,csv:rcCSV,filename:'capacitor-time.csv'});
+ },summary:record=>`${record.input.resistance} Ω / ${record.input.capacitance} µF / ${record.input.emf} V · ${record.state.mode} · ${record.state.time.toFixed(2)} s · ${record.state.voltage.toFixed(3)} V`,compare:compareRC,csv:rcCSV,filename:'capacitor-time.csv',durable:{slug:'capacitors',validate:checkedState({input:RC_DEFAULTS,state:initialRC()},r=>validateRC(r.input,r.state)),labels:{input:'元件参数（V/Ω/µF）',state:'时刻、电压与能量账本'}}});
  document.querySelectorAll<HTMLButtonElement>('[data-rc-answer]').forEach(button=>button.addEventListener('click',()=>{
   document.querySelectorAll('[data-rc-answer]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
   const small=advanceRC(RC_DEFAULTS,initialRC(),1),large=advanceRC({...RC_DEFAULTS,capacitance:2000},initialRC(),1);

@@ -1,3 +1,4 @@
+import {setupControlDiscoveries} from '../product/control-discoveries';
 import { Pendulum, DEFAULT_PENDULUM, theoreticalPeriod, STEP, type PendulumParams } from '../../lib/stem-lab/pendulum';
 import { comparePendulum, type PendulumRecord } from '../../lib/stem-lab/pendulum-records';
 import { createPendulumScene } from './pendulum-scene';
@@ -220,3 +221,5 @@ node('save-period').addEventListener('click',()=>{
 
 const dimensionalSwitch=document.createElement('button'); dimensionalSwitch.type='button';dimensionalSwitch.textContent='查看二维实验';dimensionalSwitch.style.cssText='min-height:44px;margin:10px;padding:10px 16px';
 let flatView=false; dimensionalSwitch.addEventListener('click',()=>{flatView=!flatView;node('pendulum-fallback').hidden=!flatView&&Boolean(scene);const canvas=document.querySelector<HTMLCanvasElement>('#apparatus canvas');if(canvas)canvas.hidden=flatView;dimensionalSwitch.textContent=flatView?'返回三维实验':'查看二维实验';dimensionalSwitch.setAttribute('aria-pressed',String(flatView));update(true);});viewport.after(dimensionalSwitch);
+
+setupControlDiscoveries('pendulum',['length','mass','angle','gravity','damping'],()=>{resetExperiment();document.querySelectorAll('[data-mission],#answers button').forEach(n=>n.setAttribute('aria-pressed','false'));node('answer-feedback').textContent='已恢复释放条件；请重新预测并释放检验。';delete node('answer-feedback').dataset.correct;},s=>`摆长 ${s.length} m；质量 ${s.mass} kg；初角 ${s.angle}°；重力 ${s.gravity} m/s²；阻尼 ${s.damping}。恢复初始释放条件，不补造轨迹。`);

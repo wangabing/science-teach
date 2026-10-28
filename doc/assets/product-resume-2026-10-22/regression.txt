@@ -1,0 +1,44 @@
+
+> science-teach@0.1.0 test:browser:coverage-regression
+> playwright test --config playwright.coverage-regression.config.ts
+
+
+Running 33 tests using 1 worker
+
+(node:3092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/circuits.spec.ts:6:1 › keyboard closes first loop, cancels selection, prevents duplicates and removes wire (11.5s)
+  ✓   2 tests/browser/circuits.spec.ts:20:1 › series, lamp bypass and supply short have distinct model-backed diagnostics (4.9s)
+  ✓   3 tests/browser/circuits.spec.ts:28:1 › independent challenge needs own wiring and actual disconnection, then edits invalidate (8.7s)
+  ✓   4 tests/browser/circuits.spec.ts:43:1 › example and restore cannot claim independent completion; records compare and export (16.9s)
+  ✓   5 tests/browser/circuits.spec.ts:57:1 › transfer feedback explains internal resistance without replacing current circuit (4.9s)
+  ✓   6 tests/browser/circuits.spec.ts:66:3 › mobile touch › tap terminals, read both lamps and operate without page overflow (9.2s)
+  ✓   7 tests/browser/circuits.spec.ts:77:3 › no JavaScript › reading and honest numeric fallback remain available (4.0s)
+  ✓   8 tests/browser/electricity.spec.ts:5:1 › divider independent task, loading, snapshot and export stay coherent (7.8s)
+  ✓   9 tests/browser/electricity.spec.ts:19:1 › RC exact stepping, continuous switches, signed current and independent observation (8.5s)
+  ✓  10 tests/browser/electricity.spec.ts:33:1 › RC same-time capacity comparison, playback and hidden pause (5.6s)
+  ✓  11 tests/browser/electricity.spec.ts:44:47 › mobile › resistors touch, catalog and layout (6.7s)
+  ✓  12 tests/browser/electricity.spec.ts:44:47 › mobile › capacitors touch, catalog and layout (7.0s)
+  ✓  13 tests/browser/electricity.spec.ts:51:47 › no JS › resistors honest fallback (3.3s)
+  ✓  14 tests/browser/electricity.spec.ts:51:47 › no JS › capacitors honest fallback (4.6s)
+  ✓  15 tests/browser/geometry-studios.spec.ts:10:1 › reflection independent keyboard search, reference credit and undo/redo (5.1s)
+  ✓  16 tests/browser/geometry-studios.spec.ts:20:1 › reflection segment changes optimum; snapshots compare, export and restore recomputed values (7.2s)
+  ✓  17 tests/browser/geometry-studios.spec.ts:30:1 › circle requires two manual positions, rejects endpoints and distinguishes opposite arcs (8.0s)
+  ✓  18 tests/browser/geometry-studios.spec.ts:39:1 › triangle locking preserves current third side, disables free hinge and mirror keeps lengths (5.4s)
+  ✓  19 tests/browser/geometry-studios.spec.ts:48:1 › triangle impossible and degenerate states recover without NaN or fake task credit (3.9s)
+  ✓  20 tests/browser/geometry-studios.spec.ts:55:1 › ellipse observes constant sum, distinguishes actual trace, restores without forged history and handles invalid shapes (6.6s)
+  ✓  21 tests/browser/geometry-studios.spec.ts:64:1 › real pointer drag stays on constrained baseline and produces one undo transaction (4.7s)
+  ✓  22 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › reflection touch controls, 44px point and no overflow (3.7s)
+  ✓  23 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › circle-angles touch controls, 44px point and no overflow (3.9s)
+  ✓  24 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › triangle-rigidity touch controls, 44px point and no overflow (3.4s)
+  ✓  25 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › ellipse-string touch controls, 44px point and no overflow (4.3s)
+  ✓  26 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of reflection preserves construction (3.9s)
+  ✓  27 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of circle-angles preserves construction (3.9s)
+  ✓  28 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of triangle-rigidity preserves construction (3.0s)
+  ✓  29 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of ellipse-string preserves construction (3.2s)
+  ✓  30 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › reflection static figure, conditions and general reasoning (3.6s)
+  ✓  31 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › circle-angles static figure, conditions and general reasoning (2.9s)
+  ✓  32 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › triangle-rigidity static figure, conditions and general reasoning (2.8s)
+  ✓  33 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › ellipse-string static figure, conditions and general reasoning (3.4s)
+
+  33 passed (3.4m)

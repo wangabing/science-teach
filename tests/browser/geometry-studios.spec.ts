@@ -14,7 +14,7 @@ test('reflection independent keyboard search, reference credit and undo/redo',as
  await button(page,'撤销').click();await expect(note(page)).toContainText('任务与历史笔迹未恢复');await expect(page.locator('#geo-position-value')).toHaveText('-2.90 u');
  await button(page,'重做').click();await expect(page.locator('#geo-position-value')).toHaveText('-1.00 u');await button(page,'核验这次观察').click();await expect(note(page)).toContainText('先准备');
  await page.getByText('需要时，看参考状态',{exact:true}).click();await button(page,'应用参考状态').click();await expect(note(page)).toContainText('不计为独立完成');
- await page.getByText('展开一般论证',{exact:true}).click();await expect(page.getByText(/由三角不等式，PA/)).toBeVisible();
+ await page.getByText('展开一般论证',{exact:true}).click();await expect(page.getByRole('listitem').filter({hasText:/由三角不等式，PA/})).toBeVisible();
 });
 
 test('reflection segment changes optimum; snapshots compare, export and restore recomputed values',async({checkedPage:page})=>{

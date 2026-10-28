@@ -1,3 +1,4 @@
+import {setupControlDiscoveries} from '../product/control-discoveries';
 import { launchOrbit,stepOrbit,orbitEnergy,EARTH_RADIUS,LAUNCH_RADIUS,circularSpeed,escapeSpeed,type OrbitState } from '../../lib/exploration/orbit';
 import { el,text,value,bindRange,clock } from './ui';
 import { orbitalElements } from '../../lib/exploration/measurements';
@@ -57,3 +58,5 @@ function demonstrate(speed:number){preset(speed);el<HTMLSelectElement>('time-rat
 el('demo').addEventListener('click',()=>demonstrate(circularSpeed));el('demo-ellipse').addEventListener('click',()=>demonstrate(8));
 el('demo-pause').addEventListener('click',()=>{animator.pause();text('demo-stage','已暂停，可以读公式与图表；“开始 / 继续”从此刻继续。');});
 el('time-rate').addEventListener('change',()=>{demoMode=false;text('demo-stage','观察速度已改变，积分步长仍为 3 秒。');});
+
+setupControlDiscoveries('orbit',['speed','angle'],reset,s=>`发射速率 ${s.speed} km/s；偏角 ${s.angle}°。恢复发射初态，不保存飞行轨迹。`);

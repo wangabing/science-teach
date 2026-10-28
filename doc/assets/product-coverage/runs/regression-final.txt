@@ -1,0 +1,12 @@
+
+> science-teach@0.1.0 test:browser:coverage-regression
+> playwright test --config playwright.coverage-regression.config.ts --grep reflection independent keyboard search
+
+
+Running 1 test using 1 worker
+
+(node:8137) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/geometry-studios.spec.ts:10:1 › reflection independent keyboard search, reference credit and undo/redo (4.7s)
+
+  1 passed (14.0s)

@@ -1,0 +1,24 @@
+
+> science-teach@0.1.0 test:browser:product
+> playwright test --config playwright.product.config.ts
+
+
+Running 13 tests using 1 worker
+
+(node:6506) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/product-journey.spec.ts:4:1 › homepage offers four starting points and directory preserves a shareable searchable catalog (10.9s)
+  ✓   2 tests/browser/product-journey.spec.ts:14:1 › without scripts the complete directory remains readable (4.2s)
+  ✓   3 tests/browser/product-journey.spec.ts:17:27 › lens saves two discoveries and restores actual conditions without automatic credit (12.2s)
+  ✓   4 tests/browser/product-journey.spec.ts:17:27 › sections saves two discoveries and restores actual conditions without automatic credit (12.9s)
+  ✓   5 tests/browser/product-journey.spec.ts:17:27 › moon saves two discoveries and restores actual conditions without automatic credit (16.5s)
+  ✓   6 tests/browser/product-journey.spec.ts:17:27 › bridge saves two discoveries and restores actual conditions without automatic credit (11.1s)
+  ✓   7 tests/browser/product-journey.spec.ts:17:27 › belt-drive saves two discoveries and restores actual conditions without automatic credit (21.1s)
+  ✓   8 tests/browser/product-journey.spec.ts:17:27 › tidal-roche saves two discoveries and restores actual conditions without automatic credit (16.3s)
+  ✓   9 tests/browser/product-journey.spec.ts:40:30 › first operation is reachable at 320px and reduced motion (16.0s)
+  ✓  10 tests/browser/product-journey.spec.ts:40:30 › first operation is reachable at 390px and reduced motion (15.4s)
+  ✓  11 tests/browser/product-journey.spec.ts:48:1 › malformed and denied local storage fail safely (4.8s)
+  ✓  12 tests/browser/product-journey.spec.ts:54:1 › shared workbench carries a route to a real next question (3.5s)
+  ✓  13 tests/browser/product-journey.spec.ts:59:1 › WebGL failure leaves native 2D evidence and parameter edits usable (3.9s)
+
+  13 passed (2.7m)

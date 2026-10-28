@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {numericState,type DiscoveryState} from '../../lib/product/discoveries';
 import {solveLens,rayHeights,type LensInput,type LensRegime} from '../../lib/exploration/lens';
 import {el,text,value,svgPoint} from './ui';
 import {decodeRecords,compareRecords,challengeHint,LENS_STORAGE_KEY,type LensRecord} from '../../lib/exploration/lens-notebook';
@@ -154,3 +156,10 @@ document.querySelectorAll<HTMLButtonElement>('[data-lens-camera]').forEach(b=>b.
 document.querySelectorAll<HTMLButtonElement>('[data-lens-step]').forEach(b=>b.addEventListener('click',()=>{const [id,step]=b.dataset.lensStep!.split(':');manual();set(id!,value(id!)+Number(step));render(true);}));
 window.addEventListener('pagehide',()=>{departed=true;spatial?.dispose();spatial=undefined;});window.addEventListener('pageshow',e=>{if(e.persisted){departed=false;void initSpatial();}});
 void initSpatial();
+
+setupDiscoveries({slug:'lens',snapshot:()=>({focal:value('focal-length'),object:value('object-distance'),screen:value('screen-distance'),extensions:Number(el<HTMLInputElement>('show-extensions').checked)}),
+ validate:(v):v is DiscoveryState=>numericState({focal:{min:6,max:16,step:.5},object:{min:5,max:80,step:.1},screen:{min:5,max:100,step:.1},extensions:{min:0,max:1,step:1}},v),
+ labels:{focal:'焦距/cm',object:'物距/cm',screen:'屏距/cm',extensions:'延长线'},
+ describe:p=>{const r=solveLens({focal:p.focal as number,object:p.object as number,screen:p.screen as number,height:2});return `f=${p.focal} cm，u=${p.object} cm，屏距=${p.screen} cm；像距=${r.image===null?'无有限值':fmt(r.image)+' cm'}，${names[r.regime]}，${r.focused?'已对焦':'未对焦'}。`;},
+ restore:p=>{manual();leaveFirstFocus();challenge='';set('focal-length',p.focal as number);set('object-distance',p.object as number);set('screen-distance',p.screen as number);el<HTMLInputElement>('show-extensions').checked=!!p.extensions;render();}
+});

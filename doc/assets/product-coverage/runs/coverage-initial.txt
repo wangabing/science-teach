@@ -1,0 +1,142 @@
+
+> science-teach@0.1.0 test:browser:coverage
+> playwright test --config playwright.coverage.config.ts
+
+
+Running 140 tests using 1 worker
+
+(node:6209) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘    1 tests/browser/product-coverage.spec.ts:6:37 › buoyancy: mobile guidance and durable conditions roundtrip (7.6s)
+(node:6228) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘    2 tests/browser/product-coverage.spec.ts:6:37 › pendulum: mobile guidance and durable conditions roundtrip (7.5s)
+(node:6248) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    3 tests/browser/product-coverage.spec.ts:6:37 › lens: mobile guidance and durable conditions roundtrip (5.9s)
+  ✓    4 tests/browser/product-coverage.spec.ts:6:37 › interference: mobile guidance and durable conditions roundtrip (3.4s)
+  ✓    5 tests/browser/product-coverage.spec.ts:6:37 › circuits: mobile guidance and durable conditions roundtrip (3.3s)
+  ✓    6 tests/browser/product-coverage.spec.ts:6:37 › resistors: mobile guidance and durable conditions roundtrip (4.1s)
+  ✓    7 tests/browser/product-coverage.spec.ts:6:37 › capacitors: mobile guidance and durable conditions roundtrip (4.4s)
+  ✓    8 tests/browser/product-coverage.spec.ts:6:37 › area: mobile guidance and durable conditions roundtrip (7.8s)
+  ✓    9 tests/browser/product-coverage.spec.ts:6:37 › sections: mobile guidance and durable conditions roundtrip (4.9s)
+  ✓   10 tests/browser/product-coverage.spec.ts:6:37 › mobius: mobile guidance and durable conditions roundtrip (4.3s)
+  ✓   11 tests/browser/product-coverage.spec.ts:6:37 › reflection: mobile guidance and durable conditions roundtrip (4.2s)
+  ✓   12 tests/browser/product-coverage.spec.ts:6:37 › circle-angles: mobile guidance and durable conditions roundtrip (3.5s)
+  ✘   13 tests/browser/product-coverage.spec.ts:6:37 › triangle-rigidity: mobile guidance and durable conditions roundtrip (2.6s)
+
+
+  1) tests/browser/product-coverage.spec.ts:6:37 › buoyancy: mobile guidance and durable conditions roundtrip 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: locator('[data-personal-discoveries]')
+    Expected: "true"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveAttribute" locator('[data-personal-discoveries]') with timeout 5000ms
+      - waiting for locator('[data-personal-discoveries]')
+
+
+       8 |  await page.setViewportSize({width:320,height:844});await page.emulateMedia({reducedMotion:'reduce'});
+       9 |  await page.goto(experiment.href);
+    > 10 |  const panel=page.locator('[data-personal-discoveries]');await expect(panel).toHaveAttribute('data-ready','true');
+         |                                                                              ^
+      11 |  const start=page.getByRole('link',{name:'开始动手 ↓',exact:true});
+      12 |  for(const width of [320,390]){
+      13 |   await page.setViewportSize({width,height:844});await page.evaluate(()=>scrollTo(0,0));
+        at /Users/abing/GolandProjects/science-teach/tests/browser/product-coverage.spec.ts:10:78
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-buoyancy--67f3f-urable-conditions-roundtrip/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/coverage/product-coverage-buoyancy--67f3f-urable-conditions-roundtrip/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-buoyancy--67f3f-urable-conditions-roundtrip/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/coverage/product-coverage-buoyancy--67f3f-urable-conditions-roundtrip/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/browser/product-coverage.spec.ts:6:37 › pendulum: mobile guidance and durable conditions roundtrip 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: locator('[data-personal-discoveries]')
+    Expected: "true"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveAttribute" locator('[data-personal-discoveries]') with timeout 5000ms
+      - waiting for locator('[data-personal-discoveries]')
+
+
+       8 |  await page.setViewportSize({width:320,height:844});await page.emulateMedia({reducedMotion:'reduce'});
+       9 |  await page.goto(experiment.href);
+    > 10 |  const panel=page.locator('[data-personal-discoveries]');await expect(panel).toHaveAttribute('data-ready','true');
+         |                                                                              ^
+      11 |  const start=page.getByRole('link',{name:'开始动手 ↓',exact:true});
+      12 |  for(const width of [320,390]){
+      13 |   await page.setViewportSize({width,height:844});await page.evaluate(()=>scrollTo(0,0));
+        at /Users/abing/GolandProjects/science-teach/tests/browser/product-coverage.spec.ts:10:78
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-pendulum--cc7d9-urable-conditions-roundtrip/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/coverage/product-coverage-pendulum--cc7d9-urable-conditions-roundtrip/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-pendulum--cc7d9-urable-conditions-roundtrip/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/coverage/product-coverage-pendulum--cc7d9-urable-conditions-roundtrip/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests/browser/product-coverage.spec.ts:6:37 › triangle-rigidity: mobile guidance and durable conditions roundtrip 
+
+    Test was interrupted.
+
+    Error: page.reload: Test ended.
+    Call log:
+      - waiting for navigation until "load"
+        - navigated to "http://127.0.0.1:4371/labs/triangle-rigidity/"
+
+
+      37 |  // A valid-looking envelope with an unknown condition must never reach a model.
+      38 |  await page.evaluate(slug=>{const key=`science-teach:discoveries:${slug}:v1`,data=JSON.parse(localStorage.getItem(key)!);data.records[0].conditions.unexpected=42;localStorage.setItem(key,JSON.stringify(data));},experiment.slug);
+    > 39 |  await page.reload();await expect(panel).toHaveAttribute('data-ready','true');await expect(panel.locator('[role=status]')).toContainText('不兼容');await expect(panel.locator('.discovery-records article')).toHaveCount(0);
+         |             ^
+      40 |  await page.getByRole('button',{name:'清除本机发现',exact:true}).click();await page.reload();await expect(panel).toHaveAttribute('data-ready','true');await expect(panel.locator('.discovery-records article')).toHaveCount(0);expect(errors).toEqual([]);
+      41 | });
+      42 |
+        at /Users/abing/GolandProjects/science-teach/tests/browser/product-coverage.spec.ts:39:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-triangle--bc0b3-urable-conditions-roundtrip/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/coverage/product-coverage-triangle--bc0b3-urable-conditions-roundtrip/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-triangle--bc0b3-urable-conditions-roundtrip/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/coverage/product-coverage-triangle--bc0b3-urable-conditions-roundtrip/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests/browser/product-coverage.spec.ts:6:37 › buoyancy: mobile guidance and durable conditions roundtrip 
+    tests/browser/product-coverage.spec.ts:6:37 › pendulum: mobile guidance and durable conditions roundtrip 
+  1 interrupted
+    tests/browser/product-coverage.spec.ts:6:37 › triangle-rigidity: mobile guidance and durable conditions roundtrip 
+  127 did not run
+  10 passed (1.3m)

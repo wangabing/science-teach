@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {numericState,type DiscoveryState} from '../../lib/product/discoveries';
 import { cubeVertices,cubeEdges,cubeSectionEvidence,project3,sectionBasis,dot,type V3 } from '../../lib/exploration/section';
 import { el,text,value,bindRange } from './ui';
 import { sequence } from './demonstration';
@@ -53,4 +55,10 @@ for(const id of ['cube-view','flat-view','section-points'])el(id).addEventListen
  if(target.dataset.sectionVertex!==undefined){selectedVertex=Number(target.dataset.sectionVertex);selectedEdge=-1;}
  else{const edge=Number(target.dataset.sectionEdge);if(!currentEvidence.vertices.some(p=>p.edges.includes(edge))){text('section-source',`原棱 ${edge+1} 当前没有截面顶点。试着平移切平面。`);return;}selectedEdge=edge;selectedVertex=-1;}
  render(false);if(focus)document.querySelector<HTMLButtonElement>(`#section-points [data-section-vertex="${selectedVertex}"]`)?.focus({preventScroll:true});
+});
+
+setupDiscoveries({slug:'sections',snapshot:()=>({azimuth:value('azimuth'),tilt:value('tilt'),offset:value('offset')}),
+ validate:(v):v is DiscoveryState=>numericState({azimuth:{min:0,max:180,step:1},tilt:{min:0,max:90,step:.001},offset:{min:-1.8,max:1.8,step:.01}},v),labels:{azimuth:'方位角/°',tilt:'切面方向/°',offset:'偏移/单位'},
+ describe:p=>{const az=(p.azimuth as number)*Math.PI/180,t=(p.tilt as number)*Math.PI/180,e=cubeSectionEvidence([Math.cos(t)*Math.cos(az),Math.cos(t)*Math.sin(az),Math.sin(t)],p.offset as number);return `方位${p.azimuth}°，方向${p.tilt}°，偏移${p.offset}；${e.vertices.length}个交点。`;},
+ restore:p=>{demo.cancel();setParameters(p.azimuth as number,p.tilt as number,p.offset as number);text('demo-stage','已恢复切面条件；未恢复演示与顶点选择，不计独立操作。');}
 });

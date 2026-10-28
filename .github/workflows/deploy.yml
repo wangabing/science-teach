@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -27,6 +29,7 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - name: Configure Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
@@ -34,12 +37,28 @@ jobs:
         run: npm test
       - name: Check types and build site
         run: npm run build
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify critical product journeys
+        run: npm run test:browser:product
+      - name: Verify catalog-wide learning and persistence
+        run: npm run test:browser:coverage
+      - name: Verify affected circuit, electricity, and geometry behavior
+        run: npm run test:browser:coverage-regression
+      - name: Preserve browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-failures
+          path: test-results/
       - name: Upload site
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     permissions:

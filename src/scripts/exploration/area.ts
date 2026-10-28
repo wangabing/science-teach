@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {checkedState} from '../../lib/product/state-validation';
 import { areaEvidence, areaSources, areaTargets, type Pose } from '../../lib/exploration/area';
 import { el, text, value, bindRange, svgPoint } from './ui';
 import { sequence } from './demonstration';
@@ -125,3 +127,14 @@ el('demo').addEventListener('click',()=>{reset();demo.start(true);});
 el('demo-pause').addEventListener('click',()=>{if(demo.isRunning()){demo.pause();text('demo-stage','演示已暂停。再次点“暂停演示”可继续，也可以手动接管。');}else if(demo.progress()>0&&demo.progress()<1)demo.start();});
 el('next-piece').addEventListener('click',()=>{stopDemo();const i=placed.findIndex(p=>!p);if(i<0){text('demo-stage','全部归位！改变 a、b 后，再验证一次。');return;}selected=i;poses[i]=target(i);placed[i]=true;updatePieces();text('demo-stage',`已自动旋转并放好第 ${i+1} 块。观察同色三角形，下一块该去哪里？`);});
 el('hint').setAttribute('aria-pressed','true');el('hint').textContent='隐藏拼图轮廓';
+
+// Positions are normalized in their own board coordinates, so phone/desktop restore preserves construction.
+const puzzleSnapshot=()=>({a:value('leg-a'),b:value('leg-b'),selected,hints,pieces:poses.map((p,i)=>{
+ const panel=placed[i]||(targetOrigin.y>100?p.y>=410:p.x>=390)?1:0,origin=panel?targetOrigin:sourceOrigin;
+ return {x:(p.x-origin.x)/scale,y:(p.y-origin.y)/scale,angle:p.angle,panel};
+})});
+setupDiscoveries({slug:'area',snapshot:puzzleSnapshot,validate:checkedState(puzzleSnapshot(),p=>{
+ if(p.a<2||p.a>6||p.b<2||p.b>6||!Number.isInteger(p.selected)||p.selected<0||p.selected>3||p.pieces.some(q=>Math.abs(q.x)>1e6||Math.abs(q.y)>1e6||q.angle<0||q.angle>=360||![0,1].includes(q.panel)))throw new RangeError('Invalid puzzle');
+}),labels:{a:'直角边 a',b:'直角边 b',pieces:'拼块位置与朝向',selected:'选中块',hints:'轮廓提示'},
+ describe:s=>`直角边 ${s.a}、${s.b}；四块三角形位置与朝向已记录。恢复时重新判定归位，不保存演示过程。`,
+ restore:s=>{const p=s as unknown as ReturnType<typeof puzzleSnapshot>;stopDemo();el<HTMLInputElement>('leg-a').value=String(p.a);el<HTMLInputElement>('leg-b').value=String(p.b);hints=p.hints;reset();poses=p.pieces.map(q=>{const origin=q.panel?targetOrigin:sourceOrigin;return {x:origin.x+q.x*scale,y:origin.y+q.y*scale,angle:q.angle};});placed=poses.map((q,i)=>{const t=target(i);return Math.abs(q.angle-t.angle)<1e-7&&Math.hypot(q.x-t.x,q.y-t.y)<1e-6;});selected=p.selected;el('hint').setAttribute('aria-pressed',String(hints));el('hint').textContent=hints?'隐藏拼图轮廓':'显示拼图轮廓';updatePieces();text('area-feedback','已恢复拼块并重新判定位置；恢复不代表独立完成，请继续亲手检验。');}});

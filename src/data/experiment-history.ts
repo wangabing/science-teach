@@ -1,5 +1,5 @@
-import {studios} from './discovery-studios';
-import {experimentContexts} from './experiment-contexts';
+import {studios} from './discovery-studios.ts';
+import {experimentContexts} from './experiment-contexts.ts';
 import type {experiments} from './labs';
 
 export type ExperimentSlug = (typeof experiments)[number]['slug'];

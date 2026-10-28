@@ -1,4 +1,4 @@
-import {studios} from './discovery-studios';
+import {studios} from './discovery-studios.ts';
 const legacyExperiments = [
   { slug: 'buoyancy', title: '水托住的，究竟有多重？', name: '浮力实验台', space: 'physics', topic: '阿基米德原理', description: '把铝块慢慢放进水中，观察排水体积、浮力与测力计读数的关系。', tags: ['浮力', '控制变量', '三维互动'], href: '/stem-lab/buoyancy/' },
   { slug: 'pendulum', title: '更重的摆球，会摆得更快吗？', name: '单摆与能量', space: 'physics', topic: '周期与能量守恒', description: '亲手释放摆球，测量周期，用参考摆对照，让能量的来回交换看得见。', tags: ['单摆', '能量', '对照实验'], href: '/stem-lab/pendulum/' },

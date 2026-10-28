@@ -1,0 +1,52 @@
+[
+  {
+    "suite": "lens-workbench",
+    "exitCode": 1,
+    "seconds": 124.4,
+    "finalExitCode": 0,
+    "resolution": "5 initially passed; temporary build-directory 404 on one case, which passed on targeted rerun",
+    "recheckLog": "logs/lens-recheck.log"
+  },
+  {
+    "suite": "discovery",
+    "exitCode": 0,
+    "seconds": 95.4,
+    "finalExitCode": 0
+  },
+  {
+    "suite": "moon",
+    "exitCode": 0,
+    "seconds": 91.5,
+    "finalExitCode": 0
+  },
+  {
+    "suite": "exploration",
+    "exitCode": 0,
+    "seconds": 59.4,
+    "finalExitCode": 0
+  },
+  {
+    "suite": "learning",
+    "exitCode": 0,
+    "seconds": 62.5,
+    "finalExitCode": 0
+  },
+  {
+    "suite": "response-closure",
+    "exitCode": 0,
+    "seconds": 67.0,
+    "finalExitCode": 0
+  },
+  {
+    "suite": "tidal",
+    "exitCode": 0,
+    "seconds": 22.5,
+    "finalExitCode": 0
+  },
+  {
+    "suite": "history",
+    "exitCode": 0,
+    "seconds": 285.9,
+    "finalExitCode": 0
+  }
+]

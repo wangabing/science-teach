@@ -1,0 +1,8 @@
+
+> science-teach@0.1.0 measure:product
+> node scripts/product-performance.mjs before
+
+/experiments/ 1/3: 10848ms, 2063033 bytes
+/experiments/ 2/3: 10920ms, 2062525 bytes
+/experiments/ 3/3: 10793ms, 2062525 bytes
+Saved 3 before measurements

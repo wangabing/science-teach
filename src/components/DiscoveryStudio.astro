@@ -1,4 +1,6 @@
 ---
+import PilotLearning from './PilotLearning.astro';
+import NextExploration from './NextExploration.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';import ExperimentHistory from './ExperimentHistory.astro';import StudyNotebook from './StudyNotebook.astro';
 import {type Studio} from '../data/discovery-studios';import {modelById} from '../lib/discovery/registry';import {defaults,solveModel,format} from '../lib/discovery/core';import {spaces} from '../data/labs';import '../styles/discovery-studios.css';
 import DiscoveryControl from './DiscoveryControl.astro';import {experienceById} from '../data/discovery-experiences';import {observationCue} from '../lib/discovery/observation-cues';import {apparatusDrawing} from '../lib/discovery/presentation';
@@ -60,7 +62,7 @@ const {studio:s}=Astro.props,model=modelById(s.id),initial=solveModel(model,defa
   <StudyNotebook note="保存模型条件与单位；恢复后重算，不恢复任务完成资格。"/>
  </fieldset>
  <section class="dis-reasoning"><div><p class="kicker">从观察到解释</p><h2>把证据带回纸上</h2><details><summary>展开关系与推导</summary><p>{s.proof}</p><p>固定哪些量？改变哪个量？列出两组数值，写出关系，再说明一个不能套用的条件。实验支持猜想，一般证明需要理由。</p></details></div><aside><h3>适用范围与科学状态</h3><p>{initial.note}</p>{s.space==='cosmos'&&<p>公认理论：引力、光速与能量动量关系。限定近似：本页计算模型。工程设想和小说假设见背景说明，均不作已实现机制。</p>}<p>{s.stage}，按知识主题连接中国初高中课程。北京教材章节、届别和课堂使用需教师结合所用版本核对；未宣称教学认证。</p></aside></section>
- <nav class="dis-next next-exploration"><a href={`/spaces/${s.space}/`}>回到{space.name} ↗</a><a href="/experiments/">探索全部实验 ↗</a><a href="/about/">我们怎样做实验 ↗</a></nav>
+ <PilotLearning slug={s.slug}/><NextExploration slug={s.slug}/><nav class="dis-next next-exploration"><a href={`/spaces/${s.space}/`}>回到{space.name} ↗</a><a href="/experiments/">探索全部实验 ↗</a><a href="/about/">我们怎样做实验 ↗</a></nav>
 </article>
 <script>import '../scripts/discovery/workbench';</script>
 </SiteLayout>

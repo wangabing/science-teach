@@ -1,0 +1,141 @@
+{
+  "method": "Three samples per page; same milestone and conditions before/after; medians, not a significance test.",
+  "rows": [
+    {
+      "pathname": "/",
+      "beforeMedian": {
+        "elapsedMs": 15738.299999952316,
+        "htmlBytes": 995705,
+        "height": 38354,
+        "transferredBytes": 2908942
+      },
+      "afterMedian": {
+        "elapsedMs": 2201.899999976158,
+        "htmlBytes": 16476,
+        "height": 4565,
+        "transferredBytes": 194915
+      },
+      "elapsedChangePercent": -86.0,
+      "domBytesChangePercent": -98.3
+    },
+    {
+      "pathname": "/experiments/",
+      "beforeMedian": {
+        "elapsedMs": 16771.19999998808,
+        "htmlBytes": 997651,
+        "height": 41524,
+        "transferredBytes": 3019598
+      },
+      "afterMedian": {
+        "elapsedMs": 10790.600000023842,
+        "htmlBytes": 1053148,
+        "height": 52172,
+        "transferredBytes": 2038360
+      },
+      "elapsedChangePercent": -35.7,
+      "domBytesChangePercent": 5.6
+    },
+    {
+      "pathname": "/labs/lens/",
+      "beforeMedian": {
+        "elapsedMs": 6912,
+        "htmlBytes": 30427,
+        "height": 5541,
+        "transferredBytes": 1156586
+      },
+      "afterMedian": {
+        "elapsedMs": 7088.699999988079,
+        "htmlBytes": 34712,
+        "height": 6673,
+        "transferredBytes": 1169739
+      },
+      "elapsedChangePercent": 2.6,
+      "domBytesChangePercent": 14.1
+    },
+    {
+      "pathname": "/labs/sections/",
+      "beforeMedian": {
+        "elapsedMs": 6625.400000035763,
+        "htmlBytes": 20286,
+        "height": 4268,
+        "transferredBytes": 1201504
+      },
+      "afterMedian": {
+        "elapsedMs": 6180,
+        "htmlBytes": 24596,
+        "height": 5444,
+        "transferredBytes": 1089934
+      },
+      "elapsedChangePercent": -6.7,
+      "domBytesChangePercent": 21.2
+    },
+    {
+      "pathname": "/labs/moon/",
+      "beforeMedian": {
+        "elapsedMs": 10568.400000035763,
+        "htmlBytes": 45953,
+        "height": 6907,
+        "transferredBytes": 1913797
+      },
+      "afterMedian": {
+        "elapsedMs": 10431,
+        "htmlBytes": 50222,
+        "height": 8040,
+        "transferredBytes": 1926833
+      },
+      "elapsedChangePercent": -1.3,
+      "domBytesChangePercent": 9.3
+    },
+    {
+      "pathname": "/labs/bridge/",
+      "beforeMedian": {
+        "elapsedMs": 6899.400000035763,
+        "htmlBytes": 19999,
+        "height": 4476,
+        "transferredBytes": 1229595
+      },
+      "afterMedian": {
+        "elapsedMs": 7107.399999976158,
+        "htmlBytes": 24466,
+        "height": 5603,
+        "transferredBytes": 1243377
+      },
+      "elapsedChangePercent": 3.0,
+      "domBytesChangePercent": 22.3
+    },
+    {
+      "pathname": "/labs/belt-drive/",
+      "beforeMedian": {
+        "elapsedMs": 8297.5,
+        "htmlBytes": 45271,
+        "height": 5091,
+        "transferredBytes": 1482928
+      },
+      "afterMedian": {
+        "elapsedMs": 8583.100000023842,
+        "htmlBytes": 49324,
+        "height": 6195,
+        "transferredBytes": 1495653
+      },
+      "elapsedChangePercent": 3.4,
+      "domBytesChangePercent": 9.0
+    },
+    {
+      "pathname": "/labs/tidal-roche/",
+      "beforeMedian": {
+        "elapsedMs": 8994,
+        "htmlBytes": 39725,
+        "height": 5111,
+        "transferredBytes": 1522884
+      },
+      "afterMedian": {
+        "elapsedMs": 9020.800000011921,
+        "htmlBytes": 43870,
+        "height": 6216,
+        "transferredBytes": 1535700
+      },
+      "elapsedChangePercent": 0.3,
+      "domBytesChangePercent": 10.4
+    }
+  ]
+}

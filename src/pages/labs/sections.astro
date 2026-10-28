@@ -1,4 +1,5 @@
 ---
+import PilotLearning from '../../components/PilotLearning.astro';
 import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import NextExploration from '../../components/NextExploration.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
@@ -18,7 +19,7 @@ import '../../styles/exploration.css';
     </section>
     <section class="learning-evidence" aria-label="截面实时测量"><h2>图形变了，数据怎样变？</h2><div class="evidence-grid"><div><dl class="readouts"><div><dt>顶点数</dt><dd id="section-vertices">4</dd></div><div><dt>面积（平方单位）</dt><dd id="section-area">4.000</dd></div><div><dt>周长（单位）</dt><dd id="section-perimeter">8.000</dd></div></dl><div class="formula-live"><span class="formula-rule">nₓx + nᵧy + n_z z = d</span><span id="section-formula">0x + 0y + 1z = 0</span></div><p>n 是垂直切平面的单位方向，d 是平移距离。公式描述的正是左图中的切平面。</p></div><div><h3>每条边有多长？</h3><div id="section-bars"></div><p id="section-observation">水平切得到边长 2 的正方形。</p></div></div></section>
     <section class="lab-notes"><article><h2>截面不是随意画出的图形</h2><p>切平面碰到一条棱，就可能留下一个顶点。把交点按顺序连接，才得到真正的截面。一个立方体虽然有 12 条棱，但一个平面截面最多有 6 个顶点。</p><p>试试六边形预设，再慢慢平移切平面：为什么靠近顶角时，顶点会变少？</p></article><article class="model-note"><h2>挑战：找到五边形</h2><p>不要只沿体对角线对称地切。改变方位角和仰角，再调整偏移，找到一个五边形。你能解释第五个顶点来自哪条棱吗？</p><p>这里展示理想平面与边长 2 的立方体相交；左边是三维坐标的投影，右边是切平面正视图。面外或相切成线/点时，不显示为多边形截面。</p></article></section>
-    <NextExploration slug="sections" />
+    <PilotLearning slug="sections"/><NextExploration slug="sections" />
     <script>import '../../scripts/exploration/section';</script>
   </div>
 </SiteLayout>

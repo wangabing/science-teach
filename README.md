@@ -14,7 +14,7 @@ npm run dev
 打开终端显示的地址，默认 http://localhost:4321。
 
 ```sh
-npm test          # 292 项科学模型与证据逻辑测试
+npm test          # 297 项科学模型、目录与证据逻辑测试
 npm run check     # Astro / TypeScript 检查
 npm run build     # 类型检查与静态构建，产物为 dist/
 npm run preview   # 本地预览生产构建
@@ -26,8 +26,8 @@ npm run preview   # 本地预览生产构建
 
 ## 页面与当前范围
 
-- `/`：明亮首页、可调摆长的轻量预览、四个空间入口。
-- `/experiments/`：真实可用实验目录。
+- `/`：四项起步推荐、可调摆长的轻量预览、四个空间入口。
+- `/experiments/`：140项完整目录，支持关键词、空间和探索目标组合查找。
 - `/spaces/physics/`：物理实验室，已开放37个实验。
 - `/stem-lab/buoyancy/`：三维浮力实验，含数值、公式与静态降级。
 - `/stem-lab/pendulum/`：三维单摆与能量，含测量、对照、任务和动态二维降级。
@@ -99,4 +99,15 @@ npm run preview   # 本地预览生产构建
 npm run test:browser:response-closure  # 参数扫描、离散状态、三维联动与手机回归
 # 完成全量巡检后生成原始线索闭环记录（保留原报告）
 node --experimental-strip-types scripts/close-experience-findings.mjs
+```
+
+产品体检与改进：[体检报告](doc/product-health-report-2026-10-21.md)、[A—F交付与验证](doc/product-improvement-delivery.md)、[推广反馈表](doc/product-improvement-feedback.md)。全140项现已接入首动作、学习资料与本机发现保存；见[全目录交付](doc/product-coverage-delivery.md)、[后续条件TODO](doc/product-followup-todo.md)。
+
+```sh
+npm run review:index          # 生成140项分层审阅索引
+npm run test:browser:product # 自动启动生产静态服务，验收关键产品旅程
+npm run test:browser:coverage # 全140项手机入口与保存/恢复，以及复合构造
+npm run test:browser:coverage-regression # 电路、电学与几何受影响功能回归
+# 已启动生产服务时，执行固定条件性能采样
+npm run measure:product -- after
 ```

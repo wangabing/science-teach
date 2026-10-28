@@ -1,4 +1,7 @@
-import {CIRCUIT_DEFAULTS,CIRCUIT_PRESETS,cloneCircuit,solveCircuit,wireKey,independentBranches,compareCircuits,circuitsCSV,type CircuitInput,type Terminal,type Wire} from '../../lib/exploration/circuits';
+import {setupDiscoveries} from '../product/discoveries';
+import {exactObject,sameShape} from '../../lib/product/state-validation';
+import type {DiscoveryState} from '../../lib/product/discoveries';
+import {CIRCUIT_DEFAULTS,CIRCUIT_PRESETS,cloneCircuit,validateCircuit,solveCircuit,wireKey,independentBranches,compareCircuits,circuitsCSV,type CircuitInput,type Terminal,type Wire} from '../../lib/exploration/circuits';
 
 const get=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(`circuit-${id}`) as T;
 const text=(id:string,value:string)=>{get(id).textContent=value;};
@@ -127,3 +130,9 @@ try {
 }catch(error){
   get<HTMLFieldSetElement>('tools').disabled=true;text('diagnosis','接线工具未能就绪，请刷新后重试。下方原理和历史说明仍可阅读。');console.error(error);
 }
+
+setupDiscoveries({slug:'circuits',snapshot:()=>cloneCircuit(input) as unknown as DiscoveryState,
+ validate:(s):s is DiscoveryState=>{try{if(!exactObject(s,['emf','resistance','enabled','wires'])||!sameShape(CIRCUIT_DEFAULTS.emf,s.emf)||!sameShape(CIRCUIT_DEFAULTS.resistance,s.resistance)||!sameShape(CIRCUIT_DEFAULTS.enabled,s.enabled)||!Array.isArray(s.wires)||!s.wires.every(w=>Array.isArray(w)&&w.length===2))return false;validateCircuit(s as unknown as CircuitInput);return true;}catch{return false;}},
+ labels:{emf:'电动势 V',resistance:'灯电阻 Ω',enabled:'接入状态',wires:'接线拓扑'},
+ describe:s=>{const p=s as unknown as CircuitInput,r=solveCircuit(p);return `${p.emf} V；电阻 ${p.resistance.join('/')} Ω；接入 ${p.enabled.join('/')}；导线 ${p.wires.map(w=>w.join('—')).join('、')||'无'}；总电流 ${r.current.toFixed(3)} A。`;},
+ restore:s=>{input=cloneCircuit(s as unknown as CircuitInput);selected=null;invalidate('restore');example=false;document.querySelectorAll('[data-circuit-answer]').forEach(b=>b.setAttribute('aria-pressed','false'));text('transfer-note','请重新预测，再检验。');text('selection','已恢复接线并重算，不计独立挑战。');render();}});

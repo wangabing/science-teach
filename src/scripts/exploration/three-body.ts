@@ -1,3 +1,4 @@
+import {setupControlDiscoveries} from '../product/control-discoveries';
 import { threePreset,stepThree,threeEnergy,separation,minDistance,threeAccelerations,type Body } from '../../lib/exploration/three-body';
 import { el,text,value,bindRange,clock } from './ui';
 import { bodyEnergies } from '../../lib/exploration/measurements';
@@ -61,3 +62,5 @@ function demonstrate(kind:'eight'|'sensitive'|'mass'){
 }
 el('demo').addEventListener('click',()=>demonstrate('eight'));el('demo-sensitive').addEventListener('click',()=>demonstrate('sensitive'));el('demo-mass').addEventListener('click',()=>demonstrate('mass'));
 el('demo-pause').addEventListener('click',()=>{animator.pause();text('demo-stage','已暂停：可以逐星读速率与合加速度，再继续观察。');});el('time-rate').addEventListener('change',()=>{demoMode=false;});
+
+setupControlDiscoveries('three-body',['perturbation','star-mass','velocity-scale'],s=>{preset=s.preset===0?'eight':'sensitive';reset();},s=>`${s.preset===0?'八字':'敏感'}初态；位置扰动 ${s.perturbation}；第一星质量 ${s['star-mass']}；速度倍率 ${s['velocity-scale']}。恢复初态，不补造轨迹。`,{read:()=>({preset:preset==='eight'?0:1}),rules:{preset:{min:0,max:1,options:[0,1]}},labels:{preset:'初态'}});

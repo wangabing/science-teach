@@ -20,9 +20,10 @@ const groups=names.map((name,i)=>({id:`${space.slug}-topic-${i}`,name,slugs:[...
   <section class="wrap page-intro"><p class="breadcrumb"><a href="/">探索首页</a> / {space.name}</p><p class="kicker">{space.english}</p><h1>{space.name}</h1><p>{space.question}<br />{space.description}</p></section>
   <section class="wrap directory" aria-label={`${space.name}实验目录`}>
     <span class={`status ${available.length ? 'open' : ''}`}>{available.length ? `${available.length} 个可探索实验` : '筹备中 · 暂无开放实验'}</span>
+    <details><summary>沿一个问题，查看探索路线</summary><ExplorationTrails space={space.slug}/></details>
     <nav class="space-tabs" aria-label="学习主题">{groups.map(group=><a href={`#${group.id}`}>{group.name}</a>)}</nav>
     {groups.map(group=><section id={group.id} class="geometry-topic"><h2>{group.name}</h2><div class="experiment-grid">{group.slugs.map(slug=>available.find(e=>e.slug===slug)).filter(Boolean).map(experiment=><ExperimentCard experiment={experiment!}/>)}</div></section>)}
-    <ExplorationTrails space={space.slug} />
+
   </section>
 </SiteLayout>
 

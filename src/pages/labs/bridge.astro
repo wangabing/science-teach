@@ -1,4 +1,5 @@
 ---
+import PilotLearning from '../../components/PilotLearning.astro';
 import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import NextExploration from '../../components/NextExploration.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
@@ -26,7 +27,7 @@ import '../../styles/exploration.css';
     </aside></div>
     <section class="learning-evidence" aria-label="桥梁受力与反力证据"><h2>载荷最终去了哪里？</h2><div class="evidence-grid"><div><div class="formula-live"><span class="formula-rule">R左 + R右 = P</span><span id="bridge-live-formula">结构不稳定，不能确定可信反力。</span></div><div id="bridge-reaction-bars"></div><p id="bridge-load-explain">加斜撑让结构稳定后，再观察载荷怎样分到两侧支座。</p><p>EA 相同时，杆的轴向伸缩满足 ΔL = NL/(EA)。拉力为正，压力为负；变形图放大 100 倍。</p><div class="formula-live"><span class="formula-rule">ΔL = N × L / 200000</span><span id="bridge-member-formula">选中杆件后，代入当前受力与长度。</span></div></div><div><h3>每根杆的当前轴向力</h3><table class="live-table"><thead><tr><th>杆件</th><th>长度 m</th><th>状态</th><th>力 kN</th></tr></thead><tbody id="bridge-force-table"></tbody></table><p>不稳定时只保留几何长度，不提供没有意义的“承重分数”或受力值。</p></div></div></section>
     <section class="lab-notes"><article><h2>三角形，为什么能锁住形状？</h2><p>铰接的四边形可以在杆长不变时歪斜；三角形的三条边一旦确定，形状也就确定。斜撑把可变的框架拆成三角形，让载荷通过拉力和压力传到支座。</p><p>颜色表示当前载荷下的轴向受力，不代表材料已经损坏。把载荷加倍，观察杆力和位移是否也加倍。</p></article><article class="model-note"><h2>实验桥，不是施工图</h2><p>二维、理想铰接、线弹性小变形；每根杆 EA=200000 kN，忽略弯曲、自重、屈曲、接头与破坏。求解刚度矩阵，奇异时报告不稳定；不能用该模型证明真实桥梁的安全。</p><p>橙色虚线将位移放大 100 倍便于观察；读数仍是实际计算值。手动搭建或改变载荷会立即重新求解；标准演示逐渐增加真实载荷，每一步重新计算。</p></article></section>
-    <NextExploration slug="bridge" />
+    <PilotLearning slug="bridge"/><NextExploration slug="bridge" />
     <script>import '../../scripts/exploration/bridge';</script>
   </div>
 </SiteLayout>

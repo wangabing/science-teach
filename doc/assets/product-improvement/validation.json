@@ -1,0 +1,93 @@
+{
+  "recordedAt": "2026-10-21T10:36:17.666403+00:00",
+  "status": "passed",
+  "environment": {
+    "node": "23.4.0 (local; project and configured CI require Node24)",
+    "browser": "Chrome 155.0.8059.85",
+    "server": "scripts/serve-dist.mjs; production dist; http://127.0.0.1:4371",
+    "ciExecution": "Configured Node24 + installed Chromium; hosted CI/deployment not executed in this session"
+  },
+  "unit": {
+    "passed": 297,
+    "failed": 0,
+    "log": "logs/unit.log"
+  },
+  "build": {
+    "pages": 147,
+    "typeErrors": 0,
+    "typeWarnings": 0,
+    "typeHints": 0,
+    "remainingWarning": "Existing minified chunk above500kB",
+    "log": "logs/build.log"
+  },
+  "productBrowser": {
+    "passed": 13,
+    "failed": 0,
+    "flaky": 0,
+    "report": "product-browser-report.json",
+    "includes": [
+      "six pilot save/reload/restore/clear",
+      "320/390px and reduced motion",
+      "actual text contrast >=4.5 on new panel/route headings",
+      "storage malformed/denied",
+      "no JavaScript full directory",
+      "route context",
+      "WebGL unavailable fallback"
+    ]
+  },
+  "allSiteQuality": {
+    "uniqueCases": 141,
+    "initialPassed": 139,
+    "initialFailed": 2,
+    "recheckPassed": 2,
+    "resolution": "Both initial failures were transient404 while dist was being rebuilt. Final immutable dist recheck passed.",
+    "logs": [
+      "logs/quality-first.log",
+      "logs/quality-recheck.log"
+    ]
+  },
+  "affectedRegressions": "affected-regressions.json",
+  "finalStyleRecheck": {
+    "passed": 9,
+    "failed": 0,
+    "log": "logs/quality-final-pilots.log",
+    "scope": "After full regressions, scoped foreground/color tokens were fixed for new pale discovery/route panels; all13 product journeys and9 matching quality cases were rerun on final dist."
+  },
+  "history": {
+    "passed": 3,
+    "scope": "All140 routes with JavaScript and all140 without, plus live interaction/history boundary case",
+    "log": "logs/history.log"
+  },
+  "sourceLinks": {
+    "checked": 6,
+    "http200": 6,
+    "record": "source-checks.json",
+    "scope": "Public URL/title availability; not external expert science approval"
+  },
+  "performance": {
+    "beforeSamples": 24,
+    "afterSamples": 24,
+    "comparison": "performance-comparison.md"
+  },
+  "review": {
+    "assetCount": 140,
+    "pilotCount": 6,
+    "featuredCount": 4,
+    "externalStudentTeacherFeedback": "deferred-post-launch; none invented",
+    "curriculumCertification": "not verified"
+  },
+  "verificationCorrections": [
+    "First product run:11/12 passed; corrected ambiguous accessible-name test locator, targeted case passed.",
+    "One lens persistence case and two quality cases hit transient404 during rebuild; each passed targeted rerun on fixed dist.",
+    "Visual review caught pale text inherited from cosmos theme in new light panels; scoped color tokens fixed, contrast assertion added and final13+9 browser cases passed.",
+    "Performance sampling interrupted for that visual fix; interrupted log retained and only complete final24 samples used."
+  ],
+  "openspec": {
+    "change": "improve-product-discovery-and-learning",
+    "strictChangeValidation": "passed",
+    "strictMainSpecs": 33,
+    "archiveStatus": "archived",
+    "archive": "openspec/changes/archive/2026-10-21-improve-product-discovery-and-learning",
+    "completedTasks": 18
+  }
+}

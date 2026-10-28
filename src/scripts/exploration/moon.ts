@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {numericState,type DiscoveryState} from '../../lib/product/discoveries';
 import {solveMoon,moonPosition,phaseFromPlan,wrap,degrees,lunarNames,solarNames,type MoonInput} from '../../lib/exploration/moon';
 import {MoonNodeTask} from '../../lib/exploration/moon-task';
 import {createSkyPainter} from './moon-sky';
@@ -66,3 +68,9 @@ async function init(){if(departed||failedGL||spatial)return;const token=++epoch;
 el('moon-view-toggle').addEventListener('click',()=>{view2d=!view2d;setView();});document.querySelectorAll<HTMLButtonElement>('[data-moon-camera]').forEach(b=>b.addEventListener('click',()=>{view2d=false;setView();spatial?.preset(b.dataset.moonCamera!);}));
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&mode!=='idle'&&!paused)pause();});window.addEventListener('pagehide',()=>{if(mode!=='idle'&&!paused)pause();departed=true;epoch++;spatial?.dispose();spatial=undefined;});window.addEventListener('pageshow',e=>{if(e.persisted){departed=false;void init();}});
 render();setView();void init();
+
+setupDiscoveries({slug:'moon',snapshot:()=>({...input()}),
+ validate:(v):v is DiscoveryState=>numericState({phase:{min:0,max:360,step:.1},node:{min:0,max:360,step:.1},inclination:{min:0,max:10,step:.001},distance:{min:56,max:64,step:.01}},v),labels:{phase:'相位/°',node:'交点/°',inclination:'倾角/°',distance:'距离/R⊕'},
+ describe:p=>{const r=solveMoon(p as unknown as MoonInput);return `相位${p.phase}°，交点${p.node}°，倾角${p.inclination}°，距离${p.distance} R⊕；受光${pct(r.fraction)}，本影${pct(r.lunar.umbralFraction)}，${lunarNames[r.lunar.type]}。`;},
+ restore:p=>{manual();task.example();task.reason='记录恢复不计独立观察，请重新准备任务。';for(const k of ['phase','node','inclination','distance'])set('moon-'+k,p[k] as number);text('moon-challenge-note',task.reason);render();}
+});

@@ -1,4 +1,7 @@
 ---
+import PilotStart from '../../components/PilotStart.astro';
+import PilotLearning from '../../components/PilotLearning.astro';
+import '../../styles/product.css';
 import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import '@fontsource-variable/noto-sans-sc';
 import '@fontsource/ibm-plex-mono/400.css';
@@ -20,6 +23,7 @@ import '../../styles/buoyancy-lab.css';
       <a class="back" href="/">返回探索首页 <span aria-hidden="true">↗</span></a>
     </header>
     <main>
+      <PilotStart slug="buoyancy"/>
       <section class="intro">
         <div><p class="eyebrow">初中物理 / 阿基米德原理</p><h1>水托住的，<br class="mobile-break" />究竟有多重？</h1><p class="intro-copy">把铝块慢慢放进水中。看排水体积如何改变浮力，又如何改变测力计的读数。</p></div>
         <div class="experiment-stamp"><span>EXPERIMENT</span><strong>F<span>浮</span> = ρgV<span>排</span></strong><span>观察 → 建模 → 推导</span></div>
@@ -75,6 +79,7 @@ import '../../styles/buoyancy-lab.css';
         <div class="derivation" aria-live="polite" id="derivation">水中浸入 5.0 cm：V排 = 100 × 5.0 = 500 cm³；F浮 = 1000 × 10 × 0.000500 = 5.0 N；T = 27 − 5.0 = 22.0 N。</div>
       </section>
       <section class="lab-notes"><div><h3>实验条件</h3><p>铝块边长 10 cm，密度 2700 kg/m³；容器底面积 400 cm²，初始液深 15 cm；取 g = 10 N/kg。</p></div><div><h3>模型说明</h3><p>缓慢升降，忽略空气浮力、液体阻力与绳子体积；物体不触底、不自由漂浮。箭头长度表示力的相对大小，测力计为准静态读数示意。</p></div></section>
+    <PilotLearning slug="buoyancy"/>
     </main>
     <footer><span>科学探索实验室 · 浮力实验台 · <a href="/stem-lab/pendulum/">探索单摆与能量 ↗</a></span><span>装置呈现与共享模型思路参考 <a href="https://github.com/wheresryan22/anatomy" target="_blank" rel="noreferrer">Anatomy ↗</a> · 三维渲染 <a href="https://threejs.org/" target="_blank" rel="noreferrer">Three.js ↗</a></span></footer>
     <script>import '../../scripts/stem-lab/buoyancy';</script>

@@ -1,0 +1,14 @@
+---
+import {curation} from '../data/curation';
+const {slug}=Astro.props;
+const guide=curation[slug];
+---
+{guide&&<aside class="pilot-start wrap" aria-label="第一次动手"><div><span class="kicker">先做一件事</span><p>{guide.first}</p></div><a class="button primary" href={guide.target} data-pilot-start>开始动手 ↓</a></aside>}
+<script>
+ document.querySelector<HTMLAnchorElement>('[data-pilot-start]')?.addEventListener('click',event=>{
+  const link=event.currentTarget as HTMLAnchorElement,target=document.querySelector<HTMLElement>(link.hash);
+  if(!target)return;event.preventDefault();let parent=target.parentElement;while(parent){if(parent instanceof HTMLDetailsElement)parent.open=true;parent=parent.parentElement;}target.scrollIntoView({block:'center',behavior:'instant'});
+  const focus=target.matches('button,input,a,select')?target:target.querySelector<HTMLElement>('button,input,a,select');
+  focus?.focus({preventScroll:true});
+ });
+</script>

@@ -1,3 +1,4 @@
+import {setupControlDiscoveries} from '../product/control-discoveries';
 import { gearTrain,gearOutline } from '../../lib/exploration/gears';
 import { el,text,value,bindRange,clock } from './ui';
 import { bars } from './evidence';
@@ -46,3 +47,5 @@ el('reset').addEventListener('click',()=>{hasIdler=false;[['input-teeth','20'],[
 
 function demonstrate(idler:boolean){hasIdler=idler;el<HTMLInputElement>('input-teeth').value='20';el<HTMLInputElement>('output-teeth').value='60';el<HTMLInputElement>('idler-teeth').value='30';el<HTMLInputElement>('rpm').value='12';setIdler();demoMode=true;animator.start();}
 el('demo').addEventListener('click',()=>demonstrate(false));el('demo-idler').addEventListener('click',()=>demonstrate(true));el('demo-pause').addEventListener('click',()=>{animator.pause();text('demo-stage','已暂停：比较输入、输出累计圈数与扭矩。按“开始 / 继续”继续。');});
+
+setupControlDiscoveries('gears',['input-teeth','idler-teeth','output-teeth','rpm'],s=>{hasIdler=s.idler===1;setIdler();},s=>`主动/中间/从动齿数 ${s['input-teeth']}/${s['idler-teeth']}/${s['output-teeth']}；主动 ${s.rpm} rpm；${s.idler?'含':'无'}中间轮。恢复暂停初态。`,{read:()=>({idler:hasIdler?1:0}),rules:{idler:{min:0,max:1,options:[0,1]}},labels:{idler:'中间轮'},check:s=>['input-teeth','idler-teeth','output-teeth'].every(k=>Number.isInteger(s[k]))});

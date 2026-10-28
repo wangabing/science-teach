@@ -1,4 +1,5 @@
 ---
+import PilotLearning from '../../components/PilotLearning.astro';
 import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import LabObservationBar from '../../components/LabObservationBar.astro';
@@ -49,7 +50,7 @@ import '../../styles/spatial.css';
   <section class="lens-notebook" aria-labelledby="notebook-heading"><div class="notebook-heading"><div><p class="kicker">留下证据，比较才有依据</p><h2 id="notebook-heading">我的光学观察</h2></div><div><button id="record-lens" type="button">记下这一刻</button><button id="clear-lens-records" type="button">清空记录</button></div></div><p id="record-feedback" role="status">最多六组，保存在此浏览器；不上传，也不会跨设备同步。试着固定焦距，只改变物距。</p><div class="notebook-scroll" tabindex="0" aria-label="观测数据表，可横向滚动"><table><caption>单位：距离 cm；m 为带符号放大率</caption><thead><tr><th>u</th><th>f</th><th>屏距</th><th>v</th><th>m</th><th>观察</th><th>恢复条件</th></tr></thead><tbody id="lens-records"><tr><td colspan="7">还没有记录。改变一个条件，记下你的第一个发现。</td></tr></tbody></table></div><p id="lens-record-comparison" class="record-comparison">保留两组观察后，在这里比较固定条件和变化。</p></section>
   <section class="lens-reading"><article><p class="kicker">把观察带回生活</p><h2>照相机和放大镜，<br/>原来是同一条规律。</h2><p>物体在焦点外，透镜后的光线能在另一侧会合，形成倒立的实像。照相机的感光面、投影仪的幕布，都需要放在合适的位置才能清晰。</p><p>物体在焦点内，出射光线仍然散开。眼睛把这些光线向后追溯，仿佛来自物体同侧一个更大、更远的图案——这就是正立的虚像。虚线只是追溯方向，那里没有光线真正会合。</p><p>下一次拿起放大镜，先猜：想放大文字，透镜应该靠近纸，还是离纸很远？</p></article><article class="lens-model-note"><h2>这张光路图，省略了什么？</h2><p>这里采用空气中的理想薄凸透镜、近轴近似，物高固定为 2 cm。实像的像距为正，虚像为负；焦点处出射光平行，没有有限像距。图示为了可读性放大了透镜厚度。</p><p>两条代表光线说明物体顶端怎样成像，并非只有两条光。光屏不透明，会截住到达它的光；轮廓箭头只是理论像的位置。光屏两面使用同一投影图案便于转动观察，真实不透明光屏需从入光面观察。光屏预览不计算真实孔径、光强、像差、衍射或眼睛成像。</p><p>光路与案例表达参考 <a href="https://github.com/ricktu288/ray-optics">Ray Optics</a>；本页模型、界面和图形独立实现。</p></article></section>
   <LabObservationBar stage="#lens-spatial, #lens-2d, #screen-preview, #magnifier-observer, #pocket-preview" controls=".lens-controls, .spatial-fine, .lens-toolbar" readouts={[{"label": "像的性质", "id": "image-nature"}, {"label": "理论像距", "id": "image-distance"}]}/>
- <NextExploration slug="lens"/>
+ <PilotLearning slug="lens"/><NextExploration slug="lens"/>
  </div>
  <script>import '../../scripts/exploration/lens';</script>
 </SiteLayout>

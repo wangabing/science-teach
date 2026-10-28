@@ -1,0 +1,325 @@
+[
+  {
+    "repo": "ricktu288/ray-optics",
+    "fetched_at_utc": "2026-10-21T09:12:41.532267+00:00",
+    "html_url": "https://github.com/ricktu288/ray-optics",
+    "description": "A web app for creating and simulating 2D geometric optical scenes, with a gallery of (interactive) demos.",
+    "stargazers_count": 1801,
+    "pushed_at": "2026-10-05T00:39:59Z",
+    "archived": false,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "default_branch": "master",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/ricktu288/ray-optics/master/README.md"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://raw.githubusercontent.com/ricktu288/ray-optics/master/LICENSE"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/ricktu288/ray-optics/master/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  },
+  {
+    "repo": "liabru/matter-js",
+    "fetched_at_utc": "2026-10-21T09:12:41.534072+00:00",
+    "html_url": "https://github.com/liabru/matter-js",
+    "description": "a 2D rigid body physics engine for the web ▲● ■",
+    "stargazers_count": 18485,
+    "pushed_at": "2026-09-30T17:14:46Z",
+    "archived": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "default_branch": "master",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/liabru/matter-js/master/README.md"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://raw.githubusercontent.com/liabru/matter-js/master/LICENSE"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/liabru/matter-js/master/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  },
+  {
+    "repo": "CindyJS/CindyJS",
+    "fetched_at_utc": "2026-10-21T09:12:41.539761+00:00",
+    "html_url": "https://github.com/CindyJS/CindyJS",
+    "description": "A JavaScript framework for interactive (mathematical) content.",
+    "stargazers_count": 717,
+    "pushed_at": "2026-10-14T09:34:05Z",
+    "archived": false,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "default_branch": "main",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/CindyJS/CindyJS/main/README.md"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://raw.githubusercontent.com/CindyJS/CindyJS/main/LICENSE"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/CindyJS/CindyJS/main/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  },
+  {
+    "repo": "jsxgraph/jsxgraph",
+    "fetched_at_utc": "2026-10-21T09:12:41.540409+00:00",
+    "html_url": "https://github.com/jsxgraph/jsxgraph",
+    "description": "JSXGraph is a cross-browser library for interactive geometry, function plotting, charting, and data visualization in a web browser.",
+    "stargazers_count": 1479,
+    "pushed_at": "2026-10-21T09:10:06Z",
+    "archived": false,
+    "license": {
+      "key": "lgpl-3.0",
+      "name": "GNU Lesser General Public License v3.0",
+      "spdx_id": "LGPL-3.0",
+      "url": "https://api.github.com/licenses/lgpl-3.0",
+      "node_id": "MDc6TGljZW5zZTEy"
+    },
+    "default_branch": "main",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/jsxgraph/jsxgraph/main/README.md"
+      },
+      {
+        "name": "LICENSE.MIT",
+        "url": "https://raw.githubusercontent.com/jsxgraph/jsxgraph/main/LICENSE.MIT"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/jsxgraph/jsxgraph/main/LICENSE']' returned non-zero exit status 56."
+      },
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/jsxgraph/jsxgraph/main/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ],
+    "license_note": "README states dual MIT/LGPL; LICENSE.MIT fetched separately. API LGPL field alone is incomplete."
+  },
+  {
+    "repo": "ncase/trust",
+    "fetched_at_utc": "2026-10-21T09:12:41.545555+00:00",
+    "html_url": "https://github.com/ncase/trust",
+    "description": "An interactive guide to the game theory of cooperation",
+    "stargazers_count": 6312,
+    "pushed_at": "2025-12-29T01:00:39Z",
+    "archived": false,
+    "license": {
+      "key": "cc0-1.0",
+      "name": "Creative Commons Zero v1.0 Universal",
+      "spdx_id": "CC0-1.0",
+      "url": "https://api.github.com/licenses/cc0-1.0",
+      "node_id": "MDc6TGljZW5zZTY="
+    },
+    "default_branch": "gh-pages",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/ncase/trust/gh-pages/README.md"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://raw.githubusercontent.com/ncase/trust/gh-pages/LICENSE"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/ncase/trust/gh-pages/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  },
+  {
+    "repo": "ncase/crowds",
+    "fetched_at_utc": "2026-10-21T09:12:47.012415+00:00",
+    "html_url": "https://github.com/ncase/crowds",
+    "description": "The Wisdom and/or Madness of the Crowds",
+    "stargazers_count": 449,
+    "pushed_at": "2021-09-30T16:46:46Z",
+    "archived": false,
+    "license": {
+      "key": "cc0-1.0",
+      "name": "Creative Commons Zero v1.0 Universal",
+      "spdx_id": "CC0-1.0",
+      "url": "https://api.github.com/licenses/cc0-1.0",
+      "node_id": "MDc6TGljZW5zZTY="
+    },
+    "default_branch": "master",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/ncase/crowds/master/README.md"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://raw.githubusercontent.com/ncase/crowds/master/LICENSE"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/ncase/crowds/master/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  },
+  {
+    "repo": "mathigon/textbooks",
+    "fetched_at_utc": "2026-10-21T09:12:47.031503+00:00",
+    "html_url": "https://github.com/mathigon/textbooks",
+    "description": "Source code of Mathigon's interactive textbooks",
+    "stargazers_count": 395,
+    "pushed_at": "2025-02-25T08:54:18Z",
+    "archived": false,
+    "license": null,
+    "default_branch": "master",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/mathigon/textbooks/master/README.md"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/mathigon/textbooks/master/LICENSE']' returned non-zero exit status 56."
+      },
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/mathigon/textbooks/master/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  },
+  {
+    "repo": "phetsims/pendulum-lab",
+    "fetched_at_utc": "2026-10-21T09:12:48.855447+00:00",
+    "html_url": "https://github.com/phetsims/pendulum-lab",
+    "description": "\"Pendulum Lab\" is an educational simulation in HTML5, by PhET Interactive Simulations.",
+    "stargazers_count": 4,
+    "pushed_at": "2026-10-09T14:36:42Z",
+    "archived": false,
+    "license": null,
+    "default_branch": "main",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/phetsims/pendulum-lab/main/README.md"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/phetsims/pendulum-lab/main/LICENSE']' returned non-zero exit status 56."
+      },
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/phetsims/pendulum-lab/main/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  },
+  {
+    "repo": "pmndrs/react-three-rapier",
+    "fetched_at_utc": "2026-10-21T09:12:52.541050+00:00",
+    "html_url": "https://github.com/pmndrs/react-three-rapier",
+    "description": "🤺 Rapier physics in React",
+    "stargazers_count": 1499,
+    "pushed_at": "2026-10-12T05:06:24Z",
+    "archived": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "default_branch": "main",
+    "file_errors": [
+      {
+        "name": "README.md",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/pmndrs/react-three-rapier/main/README.md']' returned non-zero exit status 56."
+      },
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/pmndrs/react-three-rapier/main/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ],
+    "files": [
+      {
+        "name": "LICENSE",
+        "url": "https://raw.githubusercontent.com/pmndrs/react-three-rapier/main/LICENSE"
+      }
+    ]
+  },
+  {
+    "repo": "concord-consortium/lab",
+    "fetched_at_utc": "2026-10-21T09:12:53.985381+00:00",
+    "html_url": "https://github.com/concord-consortium/lab",
+    "description": "HTML5-based scientific models, visualizations, graphing, and probeware",
+    "stargazers_count": 58,
+    "pushed_at": "2023-07-18T13:58:03Z",
+    "archived": false,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "default_branch": "master",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/concord-consortium/lab/master/README.md"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://raw.githubusercontent.com/concord-consortium/lab/master/LICENSE"
+      }
+    ],
+    "file_errors": [
+      {
+        "name": "LICENSE.txt",
+        "error": "Command '['curl', '-fL', '--max-time', '25', '-sS', 'https://raw.githubusercontent.com/concord-consortium/lab/master/LICENSE.txt']' returned non-zero exit status 56."
+      }
+    ]
+  }
+]

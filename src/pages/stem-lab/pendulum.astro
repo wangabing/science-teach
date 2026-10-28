@@ -1,4 +1,7 @@
 ---
+import PilotStart from '../../components/PilotStart.astro';
+import PilotLearning from '../../components/PilotLearning.astro';
+import '../../styles/product.css';
 import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import '@fontsource-variable/noto-sans-sc';
 import '@fontsource/ibm-plex-mono/400.css';
@@ -15,6 +18,7 @@ import '../../styles/pendulum-lab.css';
     <a class="skip" href="#apparatus">跳到实验台</a>
     <header class="lab-nav"><a class="brand" href="/"><b>∴</b> 科学探索实验室 <span>STEM LAB</span></a><nav aria-label="实验导航"><a href="/stem-lab/buoyancy/">浮力实验</a><a href="/">探索首页 ↗</a></nav></header>
     <main>
+      <PilotStart slug="pendulum"/>
       <section class="intro"><div><p class="eyebrow">力学实验 / 单摆与机械能</p><h1>能量，<em>往返之间。</em></h1><p>拉高摆球，松开手。看同一份能量，如何在高度与速度之间流转。</p></div><div class="intro-equation"><span>IDEAL PENDULUM</span><strong>E<sub>势</sub> + E<sub>动</sub> = 常量</strong><span>一个摆球，三条值得亲手验证的规律。</span></div></section>
       <ExperimentHistory slug="pendulum" dark />
       <section class="bench-grid" aria-label="单摆实验">
@@ -48,6 +52,7 @@ import '../../styles/pendulum-lab.css';
       <section class="explore" aria-labelledby="explore-heading"><div class="lesson-heading"><div><p class="eyebrow">先预测，再亲手验证</p><h2 id="explore-heading">三个小实验，拆开一个单摆。</h2></div><p>选择一个问题，实验条件会为你准备好。</p></div><div class="mission-tabs" role="group" aria-label="探索问题"><button data-mission="mass" type="button" aria-pressed="true"><span>01 / 控制变量</span><strong>更重，会摆得更快吗？</strong></button><button data-mission="length" type="button" aria-pressed="false"><span>02 / 周期规律</span><strong>摆长变长，时间怎么变？</strong></button><button data-mission="energy" type="button" aria-pressed="false"><span>03 / 能量转换</span><strong>最快的地方，拉力多大？</strong></button></div><div class="mission-body"><div><p id="mission-question">保持摆长、重力与释放角度相同，把主摆质量增加到 3 kg。它与 1 kg 参考摆相比，会怎样？</p><p id="mission-tip" class="muted">已开启对照摆。先选答案，再释放；两球的位置会给你证据。</p></div><div class="answer-area"><div id="answers" class="answers"></div><p id="answer-feedback" aria-live="polite">选一个预测，看看你的直觉。</p></div></div></section>
       <section class="principles"><article><span class="principle-symbol">θ</span><h3>为什么会来回摆？</h3><p>重力沿圆弧切线的分量总指向最低处：F切 = −mg sinθ。惯性让摆球越过最低处，随后减速爬升，循环往返。</p><p class="formula">θ̈ = −(g/L) sinθ − bθ̇</p></article><article><span class="principle-symbol">T</span><h3>周期由什么决定？</h3><p>小角度时 T ≈ 2π√(L/g)。摆长越长越慢，重力越小越慢，质量不影响周期。大摆角下周期会增加，试试 70° 与 10°。</p><p class="formula">T小角 ≈ 2π√(L/g)</p></article><article><span class="principle-symbol">E</span><h3>能量去了哪里？</h3><p>无阻尼时，势能与动能互换，机械能总量不变。有阻尼时，一部分机械能转化为内能；账本把它计入「已耗散」。</p><p class="formula">E势 + E动 + E耗散 = E初始</p></article></section>
       <details class="model-notes"><summary>实验假设与读数说明 <span>＋</span></summary><p>摆球视为质点，摆长从悬点量到球心；绳子无质量、不可伸长，摆动限制在一个竖直平面，忽略地球自转与球体转动。阻尼采用角速度线性阻尼 b，b 的单位为 s⁻¹，便于单独观察耗散。</p><p>「完整理论值」为当前释放角度下无阻尼非线性单摆周期；有阻尼时只作参考。实测周期取两次由正角度向负角度过零的仿真时间差，首个读数约需 1¼ 个周期。改变参数或拖拽会重新开始实验与测量；继续按钮从暂停状态恢复，释放按钮从设定角度重新开始。</p><p>受力只有重力和绳子张力；向心力是它们沿径向的合力，不是第三个作用力。图中球体大小随质量改变用于辨认，模型仍按质点计算。参考摆不受主摆参数影响。</p></details>
+    <PilotLearning slug="pendulum"/>
     </main><footer><span>科学探索实验室 / MECHANICS 02</span><a href="/stem-lab/buoyancy/">继续探索：浮力实验台 ↗</a><a href="/experiments/#trail-light">回看探索路线：光与测量 ↗</a><span>亲手操作，让公式有来处。</span></footer>
     <script>import '../../scripts/stem-lab/pendulum';</script>
   </body>

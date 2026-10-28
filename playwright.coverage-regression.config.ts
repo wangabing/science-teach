@@ -1,0 +1,3 @@
+import {defineConfig} from '@playwright/test';
+const external=process.env.BROWSER_CHECK_URL;
+export default defineConfig({testDir:'./tests/browser',testMatch:['electricity.spec.ts','geometry-studios.spec.ts','circuits.spec.ts'],timeout:90000,workers:1,outputDir:'test-results/coverage-regression',reporter:[['list'],['json',{outputFile:'test-results/coverage-regression-report.json'}]],use:{baseURL:external??'http://127.0.0.1:4371',...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{}),trace:'retain-on-failure',screenshot:'only-on-failure'},webServer:external?undefined:{command:'node scripts/serve-dist.mjs',url:'http://127.0.0.1:4371',reuseExistingServer:!process.env.CI,timeout:30000}});

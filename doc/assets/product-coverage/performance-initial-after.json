@@ -1,0 +1,45 @@
+{
+  "recordedAt": "2026-10-22T08:56:02.592Z",
+  "conditions": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "latency": 100,
+    "downloadThroughput": 200000,
+    "uploadThroughput": 100000,
+    "cpuSlowdown": 4,
+    "cache": "disabled; fresh context per page",
+    "runs": 3
+  },
+  "limits": "Local synthetic conditions; elapsed milestones differ by page and are not a real-user metric. No cross-page speed ranking.",
+  "results": [
+    {
+      "pathname": "/experiments/",
+      "run": 1,
+      "elapsedMs": 2929.800000011921,
+      "height": 52179,
+      "htmlBytes": 254921,
+      "cards": 140,
+      "transferredBytes": 433412
+    },
+    {
+      "pathname": "/experiments/",
+      "run": 2,
+      "elapsedMs": 3911.099999964237,
+      "height": 52177,
+      "htmlBytes": 254921,
+      "cards": 140,
+      "transferredBytes": 642340
+    },
+    {
+      "pathname": "/experiments/",
+      "run": 3,
+      "elapsedMs": 4387.799999952316,
+      "height": 52172,
+      "htmlBytes": 254921,
+      "cards": 140,
+      "transferredBytes": 701183
+    }
+  ]
+}

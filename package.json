@@ -35,7 +35,12 @@
     "test:browser:quality": "playwright test --config playwright.quality.config.ts",
     "audit:experience": "playwright test --config playwright.experience-audit.config.ts",
     "test:browser:tidal": "playwright test --config playwright.tidal.config.ts",
-    "test:browser:response-closure": "playwright test --config playwright.response-closure.config.ts"
+    "test:browser:response-closure": "playwright test --config playwright.response-closure.config.ts",
+    "test:browser:product": "playwright test --config playwright.product.config.ts",
+    "review:index": "node --experimental-strip-types scripts/product-asset-index.ts",
+    "measure:product": "node scripts/product-performance.mjs",
+    "test:browser:coverage": "playwright test --config playwright.coverage.config.ts",
+    "test:browser:coverage-regression": "playwright test --config playwright.coverage-regression.config.ts"
   },
   "dependencies": {
     "@fontsource-variable/noto-sans-sc": "^5.3.0",

@@ -1,3 +1,4 @@
+import {setupControlDiscoveries} from '../product/control-discoveries';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { buoyancyState } from '../../lib/stem-lab/buoyancy';
@@ -276,3 +277,5 @@ window.addEventListener('pagehide', (event) => {
 });
 
 const dimensionalSwitch=document.createElement('button');dimensionalSwitch.type='button';dimensionalSwitch.textContent='查看二维实验';dimensionalSwitch.style.cssText='min-height:44px;margin:10px;padding:10px 16px';let flatView=false;dimensionalSwitch.addEventListener('click',()=>{flatView=!flatView;fallback.hidden=!flatView&&Boolean(renderScene);const canvas=viewport.querySelector('canvas');if(canvas)canvas.hidden=flatView;dimensionalSwitch.textContent=flatView?'返回三维实验':'查看二维实验';dimensionalSwitch.setAttribute('aria-pressed',String(flatView));document.getElementById('scene-message')!.textContent='二维装置与深度、排水量及测力计同步；尺寸为示意。';update();});viewport.after(dimensionalSwitch);
+
+setupControlDiscoveries('buoyancy',['immersion','liquid'],()=>{stop();update();document.getElementById('buoyancy-task-note')!.textContent='已恢复条件并重算；请重新亲手改变浸入量，留下观察证据。';},s=>`浸入 ${s.immersion} cm；液体密度 ${s.liquid} kg/m³；浮力 ${buoyancyState(Number(s.immersion),Number(s.liquid)).buoyancyN.toFixed(2)} N。`);

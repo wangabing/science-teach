@@ -1,0 +1,92 @@
+{
+  "recordedAt": "2026-10-22T09:04:49.088985+00:00",
+  "status": "passed-with-deferred-external-work",
+  "environment": {
+    "node": "24.22.1 isolated official runtime; official SHA256 checked",
+    "browser": "Chrome 155",
+    "server": "production dist http://127.0.0.1:4371",
+    "hostedCI": "configured; not executed",
+    "publication": "not executed"
+  },
+  "unit": {
+    "passed": 303,
+    "failed": 0,
+    "log": "runs/unit.txt"
+  },
+  "build": {
+    "pages": 147,
+    "typeErrors": 0,
+    "typeWarnings": 0,
+    "typeHints": 0,
+    "log": "runs/build.txt",
+    "remainingWarning": "Three.js/OrbitControls shared minified chunk about600kB"
+  },
+  "coverageBrowser": {
+    "uniqueCases": 145,
+    "allExperiments": 140,
+    "passingEvidence": true,
+    "fullRun": {
+      "passed": 143,
+      "failed": 1,
+      "report": "coverage-full-report.json"
+    },
+    "finalAffectedRun": {
+      "passed": 4,
+      "failed": 0,
+      "report": "coverage-final-report.json"
+    },
+    "note": "Full run failed only a test trying to click a closed circuit example. Fixed by opening its details. Final affected run covers buoyancy, pendulum, circuit topology and added charged RC state. Full140 all passed."
+  },
+  "productBrowser": {
+    "passed": 13,
+    "failed": 0,
+    "report": "product-report.json"
+  },
+  "qualityBrowser": {
+    "passed": 141,
+    "failed": 0,
+    "log": "runs/quality-full.txt"
+  },
+  "affectedRegression": {
+    "uniqueCases": 33,
+    "fullRun": {
+      "passed": 32,
+      "failed": 1,
+      "report": "regression-full-report.json"
+    },
+    "finalRun": {
+      "passed": 1,
+      "failed": 0,
+      "report": "regression-final-report.json"
+    },
+    "note": "Duplicate proof text from new cards required scoping old reflection assertion to listitem; corrected case passed."
+  },
+  "initialFailures": {
+    "layout": "Buoyancy and pendulum bypass SiteLayout; added both components and isolated color tokens, then both full mobile cases passed. Initial run stopped after finding issue.",
+    "logs": [
+      "runs/coverage-initial.txt",
+      "runs/circuit-test-initial-failure.md",
+      "runs/geometry-test-initial-failure.md"
+    ]
+  },
+  "performance": {
+    "comparison": "performance-comparison.md",
+    "before": "performance-before.json",
+    "after": "performance-after.json",
+    "initialSamples": "retained separately; not used in final comparison"
+  },
+  "scientificReview": {
+    "sourceDerivedGuidance": true,
+    "externalExpertReview": "not-verified",
+    "curriculum": "not-verified",
+    "realLearners": "not-verified",
+    "sourceLinks": "not freshly rechecked; history/readings not formula verification"
+  },
+  "followup": "../../product-followup-todo.md",
+  "specs": {
+    "beforeArchive": "35 items passed, 0 failed (34 main specs + active change)",
+    "afterArchive": "34 main specs passed, 0 failed; completed change archived",
+    "archive": "openspec/changes/archive/2026-10-22-extend-product-learning-coverage",
+    "tasks": "12/12 complete"
+  }
+}

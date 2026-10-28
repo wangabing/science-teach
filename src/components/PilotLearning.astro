@@ -1,0 +1,17 @@
+---
+import {curation} from '../data/curation';
+const {slug}=Astro.props,guide=curation[slug];
+---
+{guide&&<section class="pilot-learning" aria-label="把发现留下来" data-personal-discoveries data-slug={slug}>
+ <p class="kicker">先预测，再用证据解释</p><h2>把这次发现，留给下次的自己</h2>
+ <p>{guide.prediction}</p>
+ <label for="discovery-prediction">我的预测（可选）</label><textarea id="discovery-prediction" data-discovery-prediction maxlength="1000" placeholder="先写下想法，再改变条件检验。"></textarea>
+ <div class="pilot-conditions"><div><h3>换个条件，再试一次</h3><p>{guide.transfer}</p></div><div><h3>看哪里？</h3><p>{guide.views}</p></div></div>
+ <label for="discovery-explanation">我的解释与证据（可选）</label><textarea id="discovery-explanation" data-discovery-explanation maxlength="2000" placeholder="我改变了……，保持了……；这两组证据说明……，但不能说明……"></textarea>
+ <div class="pilot-actions"><button type="button" data-discovery-save disabled>保存这次发现</button><button type="button" data-discovery-clear>清除本机发现</button><a href={guide.target}>回到装置再试 ↑</a></div>
+ <p>仅此浏览器保存最近两组，第三组替换最早一组。条件、预测和解释一起保存；文字不自动判分。与原实验的临时记录分别保存。</p>
+ <p data-discovery-status role="status">尚未保存。启用交互后可以记录；请勿在这里填写个人身份信息。</p>
+ <div class="discovery-records" data-discovery-records></div><p data-discovery-comparison></p>
+ <details><summary>先修与两种探索深度</summary><p>{guide.prerequisite}</p><p>先看现象：{guide.intuitive}</p><p>再做定量：{guide.quantitative}</p></details>
+ <details><summary>模型、来源与核验边界</summary><p>{guide.model.relation}</p><p>{guide.model.checkKind==='authored-comparison'?'对照核验提示：':'解析核验提示：'}{guide.model.check}</p><p>适用范围：{guide.model.limits}</p><p><a href={guide.model.source} rel="noreferrer">{guide.model.location} ↗</a></p><p>本页为模型探索，未认证具体教材章节；真实学生和教师反馈尚待推广后收集。</p></details>
+</section>}

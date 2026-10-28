@@ -2,9 +2,23 @@
 import ExplorationTrails from '../components/ExplorationTrails.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ExperimentCard from '../components/ExperimentCard.astro';
-import { experiments, spaces } from '../data/labs';
+import {experiments,spaces} from '../data/labs';
+import {curation,goals} from '../data/curation';
 ---
 <SiteLayout title="全部实验 · 科学探索实验室">
-  <section class="wrap page-intro"><p class="breadcrumb"><a href="/">探索首页</a> / 全部实验</p><p class="kicker">把问题放上实验台</p><h1>全部实验</h1><p data-experiment-count>{experiments.length} 个可探索实验</p><p>从一个具体的问题开始。先预测，再操作，用观察与测量检验你的想法。</p></section>
-  <section class="wrap directory" aria-label="实验目录"><nav class="space-tabs" aria-label="按空间浏览"><a href="/experiments/" aria-current="page">全部实验</a>{spaces.map(space => <a href={`/spaces/${space.slug}/`}>{space.name}</a>)}</nav><div class="experiment-grid">{experiments.map(experiment => <ExperimentCard experiment={experiment} />)}</div><ExplorationTrails /></section>
+ <section class="wrap page-intro"><p class="breadcrumb"><a href="/">探索首页</a> / 全部实验</p><p class="kicker">把问题放上实验台</p><h1>全部实验</h1><p data-experiment-count>{experiments.length} 个可探索实验</p><p>带着一个问题查找，或沿一条短路线开始。随时可以自由探索。</p></section>
+ <section class="wrap directory" aria-label="实验目录">
+  <details class="directory-trails"><summary>沿一个问题接着探索 · 查看短路线</summary><ExplorationTrails/></details>
+  <form class="catalog-filters" method="get" action="/experiments/" role="search" aria-label="查找实验" data-catalog-filter>
+   <label for="catalog-q">想探索什么？<input id="catalog-q" name="q" type="search" placeholder="试试：放大镜、月相、搭桥"/></label>
+   <label for="catalog-space">探索空间<select id="catalog-space" name="space"><option value="">全部空间</option>{spaces.map(s=><option value={s.slug}>{s.name}</option>)}</select></label>
+   <label for="catalog-goal">探索目标<select id="catalog-goal" name="goal"><option value="">全部目标</option>{Object.entries(goals).map(([key,label])=><option value={key}>{label}</option>)}</select></label>
+   <button type="submit">查找实验</button><button type="button" data-clear-filters>清除筛选</button>
+  </form>
+  <noscript><p>下方保留全部实验。启用JavaScript可按关键词和目标筛选，也可使用浏览器的页面查找。</p></noscript>
+  <p data-result-count role="status">全部 {experiments.length} 个实验；探索目标按每项当前的操作与资料整理。</p>
+  <div data-no-results hidden><p>没有找到匹配实验。试试更短的词，或清除筛选查看全部。</p><button type="button" data-clear-filters>查看全部实验</button></div>
+  <div class="experiment-grid">{experiments.map(experiment=><div data-catalog-entry data-space={experiment.space} data-goal={curation[experiment.slug]?.goal??''} data-search={[experiment.name,experiment.title,experiment.topic,experiment.description,...experiment.tags,...(curation[experiment.slug]?.synonyms??[])].join(' ')}><ExperimentCard compact experiment={experiment}/></div>)}</div>
+ </section>
+ <script>import '../scripts/product/catalog';</script>
 </SiteLayout>

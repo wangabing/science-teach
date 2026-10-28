@@ -1,0 +1,206 @@
+
+> science-teach@0.1.0 test:browser:coverage
+> playwright test --config playwright.coverage.config.ts
+
+
+Running 144 tests using 2 workers
+
+(node:6466) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6465) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 tests/browser/product-coverage.spec.ts:6:37 › buoyancy: mobile guidance and durable conditions roundtrip (9.8s)
+  ✓    2 tests/browser/product-coverage.spec.ts:6:37 › pendulum: mobile guidance and durable conditions roundtrip (12.2s)
+  ✓    4 tests/browser/product-coverage.spec.ts:6:37 › interference: mobile guidance and durable conditions roundtrip (8.4s)
+  ✓    3 tests/browser/product-coverage.spec.ts:6:37 › lens: mobile guidance and durable conditions roundtrip (11.8s)
+  ✓    5 tests/browser/product-coverage.spec.ts:6:37 › circuits: mobile guidance and durable conditions roundtrip (7.4s)
+  ✓    6 tests/browser/product-coverage.spec.ts:6:37 › resistors: mobile guidance and durable conditions roundtrip (6.6s)
+  ✓    7 tests/browser/product-coverage.spec.ts:6:37 › capacitors: mobile guidance and durable conditions roundtrip (7.8s)
+  ✓    8 tests/browser/product-coverage.spec.ts:6:37 › area: mobile guidance and durable conditions roundtrip (8.5s)
+  ✓    9 tests/browser/product-coverage.spec.ts:6:37 › sections: mobile guidance and durable conditions roundtrip (7.9s)
+  ✓   10 tests/browser/product-coverage.spec.ts:6:37 › mobius: mobile guidance and durable conditions roundtrip (7.6s)
+  ✓   11 tests/browser/product-coverage.spec.ts:6:37 › reflection: mobile guidance and durable conditions roundtrip (10.0s)
+  ✓   12 tests/browser/product-coverage.spec.ts:6:37 › circle-angles: mobile guidance and durable conditions roundtrip (10.6s)
+  ✓   13 tests/browser/product-coverage.spec.ts:6:37 › triangle-rigidity: mobile guidance and durable conditions roundtrip (9.0s)
+  ✓   14 tests/browser/product-coverage.spec.ts:6:37 › ellipse-string: mobile guidance and durable conditions roundtrip (9.8s)
+  ✓   16 tests/browser/product-coverage.spec.ts:6:37 › orbit: mobile guidance and durable conditions roundtrip (8.9s)
+  ✓   15 tests/browser/product-coverage.spec.ts:6:37 › moon: mobile guidance and durable conditions roundtrip (12.0s)
+  ✓   17 tests/browser/product-coverage.spec.ts:6:37 › three-body: mobile guidance and durable conditions roundtrip (11.4s)
+  ✓   18 tests/browser/product-coverage.spec.ts:6:37 › bridge: mobile guidance and durable conditions roundtrip (10.9s)
+  ✓   20 tests/browser/product-coverage.spec.ts:6:37 › gears: mobile guidance and durable conditions roundtrip (14.0s)
+  ✓   19 tests/browser/product-coverage.spec.ts:6:37 › balance: mobile guidance and durable conditions roundtrip (17.1s)
+  ✓   21 tests/browser/product-coverage.spec.ts:6:37 › galileo-incline: mobile guidance and durable conditions roundtrip (11.5s)
+  ✓   22 tests/browser/product-coverage.spec.ts:6:37 › collision-track: mobile guidance and durable conditions roundtrip (12.0s)
+  ✓   23 tests/browser/product-coverage.spec.ts:6:37 › resonance-table: mobile guidance and durable conditions roundtrip (11.5s)
+  ✓   24 tests/browser/product-coverage.spec.ts:6:37 › electric-field-probe: mobile guidance and durable conditions roundtrip (11.6s)
+  ✓   25 tests/browser/product-coverage.spec.ts:6:37 › faraday-coil: mobile guidance and durable conditions roundtrip (11.2s)
+  ✓   26 tests/browser/product-coverage.spec.ts:6:37 › magnetic-sorter: mobile guidance and durable conditions roundtrip (10.7s)
+  ✓   27 tests/browser/product-coverage.spec.ts:6:37 › joule-calorimeter: mobile guidance and durable conditions roundtrip (11.0s)
+  ✓   28 tests/browser/product-coverage.spec.ts:6:37 › ideal-gas-piston: mobile guidance and durable conditions roundtrip (12.5s)
+  ✓   29 tests/browser/product-coverage.spec.ts:6:37 › brownian-microscope: mobile guidance and durable conditions roundtrip (12.7s)
+  ✓   30 tests/browser/product-coverage.spec.ts:6:37 › refraction-interface: mobile guidance and durable conditions roundtrip (10.6s)
+  ✓   31 tests/browser/product-coverage.spec.ts:6:37 › cube-nets: mobile guidance and durable conditions roundtrip (11.5s)
+  ✓   32 tests/browser/product-coverage.spec.ts:6:37 › cavalieri-slices: mobile guidance and durable conditions roundtrip (11.5s)
+  ✓   33 tests/browser/product-coverage.spec.ts:6:37 › spatial-perpendicular: mobile guidance and durable conditions roundtrip (15.1s)
+  ✓   34 tests/browser/product-coverage.spec.ts:6:37 › conic-sections: mobile guidance and durable conditions roundtrip (17.1s)
+  ✓   35 tests/browser/product-coverage.spec.ts:6:37 › moving-point-function: mobile guidance and durable conditions roundtrip (18.4s)
+  ✓   36 tests/browser/product-coverage.spec.ts:6:37 › unit-circle-wave: mobile guidance and durable conditions roundtrip (24.5s)
+  ✓   37 tests/browser/product-coverage.spec.ts:6:37 › tangent-microscope: mobile guidance and durable conditions roundtrip (24.1s)
+  ✓   38 tests/browser/product-coverage.spec.ts:6:37 › galton-board: mobile guidance and durable conditions roundtrip (19.7s)
+  ✓   39 tests/browser/product-coverage.spec.ts:6:37 › euler-polyhedra: mobile guidance and durable conditions roundtrip (15.6s)
+  ✓   40 tests/browser/product-coverage.spec.ts:6:37 › sphere-packing: mobile guidance and durable conditions roundtrip (19.9s)
+  ✓   41 tests/browser/product-coverage.spec.ts:6:37 › three-suns: mobile guidance and durable conditions roundtrip (17.9s)
+  ✓   42 tests/browser/product-coverage.spec.ts:6:37 › lagrange-station: mobile guidance and durable conditions roundtrip (16.4s)
+  ✓   43 tests/browser/product-coverage.spec.ts:6:37 › light-cone-messages: mobile guidance and durable conditions roundtrip (19.4s)
+  ✓   44 tests/browser/product-coverage.spec.ts:6:37 › relativistic-clocks: mobile guidance and durable conditions roundtrip (24.0s)
+  ✓   45 tests/browser/product-coverage.spec.ts:6:37 › solar-sail: mobile guidance and durable conditions roundtrip (23.9s)
+  ✓   46 tests/browser/product-coverage.spec.ts:6:37 › black-hole-rays: mobile guidance and durable conditions roundtrip (24.8s)
+  ✓   47 tests/browser/product-coverage.spec.ts:6:37 › tidal-roche: mobile guidance and durable conditions roundtrip (19.7s)
+  ✓   48 tests/browser/product-coverage.spec.ts:6:37 › cosmic-radio: mobile guidance and durable conditions roundtrip (19.6s)
+  ✓   49 tests/browser/product-coverage.spec.ts:6:37 › gravitational-chirp: mobile guidance and durable conditions roundtrip (20.5s)
+  ✓   51 tests/browser/product-coverage.spec.ts:6:37 › funicular-arch: mobile guidance and durable conditions roundtrip (17.7s)
+  ✓   50 tests/browser/product-coverage.spec.ts:6:37 › cosmic-background: mobile guidance and durable conditions roundtrip (29.6s)
+  ✓   52 tests/browser/product-coverage.spec.ts:6:37 › cantilever-design: mobile guidance and durable conditions roundtrip (16.9s)
+  ✓   53 tests/browser/product-coverage.spec.ts:6:37 › seismic-tower: mobile guidance and durable conditions roundtrip (18.1s)
+  ✓   54 tests/browser/product-coverage.spec.ts:6:37 › tensegrity: mobile guidance and durable conditions roundtrip (17.9s)
+  ✓   55 tests/browser/product-coverage.spec.ts:6:37 › suspension-cable: mobile guidance and durable conditions roundtrip (16.7s)
+  ✓   56 tests/browser/product-coverage.spec.ts:6:37 › crank-slider: mobile guidance and durable conditions roundtrip (19.4s)
+  ✓   57 tests/browser/product-coverage.spec.ts:6:37 › pulley-lift: mobile guidance and durable conditions roundtrip (20.9s)
+  ✓   58 tests/browser/product-coverage.spec.ts:6:37 › hydraulic-lift: mobile guidance and durable conditions roundtrip (15.1s)
+  ✓   59 tests/browser/product-coverage.spec.ts:6:37 › miura-canopy: mobile guidance and durable conditions roundtrip (15.8s)
+  ✓   60 tests/browser/product-coverage.spec.ts:6:37 › thermal-house: mobile guidance and durable conditions roundtrip (14.9s)
+  ✓   61 tests/browser/product-coverage.spec.ts:6:37 › projectile-launch: mobile guidance and durable conditions roundtrip (15.8s)
+  ✓   62 tests/browser/product-coverage.spec.ts:6:37 › atwood-machine: mobile guidance and durable conditions roundtrip (18.1s)
+  ✓   63 tests/browser/product-coverage.spec.ts:6:37 › centripetal-force: mobile guidance and durable conditions roundtrip (16.7s)
+  ✓   64 tests/browser/product-coverage.spec.ts:6:37 › torque-balance: mobile guidance and durable conditions roundtrip (20.0s)
+  ✓   65 tests/browser/product-coverage.spec.ts:6:37 › spring-energy-store: mobile guidance and durable conditions roundtrip (22.6s)
+  ✓   66 tests/browser/product-coverage.spec.ts:6:37 › venturi-tube: mobile guidance and durable conditions roundtrip (18.8s)
+  ✓   67 tests/browser/product-coverage.spec.ts:6:37 › hydrostatic-pressure: mobile guidance and durable conditions roundtrip (16.2s)
+  ✓   68 tests/browser/product-coverage.spec.ts:6:37 › young-double-slit: mobile guidance and durable conditions roundtrip (16.1s)
+  ✓   69 tests/browser/product-coverage.spec.ts:6:37 › single-slit-diffraction: mobile guidance and durable conditions roundtrip (18.8s)
+  ✓   70 tests/browser/product-coverage.spec.ts:6:37 › acoustic-beats: mobile guidance and durable conditions roundtrip (18.8s)
+  ✓   71 tests/browser/product-coverage.spec.ts:6:37 › standing-wave-string: mobile guidance and durable conditions roundtrip (18.4s)
+  ✓   72 tests/browser/product-coverage.spec.ts:6:37 › doppler-source: mobile guidance and durable conditions roundtrip (14.2s)
+  ✓   73 tests/browser/product-coverage.spec.ts:6:37 › wire-magnetic-force: mobile guidance and durable conditions roundtrip (13.3s)
+  ✓   74 tests/browser/product-coverage.spec.ts:6:37 › ideal-transformer: mobile guidance and durable conditions roundtrip (15.5s)
+  ✓   75 tests/browser/product-coverage.spec.ts:6:37 › rlc-frequency-selector: mobile guidance and durable conditions roundtrip (18.1s)
+  ✓   76 tests/browser/product-coverage.spec.ts:6:37 › carnot-engine: mobile guidance and durable conditions roundtrip (14.6s)
+  ✓   77 tests/browser/product-coverage.spec.ts:6:37 › mixing-calorimetry: mobile guidance and durable conditions roundtrip (14.2s)
+  ✓   78 tests/browser/product-coverage.spec.ts:6:37 › fourier-heat-bridge: mobile guidance and durable conditions roundtrip (13.3s)
+  ✓   79 tests/browser/product-coverage.spec.ts:6:37 › photoelectric-effect: mobile guidance and durable conditions roundtrip (17.0s)
+  ✓   80 tests/browser/product-coverage.spec.ts:6:37 › rutherford-scattering: mobile guidance and durable conditions roundtrip (15.7s)
+  ✓   82 tests/browser/product-coverage.spec.ts:6:37 › triangle-centroid: mobile guidance and durable conditions roundtrip (13.1s)
+  ✓   81 tests/browser/product-coverage.spec.ts:6:37 › pythagorean-squares: mobile guidance and durable conditions roundtrip (14.6s)
+  ✓   83 tests/browser/product-coverage.spec.ts:6:37 › similarity-shadow: mobile guidance and durable conditions roundtrip (12.5s)
+  ✓   84 tests/browser/product-coverage.spec.ts:6:37 › sine-rule-circle: mobile guidance and durable conditions roundtrip (13.9s)
+  ✓   85 tests/browser/product-coverage.spec.ts:6:37 › cosine-rule-hinge: mobile guidance and durable conditions roundtrip (13.4s)
+  ✓   86 tests/browser/product-coverage.spec.ts:6:37 › ptolemy-quadrilateral: mobile guidance and durable conditions roundtrip (12.3s)
+  ✓   87 tests/browser/product-coverage.spec.ts:6:37 › parabola-focus-directrix: mobile guidance and durable conditions roundtrip (10.7s)
+  ✓   88 tests/browser/product-coverage.spec.ts:6:37 › hyperbola-focal-difference: mobile guidance and durable conditions roundtrip (12.5s)
+  ✓   89 tests/browser/product-coverage.spec.ts:6:37 › circle-inversion: mobile guidance and durable conditions roundtrip (14.5s)
+  ✓   90 tests/browser/product-coverage.spec.ts:6:37 › determinant-area: mobile guidance and durable conditions roundtrip (16.1s)
+  ✓   91 tests/browser/product-coverage.spec.ts:6:37 › cross-product-space: mobile guidance and durable conditions roundtrip (17.9s)
+  ✓   92 tests/browser/product-coverage.spec.ts:6:37 › skew-lines-distance: mobile guidance and durable conditions roundtrip (17.3s)
+  ✓   93 tests/browser/product-coverage.spec.ts:6:37 › sphere-plane-section: mobile guidance and durable conditions roundtrip (14.7s)
+  ✓   94 tests/browser/product-coverage.spec.ts:6:37 › cuboid-diagonal: mobile guidance and durable conditions roundtrip (16.1s)
+  ✓   95 tests/browser/product-coverage.spec.ts:6:37 › solid-of-revolution: mobile guidance and durable conditions roundtrip (16.6s)
+  ✓   96 tests/browser/product-coverage.spec.ts:6:37 › riemann-area: mobile guidance and durable conditions roundtrip (16.5s)
+  ✓   97 tests/browser/product-coverage.spec.ts:6:37 › monte-carlo-pi: mobile guidance and durable conditions roundtrip (18.2s)
+  ✓   98 tests/browser/product-coverage.spec.ts:6:37 › bayes-screening: mobile guidance and durable conditions roundtrip (14.3s)
+  ✓   99 tests/browser/product-coverage.spec.ts:6:37 › complex-rotation: mobile guidance and durable conditions roundtrip (14.3s)
+  ✓  100 tests/browser/product-coverage.spec.ts:6:37 › quadratic-discriminant: mobile guidance and durable conditions roundtrip (15.2s)
+  ✓  101 tests/browser/product-coverage.spec.ts:6:37 › kepler-area-clock: mobile guidance and durable conditions roundtrip (13.6s)
+  ✓  102 tests/browser/product-coverage.spec.ts:6:37 › escape-speed-well: mobile guidance and durable conditions roundtrip (14.6s)
+  ✓  103 tests/browser/product-coverage.spec.ts:6:37 › hohmann-transfer: mobile guidance and durable conditions roundtrip (15.6s)
+  ✓  104 tests/browser/product-coverage.spec.ts:6:37 › exoplanet-transit: mobile guidance and durable conditions roundtrip (17.0s)
+  ✓  105 tests/browser/product-coverage.spec.ts:6:37 › stellar-radial-velocity: mobile guidance and durable conditions roundtrip (17.4s)
+  ✓  106 tests/browser/product-coverage.spec.ts:6:37 › habitable-zone: mobile guidance and durable conditions roundtrip (16.5s)
+  ✓  107 tests/browser/product-coverage.spec.ts:6:37 › stellar-blackbody: mobile guidance and durable conditions roundtrip (13.6s)
+  ✓  108 tests/browser/product-coverage.spec.ts:6:37 › stellar-lifetime: mobile guidance and durable conditions roundtrip (13.6s)
+  ✓  109 tests/browser/product-coverage.spec.ts:6:37 › neutron-star-compactness: mobile guidance and durable conditions roundtrip (15.9s)
+  ✓  110 tests/browser/product-coverage.spec.ts:6:37 › cosmological-redshift: mobile guidance and durable conditions roundtrip (17.7s)
+  ✓  111 tests/browser/product-coverage.spec.ts:6:37 › gravitational-clock: mobile guidance and durable conditions roundtrip (16.8s)
+  ✓  112 tests/browser/product-coverage.spec.ts:6:37 › einstein-lens: mobile guidance and durable conditions roundtrip (16.9s)
+  ✓  113 tests/browser/product-coverage.spec.ts:6:37 › relativistic-precession: mobile guidance and durable conditions roundtrip (13.5s)
+  ✓  114 tests/browser/product-coverage.spec.ts:6:37 › hill-sphere: mobile guidance and durable conditions roundtrip (15.1s)
+  ✓  115 tests/browser/product-coverage.spec.ts:6:37 › rocket-mass-ledger: mobile guidance and durable conditions roundtrip (15.1s)
+  ✓  116 tests/browser/product-coverage.spec.ts:6:37 › relativistic-energy: mobile guidance and durable conditions roundtrip (15.7s)
+  ✓  117 tests/browser/product-coverage.spec.ts:6:37 › interstellar-dust-impact: mobile guidance and durable conditions roundtrip (14.9s)
+  ✓  118 tests/browser/product-coverage.spec.ts:6:37 › telescope-resolution: mobile guidance and durable conditions roundtrip (16.9s)
+  ✓  119 tests/browser/product-coverage.spec.ts:6:37 › interferometer-baseline: mobile guidance and durable conditions roundtrip (15.2s)
+  ✓  120 tests/browser/product-coverage.spec.ts:6:37 › hubble-distance-ladder: mobile guidance and durable conditions roundtrip (17.4s)
+  ✓  121 tests/browser/product-coverage.spec.ts:6:37 › triangle-truss-joint: mobile guidance and durable conditions roundtrip (16.9s)
+  ✓  122 tests/browser/product-coverage.spec.ts:6:37 › moving-load-beam: mobile guidance and durable conditions roundtrip (13.5s)
+  ✓  123 tests/browser/product-coverage.spec.ts:6:37 › euler-column: mobile guidance and durable conditions roundtrip (15.6s)
+  ✓  124 tests/browser/product-coverage.spec.ts:6:37 › eccentric-column-stress: mobile guidance and durable conditions roundtrip (15.3s)
+  ✓  125 tests/browser/product-coverage.spec.ts:6:37 › retaining-wall-overturn: mobile guidance and durable conditions roundtrip (14.3s)
+  ✓  126 tests/browser/product-coverage.spec.ts:6:37 › slope-friction: mobile guidance and durable conditions roundtrip (15.4s)
+  ✓  127 tests/browser/product-coverage.spec.ts:6:37 › screw-jack: mobile guidance and durable conditions roundtrip (14.4s)
+  ✓  128 tests/browser/product-coverage.spec.ts:6:37 › wedge-lift: mobile guidance and durable conditions roundtrip (14.3s)
+  ✓  129 tests/browser/product-coverage.spec.ts:6:37 › belt-drive: mobile guidance and durable conditions roundtrip (15.4s)
+  ✓  130 tests/browser/product-coverage.spec.ts:6:37 › planetary-gear: mobile guidance and durable conditions roundtrip (17.3s)
+  ✓  131 tests/browser/product-coverage.spec.ts:6:37 › four-bar-linkage: mobile guidance and durable conditions roundtrip (15.6s)
+  ✓  132 tests/browser/product-coverage.spec.ts:6:37 › scissor-lift: mobile guidance and durable conditions roundtrip (14.3s)
+  ✓  133 tests/browser/product-coverage.spec.ts:6:37 › spherical-cap-dome: mobile guidance and durable conditions roundtrip (12.5s)
+  ✓  134 tests/browser/product-coverage.spec.ts:6:37 › diagonal-bracing: mobile guidance and durable conditions roundtrip (17.2s)
+  ✓  135 tests/browser/product-coverage.spec.ts:6:37 › honeycomb-relative-density: mobile guidance and durable conditions roundtrip (17.9s)
+  ✓  136 tests/browser/product-coverage.spec.ts:6:37 › sandwich-beam: mobile guidance and durable conditions roundtrip (16.0s)
+  ✓  137 tests/browser/product-coverage.spec.ts:6:37 › room-reverberation: mobile guidance and durable conditions roundtrip (14.6s)
+  ✓  139 tests/browser/product-coverage.spec.ts:6:37 › rainwater-harvesting: mobile guidance and durable conditions roundtrip (13.0s)
+  ✓  138 tests/browser/product-coverage.spec.ts:6:37 › solar-shading: mobile guidance and durable conditions roundtrip (14.6s)
+  ✓  140 tests/browser/product-coverage.spec.ts:6:37 › stack-ventilation: mobile guidance and durable conditions roundtrip (12.8s)
+  ✓  142 tests/browser/product-coverage.spec.ts:50:1 › puzzle construction survives a desktop-to-phone reload (7.6s)
+  ✓  143 tests/browser/product-coverage.spec.ts:56:1 › partial paper cut and idler topology are recoverable paused constructions (15.8s)
+  ✓  144 tests/browser/product-coverage.spec.ts:60:1 › shared workbench preserves legal non-step dragged conditions (9.5s)
+  ✘  141 tests/browser/product-coverage.spec.ts:43:1 › circuit topology restores and clears independent challenge credit (1.5m)
+
+
+  1) tests/browser/product-coverage.spec.ts:43:1 › circuit topology restores and clears independent challenge credit 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for locator('[data-circuit-preset="parallel"]')
+        - locator resolved to <button type="button" data-circuit-preset="parallel">示例：两灯并联</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        166 × waiting for element to be visible, enabled and stable
+            - element is not visible
+          - retrying click action
+            - waiting 500ms
+
+
+      43 | test('circuit topology restores and clears independent challenge credit',async({page})=>{
+      44 |  await page.goto('/labs/circuits/');const panel=page.locator('[data-personal-discoveries]');await expect(panel).toHaveAttribute('data-ready','true');
+    > 45 |  await page.locator('[data-circuit-preset="parallel"]').click();
+         |                                                         ^
+      46 |  await page.getByRole('button',{name:'保存这次发现',exact:true}).click();
+      47 |  const before=await page.locator('#circuit-wire-list').textContent();await page.locator('#circuit-prepare').click();await page.getByRole('button',{name:'恢复发现 A',exact:true}).click();
+      48 |  await expect(page.locator('#circuit-wire-list')).toHaveText(before!);await expect(page.locator('#circuit-challenge-note')).toContainText('不计');
+        at /Users/abing/GolandProjects/science-teach/tests/browser/product-coverage.spec.ts:45:57
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-circuit-t-c180b-ndependent-challenge-credit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/coverage/product-coverage-circuit-t-c180b-ndependent-challenge-credit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/coverage/product-coverage-circuit-t-c180b-ndependent-challenge-credit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/coverage/product-coverage-circuit-t-c180b-ndependent-challenge-credit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/product-coverage.spec.ts:43:1 › circuit topology restores and clears independent challenge credit 
+  143 passed (19.5m)

@@ -1,4 +1,6 @@
-import {WAVE_DEFAULTS,waveAt,wavePhases,waveCSV,compareWave,type WaveInput,type WaveRecord,type WaveMode} from '../../lib/exploration/interference';
+import {setupDiscoveries} from '../product/discoveries';
+import {checkedState} from '../../lib/product/state-validation';
+import {WAVE_DEFAULTS,validateWave,waveAt,wavePhases,waveCSV,compareWave,type WaveInput,type WaveRecord,type WaveMode} from '../../lib/exploration/interference';
 
 const el=<T extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(id) as T;
 const control=(id:string)=>el<HTMLInputElement>(`wave-${id}`);
@@ -118,3 +120,7 @@ reduced.addEventListener('change',()=>{if(reduced.matches)stop();});
 window.addEventListener('pagehide',()=>{stop();departed=true;});window.addEventListener('pageshow',()=>{departed=false;});
 cache();render();showRecords();
 if(!ctx)text('render-note','位移场暂不可显示。波源、探针、曲线与读数仍可操作。');
+
+setupDiscoveries({slug:'interference',snapshot:()=>({...p}),validate:checkedState(WAVE_DEFAULTS,validateWave),labels:{wavelength:'波长 cm',separation:'源距 cm',phase:'相位 °',x:'探针 x cm',y:'探针 y cm',mode:'波源'},
+ describe:s=>{const q=s as unknown as WaveInput;return `波长 ${q.wavelength} cm；源距 ${q.separation} cm；相位 ${q.phase}°；探针 (${q.x}, ${q.y}) cm；${q.mode}；振幅 ${waveAt(q,0).amplitude.toFixed(3)} mm。恢复 t=0。`;},
+ restore:s=>{stop();p={...s} as unknown as WaveInput;time=0;task=false;phaseAdjusted=false;pointer=-1;sync();cache();render();text('task-note','已恢复条件并暂停；不计独立静点任务。');document.querySelectorAll('[data-wave-answer]').forEach(b=>b.setAttribute('aria-pressed','false'));text('transfer-note','请重新作出判断，并用整周期曲线检查。');}});

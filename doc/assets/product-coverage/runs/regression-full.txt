@@ -1,0 +1,88 @@
+
+> science-teach@0.1.0 test:browser:coverage-regression
+> playwright test --config playwright.coverage-regression.config.ts
+
+
+Running 33 tests using 1 worker
+
+(node:7782) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/circuits.spec.ts:6:1 › keyboard closes first loop, cancels selection, prevents duplicates and removes wire (9.3s)
+  ✓   2 tests/browser/circuits.spec.ts:20:1 › series, lamp bypass and supply short have distinct model-backed diagnostics (5.2s)
+  ✓   3 tests/browser/circuits.spec.ts:28:1 › independent challenge needs own wiring and actual disconnection, then edits invalidate (10.6s)
+  ✓   4 tests/browser/circuits.spec.ts:43:1 › example and restore cannot claim independent completion; records compare and export (8.6s)
+  ✓   5 tests/browser/circuits.spec.ts:57:1 › transfer feedback explains internal resistance without replacing current circuit (3.5s)
+  ✓   6 tests/browser/circuits.spec.ts:66:3 › mobile touch › tap terminals, read both lamps and operate without page overflow (6.4s)
+  ✓   7 tests/browser/circuits.spec.ts:77:3 › no JavaScript › reading and honest numeric fallback remain available (4.0s)
+  ✓   8 tests/browser/electricity.spec.ts:5:1 › divider independent task, loading, snapshot and export stay coherent (6.9s)
+  ✓   9 tests/browser/electricity.spec.ts:19:1 › RC exact stepping, continuous switches, signed current and independent observation (5.4s)
+  ✓  10 tests/browser/electricity.spec.ts:33:1 › RC same-time capacity comparison, playback and hidden pause (7.7s)
+  ✓  11 tests/browser/electricity.spec.ts:44:47 › mobile › resistors touch, catalog and layout (6.5s)
+  ✓  12 tests/browser/electricity.spec.ts:44:47 › mobile › capacitors touch, catalog and layout (6.4s)
+  ✓  13 tests/browser/electricity.spec.ts:51:47 › no JS › resistors honest fallback (3.0s)
+  ✓  14 tests/browser/electricity.spec.ts:51:47 › no JS › capacitors honest fallback (3.5s)
+  ✘  15 tests/browser/geometry-studios.spec.ts:10:1 › reflection independent keyboard search, reference credit and undo/redo (5.0s)
+(node:7929) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 tests/browser/geometry-studios.spec.ts:20:1 › reflection segment changes optimum; snapshots compare, export and restore recomputed values (5.1s)
+  ✓  17 tests/browser/geometry-studios.spec.ts:30:1 › circle requires two manual positions, rejects endpoints and distinguishes opposite arcs (8.0s)
+  ✓  18 tests/browser/geometry-studios.spec.ts:39:1 › triangle locking preserves current third side, disables free hinge and mirror keeps lengths (6.5s)
+  ✓  19 tests/browser/geometry-studios.spec.ts:48:1 › triangle impossible and degenerate states recover without NaN or fake task credit (2.0s)
+  ✓  20 tests/browser/geometry-studios.spec.ts:55:1 › ellipse observes constant sum, distinguishes actual trace, restores without forged history and handles invalid shapes (5.1s)
+  ✓  21 tests/browser/geometry-studios.spec.ts:64:1 › real pointer drag stays on constrained baseline and produces one undo transaction (1.8s)
+  ✓  22 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › reflection touch controls, 44px point and no overflow (1.7s)
+  ✓  23 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › circle-angles touch controls, 44px point and no overflow (1.9s)
+  ✓  24 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › triangle-rigidity touch controls, 44px point and no overflow (1.5s)
+  ✓  25 tests/browser/geometry-studios.spec.ts:74:88 › touch and responsive › ellipse-string touch controls, 44px point and no overflow (1.7s)
+  ✓  26 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of reflection preserves construction (1.3s)
+  ✓  27 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of circle-angles preserves construction (1.2s)
+  ✓  28 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of triangle-rigidity preserves construction (1.1s)
+  ✓  29 tests/browser/geometry-studios.spec.ts:80:301 › touch and responsive › actual touch drag of ellipse-string preserves construction (1.7s)
+  ✓  30 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › reflection static figure, conditions and general reasoning (1.5s)
+  ✓  31 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › circle-angles static figure, conditions and general reasoning (1.3s)
+  ✓  32 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › triangle-rigidity static figure, conditions and general reasoning (1.5s)
+  ✓  33 tests/browser/geometry-studios.spec.ts:90:88 › without JavaScript › ellipse-string static figure, conditions and general reasoning (1.3s)
+
+
+  1) tests/browser/geometry-studios.spec.ts:10:1 › reflection independent keyboard search, reference credit and undo/redo 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText(/由三角不等式，PA/)
+    Expected: visible
+    Error: strict mode violation: getByText(/由三角不等式，PA/) resolved to 3 elements:
+        1) <li>由三角不等式，PA + PB′ ≥ AB′；只有A、P、B′共线且P在两点之间时取等号。A、B在l…</li> aka getByText('由三角不等式，PA + PB′ ≥ AB′；只有A、P、B′共线且P在两点之间时取等号。A、B在l同侧，保证线段AB′穿过l。', { exact: true })
+        2) <p>再做定量：作B关于直线l的对称点B′。因为P在对称轴上，所以PB = PB′；于是原路程PA + …</p> aka getByText('再做定量：作B关于直线l的对称点B′。因为P')
+        3) <p>作B关于直线l的对称点B′。因为P在对称轴上，所以PB = PB′；于是原路程PA + PB变成P…</p> aka getByText('作B关于直线l的对称点B′。因为P在对称轴上，所以PB').nth(2)
+
+    Call log:
+      - Expect "toBeVisible" getByText(/由三角不等式，PA/) with timeout 5000ms
+      - waiting for getByText(/由三角不等式，PA/)
+
+
+      15 |  await button(page,'重做').click();await expect(page.locator('#geo-position-value')).toHaveText('-1.00 u');await button(page,'核验这次观察').click();await expect(note(page)).toContainText('先准备');
+      16 |  await page.getByText('需要时，看参考状态',{exact:true}).click();await button(page,'应用参考状态').click();await expect(note(page)).toContainText('不计为独立完成');
+    > 17 |  await page.getByText('展开一般论证',{exact:true}).click();await expect(page.getByText(/由三角不等式，PA/)).toBeVisible();
+         |                                                                                                ^
+      18 | });
+      19 |
+      20 | test('reflection segment changes optimum; snapshots compare, export and restore recomputed values',async({checkedPage:page})=>{
+        at /Users/abing/GolandProjects/science-teach/tests/browser/geometry-studios.spec.ts:17:96
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/coverage-regression/geometry-studios-reflectio-2059e-erence-credit-and-undo-redo/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/coverage-regression/geometry-studios-reflectio-2059e-erence-credit-and-undo-redo/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/coverage-regression/geometry-studios-reflectio-2059e-erence-credit-and-undo-redo/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/coverage-regression/geometry-studios-reflectio-2059e-erence-credit-and-undo-redo/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/browser/geometry-studios.spec.ts:10:1 › reflection independent keyboard search, reference credit and undo/redo 
+  32 passed (2.6m)

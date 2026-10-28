@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-21",
+  "commit": "05c3826",
+  "runtime": {
+    "node": "23.4.0",
+    "npm": "10.9.2",
+    "browser": "local Google Chrome",
+    "declared_node": ">=24"
+  },
+  "unit_tests": {
+    "passed": 292,
+    "failed": 0,
+    "log": "unit-tests.log"
+  },
+  "build": {
+    "pages": 147,
+    "type_errors": 0,
+    "type_warnings": 0,
+    "type_hints": 0,
+    "bundle_warning": "Some chunks are larger than 500 kB after minification",
+    "log": "build.log"
+  },
+  "browser_regression": {
+    "script": "test:browser:response-closure",
+    "passed": 14,
+    "failed": 0,
+    "seconds": 56.7,
+    "base_url": "http://127.0.0.1:4358",
+    "log": "browser-regression.log"
+  },
+  "browser_sample": {
+    "pages": 6,
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "report": "browser-sample.json"
+  },
+  "limits": [
+    "Not a full 140-experiment browser rerun",
+    "No new real student or teacher study",
+    "No live competitor interaction benchmark",
+    "No constrained-network performance measurement"
+  ],
+  "report_local_links": "all resolve"
+}

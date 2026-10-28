@@ -1,10 +1,10 @@
 ---
 import Instrument from './Instrument.astro';
 import type { experiments } from '../data/labs';
-interface Props { experiment: (typeof experiments)[number] }
-const { experiment } = Astro.props;
+interface Props { experiment: (typeof experiments)[number]; compact?:boolean }
+const { experiment,compact=false } = Astro.props;
 ---
 <a class="experiment-card" href={experiment.href}>
-  <div class="experiment-picture"><Instrument kind={experiment.slug} /><span class="picture-label">{['buoyancy','pendulum','lens','mobius','balance', 'moon'].includes(experiment.slug) ? '可操作 · 三维实验' : '可操作 · 互动探索'}</span></div>
+  <div class="experiment-picture"><Instrument kind={compact?({physics:'pendulum',geometry:'geometry',cosmos:'orbit',structures:'structure'}[experiment.space]??experiment.slug):experiment.slug} /><span class="picture-label">{['buoyancy','pendulum','lens','mobius','balance', 'moon'].includes(experiment.slug) ? '可操作 · 三维实验' : '可操作 · 互动探索'}</span></div>
   <div class="experiment-copy"><p class="kicker">{experiment.topic}</p><h3>{experiment.name}<span aria-hidden="true">↗</span></h3><p>{experiment.description}</p><div class="tags">{experiment.tags.map(tag => <span>{tag}</span>)}</div></div>
 </a>

@@ -1,0 +1,3 @@
+import {defineConfig} from '@playwright/test';
+const external=process.env.BROWSER_CHECK_URL;
+export default defineConfig({testDir:'./tests/browser',testMatch:'product-journey.spec.ts',timeout:60000,workers:2,outputDir:'test-results/product',reporter:[['list'],['json',{outputFile:'test-results/product-report.json'}]],use:{baseURL:external??'http://127.0.0.1:4371',...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{}),trace:'retain-on-failure',screenshot:'only-on-failure'},webServer:external?undefined:{command:'node scripts/serve-dist.mjs',url:'http://127.0.0.1:4371',reuseExistingServer:!process.env.CI,timeout:30000}});

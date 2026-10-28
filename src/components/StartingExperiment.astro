@@ -1,0 +1,6 @@
+---
+import ExperimentCard from './ExperimentCard.astro';
+import {curation} from '../data/curation';
+const {experiment}=Astro.props,guide=curation[experiment.slug]!;
+---
+<article class="starting-experiment"><ExperimentCard experiment={experiment}/><div class="starting-notes"><p><strong>适合你，如果</strong>{guide.suitable}。</p><p><strong>第一步 →</strong>{guide.first}。</p><p><strong>会发现什么</strong>{guide.intuitive}</p></div></article>

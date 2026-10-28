@@ -1,4 +1,5 @@
 ---
+import PilotLearning from '../../components/PilotLearning.astro';
 import ExperimentHistory from '../../components/ExperimentHistory.astro';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import LabObservationBar from '../../components/LabObservationBar.astro';
@@ -37,6 +38,6 @@ const phasePath=(a:number)=>{const t=a*Math.PI/180,side=Math.sin(t)>=0?1:-1;cons
  <section class="moon-reading"><article><p class="kicker">灯、球和你，就是一座天文台</p><h2>用一盏灯，<br/>亲手制造月相。</h2><ol><li>在较暗房间让一盏固定灯充当太阳，用浅色小球充当月球，自己的眼睛代表地球上的观察者。</li><li>把球举到眼睛前方，身体慢慢转动一圈。让球稍高于眼睛，避免身体的影子落到球上。观察什么时候亮面在右、什么时候在左。</li><li>背对灯时先把球举高，看到满月；再降低到头部影子里，比较普通满月和“月食”。</li></ol><p>实体活动只使用室内灯。观看真实日食必须使用合格太阳观测设备，不能直视太阳或通过普通望远镜观察。</p></article><article><h2>逼真画面，明确边界</h2><p>月面与地球表面使用 NASA 科学影像纹理；光照、相位和遮挡随同一组位置参数变化。月全食的红色来自地球大气折射、散射后透过的光，这里只作色彩近似。</p><p>模型采用圆轨道快照、平均太阳距离和可调地月距离，不包含历书、轨道偏心、自转、章动、天平动或精确大气效应；不能预报某地某时的日月食。月盘北向上、无地平线旋转。</p><p>月盘是地心放大视图；日食只在朝日侧赤道金点判断。太阳亮度按均匀圆盘近似，忽略临边昏暗；本影与半影按小角度圆锥截面估计，不把装置的压缩距离用于科学判定。</p><p class="moon-credit">素材：NASA/GSFC/ASU LROC、NASA Blue Marble。<a href="/textures/astronomy/CREDITS.md">纹理来源与署名</a></p></article></section>
  <noscript><p class="moon-noscript">启用 JavaScript 可移动日地月并观看实时月相。月相来自太阳照亮月球的一半与观察方向的关系；月食需要满月接近轨道交点，普通满月不一定进入地影。也可按上方室内灯活动验证。</p></noscript>
  <LabObservationBar stage=".moon-views" controls=".moon-controls, .moon-small-steps, .moon-playbar" readouts={[{"label": "受光比例", "id": "moon-fraction"}, {"label": "当前观测", "id": "moon-event-short"}]}/>
- <NextExploration slug="moon"/>
+ <PilotLearning slug="moon"/><NextExploration slug="moon"/>
 </div><script>import '../../scripts/exploration/moon';</script>
 </SiteLayout>

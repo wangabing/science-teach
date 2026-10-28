@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {numericState,type DiscoveryState} from '../../lib/product/discoveries';
 import {demonstrationValue} from '../../lib/discovery/demonstration';
 import { experienceById } from "../../data/discovery-experiences";
 import { observationCue } from "../../lib/discovery/observation-cues";
@@ -495,6 +497,13 @@ async function boot(root: HTMLElement) {
       render();
     });
   }
+  setupDiscoveries({slug:studio.slug,
+    snapshot:()=>clone(p),
+    validate:(value):value is DiscoveryState=>numericState(Object.fromEntries(model.controls.map(c=>[c.key,{min:c.min,max:c.max,options:c.options?.map(o=>o[0])}])),value),
+    labels:Object.fromEntries(model.controls.map(c=>[c.key,c.label+(c.unit?'/'+c.unit:'')])),
+    describe:state=>{const inputs=state as Inputs,o=solveModel(model,inputs);return model.controls.map(c=>`${c.label}=${inputs[c.key]} ${c.unit}`).join('，')+'；'+o.metrics.map(m=>`${m.label}=${format(m.value)} ${m.unit}`).join('，');},
+    restore:state=>{pause();const before=clone(p);p=clone(state as Inputs);push(before);clear('已恢复发现，重新计算；不计独立任务。');render();}
+  });
   setupNotebook<Snapshot>({
     snapshot: () => ({ version: "discovery-v1", id, inputs: clone(p) }),
     clone: (s) => ({ ...s, inputs: clone(s.inputs) }),

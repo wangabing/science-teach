@@ -1,3 +1,5 @@
+import {setupDiscoveries} from '../product/discoveries';
+import {numericState,type DiscoveryState} from '../../lib/product/discoveries';
 import { bridgeNodes,bareMembers,trussMembers,solveBridge,type Member } from '../../lib/exploration/bridge';
 import { el,text,value,bindRange,activate } from './ui';
 import { sequence } from './demonstration';
@@ -70,3 +72,13 @@ el('demo-pause').addEventListener('click',()=>{if(demo.isRunning()){demo.pause()
 el('guide-next').addEventListener('click',()=>{demo.cancel();const has=(a:number,b:number)=>members.some(m=>m[0]===a&&m[1]===b);if(!has(0,4))members.push([0,4]);else if(!has(2,4))members.push([2,4]);else el<HTMLInputElement>('load').value=String(Math.min(100,value('load')+20));render();});
 el('remove-member').addEventListener('click',()=>{demo.cancel();if(!inspected)return;members=members.filter(m=>m[0]!==inspected![0]||m[1]!==inspected![1]);inspected=null;render();});
 el('load').addEventListener('input',()=>demo.cancel(),true);el('load-node').addEventListener('change',()=>demo.cancel(),true);
+
+const validBridge=(v:unknown):v is DiscoveryState=>{
+ if(!v||typeof v!=='object'||Array.isArray(v))return false;const p=v as Record<string,unknown>;
+ if(Object.keys(p).sort().join(',')!=='load,loadNode,members'||!numericState({load:{min:5,max:100,step:5},loadNode:{min:1,max:5,options:[1,3,4,5]}},{load:p.load,loadNode:p.loadNode})||!Array.isArray(p.members)||p.members.length>15)return false;
+ const pairs=p.members;return pairs.every(m=>Array.isArray(m)&&m.length===2&&Number.isInteger(m[0])&&Number.isInteger(m[1])&&m[0]>=0&&m[0]<m[1]&&m[1]<6)&&new Set(pairs.map(m=>JSON.stringify(m))).size===pairs.length;
+};
+setupDiscoveries({slug:'bridge',snapshot:()=>({members:members.map(m=>[...m]),load:value('load'),loadNode:Number(el<HTMLSelectElement>('load-node').value)}),validate:validBridge,labels:{members:'杆件连接',load:'载荷/kN',loadNode:'施力节点编号'},
+ describe:p=>{const r=solveBridge(p.members as Member[],p.load as number,p.loadNode as number);return `连接${(p.members as Member[]).map(([a,b])=>names[a]+'–'+names[b]).join('、')||'无'}；载荷${p.load} kN，节点${names[p.loadNode as number]}；总杆长${r.length.toFixed(2)} m，${r.stable?`左右反力${r.reactions[1]!.toFixed(2)}/${r.reactions[5]!.toFixed(2)} kN`:'结构不稳定，受力不定义'}。`;},
+ restore:p=>{demo.cancel();members=(p.members as Member[]).map(m=>[...m]);selected=null;inspected=null;el<HTMLInputElement>('load').value=String(p.load);el<HTMLSelectElement>('load-node').value=String(p.loadNode);render();text('demo-stage','已恢复设计并重算；未恢复演示，不计个人独立搭建。');}
+});

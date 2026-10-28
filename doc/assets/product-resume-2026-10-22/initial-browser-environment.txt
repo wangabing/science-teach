@@ -1,0 +1,1 @@
+Initial sandboxed browser run could not start the local preview server: listen EPERM 127.0.0.1:4371. No browser assertions executed in that attempt. Re-ran with approved local server and Chrome permissions.

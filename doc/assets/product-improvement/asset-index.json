@@ -1,0 +1,3646 @@
+{
+  "generatedAt": "2026-10-21T10:22:55.263Z",
+  "scope": "Editorial/source-code review, not student validation. Independent checks are specified; execution evidence is in validation.json.",
+  "records": [
+    {
+      "slug": "buoyancy",
+      "name": "浮力实验台",
+      "space": "physics",
+      "href": "/stem-lab/buoyancy/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "pendulum",
+      "name": "单摆与能量",
+      "space": "physics",
+      "href": "/stem-lab/pendulum/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "lens",
+      "name": "透镜成像",
+      "space": "physics",
+      "href": "/labs/lens/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "reviewed-for-pilot",
+        "note": "分不清实像、虚像，或不知道光屏为什么模糊"
+      },
+      "scientific": {
+        "status": "independent-check-specified",
+        "check": "f=10、u=30得到v=15；u=15得到v=30；u=f无有限像距。"
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "starting-point",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "interference",
+      "name": "双源波纹",
+      "space": "physics",
+      "href": "/labs/interference/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "circuits",
+      "name": "电路接线工坊",
+      "space": "physics",
+      "href": "/labs/circuits/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "resistors",
+      "name": "电阻分压台",
+      "space": "physics",
+      "href": "/labs/resistors/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "capacitors",
+      "name": "电容时间台",
+      "space": "physics",
+      "href": "/labs/capacitors/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "area",
+      "name": "面积搬家",
+      "space": "geometry",
+      "href": "/labs/area/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "sections",
+      "name": "切开立方体",
+      "space": "geometry",
+      "href": "/labs/sections/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "reviewed-for-pilot",
+        "note": "难以想象平面切过立方体后留下的形状"
+      },
+      "scientific": {
+        "status": "independent-check-specified",
+        "check": "水平过中心得面积4、周长8；垂直体对角线过中心得面积3√3的正六边形。"
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "starting-point",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "mobius",
+      "name": "莫比乌斯带",
+      "space": "geometry",
+      "href": "/labs/mobius/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "reflection",
+      "name": "镜像寻路",
+      "space": "geometry",
+      "href": "/labs/reflection/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "circle-angles",
+      "name": "圆周角观测台",
+      "space": "geometry",
+      "href": "/labs/circle-angles/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "triangle-rigidity",
+      "name": "三角形锁形工坊",
+      "space": "geometry",
+      "href": "/labs/triangle-rigidity/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "ellipse-string",
+      "name": "双钉拉线实验",
+      "space": "geometry",
+      "href": "/labs/ellipse-string/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "moon",
+      "name": "月相与日月食",
+      "space": "cosmos",
+      "href": "/labs/moon/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "reviewed-for-pilot",
+        "note": "把月相变化误认为地球影子遮住了月球"
+      },
+      "scientific": {
+        "status": "independent-check-specified",
+        "check": "φ=0/90/180°分别为0/0.5/1；满月交点90°无月食，对齐0°可入本影。"
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "starting-point",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "orbit",
+      "name": "发射一颗卫星",
+      "space": "cosmos",
+      "href": "/labs/orbit/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "three-body",
+      "name": "三体：两种未来",
+      "space": "cosmos",
+      "href": "/labs/three-body/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "bridge",
+      "name": "桥梁挑战",
+      "space": "structures",
+      "href": "/labs/bridge/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "reviewed-for-pilot",
+        "note": "想知道增加一根斜撑，怎样改变结构稳定性"
+      },
+      "scientific": {
+        "status": "independent-check-specified",
+        "check": "对称中央加载40 kN，左右竖向反力各20 kN；固定稳定结构载荷加倍，杆力与位移加倍。"
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "starting-point",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "balance",
+      "name": "重心与稳定",
+      "space": "structures",
+      "href": "/labs/balance/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "gears",
+      "name": "齿轮工坊",
+      "space": "structures",
+      "href": "/labs/gears/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "galileo-incline",
+      "name": "伽利略斜面",
+      "space": "physics",
+      "href": "/labs/galileo-incline/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "collision-track",
+      "name": "碰撞轨道",
+      "space": "physics",
+      "href": "/labs/collision-track/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "resonance-table",
+      "name": "共振台",
+      "space": "physics",
+      "href": "/labs/resonance-table/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "electric-field-probe",
+      "name": "电场探针",
+      "space": "physics",
+      "href": "/labs/electric-field-probe/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "faraday-coil",
+      "name": "法拉第线圈",
+      "space": "physics",
+      "href": "/labs/faraday-coil/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "magnetic-sorter",
+      "name": "磁场分选器",
+      "space": "physics",
+      "href": "/labs/magnetic-sorter/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "joule-calorimeter",
+      "name": "焦耳量热",
+      "space": "physics",
+      "href": "/labs/joule-calorimeter/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "ideal-gas-piston",
+      "name": "气体活塞",
+      "space": "physics",
+      "href": "/labs/ideal-gas-piston/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "brownian-microscope",
+      "name": "布朗显微镜",
+      "space": "physics",
+      "href": "/labs/brownian-microscope/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "refraction-interface",
+      "name": "光的转弯",
+      "space": "physics",
+      "href": "/labs/refraction-interface/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cube-nets",
+      "name": "折起立方体",
+      "space": "geometry",
+      "href": "/labs/cube-nets/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cavalieri-slices",
+      "name": "等高切片",
+      "space": "geometry",
+      "href": "/labs/cavalieri-slices/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "spatial-perpendicular",
+      "name": "空间垂线",
+      "space": "geometry",
+      "href": "/labs/spatial-perpendicular/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "conic-sections",
+      "name": "切圆锥",
+      "space": "geometry",
+      "href": "/labs/conic-sections/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "moving-point-function",
+      "name": "动点函数",
+      "space": "geometry",
+      "href": "/labs/moving-point-function/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "unit-circle-wave",
+      "name": "单位圆示波台",
+      "space": "geometry",
+      "href": "/labs/unit-circle-wave/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "tangent-microscope",
+      "name": "切线显微镜",
+      "space": "geometry",
+      "href": "/labs/tangent-microscope/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "galton-board",
+      "name": "高尔顿钉板",
+      "space": "geometry",
+      "href": "/labs/galton-board/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "euler-polyhedra",
+      "name": "多面体侦探",
+      "space": "geometry",
+      "href": "/labs/euler-polyhedra/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "sphere-packing",
+      "name": "球堆仓库",
+      "space": "geometry",
+      "href": "/labs/sphere-packing/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "three-suns",
+      "name": "三日凌空",
+      "space": "cosmos",
+      "href": "/labs/three-suns/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "lagrange-station",
+      "name": "拉格朗日驿站",
+      "space": "cosmos",
+      "href": "/labs/lagrange-station/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "light-cone-messages",
+      "name": "光锥通信",
+      "space": "cosmos",
+      "href": "/labs/light-cone-messages/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "relativistic-clocks",
+      "name": "星际钟表",
+      "space": "cosmos",
+      "href": "/labs/relativistic-clocks/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "solar-sail",
+      "name": "光帆启航",
+      "space": "cosmos",
+      "href": "/labs/solar-sail/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "black-hole-rays",
+      "name": "黑洞观景台",
+      "space": "cosmos",
+      "href": "/labs/black-hole-rays/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "tidal-roche",
+      "name": "潮汐撕裂",
+      "space": "cosmos",
+      "href": "/labs/tidal-roche/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "reviewed-for-pilot",
+        "note": "想分清高密度、自引力与材料强度"
+      },
+      "scientific": {
+        "status": "independent-check-specified",
+        "check": "距离加倍潮汐约为1/8；同密度与尺寸下小球自引力不随主星距离改变。"
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cosmic-radio",
+      "name": "宇宙收音机",
+      "space": "cosmos",
+      "href": "/labs/cosmic-radio/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "gravitational-chirp",
+      "name": "时空涟漪",
+      "space": "cosmos",
+      "href": "/labs/gravitational-chirp/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cosmic-background",
+      "name": "宇宙背景屏",
+      "space": "cosmos",
+      "href": "/labs/cosmic-background/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "funicular-arch",
+      "name": "反转悬链",
+      "space": "structures",
+      "href": "/labs/funicular-arch/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cantilever-design",
+      "name": "悬臂工作台",
+      "space": "structures",
+      "href": "/labs/cantilever-design/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "seismic-tower",
+      "name": "抗震塔",
+      "space": "structures",
+      "href": "/labs/seismic-tower/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "tensegrity",
+      "name": "张拉整体",
+      "space": "structures",
+      "href": "/labs/tensegrity/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "suspension-cable",
+      "name": "悬索跨越",
+      "space": "structures",
+      "href": "/labs/suspension-cable/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "crank-slider",
+      "name": "曲柄画线机",
+      "space": "structures",
+      "href": "/labs/crank-slider/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "pulley-lift",
+      "name": "滑轮吊装",
+      "space": "structures",
+      "href": "/labs/pulley-lift/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "hydraulic-lift",
+      "name": "液压举升",
+      "space": "structures",
+      "href": "/labs/hydraulic-lift/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "miura-canopy",
+      "name": "可展开遮棚",
+      "space": "structures",
+      "href": "/labs/miura-canopy/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "thermal-house",
+      "name": "房子的热账本",
+      "space": "structures",
+      "href": "/labs/thermal-house/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "projectile-launch",
+      "name": "抛体发射台",
+      "space": "physics",
+      "href": "/labs/projectile-launch/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "atwood-machine",
+      "name": "阿特伍德机",
+      "space": "physics",
+      "href": "/labs/atwood-machine/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "centripetal-force",
+      "name": "圆周运动台",
+      "space": "physics",
+      "href": "/labs/centripetal-force/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "torque-balance",
+      "name": "力矩平衡尺",
+      "space": "physics",
+      "href": "/labs/torque-balance/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "spring-energy-store",
+      "name": "弹簧能量仓",
+      "space": "physics",
+      "href": "/labs/spring-energy-store/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "venturi-tube",
+      "name": "文丘里管",
+      "space": "physics",
+      "href": "/labs/venturi-tube/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "hydrostatic-pressure",
+      "name": "液柱压力台",
+      "space": "physics",
+      "href": "/labs/hydrostatic-pressure/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "young-double-slit",
+      "name": "双缝光屏",
+      "space": "physics",
+      "href": "/labs/young-double-slit/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "single-slit-diffraction",
+      "name": "单缝衍射",
+      "space": "physics",
+      "href": "/labs/single-slit-diffraction/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "acoustic-beats",
+      "name": "拍频听音台",
+      "space": "physics",
+      "href": "/labs/acoustic-beats/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "standing-wave-string",
+      "name": "驻波弦",
+      "space": "physics",
+      "href": "/labs/standing-wave-string/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "doppler-source",
+      "name": "多普勒声源",
+      "space": "physics",
+      "href": "/labs/doppler-source/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "wire-magnetic-force",
+      "name": "通电导线受力",
+      "space": "physics",
+      "href": "/labs/wire-magnetic-force/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "ideal-transformer",
+      "name": "理想变压器",
+      "space": "physics",
+      "href": "/labs/ideal-transformer/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "rlc-frequency-selector",
+      "name": "RLC选频台",
+      "space": "physics",
+      "href": "/labs/rlc-frequency-selector/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "carnot-engine",
+      "name": "卡诺热机",
+      "space": "physics",
+      "href": "/labs/carnot-engine/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "mixing-calorimetry",
+      "name": "混合量热",
+      "space": "physics",
+      "href": "/labs/mixing-calorimetry/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "fourier-heat-bridge",
+      "name": "导热桥",
+      "space": "physics",
+      "href": "/labs/fourier-heat-bridge/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "photoelectric-effect",
+      "name": "光电效应",
+      "space": "physics",
+      "href": "/labs/photoelectric-effect/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "rutherford-scattering",
+      "name": "卢瑟福散射",
+      "space": "physics",
+      "href": "/labs/rutherford-scattering/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "pythagorean-squares",
+      "name": "勾股面积拼证",
+      "space": "geometry",
+      "href": "/labs/pythagorean-squares/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "triangle-centroid",
+      "name": "三角形重心",
+      "space": "geometry",
+      "href": "/labs/triangle-centroid/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "similarity-shadow",
+      "name": "相似测高",
+      "space": "geometry",
+      "href": "/labs/similarity-shadow/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "sine-rule-circle",
+      "name": "正弦定理",
+      "space": "geometry",
+      "href": "/labs/sine-rule-circle/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cosine-rule-hinge",
+      "name": "余弦定理",
+      "space": "geometry",
+      "href": "/labs/cosine-rule-hinge/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "ptolemy-quadrilateral",
+      "name": "托勒密四边形",
+      "space": "geometry",
+      "href": "/labs/ptolemy-quadrilateral/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "parabola-focus-directrix",
+      "name": "抛物线焦准线",
+      "space": "geometry",
+      "href": "/labs/parabola-focus-directrix/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "hyperbola-focal-difference",
+      "name": "双曲线双焦点",
+      "space": "geometry",
+      "href": "/labs/hyperbola-focal-difference/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "circle-inversion",
+      "name": "圆反演",
+      "space": "geometry",
+      "href": "/labs/circle-inversion/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "determinant-area",
+      "name": "行列式面积",
+      "space": "geometry",
+      "href": "/labs/determinant-area/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cross-product-space",
+      "name": "空间叉积",
+      "space": "geometry",
+      "href": "/labs/cross-product-space/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "skew-lines-distance",
+      "name": "异面直线公垂线",
+      "space": "geometry",
+      "href": "/labs/skew-lines-distance/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "sphere-plane-section",
+      "name": "球的截面",
+      "space": "geometry",
+      "href": "/labs/sphere-plane-section/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cuboid-diagonal",
+      "name": "长方体空间对角线",
+      "space": "geometry",
+      "href": "/labs/cuboid-diagonal/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "solid-of-revolution",
+      "name": "旋转体",
+      "space": "geometry",
+      "href": "/labs/solid-of-revolution/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "riemann-area",
+      "name": "黎曼和",
+      "space": "geometry",
+      "href": "/labs/riemann-area/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "monte-carlo-pi",
+      "name": "蒙特卡洛圆周率",
+      "space": "geometry",
+      "href": "/labs/monte-carlo-pi/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "bayes-screening",
+      "name": "贝叶斯分诊树",
+      "space": "geometry",
+      "href": "/labs/bayes-screening/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "complex-rotation",
+      "name": "复数旋转",
+      "space": "geometry",
+      "href": "/labs/complex-rotation/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "quadratic-discriminant",
+      "name": "二次函数判别式",
+      "space": "geometry",
+      "href": "/labs/quadratic-discriminant/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "kepler-area-clock",
+      "name": "开普勒等面积",
+      "space": "cosmos",
+      "href": "/labs/kepler-area-clock/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "escape-speed-well",
+      "name": "逃逸速度",
+      "space": "cosmos",
+      "href": "/labs/escape-speed-well/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "hohmann-transfer",
+      "name": "霍曼转移",
+      "space": "cosmos",
+      "href": "/labs/hohmann-transfer/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "exoplanet-transit",
+      "name": "系外行星凌星",
+      "space": "cosmos",
+      "href": "/labs/exoplanet-transit/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "stellar-radial-velocity",
+      "name": "恒星视向速度",
+      "space": "cosmos",
+      "href": "/labs/stellar-radial-velocity/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "habitable-zone",
+      "name": "宜居带",
+      "space": "cosmos",
+      "href": "/labs/habitable-zone/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "stellar-blackbody",
+      "name": "恒星光谱",
+      "space": "cosmos",
+      "href": "/labs/stellar-blackbody/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "stellar-lifetime",
+      "name": "恒星寿命",
+      "space": "cosmos",
+      "href": "/labs/stellar-lifetime/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "neutron-star-compactness",
+      "name": "中子星致密度",
+      "space": "cosmos",
+      "href": "/labs/neutron-star-compactness/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "cosmological-redshift",
+      "name": "宇宙红移",
+      "space": "cosmos",
+      "href": "/labs/cosmological-redshift/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "gravitational-clock",
+      "name": "引力钟",
+      "space": "cosmos",
+      "href": "/labs/gravitational-clock/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "einstein-lens",
+      "name": "引力透镜",
+      "space": "cosmos",
+      "href": "/labs/einstein-lens/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "relativistic-precession",
+      "name": "水星进动",
+      "space": "cosmos",
+      "href": "/labs/relativistic-precession/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "hill-sphere",
+      "name": "希尔球",
+      "space": "cosmos",
+      "href": "/labs/hill-sphere/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "rocket-mass-ledger",
+      "name": "火箭质量账本",
+      "space": "cosmos",
+      "href": "/labs/rocket-mass-ledger/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "relativistic-energy",
+      "name": "相对论能量",
+      "space": "cosmos",
+      "href": "/labs/relativistic-energy/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "interstellar-dust-impact",
+      "name": "星际尘埃撞击",
+      "space": "cosmos",
+      "href": "/labs/interstellar-dust-impact/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "telescope-resolution",
+      "name": "望远镜分辨率",
+      "space": "cosmos",
+      "href": "/labs/telescope-resolution/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "interferometer-baseline",
+      "name": "干涉仪基线",
+      "space": "cosmos",
+      "href": "/labs/interferometer-baseline/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "hubble-distance-ladder",
+      "name": "哈勃距离梯",
+      "space": "cosmos",
+      "href": "/labs/hubble-distance-ladder/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "triangle-truss-joint",
+      "name": "三角桁架节点",
+      "space": "structures",
+      "href": "/labs/triangle-truss-joint/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "moving-load-beam",
+      "name": "移动荷载梁",
+      "space": "structures",
+      "href": "/labs/moving-load-beam/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "euler-column",
+      "name": "欧拉压杆",
+      "space": "structures",
+      "href": "/labs/euler-column/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "eccentric-column-stress",
+      "name": "偏心受压柱",
+      "space": "structures",
+      "href": "/labs/eccentric-column-stress/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "retaining-wall-overturn",
+      "name": "挡土墙抗倾覆",
+      "space": "structures",
+      "href": "/labs/retaining-wall-overturn/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "slope-friction",
+      "name": "斜坡摩擦",
+      "space": "structures",
+      "href": "/labs/slope-friction/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "screw-jack",
+      "name": "螺旋千斤顶",
+      "space": "structures",
+      "href": "/labs/screw-jack/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "wedge-lift",
+      "name": "楔块举升",
+      "space": "structures",
+      "href": "/labs/wedge-lift/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "belt-drive",
+      "name": "皮带传动",
+      "space": "structures",
+      "href": "/labs/belt-drive/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "reviewed-for-pilot",
+        "note": "想区分省力、转速和功率"
+      },
+      "scientific": {
+        "status": "independent-check-specified",
+        "check": "半径比2时输出转速为输入1/2、扭矩为2倍，输入输出功率相等。"
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "planetary-gear",
+      "name": "行星齿轮",
+      "space": "structures",
+      "href": "/labs/planetary-gear/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "four-bar-linkage",
+      "name": "四杆机构",
+      "space": "structures",
+      "href": "/labs/four-bar-linkage/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "scissor-lift",
+      "name": "剪叉升降",
+      "space": "structures",
+      "href": "/labs/scissor-lift/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "spherical-cap-dome",
+      "name": "球冠穹顶",
+      "space": "structures",
+      "href": "/labs/spherical-cap-dome/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "diagonal-bracing",
+      "name": "斜撑抗剪",
+      "space": "structures",
+      "href": "/labs/diagonal-bracing/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "honeycomb-relative-density",
+      "name": "蜂窝材料",
+      "space": "structures",
+      "href": "/labs/honeycomb-relative-density/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "sandwich-beam",
+      "name": "夹芯梁",
+      "space": "structures",
+      "href": "/labs/sandwich-beam/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "room-reverberation",
+      "name": "房间混响",
+      "space": "structures",
+      "href": "/labs/room-reverberation/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "solar-shading",
+      "name": "日照遮阳",
+      "space": "structures",
+      "href": "/labs/solar-shading/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "rainwater-harvesting",
+      "name": "雨水收集",
+      "space": "structures",
+      "href": "/labs/rainwater-harvesting/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    },
+    {
+      "slug": "stack-ventilation",
+      "name": "烟囱通风",
+      "space": "structures",
+      "href": "/labs/stack-ventilation/",
+      "automated": {
+        "status": "historical-evidence",
+        "source": "doc/assets/experience-closure/report.json"
+      },
+      "editorial": {
+        "status": "unreviewed",
+        "note": null
+      },
+      "scientific": {
+        "status": "unreviewed",
+        "check": null
+      },
+      "curriculum": {
+        "status": "not-verified"
+      },
+      "externalFeedback": {
+        "status": "deferred-post-launch"
+      },
+      "recommendation": "catalog",
+      "currentValidation": "doc/assets/product-improvement/validation.json"
+    }
+  ]
+}
